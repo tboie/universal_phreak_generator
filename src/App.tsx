@@ -3,8 +3,9 @@ import "./App.css";
 import { useEffect } from "react";
 import { useGameLife } from "react-game-life";
 
-import megaPiece from "./megapiece";
-import megaPattern from "./megapattern";
+import megaPiece1 from "./megaPiece1";
+// import megaPattern1 from "./megaPattern";
+// import megaPieceBreak1 from "./megaPieceBreak1";
 
 /*** ***/
 // Glider Templates
@@ -137,12 +138,12 @@ function App() {
       game.speedUp(100);
 
       /*
-      megaPattern.forEach((p) => {
+      megaPattern1.forEach((p) => {
         game.bornCell({ x: p.x, y: p.y });
       });
       */
 
-      megaPiece.forEach((p) => {
+      megaPiece1.forEach((p) => {
         game.bornCell({ x: p.x, y: p.y });
       });
 
