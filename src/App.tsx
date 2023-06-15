@@ -6,7 +6,7 @@ import { useGameLife } from "react-game-life";
 // import megaPiece1 from "./megaPiece1";
 // import megaPattern1 from "./megaPattern";
 // import megaPiecMorph2 from "./megaPieceMorph2";
-import megaPieceMorph4 from "./megaPieceMorph4";
+import megaPieceMorph6 from "./megaPieceMorph6";
 
 /*** ***/
 // Glider Templates
@@ -144,7 +144,7 @@ function App() {
       });
       */
 
-      megaPieceMorph4.forEach((p) => {
+      megaPieceMorph6.forEach((p) => {
         game.bornCell({ x: p.x, y: p.y });
       });
 
