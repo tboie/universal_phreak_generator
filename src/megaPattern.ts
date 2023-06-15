@@ -1,4 +1,4 @@
-export const megaPattern = [
+export default [
   {
     x: 1,
     y: -44,
