@@ -392,14 +392,17 @@ function App() {
       };
 
       points.forEach((p, i) => {
+
+        /* lorgarithmic spiral decay algorithm
         const prob = (100 - (100 / cells) * i) / 100;
         const d = Math.random();
 
         if (d < prob) {
           game.bornCell({ x: p[0], y: p[1] }); // Spawn cell
         }
-        
+        */
 
+      /* golden spiral region probabilities
         const x = p[0];
         const y = p[1];
 
