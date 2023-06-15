@@ -3,6 +3,8 @@ import "./App.css";
 import { useEffect } from "react";
 import { useGameLife } from "react-game-life";
 
+import { megaPattern } from "./megaPattern";
+
 /*** ***/
 // Glider Templates
 /** ***/
@@ -119,24 +121,34 @@ function App() {
   const [game, canvasRef] = useGameLife({
     graphics: {
       board: { zoom: 15 /*2*/ },
-      colors: { background: "#FFF", cell: "#000" },
+      colors: { background: "#000", cell: "#00FF00" },
     },
   });
 
   useEffect(() => {
     if (game) {
+      document.addEventListener("click", (event) => {
+        console.log(game.getCells());
+      });
+
       console.log(game);
 
       game.speedUp(100);
 
       /*
+      megaPattern.forEach((p) => {
+        game.bornCell({ x: p.x, y: p.y });
+      });
+      */
+
+      /* random 4 gliders
       const gliders = [
         [rG(), rG()],
         [rG(), rG()],
       ];
       */
 
-      /*
+      /* model to create mega pattern
       const gliders = [
         [
           [
@@ -189,6 +201,7 @@ function App() {
 
       */
 
+      /* WIP
       const gliders = [
         [g0, g3, r0, r0, r0, r0, r0, r0, r0, r0, r0],
         [g3, g0, r0, r0, r0, r0, r0, r0, r0, r0, r0],
@@ -236,6 +249,7 @@ function App() {
         [g2, g1, r0, r0, r0, r0, r0, r0, r0, r0, r0],
         [g1, g2, r0, r0, r0, r0, r0, r0, r0, r0, r0],
       ];
+      */
 
       /* largest 16 piece mega pattern 
       const gliders = [
@@ -337,6 +351,7 @@ function App() {
       ];
       */
 
+      /*
       console.log(gliders);
 
       gliders.forEach((gs, i) => {
@@ -351,6 +366,7 @@ function App() {
           });
         });
       });
+      */
 
       /* golden spiral probabilities
       // TODO: lol
