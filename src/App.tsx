@@ -138,16 +138,9 @@ function App() {
     let distance = 0;
     let velocity = board.length - prevBoard.length + 1;
 
-    if (board.length > 1) {
-      // TODO: use center point
-      const p1 = board[1];
-
-      board.forEach((p2, i) => {
-        if (i > 0) {
-          distance += Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2);
-        }
-      });
-    }
+    board.forEach((p) => {
+      distance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
+    });
 
     energy = (distance - prevDistance + 1) * velocity ** 2;
     console.log(energy);
