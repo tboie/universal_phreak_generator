@@ -1,12 +1,15 @@
 import "./App.css";
 
 import { useEffect } from "react";
-import { useGameLife } from "react-game-life";
+import { Point, useGameLife } from "react-game-life";
 
 // import megaPiece1 from "./megaPiece1";
 // import megaPattern1 from "./megaPattern";
 // import megaPiecMorph2 from "./megaPieceMorph2";
-import megaPieceMorph6 from "./megaPieceMorph6";
+// import megaPieceMorph6 from "./megaPieceMorph6";
+
+let prevBoard: Point[] = [];
+let prevDistance = 0;
 
 /*** ***/
 // Glider Templates
@@ -126,7 +129,35 @@ function App() {
       board: { zoom: 15 /*2*/ },
       colors: { background: "#000", cell: "#00FF00" },
     },
+    game: { onNextGeneration: nextGeneration },
   });
+
+  // calculate velocity & energy
+  function nextGeneration(board: Point[]) {
+    let energy = 0;
+    let distance = 0;
+    let velocity = 0;
+
+    velocity = board.length - prevBoard.length;
+
+    if (board.length > 1) {
+      const p1 = board[0];
+
+      board.forEach((p2, i) => {
+        if (i > 0) {
+          distance += Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2);
+        }
+      });
+    }
+
+    energy = (distance - prevDistance) * (velocity ^ 2);
+    console.log(energy);
+
+    prevBoard = [...board];
+    prevDistance = distance;
+
+    return {};
+  }
 
   useEffect(() => {
     if (game) {
@@ -134,15 +165,12 @@ function App() {
         console.log(game.getCells());
       });
 
-      console.log(game);
-
-      game.speedUp(100);
+      game.speedUp(20);
 
       /*
       megaPattern1.forEach((p) => {
         game.bornCell({ x: p.x, y: p.y });
       });
-      */
 
       megaPieceMorph6.forEach((p) => {
         game.bornCell({ x: p.x, y: p.y });
@@ -258,7 +286,7 @@ function App() {
       ];
       */
 
-      /* largest 16 piece mega pattern 
+      /* largest 16 piece mega pattern
       const gliders = [
         [g0, g3, r0, r0, r0, r0, r0, r0, r0, r0, r0],
         [g3, g0, r0, r0, r0, r0, r0, r0, r0, r0, r0],
@@ -358,8 +386,8 @@ function App() {
       ];
       */
 
-      /*
-      console.log(gliders);
+      /* console.log(gliders); */
+      const gliders = [[rG()]];
 
       gliders.forEach((gs, i) => {
         gs.forEach((g, ii) => {
@@ -373,7 +401,6 @@ function App() {
           });
         });
       });
-      */
 
       /* golden spiral probabilities
       // TODO: lol
