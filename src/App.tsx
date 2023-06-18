@@ -129,19 +129,18 @@ function App() {
       board: { zoom: 15 /*2*/ },
       colors: { background: "#000", cell: "#00FF00" },
     },
-    game: { onNextGeneration: nextGeneration },
+    game: { onNextGeneration: oNextGeneration },
   });
 
-  // calculate velocity & energy
-  function nextGeneration(board: Point[]) {
+  // calculate change in energy
+  function oNextGeneration(board: Point[]) {
     let energy = 0;
     let distance = 0;
-    let velocity = 0;
-
-    velocity = board.length - prevBoard.length;
+    let velocity = board.length - prevBoard.length + 1;
 
     if (board.length > 1) {
-      const p1 = board[0];
+      // TODO: use center point
+      const p1 = board[1];
 
       board.forEach((p2, i) => {
         if (i > 0) {
@@ -150,7 +149,7 @@ function App() {
       });
     }
 
-    energy = (distance - prevDistance) * (velocity ^ 2);
+    energy = (distance - prevDistance + 1) * velocity ** 2;
     console.log(energy);
 
     prevBoard = [...board];
