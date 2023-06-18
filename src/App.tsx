@@ -134,15 +134,14 @@ function App() {
 
   // calculate change in energy
   function oNextGeneration(board: Point[]) {
-    let energy = 0;
     let distance = 0;
-    let velocity = board.length - prevBoard.length + 1;
-
     board.forEach((p) => {
       distance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
     });
 
-    energy = (distance - prevDistance + 1) * velocity ** 2;
+    const velocity = board.length - prevBoard.length + 1;
+    const energy = (distance - prevDistance + 1) * velocity ** 2;
+
     console.log(energy);
 
     prevBoard = [...board];
@@ -278,7 +277,7 @@ function App() {
       ];
       */
 
-      /* largest 16 piece mega pattern
+      /* largest 16 piece mega pattern */
       const gliders = [
         [g0, g3, r0, r0, r0, r0, r0, r0, r0, r0, r0],
         [g3, g0, r0, r0, r0, r0, r0, r0, r0, r0, r0],
@@ -326,7 +325,6 @@ function App() {
         [g2, g1, r0, r0, r0, r0, r0, r0, r0, r0, r0],
         [g1, g2, r0, r0, r0, r0, r0, r0, r0, r0, r0],
       ];
-      */
 
       /* largest 32 piece mega pattern
       const gliders = [
@@ -379,7 +377,7 @@ function App() {
       */
 
       /* console.log(gliders); */
-      const gliders = [[rG()]];
+      // const gliders = [[rG()]];
 
       gliders.forEach((gs, i) => {
         gs.forEach((g, ii) => {
