@@ -10,6 +10,7 @@ import { Point, useGameLife } from "react-game-life";
 import spiral from "./spiral";
 import spiral2 from "./spiral2";
 import spiral3 from "./spiral3";
+import spiralmin from "./spiralmin";
 
 let prevBoard: Point[] = [];
 
@@ -162,9 +163,9 @@ function App() {
         console.log(game.getCells());
       });
 
-      game.speedUp(10);
+      // game.speedUp(10);
 
-      spiral3.forEach((p) => {
+      spiralmin.forEach((p) => {
         game.bornCell({ x: p.x, y: p.y });
       });
 
