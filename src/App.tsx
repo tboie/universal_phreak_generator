@@ -7,16 +7,67 @@ import { Point, useGameLife } from "react-game-life";
 // import megaPattern1 from "./megaPattern";
 // import megaPiecMorph2 from "./megaPieceMorph2";
 // import megaPieceMorph6 from "./megaPieceMorph6";
+import spiralmin from "./spiralmin";
 import spiral from "./spiral";
 import spiral2 from "./spiral2";
 import spiral3 from "./spiral3";
-import spiralmin from "./spiralmin";
+import spiral4 from "./spiral4";
 
 let prevBoard: Point[] = [];
 
 /*** ***/
 // Glider Templates
 /** ***/
+
+const one = [
+  [0, 1, 0, 0, 1, 1, 1],
+  [0, 0, 1, 0, 0, 0, 1],
+  [1, 1, 1, 0, 0, 1, 0],
+  [0, 0, 0, 0, 0, 0, 0],
+  [1, 1, 1, 0, 0, 1, 0],
+  [0, 0, 1, 0, 0, 0, 1],
+  [0, 1, 0, 0, 1, 1, 1],
+];
+
+const two = [
+  [0, 0, 1, 0, 1, 0, 0],
+  [1, 0, 1, 0, 1, 0, 1],
+  [0, 1, 1, 0, 1, 1, 0],
+  [0, 0, 0, 0, 0, 0, 0],
+  [1, 0, 0, 0, 0, 0, 1],
+  [1, 0, 1, 0, 1, 0, 1],
+  [1, 1, 0, 0, 0, 1, 1],
+];
+
+const three = [
+  [1, 1, 1, 0, 0, 1, 0],
+  [1, 0, 0, 0, 1, 0, 0],
+  [0, 1, 0, 0, 1, 1, 1],
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 1, 0, 0, 1, 1, 1],
+  [1, 0, 0, 0, 1, 0, 0],
+  [1, 1, 1, 0, 0, 1, 0],
+];
+
+const four = [
+  [1, 1, 0, 0, 0, 1, 1],
+  [1, 0, 1, 0, 1, 0, 1],
+  [1, 0, 0, 0, 0, 0, 1],
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 1, 1, 0, 1, 1, 0],
+  [1, 0, 1, 0, 1, 0, 1],
+  [0, 0, 1, 0, 1, 0, 0],
+];
+
+const empty = [
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0],
+];
 
 const g0 = [
   [0, 0, 0, 0, 0],
@@ -129,7 +180,7 @@ const take = (n: any) => (it: any) =>
 function App() {
   const [game, canvasRef] = useGameLife({
     graphics: {
-      board: { zoom: 15 /*2*/ },
+      board: { zoom: 15 /*2*/, height: 2000, width: 2000 },
       colors: { background: "#000", cell: "#00FF00" },
     },
     game: { onNextGeneration: oNextGeneration },
@@ -163,11 +214,13 @@ function App() {
         console.log(game.getCells());
       });
 
-      // game.speedUp(10);
+      game.speedUp(20);
 
-      spiralmin.forEach((p) => {
+      /*
+      spiral3.forEach((p) => {
         game.bornCell({ x: p.x, y: p.y });
       });
+      */
 
       /*
       megaPattern1.forEach((p) => {
@@ -383,22 +436,21 @@ function App() {
       ];
       */
 
-      /* console.log(gliders); 
-      // const gliders = [[rG()]];
+      /* spiral mega pattern */
+      const gliders = [[two, r0, r0, one], [r0], [r0], [three, r0, r0, four]];
 
       gliders.forEach((gs, i) => {
         gs.forEach((g, ii) => {
           g.forEach((gRow, gX) => {
             gRow.forEach((gCell, gY) => {
               if (gCell) {
-                // +x for padding
-                game.bornCell({ x: ii * 4 + gX, y: i * 4 + gY });
+                // +number for padding
+                game.bornCell({ x: ii * 69 + gX, y: i * 69 + gY });
               }
             });
           });
         });
       });
-      */
 
       /* golden spiral probabilities
       // TODO: lol
