@@ -7,6 +7,7 @@ import { Point, useGameLife } from "react-game-life";
 // import megaPattern1 from "./megaPattern";
 // import megaPiecMorph2 from "./megaPieceMorph2";
 // import megaPieceMorph6 from "./megaPieceMorph6";
+import spiral from "./spiral";
 
 let prevBoard: Point[] = [];
 
@@ -159,14 +160,14 @@ function App() {
         console.log(game.getCells());
       });
 
-      game.speedUp(20);
+      // game.speedUp(20);
 
-      /*
-      megaPattern1.forEach((p) => {
+      spiral.forEach((p) => {
         game.bornCell({ x: p.x, y: p.y });
       });
 
-      megaPieceMorph6.forEach((p) => {
+      /*
+      megaPattern1.forEach((p) => {
         game.bornCell({ x: p.x, y: p.y });
       });
 
@@ -214,7 +215,7 @@ function App() {
       ];
       */
 
-      /* largest mega 8 piece mega pattern
+      /* largest mega 8 piece mega pattern 
       const gliders = [
         [r0, r0, r0, r0, g0, g3, r0, r0],
         [r0, r0, r0, r0, g3, g0, r0, r0],
@@ -227,7 +228,6 @@ function App() {
         [r0, r0, r0, r0, g2, g1, r0, r0],
         [r0, r0, r0, r0, g1, g2, r0, r0],
       ];
-
       */
 
       /* WIP
@@ -380,8 +380,8 @@ function App() {
       ];
       */
 
-      /* console.log(gliders); */
-      const gliders = [[rG()]];
+      /* console.log(gliders); 
+      // const gliders = [[rG()]];
 
       gliders.forEach((gs, i) => {
         gs.forEach((g, ii) => {
@@ -395,6 +395,7 @@ function App() {
           });
         });
       });
+      */
 
       /* golden spiral probabilities
       // TODO: lol
