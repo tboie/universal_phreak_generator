@@ -8,6 +8,8 @@ import { Point, useGameLife } from "react-game-life";
 // import megaPiecMorph2 from "./megaPieceMorph2";
 // import megaPieceMorph6 from "./megaPieceMorph6";
 import spiral from "./spiral";
+import spiral2 from "./spiral2";
+import spiral3 from "./spiral3";
 
 let prevBoard: Point[] = [];
 
@@ -160,9 +162,9 @@ function App() {
         console.log(game.getCells());
       });
 
-      // game.speedUp(20);
+      game.speedUp(10);
 
-      spiral.forEach((p) => {
+      spiral3.forEach((p) => {
         game.bornCell({ x: p.x, y: p.y });
       });
 
