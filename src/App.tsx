@@ -13,6 +13,8 @@ import spiral2 from "./spiral2";
 import spiral3 from "./spiral3";
 import spiral4 from "./spiral4";
 
+import seedreverse from "./seedreverse";
+
 let prevBoard: Point[] = [];
 
 /*** ***/
@@ -214,10 +216,10 @@ function App() {
         console.log(game.getCells());
       });
 
-      game.speedUp(20);
+      // game.speedUp(20);
 
       /*
-      spiral3.forEach((p) => {
+      seedreverse.forEach((p) => {
         game.bornCell({ x: p.x, y: p.y });
       });
       */
@@ -436,8 +438,12 @@ function App() {
       ];
       */
 
-      /* spiral mega pattern */
+      /* spiral mega pattern 
       const gliders = [[two, r0, r0, one], [r0], [r0], [three, r0, r0, four]];
+      */
+
+      /* spiral half */
+      const gliders = [[two], [four]];
 
       gliders.forEach((gs, i) => {
         gs.forEach((g, ii) => {
@@ -445,7 +451,14 @@ function App() {
             gRow.forEach((gCell, gY) => {
               if (gCell) {
                 // +number for padding
-                game.bornCell({ x: ii * 69 + gX, y: i * 69 + gY });
+                // mega spiral
+                // game.bornCell({ x: ii * 69 + gX, y: i * 69 + gY });
+
+                // half spiral
+                game.bornCell({
+                  x: ii * 1 + gX,
+                  y: i * 8 + gY,
+                });
               }
             });
           });
