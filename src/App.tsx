@@ -3,8 +3,6 @@ import "./App.css";
 import { useEffect } from "react";
 import { Point, useGameLife } from "react-game-life";
 
-// import megaPiece1 from "./megaPiece1";
-
 let prevBoard: Point[] = [];
 
 /*** ***/
@@ -203,10 +201,18 @@ function App() {
       ];
       */
 
-      /* 16 glider spiral mega pattern */
+      /* 16 glider spiral mega pattern
       const gliders = [
         [two, one],
         [three, four],
+      ];
+      */
+
+      /* 8 glider cross spiral base */
+      const gliders = [
+        [empty, two],
+        [three, empty, one],
+        [empty, four],
       ];
 
       /* random 4 gliders
@@ -231,8 +237,11 @@ function App() {
                 /* 16 glider spiral base
                 game.bornCell({ x: ii * 8 + gX, y: i * 8 + gY });
                 */
-                /* 16 glider spiral mega patterne */
+                /* 16 glider spiral mega patterne
                 game.bornCell({ x: ii * 111 + gX, y: i * 111 + gY });
+                */
+                /* 16 glider cross spiral base */
+                game.bornCell({ x: ii * 8 + gX, y: i * 8 + gY });
               }
             });
           });
