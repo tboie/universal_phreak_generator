@@ -4,16 +4,6 @@ import { useEffect } from "react";
 import { Point, useGameLife } from "react-game-life";
 
 // import megaPiece1 from "./megaPiece1";
-// import megaPattern1 from "./megaPattern";
-// import megaPiecMorph2 from "./megaPieceMorph2";
-// import megaPieceMorph6 from "./megaPieceMorph6";
-import spiralmin from "./spiralmin";
-import spiral from "./spiral";
-import spiral2 from "./spiral2";
-import spiral3 from "./spiral3";
-import spiral4 from "./spiral4";
-
-import seedreverse from "./seedreverse";
 
 let prevBoard: Point[] = [];
 
@@ -72,35 +62,27 @@ const empty = [
 ];
 
 const g0 = [
-  [0, 0, 0, 0, 0],
-  [0, 1, 1, 1, 0],
-  [0, 1, 0, 0, 0],
-  [0, 0, 1, 0, 0],
-  [0, 0, 0, 0, 0],
+  [0, 0, 1],
+  [1, 0, 1],
+  [0, 1, 1],
 ];
 
 const g1 = [
-  [0, 0, 0, 0, 0],
-  [0, 1, 1, 1, 0],
-  [0, 0, 0, 1, 0],
-  [0, 0, 1, 0, 0],
-  [0, 0, 0, 0, 0],
+  [0, 1, 0],
+  [1, 0, 0],
+  [1, 1, 1],
 ];
 
 const g2 = [
-  [0, 0, 0, 0, 0],
-  [0, 0, 1, 0, 0],
-  [0, 0, 0, 1, 0],
-  [0, 1, 1, 1, 0],
-  [0, 0, 0, 0, 0],
+  [1, 1, 1],
+  [0, 0, 1],
+  [0, 1, 0],
 ];
 
 const g3 = [
-  [0, 0, 0, 0, 0],
-  [0, 0, 1, 0, 0],
-  [0, 1, 0, 0, 0],
-  [0, 1, 1, 1, 0],
-  [0, 0, 0, 0, 0],
+  [1, 1, 0],
+  [1, 0, 1],
+  [1, 0, 0],
 ];
 
 // nothing
@@ -185,7 +167,7 @@ function App() {
       board: { zoom: 15 /*2*/, height: 2000, width: 2000 },
       colors: { background: "#000", cell: "#00FF00" },
     },
-    game: { onNextGeneration: oNextGeneration },
+    //game: { onNextGeneration: oNextGeneration },
   });
 
   // calculate change in energy
@@ -216,18 +198,27 @@ function App() {
         console.log(game.getCells());
       });
 
-      // game.speedUp(20);
+      game.speedUp(20);
 
-      /*
-      seedreverse.forEach((p) => {
-        game.bornCell({ x: p.x, y: p.y });
-      });
+      /* 4 glider spiral base
+      const gliders = [
+        [g0, g1],
+        [g2, g3],
+      ];
       */
 
-      /*
-      megaPattern1.forEach((p) => {
-        game.bornCell({ x: p.x, y: p.y });
-      });
+      /* 16 glider spiral base
+      const gliders = [
+        [two, one],
+        [three, four],
+      ];
+      */
+
+      /* 16 glider spiral mega pattern */
+      const gliders = [
+        [two, one],
+        [three, four],
+      ];
 
       /* random 4 gliders
       const gliders = [
@@ -236,229 +227,23 @@ function App() {
       ];
       */
 
-      /* model to create mega pattern
-      const gliders = [
-        [
-          [
-            [0, 0, 0, 0, 0],
-            [0, 0, 1, 0, 0],
-            [0, 0, 0, 1, 0],
-            [0, 1, 1, 1, 0],
-            [0, 0, 0, 0, 0],
-          ],
-          [
-            [0, 0, 0, 0, 0],
-            [0, 1, 1, 1, 0],
-            [0, 0, 0, 1, 0],
-            [0, 0, 1, 0, 0],
-            [0, 0, 0, 0, 0],
-          ],
-        ],
-        [
-          [
-            [0, 0, 0, 0, 0],
-            [0, 1, 1, 1, 0],
-            [0, 0, 0, 1, 0],
-            [0, 0, 1, 0, 0],
-            [0, 0, 0, 0, 0],
-          ],
-          [
-            [0, 0, 0, 0, 0],
-            [0, 0, 1, 0, 0],
-            [0, 0, 0, 1, 0],
-            [0, 1, 1, 1, 0],
-            [0, 0, 0, 0, 0],
-          ],
-        ],
-      ];
-      */
-
-      /* largest mega 8 piece mega pattern 
-      const gliders = [
-        [r0, r0, r0, r0, g0, g3, r0, r0],
-        [r0, r0, r0, r0, g3, g0, r0, r0],
-        [r0, r0, r0, r0, r0, r0, r0, r0],
-        [r0, r0, r0, r0, r0, r0, r0, r0],
-        [r0, r0, r0, r0, r0, r0, r0, r0],
-        [r0, r0, r0, r0, r0, r0, r0, r0],
-        [r0, r0, r0, r0, r0, r0, r0, r0],
-        [r0, r0, r0, r0, r0, r0, r0, r0],
-        [r0, r0, r0, r0, g2, g1, r0, r0],
-        [r0, r0, r0, r0, g1, g2, r0, r0],
-      ];
-      */
-
-      /* WIP
-      const gliders = [
-        [g0, g3, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-        [g3, g0, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-
-        [g2, g1, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-        [g1, g2, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-
-        [g0, g3, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-        [g3, g0, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-
-        [g2, g1, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-        [g1, g2, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-      ];
-      */
-
-      /* largest 16 piece mega pattern
-      const gliders = [
-        [g0, g3, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-        [g3, g0, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-
-        [g2, g1, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-        [g1, g2, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-
-        [g0, g3, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-        [g3, g0, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-
-        [g2, g1, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-        [g1, g2, r0, r0, r0, r0, r0, r0, r0, r0, r0],
-      ];
-      */
-
-      /* largest 32 piece mega pattern
-      const gliders = [
-        [g0, g3, r0, r0, r0, r0, r0, r0, r0, r0, r0, g0, g3],
-        [g3, g0, r0, r0, r0, r0, r0, r0, r0, r0, r0, g3, g0],
-
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-
-        [g2, g1, r0, r0, r0, r0, r0, r0, r0, r0, r0, g2, g1],
-        [g1, g2, r0, r0, r0, r0, r0, r0, r0, r0, r0, g1, g2],
-
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-
-        [g0, g3, r0, r0, r0, r0, r0, r0, r0, r0, r0, g0, g3],
-        [g3, g0, r0, r0, r0, r0, r0, r0, r0, r0, r0, g3, g0],
-
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-        [r0, r0],
-
-        [g2, g1, r0, r0, r0, r0, r0, r0, r0, r0, r0, g2, g1],
-        [g1, g2, r0, r0, r0, r0, r0, r0, r0, r0, r0, g1, g2],
-      ];
-      */
-
-      /* spiral mega pattern 
-      const gliders = [[two, r0, r0, one], [r0], [r0], [three, r0, r0, four]];
-      */
-
-      /* spiral half */
-      const gliders = [[two], [four]];
-
       gliders.forEach((gs, i) => {
         gs.forEach((g, ii) => {
           g.forEach((gRow, gX) => {
             gRow.forEach((gCell, gY) => {
               if (gCell) {
-                // +number for padding
-                // mega spiral
-                // game.bornCell({ x: ii * 69 + gX, y: i * 69 + gY });
-
-                // half spiral
+                // +number for spacing
+                /* 4 glider spiral base
                 game.bornCell({
-                  x: ii * 1 + gX,
-                  y: i * 8 + gY,
+                  x: i * 4 + gX,
+                  y: ii * 4 + gY,
                 });
+                */
+                /* 16 glider spiral base
+                game.bornCell({ x: ii * 8 + gX, y: i * 8 + gY });
+                */
+                /* 16 glider spiral mega patterne */
+                game.bornCell({ x: ii * 111 + gX, y: i * 111 + gY });
               }
             });
           });
