@@ -85,15 +85,6 @@ const g3 = [
   [1, 0, 0],
 ];
 
-// nothing
-const r0 = [
-  [0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 0],
-];
-
 // return random glider
 const rG = () => {
   const i = Math.floor(Math.random() * (3 - 0) + 0);
@@ -108,8 +99,6 @@ const rG = () => {
     return g3;
   }
 };
-
-/***  ***/
 
 /***  ***/
 // Logarithmic spiral functions
