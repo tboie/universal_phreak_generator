@@ -3,6 +3,8 @@ import "./App.css";
 import { useEffect } from "react";
 import { Point, useGameLife } from "react-game-life";
 
+import swirlPieces from "./swirlpieces";
+
 let prevBoard: Point[] = [];
 
 /*** ***/
@@ -225,6 +227,9 @@ function App() {
         [two, three],
       ];
 
+      /* 2 spiral merge basic pieces */
+      swirlPieces.forEach((p) => game.bornCell({ x: p.x, y: p.y }));
+
       /* random 4 gliders
       const gliders = [
         [rG(), rG()],
@@ -253,8 +258,9 @@ function App() {
                 /* 16 glider cross spiral base
                 game.bornCell({ x: ii * 8 + gX, y: i * 8 + gY });
                 */
-                /* 2 spiral merge base */
+                /* 2 spiral merge base
                 game.bornCell({ x: ii * 8 + gX, y: i * 8 + gY });
+                */
               }
             });
           });
