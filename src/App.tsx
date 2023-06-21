@@ -208,11 +208,21 @@ function App() {
       ];
       */
 
-      /* 8 glider cross spiral base */
+      /* 16 glider cross spiral base
       const gliders = [
         [empty, two],
         [three, empty, one],
         [empty, four],
+      ];
+      */
+
+      /* 2 spiral merge base (same direction) */
+      // breaks down to 4 pieces each side (2 osc, 1 glider, 1 still)
+      const gliders = [
+        [two, one],
+        [three, four],
+        [one, four],
+        [two, three],
       ];
 
       /* random 4 gliders
@@ -240,7 +250,10 @@ function App() {
                 /* 16 glider spiral mega patterne
                 game.bornCell({ x: ii * 111 + gX, y: i * 111 + gY });
                 */
-                /* 16 glider cross spiral base */
+                /* 16 glider cross spiral base
+                game.bornCell({ x: ii * 8 + gX, y: i * 8 + gY });
+                */
+                /* 2 spiral merge base */
                 game.bornCell({ x: ii * 8 + gX, y: i * 8 + gY });
               }
             });
