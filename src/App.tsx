@@ -310,13 +310,14 @@ function App() {
 
       [0, 1, 2, 3].forEach((q) => {
         [aC, bC, cC, dC, eC, fC].forEach((c, i) => {
-          let x1 = Math.round(c[0][0]);
-          let y1 = Math.round(c[0][1]);
-          let x2 = Math.round(c[1][0]);
-          let y2 = Math.round(c[1][1]);
+          let x1, y1, x2, y2;
 
-          /* rotate */
-          if (q === 1 || q === 3) {
+          if (q === 0 || q === 2) {
+            x1 = Math.round(c[0][0]);
+            y1 = Math.round(c[0][1]);
+            x2 = Math.round(c[1][0]);
+            y2 = Math.round(c[1][1]);
+          } else {
             x1 = Math.round(c[0][1]);
             y1 = Math.round(c[0][0]);
             x2 = Math.round(c[1][1]);
@@ -342,8 +343,7 @@ function App() {
                 nX -= 1;
               }
 
-              const r = Math.random();
-              if (r < fibPercent[i]) {
+              if (Math.random() < fibPercent[i]) {
                 game.bornCell({ x: nX, y: nY }); // Spawn cell
               }
             }
