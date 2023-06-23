@@ -263,11 +263,15 @@ function App() {
 
       /* golden spiral regions */
 
+      /* loops each region area and adds cells */
+
       const width = 136;
       const phi = (Math.sqrt(5) + 1) / 2;
       const side = Math.round(width / 2);
 
       // a = 21, b = 13, c = 8 ....
+      // outer arc corner, inner arc corner
+
       const aX = side / phi;
       const aY = side - aX;
       const aC = [
