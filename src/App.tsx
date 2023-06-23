@@ -182,7 +182,7 @@ function App() {
   useEffect(() => {
     if (game) {
       document.addEventListener("click", (event) => {
-        console.log(game.getCells());
+        //console.log(game.getCells());
       });
 
       game.speedUp(20);
@@ -252,17 +252,106 @@ function App() {
                 /* 16 glider cross spiral base
                 game.bornCell({ x: ii * 8 + gX, y: i * 8 + gY });
                 */
-                /* 2 spiral merge base */
+                /* 2 spiral merge base
                 game.bornCell({ x: ii * 8 + gX, y: i * 8 + gY });
+                */
               }
             });
           });
         });
       });
 
-      /* golden spiral probabilities
-      // TODO: lol
+      /* golden spiral regions */
 
+      const width = 136;
+      const phi = (Math.sqrt(5) + 1) / 2;
+      const side = Math.round(width / 2);
+
+      // a = 21, b = 13, c = 8 ....
+      const aX = side / phi;
+      const aY = side - aX;
+      const aC = [
+        [aX, side],
+        [0, aY],
+      ];
+
+      const bY = aX / phi;
+      const bC = [
+        [aX, 0],
+        [bY / phi, aY],
+      ];
+
+      const cY = bY / phi;
+      const cC = [
+        [0, 0],
+        [cY, cY],
+      ];
+
+      const dC = [
+        [0, aY],
+        [cY / phi, cY],
+      ];
+
+      const eY = cY + (aY - cY) / phi / phi;
+      const eC = [
+        [cY, aY],
+        [cY / phi, eY],
+      ];
+
+      const fX = (cY / phi) * 2;
+      const fC = [
+        [cY, cY],
+        [fX / phi, eY],
+      ];
+
+      // TODO: smallest 2 squares
+
+      const fibPercent = [21, 13, 8, 5, 3, 2].map((n) => 100 / n / 100);
+
+      [0, 1, 2, 3].forEach((q) => {
+        [aC, bC, cC, dC, eC, fC].forEach((c, i) => {
+          let x1 = Math.round(c[0][0]);
+          let y1 = Math.round(c[0][1]);
+          let x2 = Math.round(c[1][0]);
+          let y2 = Math.round(c[1][1]);
+
+          /* rotate */
+          if (q === 1 || q === 3) {
+            x1 = Math.round(c[0][1]);
+            y1 = Math.round(c[0][0]);
+            x2 = Math.round(c[1][1]);
+            y2 = Math.round(c[1][0]);
+          }
+
+          const side = Math.abs(x1 - x2);
+
+          let sX = x2 < x1 ? x2 : x1;
+          let sY = y2 < y1 ? y2 : y1;
+
+          for (let x = sX; x < sX + side; x++) {
+            for (let y = sY; y < sY + side; y++) {
+              let nX = x;
+              let nY = y;
+
+              if (q === 0 || q === 1) {
+                nY *= -1;
+                nY -= 1;
+              }
+              if (q === 0 || q === 3) {
+                nX *= -1;
+                nX -= 1;
+              }
+
+              const r = Math.random();
+              if (r < fibPercent[i]) {
+                game.bornCell({ x: nX, y: nY }); // Spawn cell
+              }
+            }
+          }
+        });
+      });
+
+      /* logarithmic spiral decay probabilities
       const cells = 5112;
       const points = [...take(cells)(spiralOut(0))];
 
@@ -277,98 +366,20 @@ function App() {
           return false;
         }
       };
-
+      
       points.forEach((p, i) => {
 
-        /* lorgarithmic spiral decay algorithm
+        // logarithmic spiral decay algorithm
         const prob = (100 - (100 / cells) * i) / 100;
         const d = Math.random();
 
         if (d < prob) {
           game.bornCell({ x: p[0], y: p[1] }); // Spawn cell
         }
-        */
-
-      /* golden spiral region probabilities
-        const x = p[0];
-        const y = p[1];
-
-        console.log(p);
-
-        // 8
-        if (x >= -8 && x < 8 && y < 8 && y >= -8) {
-          if (rand(8)) {
-            game.bornCell({ x: x, y: y }); // Spawn cell
-          }
-        }
-        // 21
-        if (
-          (x >= -34 && x < -13 && y >= 0 && y < 21) ||
-          (x >= -21 && x < 0 && y < 0 && y < -13) ||
-          (x >= 13 && x < 34 && y < 0 && y >= -21) ||
-          (x >= 0 && x < 21 && y >= 13 && y < 34)
-        ) {
-          if (rand(21)) {
-            game.bornCell({ x: x, y: y }); // Spawn cell
-          }
-        }
-        // 13
-        if (
-          (x >= -13 && x < 0 && y >= 8 && y < 21) ||
-          (x >= 8 && x < 21 && y >= 0 && y < 13) ||
-          (x >= 0 && x < 13 && y < -8 && y >= -21) ||
-          (x >= -21 && x < -8 && y < 0 && y >= -13)
-        ) {
-          if (rand(13)) {
-            game.bornCell({ x: x, y: y }); // Spawn cell
-          }
-        }
-        // 5
-        if (
-          (x >= -13 && x < -8 && y >= 0 && y < 5) ||
-          (x >= 0 && x < 5 && y >= 8 && y < 13) ||
-          (x >= 8 && x < 13 && y < 0 && y >= -5) ||
-          (x >= -5 && x < 0 && y < -8 && y >= -13)
-        ) {
-          if (rand(5)) {
-            game.bornCell({ x: x, y: y }); // Spawn cell
-          }
-        }
-        // 3
-        if (
-          (x >= -13 && x < -10 && y >= 5 && y < 8) ||
-          (x >= 5 && x < 8 && y >= 10 && y < 13) ||
-          (x >= 10 && x < 13 && y < -5 && y >= -8) ||
-          (x >= -8 && x < -5 && y < -10 && y >= -13)
-        ) {
-          if (rand(3)) {
-            game.bornCell({ x: x, y: y }); // Spawn cell
-          }
-        }
-        // 2
-        if (
-          (x >= -10 && x < -8 && y >= 6 && y < 8) ||
-          (x >= 6 && x < 8 && y > 7 && y <= 9) ||
-          (x >= 8 && x < 10 && y < -6 && y >= -8) ||
-          (x >= -8 && x < -6 && y > -11 && y < -8)
-        ) {
-          if (rand(2)) {
-            game.bornCell({ x: x, y: y }); // Spawn cell
-          }
-        }
-        // 1
-        if (
-          (x >= -10 && x < -8 && y >= 5 && y < 6) ||
-          (x >= 5 && x < 6 && y >= 8 && y < 10) ||
-          (x >= 8 && x < 10 && y < -5 && y > -7) ||
-          (x >= -6 && x < -5 && y < -8 && y > -11)
-        ) {
-          game.bornCell({ x: x, y: y }); // Spawn cell
-        }
       });
       */
 
-      //game.startEvolution();
+      // game.startEvolution();
     }
   }, [game]);
 
