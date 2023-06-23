@@ -326,8 +326,8 @@ function App() {
 
           const side = Math.abs(x1 - x2);
 
-          let sX = x2 < x1 ? x2 : x1;
-          let sY = y2 < y1 ? y2 : y1;
+          const sX = x2 < x1 ? x2 : x1;
+          const sY = y2 < y1 ? y2 : y1;
 
           for (let x = sX; x < sX + side; x++) {
             for (let y = sY; y < sY + side; y++) {
