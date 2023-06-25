@@ -151,7 +151,7 @@ const take = (n: any) => (it: any) =>
 function App() {
   const [game, canvasRef] = useGameLife({
     graphics: {
-      board: { zoom: 15 /*2*/, height: 2000, width: 2000 },
+      board: { zoom: 30 /*2*/, height: 2000, width: 2000 },
       colors: { background: "#000", cell: "#00FF00" },
     },
     //game: { onNextGeneration: oNextGeneration },
@@ -182,7 +182,7 @@ function App() {
   useEffect(() => {
     if (game) {
       document.addEventListener("click", (event) => {
-        //console.log(game.getCells());
+        console.log(game.getCells());
       });
 
       game.speedUp(20);
@@ -265,6 +265,7 @@ function App() {
 
       /* loops each region area and adds cells */
 
+      /*
       const width = 136;
       const phi = (Math.sqrt(5) + 1) / 2;
       const side = Math.round(width / 2);
@@ -348,12 +349,60 @@ function App() {
               }
 
               if (Math.random() < fibPercent[i]) {
-                game.bornCell({ x: nX, y: nY }); // Spawn cell
+                //game.bornCell({ x: nX, y: nY }); // Spawn cell
               }
             }
           }
         });
       });
+
+      */
+
+      // Randomized sierpinski triangle concept
+
+      // Main triangle.
+      const T = [
+        [0, 0],
+        [199, 0],
+        [0, 199],
+      ];
+
+      // Start point.
+      let current = [0, 0];
+
+      function midPoint([x1, y1]: any, [x2, y2]: any) {
+        return [Math.round((x1 + x2) / 2), Math.round((y1 + y2) / 2)];
+      }
+
+      function putPixel(x: any, y: any) {
+        game?.bornCell({ x: x, y: y });
+        game?.bornCell({ x: x + 1, y: y });
+        game?.bornCell({ x: x, y: y + 1 });
+        game?.bornCell({ x: x + 1, y: y + 1 });
+      }
+
+      function randomInRange(min: any, max: any) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      // Max steps.
+      const maxSteps = 1000; //500000;
+
+      function step() {
+        const to = randomInRange(0, 2);
+        current = midPoint(current, T[to]);
+
+        putPixel(current[0], current[1]);
+      }
+
+      // Setup main triangle.
+      putPixel(T[0][0], T[0][1]);
+      putPixel(T[1][0], T[1][1]);
+      putPixel(T[2][0], T[2][1]);
+
+      for (let i = 0; i < maxSteps; i++) {
+        step();
+      }
 
       /* logarithmic spiral decay probabilities
       const cells = 5112;
