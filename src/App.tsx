@@ -358,51 +358,38 @@ function App() {
 
       */
 
-      // Randomized sierpinski triangle concept
+      // Sierpinski triangle concept
 
-      // Main triangle.
+      const midPoint = ([x1, y1]: any, [x2, y2]: any) => {
+        return [Math.floor((x1 + x2) / 2), Math.floor((y1 + y2) / 2)];
+      };
+
+      const ST_Recur = (level: any, p1: any, p2: any, p3: any) => {
+        if (level === 1) {
+          const p = { x: p1[0], y: p1[1] };
+
+          game?.bornCell({ x: p.x, y: p.y });
+          game?.bornCell({ x: p.x + 1, y: p.y });
+          game?.bornCell({ x: p.x, y: p.y + 1 });
+          game?.bornCell({ x: p.x + 1, y: p.y + 1 });
+        } else {
+          const p4 = midPoint(p1, p2);
+          const p5 = midPoint(p2, p3);
+          const p6 = midPoint(p1, p3);
+
+          ST_Recur(level - 1, p1, p4, p6);
+          ST_Recur(level - 1, p4, p2, p5);
+          ST_Recur(level - 1, p6, p5, p3);
+        }
+      };
+
       const T = [
         [0, 0],
-        [199, 0],
-        [0, 199],
+        [149, 0],
+        [0, 149],
       ];
 
-      // Start point.
-      let current = [0, 0];
-
-      function midPoint([x1, y1]: any, [x2, y2]: any) {
-        return [Math.round((x1 + x2) / 2), Math.round((y1 + y2) / 2)];
-      }
-
-      function putPixel(x: any, y: any) {
-        game?.bornCell({ x: x, y: y });
-        game?.bornCell({ x: x + 1, y: y });
-        game?.bornCell({ x: x, y: y + 1 });
-        game?.bornCell({ x: x + 1, y: y + 1 });
-      }
-
-      function randomInRange(min: any, max: any) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      }
-
-      // Max steps.
-      const maxSteps = 1000; //500000;
-
-      function step() {
-        const to = randomInRange(0, 2);
-        current = midPoint(current, T[to]);
-
-        putPixel(current[0], current[1]);
-      }
-
-      // Setup main triangle.
-      putPixel(T[0][0], T[0][1]);
-      putPixel(T[1][0], T[1][1]);
-      putPixel(T[2][0], T[2][1]);
-
-      for (let i = 0; i < maxSteps; i++) {
-        step();
-      }
+      ST_Recur(6, T[0], T[1], T[2]);
 
       /* logarithmic spiral decay probabilities
       const cells = 5112;
