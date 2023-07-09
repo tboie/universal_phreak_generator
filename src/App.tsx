@@ -262,8 +262,9 @@ function App() {
       });
 
       /* golden spiral regions */
-
       /* loops each region area and adds cells */
+
+      // TODO: alternate quadrant dead/alive?
 
       const width = 34;
       const phi = (Math.sqrt(5) + 1) / 2;
