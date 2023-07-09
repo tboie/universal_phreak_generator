@@ -265,8 +265,7 @@ function App() {
 
       /* loops each region area and adds cells */
 
-      /*
-      const width = 136;
+      const width = 34;
       const phi = (Math.sqrt(5) + 1) / 2;
       const side = Math.round(width / 2);
 
@@ -349,17 +348,15 @@ function App() {
               }
 
               if (Math.random() < fibPercent[i]) {
-                //game.bornCell({ x: nX, y: nY }); // Spawn cell
+                game.bornCell({ x: nX, y: nY }); // Spawn cell
               }
             }
           }
         });
       });
 
-      */
-
       // Sierpinski triangle concept
-
+      /*
       const midPoint = ([x1, y1]: any, [x2, y2]: any) => {
         return [Math.floor((x1 + x2) / 2), Math.floor((y1 + y2) / 2)];
       };
@@ -390,9 +387,10 @@ function App() {
       ];
 
       ST_Recur(6, T[0], T[1], T[2]);
+      */
 
       /* logarithmic spiral decay probabilities
-      const cells = 5112;
+      const cells = 1156; // 34x34
       const points = [...take(cells)(spiralOut(0))];
 
       const rand = (g: number) => {
@@ -406,9 +404,8 @@ function App() {
           return false;
         }
       };
-      
-      points.forEach((p, i) => {
 
+      points.forEach((p, i) => {
         // logarithmic spiral decay algorithm
         const prob = (100 - (100 / cells) * i) / 100;
         const d = Math.random();
@@ -417,9 +414,9 @@ function App() {
           game.bornCell({ x: p[0], y: p[1] }); // Spawn cell
         }
       });
-      */
 
       // game.startEvolution();
+      */
     }
   }, [game]);
 
