@@ -1,8 +1,8 @@
-## Conway Game of Life Experiments
+# Conway Game of Life Experiments
 
-### A spiraling collection of virtual measurements
+## A spiraling collection of virtual measurements
 
-#### Notes on https://conwaylife.com/wiki/Unique_father_problem
+### Notes on https://conwaylife.com/wiki/Unique_father_problem
 
 <img width="700" alt="concept" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06d05e6a-1baa-4f8b-9880-b3b41d98967d">
 
@@ -10,22 +10,21 @@
 2.  Y pattern is inverted and rotated
 3.  Golden Spiral Matrix
 
-#### Black Hole Bonus?
+### Core Collapse?
 
-The following reaction removes all but the pattern border and a few gibbles.
+<img width="450" alt="core collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/9b4fb570-ef1d-4f51-a268-31bb4f510c16">
 
-```x = 32, y = 30, rule = B3/S23
-17bo$17bobo$17b2o2$2b2obo2b2obo2b2obo2b2obo2b2obo$2bob2o2bob2o2bob2o2b
-ob2o2bob2o$3o2b4o2b4o2b4o2b4o2b3o$bob2o2bob2o2bob2o2bob2o2bob2o2bo$o2b
-2obo2b2obo2b2obo2b2obo2b2obo$3o2b4o2b4o2b4o2b4o2b3o$2b2obo2b2obo2b2ob
-o2b2obo2b2obo$2bob2o2bob2o2bob2o2bob2o2bob2o$3o2b4o2b4o2b4o2b4o2b3o$b
-ob2o2bob2o2bob2o2bob2o2bob2o2bo$o2b2obo2b2obo2b2obo2b2obo2b2obo$3o2b4o
-2b4o2b4o2b4o2b3o$2b2obo2b2obo2b2obo2b2obo2b2obo$2bob2o2bob2o2bob2o2bo
-b2o2bob2o$3o2b4o2b4o2b4o2b4o2b3o$bob2o2bob2o2bob2o2bob2o2bob2o2bo$o2b
-2obo2b2obo2b2obo2b2obo2b2obo$3o2b4o2b4o2b4o2b4o2b3o$2b2obo2b2obo2b2ob
-o2b2obo2b2obo$2bob2o2bob2o2bob2o2bob2o2bob2o$3o2b4o2b4o2b4o2b4o2b3o$b
-ob2o2bob2o2bob2o2bob2o2bob2o2bo$o2b2obo2b2obo2b2obo2b2obo2b2obo$3o2b4o
-2b4o2b4o2b4o2b3o$2b2obo2b2obo2b2obo2b2obo2b2obo$2bob2o2bob2o2bob2o2bo
-b2o2bob2o!
+<img width="450" alt="core collapse pattern" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3480ffbf-551b-4f2d-9b91-7ebadad94e04">
 
+```
+x = 28, y = 22, rule = B3/S23
+o2b4o2b4o2b4o2b4o2bo$b2o2bob2o2bob2o2bob2o2bob2o$b2obo2b2obo2b2obo2b2o
+bo2b2o$o2b4o2b4o2b4o2b4o2bo$2obo2b2obo2b2obo2b2obo2b2obo$ob2o2bob2o2b
+ob2o2bob2o2bob2o$o2b4o2b4o2b4o2b4o2bo$b2o2bob2o2bob2o2bob2o2bob2o$b2o
+bo2b2obo2b2obo2b2obo2b2o$o2b4o2b4o2b4o2b4o2bo$2obo2b2obo2b2obo2b2obo2b
+2obo$ob2o2bob2o2bob2o2bob2o2bob2o$o2b4o2b4o2b4o2b4o2bo$b2o2bob2o2bob2o
+2bob2o2bob2o$b2obo2b2obo2b2obo2b2obo2b2o$o2b4o2b4o2b4o2b4o2bo$2obo2b2o
+bo2b2obo2b2obo2b2obo$ob2o2bob2o2bob2o2bob2o2bob2o$o2b4o2b4o2b4o2b4o2b
+o$b2o2bob2o2bob2o2bob2o2bob2o$b2obo2b2obo2b2obo2b2obo2b2o$o2b4o2b4o2b
+4o2b4o2bo!
 ```
