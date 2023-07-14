@@ -48,5 +48,5 @@ Comparing to the [Unique Father Problem](https://conwaylife.com/wiki/Unique_fath
 <img width="450" alt="Unique Father Problem" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7c44c22a-fdc0-4385-8bd1-f04713439772">
 <img width="450" alt="Core Collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ec861f9f-1220-401f-8d91-f7f0f98f25b0">
 <br/><br/>
-_Mathematical structure might arise from foundational patterns from and between state time (rotated/inverted/scaled)?_
+_Mathematical structure might arise from foundational patterns at times visible and not (rotated/inverted/scaled)?_
 <br/><br/>
