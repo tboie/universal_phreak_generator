@@ -45,9 +45,9 @@ Comparing glider reactions from 2 of the [Family Four](https://conwaylife.com/wi
 
 Comparing the [Unique Father Problem](https://conwaylife.com/wiki/Unique_father_problem) and Core Collapse:
 <br/>
-<img width="89" alt="Screen Shot 2023-07-14 at 8 31 42 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3ffb028-15b8-4d26-a30c-458ddc728f9b">
 <img width="95" alt="Screen Shot 2023-07-14 at 8 31 30 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7f5e1520-dc4b-42a2-a4f5-5edd75e6bc0d">
 <img width="91" alt="Screen Shot 2023-07-14 at 8 31 22 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/731f0da1-5979-49e0-9ef3-06c9404ec06d">
+<img width="89" alt="Screen Shot 2023-07-14 at 8 31 42 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3ffb028-15b8-4d26-a30c-458ddc728f9b">
 <br/>
 <img width="450" alt="Unique Father Problem" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7c44c22a-fdc0-4385-8bd1-f04713439772">
 <img width="450" alt="Core Collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ec861f9f-1220-401f-8d91-f7f0f98f25b0">
