@@ -43,7 +43,7 @@ Comparing glider reactions from 2 of the [Family Four](https://conwaylife.com/wi
 - [Traffic Light](https://catagolue.hatsya.com/object/xp2_s01110szw222/b3s23)
 - [Honey Farm](https://catagolue.hatsya.com/object/xs24_y1696z2552wgw2552zy1343/b3s23)
 
-Comparing to the [Unique Father Problem](https://conwaylife.com/wiki/Unique_father_problem) and Core Collapse above:
+Comparing the [Unique Father Problem](https://conwaylife.com/wiki/Unique_father_problem) and Core Collapse:
 <br/>
 <img width="89" alt="Screen Shot 2023-07-14 at 8 31 42 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3ffb028-15b8-4d26-a30c-458ddc728f9b">
 <img width="95" alt="Screen Shot 2023-07-14 at 8 31 30 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7f5e1520-dc4b-42a2-a4f5-5edd75e6bc0d">
