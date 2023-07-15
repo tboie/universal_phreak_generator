@@ -34,6 +34,9 @@ o$b2o2bob2o2bob2o2bob2o2bob2o$b2obo2b2obo2b2obo2b2obo2b2o$o2b4o2b4o2b
 
 ## Composition?
 
+_Mathematical structure might form from foundational patterns at times visible and not (rotated/inverted/scaled)?_
+<br/><br/><br/>
+
 The 4 glider spiral reaction might contain design information.
 
 <img width="450" alt="4 Glider Spiral" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/22e031ae-8069-41a4-b765-c2eb8fc6b2ad">
@@ -52,5 +55,33 @@ Comparing the [Unique Father Problem](https://conwaylife.com/wiki/Unique_father_
 <img width="450" alt="Unique Father Problem" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7c44c22a-fdc0-4385-8bd1-f04713439772">
 <img width="450" alt="Core Collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ec861f9f-1220-401f-8d91-f7f0f98f25b0">
 <br/><br/>
-_Mathematical structure might form from foundational patterns at times visible and not (rotated/inverted/scaled)?_
-<br/><br/>
+
+Another Potential Pattern of Interest:
+
+[Fleet glider synthesis](https://catagolue.hatsya.com/object/xs24_g8o653wggz11wokc321/b3s23) from the [Family Four](https://conwaylife.com/wiki/Familiar_fours) forms the following pattern:
+
+<img width="143" alt="fleet reaction pattern" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/bcf4e1fe-60a3-4b42-ba7f-d1d15ed39375">
+
+<br/>
+<br/>
+
+Tiled:
+<br/>
+<img width="450" alt="Screen Shot 2023-07-15 at 3 48 31 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/b8a547f4-d6fb-4c89-8696-ed17dca9d370">
+<br/>
+
+2nd Generation produces a texture of [Ponds](https://conwaylife.com/wiki/Pond). _note: photonegative still lifes?_
+<br/>
+<img width="450" alt="Screen Shot 2023-07-15 at 3 46 17 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2224904a-5c1f-4052-afda-dedb66e42c6d">
+
+Individual tile:
+<br/>
+<img width="192" alt="Screen Shot 2023-07-15 at 3 41 28 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/6d56c6a6-3177-48b0-aed9-dc53e4a66c61">
+<br/>
+Inverted:
+<br/>
+<img width="195" alt="Screen Shot 2023-07-15 at 3 41 16 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/971cab2b-0a5d-46e3-b979-b3ad0be39258">
+<br/>
+
+[Bakery](https://catagolue.hatsya.com/object/xs28_g88m952g8gz1218kid221/b3s23) ...
+
