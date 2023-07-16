@@ -76,11 +76,11 @@ Tiled:
 
 Individual tile:
 <br/>
-<img width="192" alt="Screen Shot 2023-07-15 at 3 41 28 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/6d56c6a6-3177-48b0-aed9-dc53e4a66c61">
+<img width="162" alt="Screen Shot 2023-07-16 at 8 57 09 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/522f6697-50ed-4f09-9d4c-0250c93d3ae2">
 <br/>
 Inverted:
 <br/>
-<img width="195" alt="Screen Shot 2023-07-15 at 3 41 16 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/971cab2b-0a5d-46e3-b979-b3ad0be39258">
+<img width="160" alt="Screen Shot 2023-07-16 at 8 57 18 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/fa2a4b75-7215-4197-a883-f57a5a9de65a">
 <br/>
 
 [Bakery](https://catagolue.hatsya.com/object/xs28_g88m952g8gz1218kid221/b3s23) ...
