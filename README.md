@@ -74,14 +74,6 @@ Tiled:
 <br/>
 <img width="450" alt="Screen Shot 2023-07-15 at 3 46 17 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2224904a-5c1f-4052-afda-dedb66e42c6d">
 
-Individual tile:
-<br/>
-<img width="162" alt="Screen Shot 2023-07-16 at 8 57 09 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/522f6697-50ed-4f09-9d4c-0250c93d3ae2">
-<br/>
-Inverted:
-<br/>
-<img width="160" alt="Screen Shot 2023-07-16 at 8 57 18 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/fa2a4b75-7215-4197-a883-f57a5a9de65a">
-<br/>
-
+[Blockade](https://catagolue.hatsya.com/object/xs16_0ggydgj3zop1yd11/b3s23) ...
 [Bakery](https://catagolue.hatsya.com/object/xs28_g88m952g8gz1218kid221/b3s23) ...
 
