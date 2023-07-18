@@ -82,6 +82,7 @@ Tiled:
 ### _Squared Version_
 1.  Assign random bits to _x_ size matrix representing a quadrant
 2.  Rotate matrix clockwise for quadrants 2, 3, and 4 to form a tile
-3.  Scale tiling area
-4.  Go to next generation and check for changes
-5.  Repeat step 3
+3.  Goto next generation and check for changes
+4.  Scale tiling area
+5.  Go to next generation and check for changes
+6.  Repeat step 4
