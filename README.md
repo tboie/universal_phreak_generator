@@ -77,3 +77,10 @@ Tiled:
 [Blockade](https://catagolue.hatsya.com/object/xs16_0ggydgj3zop1yd11/b3s23) ...
 [Bakery](https://catagolue.hatsya.com/object/xs28_g88m952g8gz1218kid221/b3s23) ...
 
+## Universal Tile Generator
+
+1.  Assign random bits to x size matrix representing a quadrant
+2.  Rotate matrix clockwise for quadrants 2, 3, and 4 to form a tile
+3.  Scale tiling area
+4.  Go to next generation and check for changes
+5.  Repeat step 3
