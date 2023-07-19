@@ -80,8 +80,8 @@ Tiled:
 ## Universal Tile Generator
 
 ### _Squared Version_
-1.  Assign random bits to _x_ size matrix representing a quadrant
-2.  Rotate matrix clockwise for quadrants 2, 3, and 4 to form a tile
+1.  Assign random bits to _x_ size matrix(s) representing a quadrant
+2.  Rotate matrix(s) clockwise for quadrants 2, 3, and 4 to form a tile
 3.  Goto next generation and check for changes
 4.  Scale tiling area
 5.  Go to next generation and check for changes
