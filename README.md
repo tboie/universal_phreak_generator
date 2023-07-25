@@ -89,6 +89,6 @@ Tiled:
 
 ### Theories in progress
 - "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form
-- Spacetime and pattern wavetime structure might be a geometric result (timeless) of coordinate and ruleset system properties
-- Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual compasrisons might be helpful? see spiral image at beginning of document)
+- Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
+- Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
 - Implement relative cell energy to whole?
