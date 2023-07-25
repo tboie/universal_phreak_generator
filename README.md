@@ -34,7 +34,7 @@ o$b2o2bob2o2bob2o2bob2o2bob2o$b2obo2b2obo2b2obo2b2obo2b2o$o2b4o2b4o2b
 
 ## Composition?
 
-_Mathematical structure might form from foundational patterns at times visible and not (rotated/inverted/scaled)?_
+_Spacetime and pattern wavetime structure might be a geometric result (timeless) of coordinate and ruleset system properties_
 <br/><br/><br/>
 
 The 4 glider spiral reaction might contain design information.
