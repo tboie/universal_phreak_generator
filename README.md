@@ -77,6 +77,25 @@ Tiled:
 [Blockade](https://catagolue.hatsya.com/object/xs16_0ggydgj3zop1yd11/b3s23) ...
 [Bakery](https://catagolue.hatsya.com/object/xs28_g88m952g8gz1218kid221/b3s23) ...
 
+### More spacetime patterns?
+- LIGHTING UP THE AREA?:
+
+<img width="120" alt="area light tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ca715375-ccb1-4410-8c9d-014c3574e9f8">
+
+<br/>
+
+<img width="450" alt="area light" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/232e3317-78cf-4e66-ad98-113216a581dd"/>
+
+```
+x = 24, y = 24, rule = B3/S23
+4bo5bo5bo5bo$obo3bobo3bobo3bobo$2b3o3b3o3b3o3b3o$b3o3b3o3b3o3b3o$3bobo
+3bobo3bobo3bobo$bo5bo5bo5bo$4bo5bo5bo5bo$obo3bobo3bobo3bobo$2b3o3b3o3b
+3o3b3o$b3o3b3o3b3o3b3o$3bobo3bobo3bobo3bobo$bo5bo5bo5bo$4bo5bo5bo5bo$o
+bo3bobo3bobo3bobo$2b3o3b3o3b3o3b3o$b3o3b3o3b3o3b3o$3bobo3bobo3bobo3bob
+o$bo5bo5bo5bo$4bo5bo5bo5bo$obo3bobo3bobo3bobo$2b3o3b3o3b3o3b3o$b3o3b3o
+3b3o3b3o$3bobo3bobo3bobo3bobo$bo5bo5bo5bo!
+```
+
 ## Universal Tile Generator
 
 ### _Squared Version_
@@ -87,8 +106,12 @@ Tiled:
 5.  Go to next generation and check for changes
 6.  Repeat step 4
 
-### Theories in progress
+## Theories in progress
 - "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form.  The resulting sequence might be squared at scale?
 - Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
 - Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
 - Implement relative cell energy to whole?
+
+
+
+
