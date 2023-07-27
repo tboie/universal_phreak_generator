@@ -81,9 +81,7 @@ Tiled:
 - LIGHTING UP THE AREA?:
 
 <img width="120" alt="area light tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ca715375-ccb1-4410-8c9d-014c3574e9f8">
-
 <br/>
-
 <img width="450" alt="area light" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/232e3317-78cf-4e66-ad98-113216a581dd"/>
 
 ```
