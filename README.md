@@ -14,7 +14,7 @@
 ## Core Collapse?
 
 <img width="450" alt="core collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/9b4fb570-ef1d-4f51-a268-31bb4f510c16">
-
+<br/>
 <img width="450" alt="core collapse pattern" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3480ffbf-551b-4f2d-9b91-7ebadad94e04">
 
 ```
@@ -53,6 +53,7 @@ Comparing the [Unique Father Problem](https://conwaylife.com/wiki/Unique_father_
 <img width="89" alt="Screen Shot 2023-07-14 at 8 31 42 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3ffb028-15b8-4d26-a30c-458ddc728f9b">
 <br/>
 <img width="450" alt="Unique Father Problem" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7c44c22a-fdc0-4385-8bd1-f04713439772">
+<br/>
 <img width="450" alt="Core Collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ec861f9f-1220-401f-8d91-f7f0f98f25b0">
 <br/><br/>
 
