@@ -94,6 +94,20 @@ o$bo5bo5bo5bo$4bo5bo5bo5bo$obo3bobo3bobo3bobo$2b3o3b3o3b3o3b3o$b3o3b3o
 3b3o3b3o$3bobo3bobo3bobo3bobo$bo5bo5bo5bo!
 ```
 
+### Border Collapse Version
+
+<img width="377" alt="area light collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/e6f03f4b-09d4-49bb-9121-10fbc3d46c98">
+
+<br/>
+
+```
+x = 20, y = 20, rule = B3/S23
+2bo5bo5bo$5bo5bo5bo$b2ob2ob2ob2ob2ob2obo$2bo5bo5bo$5bo5bo5bo$ob2ob2ob
+2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo$b2ob2ob2ob2ob2ob2obo$2bo5bo5bo$5bo5bo
+5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo$b2ob2ob2ob2ob2ob2obo$2bo5b
+o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
+```
+
 ## Universal Tile Generator
 
 ### _Squared Version_
