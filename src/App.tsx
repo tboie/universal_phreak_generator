@@ -197,7 +197,7 @@ function App() {
     if (isFinite(p0[0])) {
       for (let y = p0[1]; y >= p2[1]; y--) {
         for (let x = p0[0]; x <= p2[0]; x++) {
-          if (!board.find((p) => p.x === x && p.y === y)) {
+          if (!aliveBoard.find((p) => p.x === x && p.y === y)) {
             deadBoard.push({ x: x, y: y });
           }
         }
