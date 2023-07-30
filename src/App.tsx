@@ -179,7 +179,7 @@ function App() {
 
     console.log("Alive Energy Change: " + aliveEnergy);
 
-    // Dead Energy from alive board bounding box area
+    // Dead Energy using alive board bounding box area
 
     const allX = board.map((p) => p.x);
     const allY = board.map((p) => p.y);
