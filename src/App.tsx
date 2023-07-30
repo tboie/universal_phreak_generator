@@ -189,14 +189,14 @@ function App() {
     const maxX = Math.max(...allX);
     const maxY = Math.max(...allY);
 
-    const p0 = [minX, maxY];
-    const p2 = [maxX, minY];
+    const p0 = { x: minX, y: maxY };
+    const p2 = { x: maxX, y: minY };
 
     const deadBoard = [];
 
-    if (isFinite(p0[0])) {
-      for (let y = p0[1]; y >= p2[1]; y--) {
-        for (let x = p0[0]; x <= p2[0]; x++) {
+    if (isFinite(p0.x)) {
+      for (let y = p0.y; y >= p2.y; y--) {
+        for (let x = p0.x; x <= p2.x; x++) {
           if (!aliveBoard.find((p) => p.x === x && p.y === y)) {
             deadBoard.push({ x: x, y: y });
           }
