@@ -181,8 +181,8 @@ function App() {
 
     // Dead Energy using alive board bounding box area
 
-    const allX = board.map((p) => p.x);
-    const allY = board.map((p) => p.y);
+    const allX = aliveBoard.map((p) => p.x);
+    const allY = aliveBoard.map((p) => p.y);
 
     const minX = Math.min(...allX);
     const minY = Math.min(...allY);
