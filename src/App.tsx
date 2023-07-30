@@ -3,7 +3,8 @@ import "./App.css";
 import { useEffect } from "react";
 import { Point, useGameLife } from "react-game-life";
 
-let prevBoard: Point[] = [];
+let prevAliveBoard: Point[] = [];
+let prevDeadBoard: Point[] = [];
 
 /*** ***/
 // Glider Templates
@@ -154,27 +155,73 @@ function App() {
       board: { zoom: 30 /*2*/, height: 2000, width: 2000 },
       colors: { background: "#000", cell: "#00FF00" },
     },
-    //game: { onNextGeneration: oNextGeneration },
+    game: { onNextGeneration: oNextGeneration },
   });
 
   // calculate change in energy
   function oNextGeneration(board: Point[]) {
-    let prevDistance = 0;
-    prevBoard.forEach((p) => {
-      prevDistance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
+    // Alive Energy
+    const aliveBoard = board;
+
+    let prevAliveDistance = 0;
+    prevAliveBoard.forEach((p) => {
+      prevAliveDistance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
     });
 
-    let distance = 0;
-    board.forEach((p) => {
-      distance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
+    let aliveDistance = 0;
+    aliveBoard.forEach((p) => {
+      aliveDistance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
     });
 
-    const velocity = board.length - prevBoard.length + 1;
-    const energy = (distance - prevDistance + 1) * velocity ** 2;
+    const aliveVelocity = aliveBoard.length - prevAliveBoard.length + 1;
+    const aliveEnergy =
+      (aliveDistance - prevAliveDistance + 1) * aliveVelocity ** 2;
 
-    console.log(energy);
+    console.log("Alive Energy Change: " + aliveEnergy);
 
-    prevBoard = [...board];
+    // Dead Energy
+
+    const allX = board.map((p) => p.x);
+    const allY = board.map((p) => p.y);
+
+    const minX = Math.min(...allX);
+    const minY = Math.min(...allY);
+    const maxX = Math.max(...allX);
+    const maxY = Math.max(...allY);
+
+    const p0 = [minX, maxY];
+    const p2 = [maxX, minY];
+
+    let deadBoard = [];
+
+    if (isFinite(p0[0])) {
+      for (let y = p0[1]; y >= p2[1]; y--) {
+        for (let x = p0[0]; x <= p2[0]; x++) {
+          if (!board.find((p) => p.x === x && p.y === y)) {
+            deadBoard.push({ x: x, y: y });
+          }
+        }
+      }
+    }
+
+    let prevDeadDistance = 0;
+    prevDeadBoard.forEach((p) => {
+      prevDeadDistance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
+    });
+
+    let deadDistance = 0;
+    deadBoard.forEach((p) => {
+      deadDistance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
+    });
+
+    const deadVelocity = deadBoard.length - prevDeadBoard.length + 1;
+    const deadEnergy =
+      (aliveDistance - prevAliveDistance + 1) * deadVelocity ** 2;
+
+    console.log("Dead Energy Change: " + deadEnergy);
+
+    prevAliveBoard = [...aliveBoard];
+    prevDeadBoard = [...deadBoard];
 
     return {};
   }
@@ -185,7 +232,7 @@ function App() {
         console.log(game.getCells());
       });
 
-      game.speedUp(20);
+      //game.speedUp(20);
 
       /* 4 glider spiral base
       const gliders = [
