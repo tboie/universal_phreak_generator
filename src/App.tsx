@@ -216,7 +216,7 @@ function App() {
 
     const deadVelocity = deadBoard.length - prevDeadBoard.length + 1;
     const deadEnergy =
-      (aliveDistance - prevAliveDistance + 1) * deadVelocity ** 2;
+      (deadDistance - prevDeadDistance + 1) * deadVelocity ** 2;
 
     console.log("Dead Energy Change: " + deadEnergy);
 
