@@ -192,7 +192,7 @@ function App() {
     const p0 = [minX, maxY];
     const p2 = [maxX, minY];
 
-    let deadBoard = [];
+    const deadBoard = [];
 
     if (isFinite(p0[0])) {
       for (let y = p0[1]; y >= p2[1]; y--) {
