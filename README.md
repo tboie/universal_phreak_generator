@@ -13,6 +13,8 @@
 
 ## Core Collapse?
 
+[gravitational collapse?](https://en.wikipedia.org/wiki/Gravitational_collapse)
+
 <img width="450" alt="core collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/9b4fb570-ef1d-4f51-a268-31bb4f510c16">
 <br/>
 <img width="450" alt="core collapse pattern" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3480ffbf-551b-4f2d-9b91-7ebadad94e04">
@@ -34,10 +36,12 @@ o$b2o2bob2o2bob2o2bob2o2bob2o$b2obo2b2obo2b2obo2b2obo2b2o$o2b4o2b4o2b
 
 ## Composition?
 
-_Spacetime and pattern wavetime structure might be a geometric result (timeless) of coordinate and ruleset system properties_
+_Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties_
 <br/><br/><br/>
 
 The 4 glider spiral reaction might contain design information.
+
+[Similar to Dirac Spin?](https://en.wikipedia.org/wiki/Dirac_equation)
 
 <img width="450" alt="4 Glider Spiral" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/22e031ae-8069-41a4-b765-c2eb8fc6b2ad">
 
@@ -72,6 +76,9 @@ Tiled:
 <br/>
 
 2nd Generation produces a texture of [Ponds](https://conwaylife.com/wiki/Pond). _note: photonegative still lifes?_
+
+[Dirac Sea?](https://en.wikipedia.org/wiki/Dirac_sea)
+
 <br/>
 <img width="450" alt="Screen Shot 2023-07-15 at 3 46 17 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2224904a-5c1f-4052-afda-dedb66e42c6d">
 
@@ -94,6 +101,8 @@ bo3bobo3bobo3bobo$2b3o3b3o3b3o3b3o$b3o3b3o3b3o3b3o$3bobo3bobo3bobo3bob
 o$bo5bo5bo5bo$4bo5bo5bo5bo$obo3bobo3bobo3bobo$2b3o3b3o3b3o3b3o$b3o3b3o
 3b3o3b3o$3bobo3bobo3bobo3bobo$bo5bo5bo5bo!
 ```
+
+[pyramids lol](https://qph.cf2.quoracdn.net/main-qimg-981af1094d5cd2b69ceb019ed4e68620-lq)
 
 ### Border Collapse Version
 
@@ -128,6 +137,8 @@ o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
 
 
 ### Structured Collapse
+
+[Black Body?](https://en.m.wikipedia.org/wiki/Black_body)
 
 Simplified Tile:
   
