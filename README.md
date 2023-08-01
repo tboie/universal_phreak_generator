@@ -129,17 +129,21 @@ o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
 
 ### Structured Collapse
 
-- Simplified Tile:
+Simplified Tile:
   
 <img width="338" alt="structured collapse tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/56b1289d-38c5-45ed-98c4-097d494ac02f">
 
-- Tiled Reaction Example
+Tiled Reaction Example:
 
 ![Screen Recording 2023-07-31 at 5 35 47 PM](https://github.com/tboie/universal_phreak_generator/assets/26150152/2464a93a-d9d7-45f2-a100-e7b90e4a06d0)
 
-- Larger Scale Tiled Reaction Example:
+Larger Scale Tiled Reaction Example:
   
 ![Screen Recording 2023-08-01 at 9 49 48 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/4f808299-eb0b-48e1-a383-47c3becd2c84)
+
+[large scale .rle file](https://github.com/tboie/universal_phreak_generator/blob/main/public/structured_collapse.rle)
+
+Tiled Reaction RLE:
 
 ```
 x = 570, y = 570, rule = B3/S23
