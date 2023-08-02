@@ -3,8 +3,8 @@ import "./App.css";
 import { useEffect } from "react";
 import { Point, useGameLife } from "react-game-life";
 
-let prevAliveBoard: Point[] = [];
-let prevDeadBoard: Point[] = [];
+let prevAliveBoard: any[] = [];
+let prevDeadBoard: any[] = [];
 
 /*** ***/
 // Glider Templates
@@ -159,25 +159,52 @@ function App() {
   });
 
   // calculate change in energy
-  function oNextGeneration(board: Point[]) {
+  function oNextGeneration(board: any[]) {
     // Alive Energy
     const aliveBoard = board;
 
     let prevAliveDistance = 0;
     prevAliveBoard.forEach((p) => {
       prevAliveDistance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
+
+      let pDist = 0;
+      prevAliveBoard.forEach((pp) => {
+        if (p.x !== pp.x && p.y !== pp.y) {
+          pDist += Math.sqrt((p.x - pp.x) ** 2 + (p.y - pp.y) ** 2);
+        }
+      });
+      p.dist = pDist;
     });
 
     let aliveDistance = 0;
     aliveBoard.forEach((p) => {
       aliveDistance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
+
+      let pDist = 0;
+      aliveBoard.forEach((pp) => {
+        if (p.x !== pp.x && p.y !== pp.y) {
+          pDist += Math.sqrt((p.x - pp.x) ** 2 + (p.y - pp.y) ** 2);
+        }
+      });
+      p.dist = pDist;
     });
 
+    // Alive System Velocity & Energy Change
     const aliveVelocity = aliveBoard.length - prevAliveBoard.length + 1;
     const aliveEnergy =
       (aliveDistance - prevAliveDistance + 1) * aliveVelocity ** 2;
 
-    console.log("Alive Energy Change: " + aliveEnergy);
+    // Alive Cell Energy
+    aliveBoard.forEach((p) => {
+      const prevCellDist =
+        prevAliveBoard.find((c) => c.x == p.x && c.y === p.y)?.dist || 0;
+
+      p.energyChange = (p.dist - prevCellDist + 1) * aliveVelocity ** 2;
+    });
+
+    console.log("Alive System Energy Change: " + aliveEnergy);
+    console.log("Alive Cells");
+    console.log(aliveBoard);
 
     // Dead Energy using alive board bounding box area
 
@@ -192,7 +219,7 @@ function App() {
     const p0 = { x: minX, y: maxY };
     const p2 = { x: maxX, y: minY };
 
-    const deadBoard = [];
+    const deadBoard: any[] = [];
 
     if (isFinite(p0.x)) {
       for (let y = p0.y; y >= p2.y; y--) {
@@ -207,18 +234,45 @@ function App() {
     let prevDeadDistance = 0;
     prevDeadBoard.forEach((p) => {
       prevDeadDistance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
+
+      let pDist = 0;
+      prevDeadBoard.forEach((pp) => {
+        if (p.x !== pp.x && p.y !== pp.y) {
+          pDist += Math.sqrt((p.x - pp.x) ** 2 + (p.y - pp.y) ** 2);
+        }
+      });
+      p.dist = pDist;
     });
 
     let deadDistance = 0;
     deadBoard.forEach((p) => {
       deadDistance += Math.sqrt((0 - p.x) ** 2 + (0 - p.y) ** 2);
+
+      let pDist = 0;
+      deadBoard.forEach((pp) => {
+        if (p.x !== pp.x && p.y !== pp.y) {
+          pDist += Math.sqrt((p.x - pp.x) ** 2 + (p.y - pp.y) ** 2);
+        }
+      });
+      p.dist = pDist;
     });
 
+    // Dead System Velocity & Energy
     const deadVelocity = deadBoard.length - prevDeadBoard.length + 1;
     const deadEnergy =
       (deadDistance - prevDeadDistance + 1) * deadVelocity ** 2;
 
-    console.log("Dead Energy Change: " + deadEnergy);
+    // Dead Cell Energy
+    deadBoard.forEach((p) => {
+      const prevCellDist =
+        prevDeadBoard.find((c) => c.x == p.x && c.y === p.y)?.dist || 0;
+
+      p.energyChange = (p.dist - prevCellDist + 1) * deadVelocity ** 2;
+    });
+
+    console.log("Dead System Energy Change: " + deadEnergy);
+    console.log("Dead Cells:");
+    console.log(deadBoard);
 
     prevAliveBoard = [...aliveBoard];
     prevDeadBoard = [...deadBoard];
