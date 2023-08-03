@@ -1,8 +1,6 @@
 # Conway Game of Life Experiments
 ## A spiraling collection of virtual measurements
 
-### Notes on https://conwaylife.com/wiki/Unique_father_problem
-
 <img width="700" alt="concept" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06d05e6a-1baa-4f8b-9880-b3b41d98967d">
 
 1.  X pattern is horizontal
@@ -134,6 +132,26 @@ o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
 - Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
 - Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
 - Implement relative cell energy to whole?
+
+
+### Stopping Spacetime?
+
+Notice opposing directions of spiral pattern?
+
+<img width="356" alt="spacetimestop-tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/087dcb96-d61b-4f07-b041-e6af7eb88400">
+
+```
+x = 20, y = 20, rule = B3/S23
+3b5o5b5o$2bo4bo4bo4bo$3o4b2ob3o4b2o$o3bo4b2o3bo4bo$o3b3o2b2o3b3o2bo$o
+2b3o3b2o2b3o3bo$o4bo3b2o4bo3bo$b2o4b3ob2o4b3o$2bo4bo4bo4bo$2b5o5b5o$3b
+5o5b5o$2bo4bo4bo4bo$3o4b2ob3o4b2o$o3bo4b2o3bo4bo$o3b3o2b2o3b3o2bo$o2b
+3o3b2o2b3o3bo$o4bo3b2o4bo3bo$b2o4b3ob2o4b3o$2bo4bo4bo4bo$2b5o5b5o!
+```
+
+
+Potential photonegative of system at empty state? Related to golden spiral and system decay ratio?
+
+![Screen Recording 2023-08-03 at 11 26 37 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/97605187-ee54-481d-9e28-f235e18be39d)
 
 
 ### Structured Collapse
