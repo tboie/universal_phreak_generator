@@ -149,7 +149,7 @@ x = 20, y = 20, rule = B3/S23
 ```
 
 
-Potential photonegative of system at empty state? Related to golden spiral and system decay ratio?
+Potential photonegative of system at empty state? Related to golden spiral mechanics and inital reaction residue/decay?
 
 ![Screen Recording 2023-08-03 at 11 26 37 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/97605187-ee54-481d-9e28-f235e18be39d)
 
