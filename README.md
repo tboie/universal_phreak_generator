@@ -134,7 +134,7 @@ o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
 - Implement relative cell energy to whole?
 
 
-### Stopping Spacetime?
+### Starting/Stopping Spacetime?
 
 Notice opposing directions of spiral pattern?
 
