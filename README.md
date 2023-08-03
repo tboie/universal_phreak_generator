@@ -102,7 +102,7 @@ o$bo5bo5bo5bo$4bo5bo5bo5bo$obo3bobo3bobo3bobo$2b3o3b3o3b3o3b3o$b3o3b3o
 
 [pyramids lol](https://qph.cf2.quoracdn.net/main-qimg-981af1094d5cd2b69ceb019ed4e68620-lq)
 
-### Border Collapse Version
+### Solid State/Empty Border Collapse Version
 
 <img width="377" alt="area light collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/e6f03f4b-09d4-49bb-9121-10fbc3d46c98">
 
