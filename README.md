@@ -208,4 +208,5 @@ o4b3o2bo$2ob4o3b2ob4o$b2o2bobo3b2o2bobo$5b3o7b3o$6bo9bo$3bo9bo$2b3o7b
 
 ![Screen Recording 2023-08-04 at 2 05 09 PM](https://github.com/tboie/universal_phreak_generator/assets/26150152/ecb7dd1e-6abf-44b1-85a4-6731ad862f80)
 
+[electronoiserip_lg.rle](https://github.com/tboie/universal_phreak_generator/blob/main/public/electronoiserip_lg.rle)
 
