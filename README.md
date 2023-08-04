@@ -180,6 +180,13 @@ Is there a system spin mechanism? Is it possible to visualize system spin mechan
 
 <img width="288" alt="spin mechanism tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/aa7e0d67-15f3-4240-829d-092b94d9f6b7">
 
+```
+x = 16, y = 16, rule = B3/S23
+2b2o6b2o$bo2b3o2bo2b3o$bobo3bobobo3bo$bo3bobobo3bobo$obo3bobobo3bo$o3b
+obobo3bobo$b3o2bo2b3o2bo$4b2o6b2o$2b2o6b2o$bo2b3o2bo2b3o$bobo3bobobo3b
+o$bo3bobobo3bobo$obo3bobobo3bo$o3bobobo3bobo$b3o2bo2b3o2bo$4b2o6b2o!
+```
+
 Maybe it is by cancelling all system matter except for spin mechanism?
 
 <img width="328" alt="spin mechanics base" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/beddd640-d68e-4668-af7e-bcb2803c17b5">
