@@ -166,11 +166,13 @@ Tiled Reaction Example:
 
 ![Screen Recording 2023-07-31 at 5 35 47 PM](https://github.com/tboie/universal_phreak_generator/assets/26150152/2464a93a-d9d7-45f2-a100-e7b90e4a06d0)
 
+[medium scale .rle file](https://github.com/tboie/universal_phreak_generator/blob/main/public/structured_collapse_md.rle)
+
 Larger Scale Tiled Reaction Example:
   
 ![Screen Recording 2023-08-01 at 9 49 48 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/4f808299-eb0b-48e1-a383-47c3becd2c84)
 
-[large scale .rle file](https://github.com/tboie/universal_phreak_generator/blob/main/public/structured_collapse.rle)
+[large scale .rle file](https://github.com/tboie/universal_phreak_generator/blob/main/public/structured_collapse_lg.rle)
 
 ### Isolating system spin mechanism?
 
