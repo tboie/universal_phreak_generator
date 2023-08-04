@@ -134,9 +134,9 @@ o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
 - Implement relative cell energy to whole?
 
 
-### Starting/Stopping Spacetime?
+### Golden Spiral/Volume mechanics?
 
-Notice opposing directions of spiral pattern?
+Notice opposing directions of spiral patterns?
 
 <img width="356" alt="spacetimestop-tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/087dcb96-d61b-4f07-b041-e6af7eb88400">
 
@@ -148,8 +148,7 @@ x = 20, y = 20, rule = B3/S23
 3o3b2o2b3o3bo$o4bo3b2o4bo3bo$b2o4b3ob2o4b3o$2bo4bo4bo4bo$2b5o5b5o!
 ```
 
-
-Potential photonegative of system at empty state? Related to golden spiral mechanics and inital reaction residue/decay?
+Related to golden spiral mechanics and inital reaction residue/decay?
 
 ![Screen Recording 2023-08-03 at 11 26 37 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/97605187-ee54-481d-9e28-f235e18be39d)
 
