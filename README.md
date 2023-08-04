@@ -172,6 +172,20 @@ Larger Scale Tiled Reaction Example:
 
 [large scale .rle file](https://github.com/tboie/universal_phreak_generator/blob/main/public/structured_collapse.rle)
 
+### Isolating system spin mechanism?
+
+Is there a system spin mechanism? Is it possible to visualize system spin mechanism?
+
+<img width="288" alt="spin mechanism tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/aa7e0d67-15f3-4240-829d-092b94d9f6b7">
+
+Maybe it is by cancelling all system matter except for spin mechanism?
+
+<img width="328" alt="spin mechanics base" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/beddd640-d68e-4668-af7e-bcb2803c17b5">
+
+Scaled reaction remains fixed indicating a constant?
+
+![Screen Recording 2023-08-04 at 9 20 13 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/ada9b19d-6816-475f-8734-9843a001ad22)
+
 Tiled Reaction RLE:
 
 ```
