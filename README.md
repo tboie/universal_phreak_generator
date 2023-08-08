@@ -155,6 +155,20 @@ Larger Scale Tiled Reaction Example:
 
 [large scale .rle file](https://github.com/tboie/universal_phreak_generator/blob/main/public/structured_collapse_lg.rle)
 
+### Another Banger
+
+- Note: Singularity of result is a block (usually empty)
+
+<img width="350" alt="Screen Shot 2023-08-08 at 9 22 25 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/29ed2d35-19c3-477f-97bc-6e5f2ef839d0">
+
+```
+x = 20, y = 20, rule = B3/S23
+b3obo5b3obo$7bobo7bobo$bobobo3bobobobo3bo$3b5obo3b5obo$ob5o3bob5o$3b5o
+bo3b5obo$ob5o3bob5o$o3bobobobo3bobobo$obo7bobo$4bob3o5bob3o$b3obo5b3ob
+o$7bobo7bobo$bobobo3bobobobo3bo$3b5obo3b5obo$ob5o3bob5o$3b5obo3b5obo$o
+b5o3bob5o$o3bobobobo3bobobo$obo7bobo$4bob3o5bob3o!
+```
+
 ### Isolating system spin mechanism?
 
 Is there a system spin mechanism? Is it possible to visualize system spin mechanism?
