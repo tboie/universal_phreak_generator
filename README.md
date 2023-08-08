@@ -192,6 +192,37 @@ o4b3o2bo$2ob4o3b2ob4o$b2o2bobo3b2o2bobo$5b3o7b3o$6bo9bo$3bo9bo$2b3o7b
 
 [electronoiserip_lg.rle](https://github.com/tboie/universal_phreak_generator/blob/main/public/electronoiserip_lg.rle)
 
+
+### Gravastar?
+
+<img width="322" alt="Screen Shot 2023-08-08 at 7 04 08 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/e9328c58-71eb-4ae2-bb4c-76fcb47fa9d5">
+
+```
+x = 16, y = 16, rule = B3/S23
+b2o3bo2b2o3bo$o2b3ob2o2b3obo$b3obobob3obobo$bo3b2o2bo3b2o$b2o3bo2b2o3b
+o$obob3obobob3o$ob3o2b2ob3o2bo$bo3b2o2bo3b2o$b2o3bo2b2o3bo$o2b3ob2o2b
+3obo$b3obobob3obobo$bo3b2o2bo3b2o$b2o3bo2b2o3bo$obob3obobob3o$ob3o2b2o
+b3o2bo$bo3b2o2bo3b2o!
+```
+
+![Screen Recording 2023-08-08 at 7 02 42 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/e8270a3f-00c6-4f5d-a67f-56a75da5c934)
+
+### Quasar?
+
+<img width="289" alt="Screen Shot 2023-08-08 at 9 43 21 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3d22ea4e-a33f-4498-aac2-50f419eae7aa">
+
+```
+x = 16, y = 16, rule = B3/S23
+b2o3bo2b2o3bo$o2b3ob2o2b3obo$b2ob2obob2ob2obo$b2o3bo2b2o3bo$bo3b2o2bo
+3b2o$ob2ob2obob2ob2o$ob3o2b2ob3o2bo$bo3b2o2bo3b2o$b2o3bo2b2o3bo$o2b3ob
+2o2b3obo$b2ob2obob2ob2obo$b2o3bo2b2o3bo$bo3b2o2bo3b2o$ob2ob2obob2ob2o$
+ob3o2b2ob3o2bo$bo3b2o2bo3b2o!
+```
+
+![Screen Recording 2023-08-08 at 9 41 15 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/728e873f-c08d-42ca-b226-67db012d43ca)
+
+
+
 ## Universal Tile Generator
 
 ### _Squared Version_
