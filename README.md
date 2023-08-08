@@ -116,24 +116,6 @@ x = 20, y = 20, rule = B3/S23
 o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
 ```
 
-
-## Universal Tile Generator
-
-### _Squared Version_
-1.  Assign random bits to _x_ size matrix(s) representing a quadrant
-2.  Rotate matrix(s) clockwise for quadrants 2, 3, and 4 to form a tile
-3.  Goto next generation and check for changes
-4.  Scale tiling area
-5.  Go to next generation and check for changes
-6.  Repeat step 4
-
-## Theories in progress
-- "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form.  The resulting sequence might be squared at scale?
-- Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
-- Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
-- Implement relative cell energy to whole?
-
-
 ### Golden Spiral/Volume mechanics?
 
 Notice opposing directions of spiral patterns?
@@ -209,4 +191,21 @@ o4b3o2bo$2ob4o3b2ob4o$b2o2bobo3b2o2bobo$5b3o7b3o$6bo9bo$3bo9bo$2b3o7b
 ![Screen Recording 2023-08-04 at 2 05 09 PM](https://github.com/tboie/universal_phreak_generator/assets/26150152/ecb7dd1e-6abf-44b1-85a4-6731ad862f80)
 
 [electronoiserip_lg.rle](https://github.com/tboie/universal_phreak_generator/blob/main/public/electronoiserip_lg.rle)
+
+## Universal Tile Generator
+
+### _Squared Version_
+1.  Assign random bits to _x_ size matrix(s) representing a quadrant
+2.  Rotate matrix(s) clockwise for quadrants 2, 3, and 4 to form a tile
+3.  Goto next generation and check for changes
+4.  Scale tiling area
+5.  Go to next generation and check for changes
+6.  Repeat step 4
+
+## Theories in progress
+- "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form.  The resulting sequence might be squared at scale?
+- Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
+- Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
+- Implement relative cell energy to whole?
+
 
