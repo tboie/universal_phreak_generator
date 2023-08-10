@@ -514,12 +514,13 @@ function App() {
       */
 
       /* logarithmic spiral decay probabilities (ring version) */
-      const cells = 1156; // 34x34
+      const cells = 1156; // 34x34 // 4624
       const points = [...take(cells)(spiralOut(0))];
-      const rings = Math.sqrt(cells) / 2;
 
+      const rings = Math.floor(Math.sqrt(cells) / 2);
       let ring = 0;
-      points.forEach((p) => {
+
+      points.forEach((p, i) => {
         const x = Math.abs(p[0]);
         const y = Math.abs(p[1]);
 
@@ -529,8 +530,15 @@ function App() {
         const d = Math.random();
 
         // switch sign for opposite
-        if (d > prob) {
-          game.bornCell({ x: p[0], y: p[1] });
+        if (d < prob) {
+          //game.bornCell({ x: p[0], y: p[1] });
+        }
+
+        // spaced rings
+        if (ring % 2 === 0) {
+          if (d < prob) {
+            game.bornCell({ x: p[0], y: p[1] });
+          }
         }
       });
     }
