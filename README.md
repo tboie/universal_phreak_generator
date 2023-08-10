@@ -150,14 +150,16 @@ Tiled Reaction Example:
 [medium scale .rle file](https://github.com/tboie/universal_phreak_generator/blob/main/public/structured_collapse_md.rle)
 
 Larger Scale Tiled Reaction Example:
-  
+
+Note: Singularity is a pond
+
 ![Screen Recording 2023-08-01 at 9 49 48 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/4f808299-eb0b-48e1-a383-47c3becd2c84)
 
 [large scale .rle file](https://github.com/tboie/universal_phreak_generator/blob/main/public/structured_collapse_lg.rle)
 
 ### Another Banger
 
-- Note: Singularity of result is a block (usually empty)
+- Note: Singularity of result is a block
 
 <img width="350" alt="Screen Shot 2023-08-08 at 9 22 25 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/29ed2d35-19c3-477f-97bc-6e5f2ef839d0">
 
