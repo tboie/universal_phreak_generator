@@ -160,6 +160,7 @@ function App() {
 
   // calculate change in energy
   function oNextGeneration(board: any[]) {
+    /*
     // Alive Energy
     const aliveBoard = board;
 
@@ -277,6 +278,8 @@ function App() {
     prevAliveBoard = [...aliveBoard];
     prevDeadBoard = [...deadBoard];
 
+    */
+
     return {};
   }
 
@@ -286,7 +289,7 @@ function App() {
         console.log(game.getCells());
       });
 
-      //game.speedUp(20);
+      game.speedUp(20);
 
       /* 4 glider spiral base
       const gliders = [
@@ -364,6 +367,8 @@ function App() {
 
       /* golden spiral regions */
       /* loops each region area and adds cells */
+
+      /*
 
       // TODO: alternate quadrant dead/alive?
 
@@ -456,6 +461,7 @@ function App() {
           }
         });
       });
+      */
 
       // Sierpinski triangle concept
       /*
@@ -491,34 +497,42 @@ function App() {
       ST_Recur(6, T[0], T[1], T[2]);
       */
 
-      /* logarithmic spiral decay probabilities
+      /* logarithmic spiral decay probabilities (cell version) */
+      /*
       const cells = 1156; // 34x34
       const points = [...take(cells)(spiralOut(0))];
 
-      const rand = (g: number) => {
-        const percent = 100 / g;
-        const prob = percent / 100;
-        const d = Math.random();
-
-        if (d < prob) {
-          return true;
-        } else {
-          return false;
-        }
-      };
-
       points.forEach((p, i) => {
-        // logarithmic spiral decay algorithm
         const prob = (100 - (100 / cells) * i) / 100;
         const d = Math.random();
 
+        // switch sign for opposite
         if (d < prob) {
-          game.bornCell({ x: p[0], y: p[1] }); // Spawn cell
+          game.bornCell({ x: p[0], y: p[1] });
         }
       });
-
-      // game.startEvolution();
       */
+
+      /* logarithmic spiral decay probabilities (ring version) */
+      const cells = 1156; // 34x34
+      const points = [...take(cells)(spiralOut(0))];
+      const rings = Math.sqrt(cells) / 2;
+
+      let ring = 0;
+      points.forEach((p) => {
+        const x = Math.abs(p[0]);
+        const y = Math.abs(p[1]);
+
+        ring = x > y ? x : y;
+
+        const prob = (100 - (100 / rings) * ring) / 100;
+        const d = Math.random();
+
+        // switch sign for opposite
+        if (d > prob) {
+          game.bornCell({ x: p[0], y: p[1] });
+        }
+      });
     }
   }, [game]);
 
