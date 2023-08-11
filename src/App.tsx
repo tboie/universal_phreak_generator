@@ -20,16 +20,6 @@ const one = [
   [0, 1, 0, 0, 1, 1, 1],
 ];
 
-const oneo = [
-  [0, 1, 0, 0, 1, 0, 0],
-  [0, 0, 1, 0, 1, 0, 1],
-  [1, 1, 1, 0, 1, 1, 0],
-  [0, 0, 0, 0, 0, 0, 0],
-  [0, 1, 1, 0, 1, 1, 1],
-  [1, 0, 1, 0, 1, 0, 0],
-  [0, 0, 1, 0, 0, 1, 0],
-];
-
 const two = [
   [0, 0, 1, 0, 1, 0, 0],
   [1, 0, 1, 0, 1, 0, 1],
@@ -95,6 +85,16 @@ const g3 = [
 ];
 
 // glider stream gliders
+
+const gSpiral = [
+  [0, 1, 0, 0, 1, 0, 0],
+  [0, 0, 1, 0, 1, 0, 1],
+  [1, 1, 1, 0, 1, 1, 0],
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 1, 1, 0, 1, 1, 1],
+  [1, 0, 1, 0, 1, 0, 0],
+  [0, 0, 1, 0, 0, 1, 0],
+];
 
 const strG3 = [
   [1, 1, 1],
@@ -371,7 +371,7 @@ function App() {
       ];
       */
 
-      const gliders = [[oneo]];
+      const gliders = [[gSpiral]];
 
       gliders.forEach((gs, i) => {
         gs.forEach((g, ii) => {
@@ -589,6 +589,7 @@ function App() {
       */
 
       /* inwards stream of gliders from four quadrants */
+      // TODO: rough concept, more precision desired
 
       // starting distance
       for (let i = 7; i < 2000; i++) {
