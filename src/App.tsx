@@ -20,6 +20,16 @@ const one = [
   [0, 1, 0, 0, 1, 1, 1],
 ];
 
+const oneo = [
+  [0, 1, 0, 0, 1, 0, 0],
+  [0, 0, 1, 0, 1, 0, 1],
+  [1, 1, 1, 0, 1, 1, 0],
+  [0, 0, 0, 0, 0, 0, 0],
+  [0, 1, 1, 0, 1, 1, 1],
+  [1, 0, 1, 0, 1, 0, 0],
+  [0, 0, 1, 0, 0, 1, 0],
+];
+
 const two = [
   [0, 0, 1, 0, 1, 0, 0],
   [1, 0, 1, 0, 1, 0, 1],
@@ -84,6 +94,31 @@ const g3 = [
   [1, 0, 0],
 ];
 
+// glider stream gliders
+
+const strG3 = [
+  [1, 1, 1],
+  [1, 0, 0],
+  [0, 1, 0],
+];
+
+const strG4 = [
+  [1, 0, 0],
+  [1, 0, 1],
+  [1, 1, 0],
+];
+
+const strG2 = [
+  [0, 1, 1],
+  [1, 0, 1],
+  [0, 0, 1],
+];
+
+const strG1 = [
+  [0, 1, 0],
+  [0, 0, 1],
+  [1, 1, 1],
+];
 // return random glider
 const rG = () => {
   const i = Math.floor(Math.random() * (3 - 0) + 0);
@@ -152,7 +187,7 @@ const take = (n: any) => (it: any) =>
 function App() {
   const [game, canvasRef] = useGameLife({
     graphics: {
-      board: { zoom: 30 /*2*/, height: 2000, width: 2000 },
+      board: { zoom: 10 /*2*/, height: 2000, width: 2000 },
       colors: { background: "#000", cell: "#00FF00" },
     },
     game: { onNextGeneration: oNextGeneration },
@@ -320,13 +355,14 @@ function App() {
       ];
       */
 
-      /* 2 spiral merge base (opposite direction) */
+      /* 2 spiral merge base (opposite direction)
       const gliders = [
         [two, one],
         [three, four],
         [one, four],
         [two, three],
       ];
+      */
 
       /* random 4 gliders
       const gliders = [
@@ -335,11 +371,18 @@ function App() {
       ];
       */
 
+      const gliders = [[oneo]];
+
       gliders.forEach((gs, i) => {
         gs.forEach((g, ii) => {
           g.forEach((gRow, gX) => {
             gRow.forEach((gCell, gY) => {
               if (gCell) {
+                game.bornCell({
+                  x: i + gX - 2,
+                  y: ii + gY - 2,
+                });
+
                 // +number for spacing
                 /* 4 glider spiral base
                 game.bornCell({
@@ -514,6 +557,8 @@ function App() {
       */
 
       /* logarithmic spiral decay probabilities (ring version) */
+
+      /*
       const cells = 1156; // 34x34 // 4624
       const points = [...take(cells)(spiralOut(0))];
 
@@ -541,6 +586,59 @@ function App() {
           }
         }
       });
+      */
+
+      /* inwards stream of gliders from four quadrants */
+
+      // starting distance
+      for (let i = 7; i < 2000; i++) {
+        // filtering
+        if (i % 7 === 0 && i % 77 !== 0) {
+          for (let q = 0; q < 4; q++) {
+            let p = [0, 0];
+
+            if (q === 0) {
+              p = [i * -1, i * -1];
+            } else if (q === 1) {
+              p = [i * -1, i];
+            } else if (q === 2) {
+              p = [i, i];
+            } else if (q === 3) {
+              p = [i, i * -1];
+            }
+
+            let gliders = [[[[0, 0]]]];
+            // 1
+            if (p[1] < 0 && p[0] < 0) {
+              gliders = [[strG1]];
+            }
+            // 2
+            else if (p[0] < 0 && p[1] > 0) {
+              gliders = [[strG2]];
+            }
+            // 3
+            else if (p[0] > 0 && p[1] > 0) {
+              gliders = [[strG3]];
+            }
+            // 4
+            else if (p[0] > 0 && p[1] < 0) {
+              gliders = [[strG4]];
+            }
+
+            gliders.forEach((gs, i) => {
+              gs.forEach((g, ii) => {
+                g.forEach((gRow, gX) => {
+                  gRow.forEach((gCell, gY) => {
+                    if (gCell) {
+                      game.bornCell({ x: p[1] + gX, y: p[0] + gY });
+                    }
+                  });
+                });
+              });
+            });
+          }
+        }
+      }
     }
   }, [game]);
 
