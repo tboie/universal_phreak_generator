@@ -195,7 +195,6 @@ function App() {
 
   // calculate change in energy
   function oNextGeneration(board: any[]) {
-    /*
     // Alive Energy
     const aliveBoard = board;
 
@@ -242,7 +241,8 @@ function App() {
     console.log("Alive Cells");
     console.log(aliveBoard);
 
-    // Dead Energy using alive board bounding box area
+    // Dead Energy using board bounding box area
+    // NOTE: bounding box uses alive board and is expanded by 1 to match neighbor rulset
 
     const allX = aliveBoard.map((p) => p.x);
     const allY = aliveBoard.map((p) => p.y);
@@ -252,8 +252,8 @@ function App() {
     const maxX = Math.max(...allX);
     const maxY = Math.max(...allY);
 
-    const p0 = { x: minX, y: maxY };
-    const p2 = { x: maxX, y: minY };
+    const p0 = { x: minX - 1, y: maxY + 1 };
+    const p2 = { x: maxX + 1, y: minY - 1 };
 
     const deadBoard: any[] = [];
 
@@ -313,8 +313,6 @@ function App() {
     prevAliveBoard = [...aliveBoard];
     prevDeadBoard = [...deadBoard];
 
-    */
-
     return {};
   }
 
@@ -324,7 +322,7 @@ function App() {
         console.log(game.getCells());
       });
 
-      game.speedUp(20);
+      // game.speedUp(20);
 
       /* 4 glider spiral base
       const gliders = [
@@ -597,9 +595,10 @@ function App() {
       //
 
       // starting distance
+      /*
       for (let i = 7; i < 1000; i++) {
         // filtering
-        if (i % 7 === 0 /*&& i % 77 !== 0*/) {
+        if (i % 7 === 0 && i % 77 !== 0) {
           for (let q = 0; q < 4; q++) {
             let p = [0, 0];
 
@@ -654,7 +653,6 @@ function App() {
                           game.bornCell({ x: p[1] + 4 + gX, y: p[0] + 4 + gY });
                         }
                       }
-                      */
                     }
                   });
                 });
@@ -662,7 +660,7 @@ function App() {
             });
           }
         }
-      }
+      }*/
     }
   }, [game]);
 
