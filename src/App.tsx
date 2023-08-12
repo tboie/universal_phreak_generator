@@ -378,6 +378,7 @@ function App() {
           g.forEach((gRow, gX) => {
             gRow.forEach((gCell, gY) => {
               if (gCell) {
+                /* glider spiral */
                 game.bornCell({
                   x: i + gX - 2,
                   y: ii + gY - 2,
@@ -589,12 +590,16 @@ function App() {
       */
 
       /* inwards stream of gliders from four quadrants */
-      // TODO: rough concept, more precision desired
+      // TODO: rough concept, more precision desired...
+      //
+      //       there are certain phases of the spiral reactions that,
+      //       when hit at certain points by gliders, amplify the form
+      //
 
       // starting distance
-      for (let i = 7; i < 2000; i++) {
+      for (let i = 7; i < 1000; i++) {
         // filtering
-        if (i % 7 === 0 && i % 77 !== 0) {
+        if (i % 7 === 0 /*&& i % 77 !== 0*/) {
           for (let q = 0; q < 4; q++) {
             let p = [0, 0];
 
@@ -626,12 +631,30 @@ function App() {
               gliders = [[strG4]];
             }
 
-            gliders.forEach((gs, i) => {
-              gs.forEach((g, ii) => {
+            gliders.forEach((gs) => {
+              gs.forEach((g) => {
                 g.forEach((gRow, gX) => {
                   gRow.forEach((gCell, gY) => {
                     if (gCell) {
                       game.bornCell({ x: p[1] + gX, y: p[0] + gY });
+
+                      /* 2 more streams in each quadrant
+                      if (i > 7) {
+                        if (q == 0) {
+                          game.bornCell({ x: p[1] - 4 + gX, y: p[0] + 4 + gY });
+                          game.bornCell({ x: p[1] + 4 + gX, y: p[0] - 4 + gY });
+                        } else if (q == 1) {
+                          game.bornCell({ x: p[1] + 4 + gX, y: p[0] + 4 + gY });
+                          game.bornCell({ x: p[1] - 4 + gX, y: p[0] - 4 + gY });
+                        } else if (q === 2) {
+                          game.bornCell({ x: p[1] + 4 + gX, y: p[0] - 4 + gY });
+                          game.bornCell({ x: p[1] - 4 + gX, y: p[0] + 4 + gY });
+                        } else if (q === 3) {
+                          game.bornCell({ x: p[1] - 4 + gX, y: p[0] - 4 + gY });
+                          game.bornCell({ x: p[1] + 4 + gX, y: p[0] + 4 + gY });
+                        }
+                      }
+                      */
                     }
                   });
                 });
