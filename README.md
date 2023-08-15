@@ -233,6 +233,16 @@ ob2o2b2ob2o2bo$bo2b2o2bo2b2o$b2o2bo2b2o2bo$o2b2ob2o2b2obo$b2obobob2obo
 bo$bo3bo2bo3bo$obob2obobob2o$ob2o2b2ob2o2bo$bo2b2o2bo2b2o!
 ```
 
+## Reaction going inwards
+
+<img width="292" alt="Screen Shot 2023-08-15 at 2 23 43 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/abcb9720-50a3-4c6d-83a7-7fcd2834ff81">
+
+```
+x = 16, y = 16, rule = B3/S23
+6ob7obo$b7ob7o$16o$16o$16o$16o$7ob7o$ob7ob6o$6ob7obo$b7ob7o$16o$16o$
+16o$16o$7ob7o$ob7ob6o!
+```
+
 ## Reaction going inward and outward
 
 <img width="289" alt="Screen Shot 2023-08-08 at 9 43 21 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3d22ea4e-a33f-4498-aac2-50f419eae7aa">
