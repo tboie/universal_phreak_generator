@@ -210,7 +210,7 @@ Scaled reaction remains fixed indicating a constant?
 
 ![Screen Recording 2023-08-04 at 9 20 13 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/ada9b19d-6816-475f-8734-9843a001ad22)
 
-### Gravastar?
+### Reactions going outward?
 
 <img width="322" alt="Screen Shot 2023-08-08 at 7 04 08 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/e9328c58-71eb-4ae2-bb4c-76fcb47fa9d5">
 
@@ -224,7 +224,14 @@ b3o2bo$bo3b2o2bo3b2o!
 
 ![Screen Recording 2023-08-08 at 7 02 42 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/e8270a3f-00c6-4f5d-a67f-56a75da5c934)
 
-### Quasar?
+<img width="259" alt="Screen Shot 2023-08-15 at 12 53 16 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/151c27bf-b5aa-4d26-ab56-e951e5b31f7b">
+
+```
+x = 14, y = 14, rule = B3/S23
+b2o2bo2b2o2bo$o2b2ob2o2b2obo$b2obobob2obobo$bo3bo2bo3bo$obob2obobob2o$
+ob2o2b2ob2o2bo$bo2b2o2bo2b2o$b2o2bo2b2o2bo$o2b2ob2o2b2obo$b2obobob2obo
+bo$bo3bo2bo3bo$obob2obobob2o$ob2o2b2ob2o2bo$bo2b2o2bo2b2o!
+```
 
 <img width="289" alt="Screen Shot 2023-08-08 at 9 43 21 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3d22ea4e-a33f-4498-aac2-50f419eae7aa">
 
