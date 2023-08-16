@@ -258,6 +258,16 @@ ob3o2b2ob3o2bo$bo3b2o2bo3b2o!
 
 ![Screen Recording 2023-08-08 at 9 41 15 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/728e873f-c08d-42ca-b226-67db012d43ca)
 
+## Oscillating Pattern Reaction
+
+<img width="195" alt="Screen Shot 2023-08-16 at 9 54 58 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ed7758af-8e37-4a2e-8c12-a9245b03409f">
+
+```
+x = 10, y = 10, rule = B3/S23
+3bo4bo$4ob4o$bobo2bobo$b4ob4o$bo4bo$3bo4bo$4ob4o$bobo2bobo$b4ob4o$bo4b
+o!
+```
+
 ## Universal Tile Generator
 
 ### _Squared Version_
