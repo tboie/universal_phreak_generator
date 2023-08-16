@@ -243,6 +243,7 @@ function App() {
 
     // Dead Energy using board bounding box area
     // NOTE: bounding box uses alive board and is expanded by 1 to match neighbor rulset
+    //       - why does blinker with middle at 0,0 have floating point difference?
 
     const allX = aliveBoard.map((p) => p.x);
     const allY = aliveBoard.map((p) => p.y);
@@ -369,6 +370,22 @@ function App() {
       ];
       */
 
+      /* blinker at 0,0
+          - why does Dead energy have floating point change?
+      */
+      game.bornCell({
+        x: 0,
+        y: 0,
+      });
+      game.bornCell({
+        x: 0,
+        y: 1,
+      });
+      game.bornCell({
+        x: 0,
+        y: -1,
+      });
+
       const gliders = [[gSpiral]];
 
       gliders.forEach((gs, i) => {
@@ -376,12 +393,12 @@ function App() {
           g.forEach((gRow, gX) => {
             gRow.forEach((gCell, gY) => {
               if (gCell) {
-                /* glider spiral */
+                /* glider spiral
                 game.bornCell({
                   x: i + gX - 2,
                   y: ii + gY - 2,
                 });
-
+                */
                 // +number for spacing
                 /* 4 glider spiral base
                 game.bornCell({
