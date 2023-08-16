@@ -1,4 +1,5 @@
 # Conway Game of Life Experiments
+
 ## A spiraling collection of virtual measurements
 
 <img width="700" alt="concept" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06d05e6a-1baa-4f8b-9880-b3b41d98967d">
@@ -84,6 +85,7 @@ Tiled:
 [Bakery](https://catagolue.hatsya.com/object/xs28_g88m952g8gz1218kid221/b3s23) ...
 
 ### More spacetime patterns?
+
 - LIGHTING UP THE AREA?:
 
 <img width="120" alt="area light tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ca715375-ccb1-4410-8c9d-014c3574e9f8">
@@ -134,13 +136,12 @@ Related to golden spiral mechanics and inital reaction residue/decay?
 
 ![Screen Recording 2023-08-03 at 11 26 37 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/97605187-ee54-481d-9e28-f235e18be39d)
 
-
 ### Structured Collapse
 
 [Black Body?](https://en.m.wikipedia.org/wiki/Black_body)
 
 Simplified Tile:
-  
+
 <img width="338" alt="structured collapse tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/56b1289d-38c5-45ed-98c4-097d494ac02f">
 
 Tiled Reaction Example:
@@ -257,11 +258,10 @@ ob3o2b2ob3o2bo$bo3b2o2bo3b2o!
 
 ![Screen Recording 2023-08-08 at 9 41 15 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/728e873f-c08d-42ca-b226-67db012d43ca)
 
-
-
 ## Universal Tile Generator
 
 ### _Squared Version_
+
 1.  Assign random bits to _x_ size matrix(s) representing a quadrant
 2.  Rotate matrix(s) clockwise for quadrants 2, 3, and 4 to form a tile
 3.  Goto next generation and check for changes
@@ -269,10 +269,16 @@ ob3o2b2ob3o2bo$bo3b2o2bo3b2o!
 5.  Go to next generation and check for changes
 6.  Repeat step 4
 
+## Universal Border Generator
+
+- random border pattern generator
+- variations in corners?
+
 ## Theories in progress
-- "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form.  The resulting sequence might be squared at scale?
+
+- "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form. The resulting sequence might be squared at scale?
 - Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
 - Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
 
 - Starting banger?
-<img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
+  <img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
