@@ -268,7 +268,7 @@ x = 10, y = 10, rule = B3/S23
 o!
 ```
 
-# Circular result?
+## Circular result?
 
 <img width="228" alt="circular result" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ef56ffe6-bc6a-4f44-993e-f9cbe5660c1d">
 
@@ -294,7 +294,8 @@ x = 12, y = 12, rule = B3/S23
 - random border pattern generator
 - variations in corners?
 
-## Universal Core Generator = Shaped Layers * (Universal Tile Generator + Universal Border Generator)
+## Universal Core Generator
+- Shaped Layers * (Universal Tile Generator + Universal Border Generator)
 
 ## Theories in progress
 
