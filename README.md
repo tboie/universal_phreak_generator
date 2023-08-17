@@ -294,6 +294,8 @@ x = 12, y = 12, rule = B3/S23
 - random border pattern generator
 - variations in corners?
 
+## Universal Core Generator = Shaped Layers * (Universal Tile Generator + Universal Border Generator)
+
 ## Theories in progress
 
 - "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form. The resulting sequence might be squared at scale?
