@@ -294,8 +294,12 @@ x = 12, y = 12, rule = B3/S23
 - random border pattern generator
 - variations in corners?
 
-## Universal Core Generator
-- Shaped Layers * (Universal Tile Generator + Universal Border Generator)
+## Universal Core aka Pattern Poppers
+- Logo:
+<img width="267" alt="Screen Shot 2023-06-29 at 12 16 57 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38a04458-1c28-481f-93eb-ec9ea1a0a092">
+
+- Concept:
+- Energy Flux = Shaped Frequency Layers * (Universal Tile Generator + Universal Border Generator)
 
 ## Theories in progress
 
