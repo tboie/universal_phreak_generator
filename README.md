@@ -268,7 +268,7 @@ x = 10, y = 10, rule = B3/S23
 o!
 ```
 
-## Circular result?
+## Circular results?
 
 <img width="228" alt="circular result" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ef56ffe6-bc6a-4f44-993e-f9cbe5660c1d">
 
@@ -277,6 +277,17 @@ x = 12, y = 12, rule = B3/S23
 3o2b4o2bo$bo2b2obo2b2o$2b2obo2b2obo$ob2o2bob2o$2o2bob2o2bo$o2b4o2b3o$
 3o2b4o2bo$bo2b2obo2b2o$2b2obo2b2obo$ob2o2bob2o$2o2bob2o2bo$o2b4o2b3o!
 ```
+
+Same pattern?
+
+<img width="225" alt="circular result base" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/573498a1-c3ab-4e2e-bd73-6aeb4bfd941d">
+
+```
+x = 12, y = 12, rule = B3/S23
+2ob5ob3o$ob2ob2ob2obo$5ob5o$b5ob5o$ob2ob2ob2obo$3ob5ob2o$2ob5ob3o$ob2o
+b2ob2obo$5ob5o$b5ob5o$ob2ob2ob2obo$3ob5ob2o!
+```
+
 
 ## Universal Tile Generator
 
