@@ -288,6 +288,15 @@ x = 12, y = 12, rule = B3/S23
 b2ob2obo$5ob5o$b5ob5o$ob2ob2ob2obo$3ob5ob2o!
 ```
 
+Same result?
+
+<img width="225" alt="circular result base 3" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/4ba74200-d208-4210-9b2a-bd8b89119c84">
+
+```
+x = 12, y = 12, rule = B3/S23
+2obob3obobo$2b2obo2b2obo$5ob5o$b5ob5o$ob2o2bob2o$obob3obob2o$2obob3obo
+bo$2b2obo2b2obo$5ob5o$b5ob5o$ob2o2bob2o$obob3obob2o!
+```
 
 ## Universal Tile Generator
 
