@@ -278,7 +278,7 @@ x = 12, y = 12, rule = B3/S23
 3o2b4o2bo$bo2b2obo2b2o$2b2obo2b2obo$ob2o2bob2o$2o2bob2o2bo$o2b4o2b3o!
 ```
 
-Same pattern?
+Same result?
 
 <img width="225" alt="circular result base" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/573498a1-c3ab-4e2e-bd73-6aeb4bfd941d">
 
