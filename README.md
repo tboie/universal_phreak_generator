@@ -327,10 +327,11 @@ Concept:
 - Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
 - Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
 
-- Implement Adjacent Differential Points?
+- Adjacent Differential Points?
+  - Implement?
+  - Does the value relate to cells with greatest alive/dead energy in system? (distance?)
 
 <img width="390" alt="ADP" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2190d839-a5b2-4514-b879-57412b75f57b">
-
 
 ## 0.125 is combinationally interesting?
 - 0
@@ -343,6 +344,6 @@ Concept:
 - 0.875
 - 1
 
-- Starting banger?
+## Starting banger?
 
 <img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
