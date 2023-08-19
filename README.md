@@ -327,8 +327,10 @@ Concept:
 - Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
 - Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
 
-- Implement Potential Active Mass?
-<img width="323" alt="potential active mass" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/e1f39c6d-dc27-4028-935b-a55a4f4a2591">
+- Implement Adjacent Differential Bounds?
+
+<img width="391" alt="Screen Shot 2023-08-19 at 10 55 11 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/d8fba64e-9ec9-4e23-9723-13fff5812202">
 
 - Starting banger?
-  <img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
+
+<img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
