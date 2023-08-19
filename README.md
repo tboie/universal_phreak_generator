@@ -329,7 +329,7 @@ Concept:
 
 - Implement Adjacent Differential Bounds?
 
-<img width="391" alt="Screen Shot 2023-08-19 at 10 55 11 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/d8fba64e-9ec9-4e23-9723-13fff5812202">
+<img width="393" alt="adb" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/606f6724-d257-4f16-b0ba-f66c0234c932">
 
 ## 0.125 is combinationally interesting?
 - 0.125
