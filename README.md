@@ -331,6 +331,16 @@ Concept:
 
 <img width="391" alt="Screen Shot 2023-08-19 at 10 55 11 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/d8fba64e-9ec9-4e23-9723-13fff5812202">
 
+## 0.125 is combinationally interesting?
+- 0.125
+- 0.25
+- 0.375
+- 0.5
+- 0.625
+- 0.75
+- 0.875
+- 0.100
+
 - Starting banger?
 
 <img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
