@@ -187,7 +187,7 @@ const take = (n: any) => (it: any) =>
 function App() {
   const [game, canvasRef] = useGameLife({
     graphics: {
-      board: { zoom: 10 /*2*/, height: 2000, width: 2000 },
+      board: { zoom: 200 /*2*/, height: 2000, width: 2000 },
       colors: { background: "#000", cell: "#00FF00" },
     },
     game: { onNextGeneration: oNextGeneration },
