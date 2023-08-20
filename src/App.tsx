@@ -242,8 +242,11 @@ function App() {
     console.log(aliveBoard);
 
     // Dead Energy using board bounding box area
-    // NOTE: bounding box uses alive board and is expanded by 1 to match neighbor rulset
-    //       - why does blinker with middle at 0,0 have floating point difference?
+    // NOTE: bounding box uses alive board and is expanded by 1 to match neighbor rulset.
+    //       Why does blinker with middle at 0,0 have floating point difference of
+    //         1.0000000000000036
+    //       - 0.9999999999999964
+    //       = 0.000000000000007
 
     const allX = aliveBoard.map((p) => p.x);
     const allY = aliveBoard.map((p) => p.y);
