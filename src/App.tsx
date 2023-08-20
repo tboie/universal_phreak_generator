@@ -246,7 +246,9 @@ function App() {
     //       Why does blinker with middle at 0,0 have floating point difference of
     //         1.0000000000000036
     //       - 0.9999999999999964
-    //       = 0.000000000000007
+    //       = 0.000000000000007 (7x10^-15 femto)
+    //
+    // NOTE: 7 is sum of prime factors (2+5) for a quadrillion (1x10^15)
 
     const allX = aliveBoard.map((p) => p.x);
     const allY = aliveBoard.map((p) => p.y);
