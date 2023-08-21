@@ -187,7 +187,7 @@ const take = (n: any) => (it: any) =>
 function App() {
   const [game, canvasRef] = useGameLife({
     graphics: {
-      board: { zoom: 40 /*2*/, height: 2000, width: 2000 },
+      board: { zoom: 20 /*2*/, height: 2000, width: 2000 },
       colors: { background: "#000", cell: "#00FF00" },
     },
     //game: { onNextGeneration: oNextGeneration },
@@ -579,8 +579,10 @@ function App() {
       */
 
       /* logarithmic spiral decay probabilities (ring version) */
+      // when density ascends outward, does the strucuture resemble
+      // half spun reverse populated golden spiral probability?
 
-      const cells = 1024; // 32 x 32 // 4624
+      const cells = 4624; // 32 x 32 // 4624
       const points = [...take(cells)(spiralOut(0))];
 
       const rings = Math.floor(Math.sqrt(cells) / 2);
@@ -602,7 +604,7 @@ function App() {
 
         // spaced rings
         //if (ring % 2 === 0) {
-        // opposite sign to reverse
+        // opposite sign to reverse density
         if (d > prob) {
           game.bornCell({ x: p[0], y: p[1] });
         }
