@@ -187,10 +187,10 @@ const take = (n: any) => (it: any) =>
 function App() {
   const [game, canvasRef] = useGameLife({
     graphics: {
-      board: { zoom: 200 /*2*/, height: 2000, width: 2000 },
+      board: { zoom: 40 /*2*/, height: 2000, width: 2000 },
       colors: { background: "#000", cell: "#00FF00" },
     },
-    game: { onNextGeneration: oNextGeneration },
+    //game: { onNextGeneration: oNextGeneration },
   });
 
   // calculate change in energy
@@ -328,7 +328,7 @@ function App() {
         console.log(game.getCells());
       });
 
-      // game.speedUp(20);
+      game.speedUp(20);
 
       /* 4 glider spiral base
       const gliders = [
@@ -377,7 +377,7 @@ function App() {
 
       /* blinker at 0,0
           - why does Dead energy have floating point change?
-      */
+      
       game.bornCell({
         x: 0,
         y: 0,
@@ -390,6 +390,7 @@ function App() {
         x: 0,
         y: -1,
       });
+      */
 
       const gliders = [[gSpiral]];
 
@@ -579,8 +580,7 @@ function App() {
 
       /* logarithmic spiral decay probabilities (ring version) */
 
-      /*
-      const cells = 1156; // 34x34 // 4624
+      const cells = 1024; // 32 x 32 // 4624
       const points = [...take(cells)(spiralOut(0))];
 
       const rings = Math.floor(Math.sqrt(cells) / 2);
@@ -601,13 +601,13 @@ function App() {
         }
 
         // spaced rings
-        if (ring % 2 === 0) {
-          if (d < prob) {
-            game.bornCell({ x: p[0], y: p[1] });
-          }
+        //if (ring % 2 === 0) {
+        // opposite sign to reverse
+        if (d > prob) {
+          game.bornCell({ x: p[0], y: p[1] });
         }
+        //}
       });
-      */
 
       /* inwards stream of gliders from four quadrants */
       // TODO: rough concept, more precision desired...
