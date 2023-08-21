@@ -328,7 +328,7 @@ function App() {
         console.log(game.getCells());
       });
 
-      game.speedUp(20);
+      //game.speedUp(20);
 
       /* 4 glider spiral base
       const gliders = [
@@ -582,7 +582,7 @@ function App() {
       // when density ascends outward, does the strucuture resemble
       // half spun reverse populated golden spiral probability?
 
-      const cells = 4624; // 32 x 32 // 4624
+      const cells = 4624; // 34 x 34 // 4624
       const points = [...take(cells)(spiralOut(0))];
 
       const rings = Math.floor(Math.sqrt(cells) / 2);
