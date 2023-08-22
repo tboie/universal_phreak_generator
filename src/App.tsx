@@ -3,11 +3,9 @@ import "./App.css";
 import { useEffect } from "react";
 import { Point, useGameLife } from "react-game-life";
 
-// x, y, dist, energyChange, t
+// x, y, dist, energyChange
 let prevAliveBoard: any[] = [];
 let prevDeadBoard: any[] = [];
-
-let generation = 0;
 
 /*** ***/
 // Glider Templates
@@ -225,10 +223,6 @@ function App() {
         }
       });
       p.dist = pDist;
-
-      // Set cell generation start
-      const pGen = prevAliveBoard.find((pp) => pp.x === p.x && pp.y === p.y)?.t;
-      p.t = typeof pGen === "undefined" ? generation - 1 : pGen;
     });
 
     // Alive System Velocity & Energy Change
@@ -274,7 +268,7 @@ function App() {
       for (let y = p0.y; y >= p2.y; y--) {
         for (let x = p0.x; x <= p2.x; x++) {
           if (!aliveBoard.find((p) => p.x === x && p.y === y)) {
-            deadBoard.push({ x: x, y: y, t: generation - 1 });
+            deadBoard.push({ x: x, y: y });
           }
         }
       }
@@ -304,10 +298,6 @@ function App() {
         }
       });
       p.dist = pDist;
-
-      // Set cell generation start
-      const pGen = prevDeadBoard.find((pp) => pp.x === p.x && pp.y === p.y)?.t;
-      p.t = typeof pGen === "undefined" ? generation - 1 : pGen;
     });
 
     // Dead System Velocity & Energy
@@ -329,7 +319,6 @@ function App() {
 
     prevAliveBoard = [...aliveBoard];
     prevDeadBoard = [...deadBoard];
-    generation = generation + 1;
 
     return {};
   }

@@ -315,17 +315,24 @@ bo$2b2obo2b2obo$5ob5o$b5ob5o$ob2o2bob2o$obob3obob2o!
 - variations in corners?
 
 ## Universal Core Generator aka Pattern Poppers
+
 Logo:
 <img width="267" alt="Screen Shot 2023-06-29 at 12 16 57 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38a04458-1c28-481f-93eb-ec9ea1a0a092">
 
 Concept:
-- Energy Flux = Shaped Frequency Layers * (Universal Tile Generator + Universal Border Generator)
+
+- Energy Flux = Shaped Frequency Layers \* (Universal Tile Generator + Universal Border Generator)
 
 ## Theories in progress
 
 - "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form. The resulting sequence might be squared at scale?
 - Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
 - Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
+
+- Wavepoints?
+
+  - is cell information streamed outwards in all space at distance 1 per generation while a cell is "alive"?
+  - store when cell is toggled?
 
 - Adjacent Differential Points Value?
   - Implement?
@@ -334,6 +341,7 @@ Concept:
 <img width="480" alt="adpv" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2a29a356-8746-4d55-9829-8be2035fe234">
 
 ## 0.125 is combinationally interesting?
+
 - 0
 - 0.125
 - 0.25
