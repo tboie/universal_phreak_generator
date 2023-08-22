@@ -5,6 +5,7 @@ import { Point, useGameLife } from "react-game-life";
 
 let prevAliveBoard: any[] = [];
 let prevDeadBoard: any[] = [];
+let generation = 0;
 
 /*** ***/
 // Glider Templates
@@ -190,7 +191,7 @@ function App() {
       board: { zoom: 20 /*2*/, height: 2000, width: 2000 },
       colors: { background: "#000", cell: "#00FF00" },
     },
-    //game: { onNextGeneration: oNextGeneration },
+    game: { onNextGeneration: oNextGeneration },
   });
 
   // calculate change in energy
@@ -222,6 +223,14 @@ function App() {
         }
       });
       p.dist = pDist;
+
+      // Set cell generation start
+      const pGen = prevAliveBoard.find((pp) => pp.x === p.x && pp.y === p.y)?.t;
+      if (typeof pGen === "undefined") {
+        p.t = generation - 1;
+      } else {
+        p.t = pGen;
+      }
     });
 
     // Alive System Velocity & Energy Change
@@ -318,6 +327,7 @@ function App() {
 
     prevAliveBoard = [...aliveBoard];
     prevDeadBoard = [...deadBoard];
+    generation = generation + 1;
 
     return {};
   }
@@ -325,7 +335,7 @@ function App() {
   useEffect(() => {
     if (game) {
       document.addEventListener("click", (event) => {
-        console.log(game.getCells());
+        //console.log(game.getCells());
       });
 
       //game.speedUp(20);
@@ -582,7 +592,7 @@ function App() {
       // when density ascends outward, does the strucuture resemble
       // half spun reverse populated golden spiral probability?
 
-      const cells = 4624; // 34 x 34 // 4624
+      const cells = 256; // 4624; // 34 x 34 // 4624
       const points = [...take(cells)(spiralOut(0))];
 
       const rings = Math.floor(Math.sqrt(cells) / 2);
