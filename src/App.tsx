@@ -3,8 +3,10 @@ import "./App.css";
 import { useEffect } from "react";
 import { Point, useGameLife } from "react-game-life";
 
+// x, y, dist, energyChange, t
 let prevAliveBoard: any[] = [];
 let prevDeadBoard: any[] = [];
+
 let generation = 0;
 
 /*** ***/
