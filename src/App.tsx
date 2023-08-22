@@ -226,11 +226,7 @@ function App() {
 
       // Set cell generation start
       const pGen = prevAliveBoard.find((pp) => pp.x === p.x && pp.y === p.y)?.t;
-      if (typeof pGen === "undefined") {
-        p.t = generation - 1;
-      } else {
-        p.t = pGen;
-      }
+      p.t = typeof pGen === "undefined" ? generation - 1 : pGen;
     });
 
     // Alive System Velocity & Energy Change
@@ -276,7 +272,7 @@ function App() {
       for (let y = p0.y; y >= p2.y; y--) {
         for (let x = p0.x; x <= p2.x; x++) {
           if (!aliveBoard.find((p) => p.x === x && p.y === y)) {
-            deadBoard.push({ x: x, y: y });
+            deadBoard.push({ x: x, y: y, t: generation - 1 });
           }
         }
       }
@@ -306,6 +302,10 @@ function App() {
         }
       });
       p.dist = pDist;
+
+      // Set cell generation start
+      const pGen = prevDeadBoard.find((pp) => pp.x === p.x && pp.y === p.y)?.t;
+      p.t = typeof pGen === "undefined" ? generation - 1 : pGen;
     });
 
     // Dead System Velocity & Energy
