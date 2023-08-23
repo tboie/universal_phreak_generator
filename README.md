@@ -326,6 +326,7 @@ Concept:
 ## Theories in progress
 
 - "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form. The resulting sequence might be squared at scale?
+  - Is there a tile that emits gliders outwards?  This has been to observed to start happening for a tile x 4.
 - Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
 - Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
 
