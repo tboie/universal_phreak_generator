@@ -298,16 +298,30 @@ x = 12, y = 12, rule = B3/S23
 bo$2b2obo2b2obo$5ob5o$b5ob5o$ob2o2bob2o$obob3obob2o!
 ```
 
-## Smallest Outward Glider Tile
+## Smallest Outward Glider Tiles
 - This is conceptually interesting
-- Is 10x10 the smallest?
 
+- 10x10
+- tesselated reaction is constant result of only outward gliders
 <img width="197" alt="outwards-glider" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/89e14d7c-4641-4f31-9c03-da77ead1585d">
 
 ```
 x = 10, y = 10, rule = B3/S23
 3b2ob2o$2bo4bo$3o4b2o$o3bo4bo$6bo2bo$o2bo$o4bo3bo$b2o4b3o$2bo4bo$2b2ob
 2o!
+```
+
+- 8x8
+- reaction result not constant
+- reaction at tesselation size 256x256 is interesting
+    - inner gliders movement change
+    - octagon to square to octagon?
+
+<img width="160" alt="Screen Shot 2023-08-23 at 12 51 32 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5c2c34cc-7ef2-41ba-9f17-eeae60f5ec77">
+
+```
+x = 8, y = 8, rule = B3/S23
+2obo3bo$bob2ob2o$2b2obo$bo3b3o$3o3bo$2bob2o$2ob2obo$o3bob2o!
 ```
 
 ## Universal Tile Generator
