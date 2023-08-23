@@ -298,6 +298,18 @@ x = 12, y = 12, rule = B3/S23
 bo$2b2obo2b2obo$5ob5o$b5ob5o$ob2o2bob2o$obob3obob2o!
 ```
 
+## Smallest Outward Glider Tile
+- This is conceptually interesting
+- Is 10x10 the smallest?
+
+<img width="197" alt="outwards-glider" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/89e14d7c-4641-4f31-9c03-da77ead1585d">
+
+```
+x = 10, y = 10, rule = B3/S23
+3b2ob2o$2bo4bo$3o4b2o$o3bo4bo$6bo2bo$o2bo$o4bo3bo$b2o4b3o$2bo4bo$2b2ob
+2o!
+```
+
 ## Universal Tile Generator
 
 ### _Squared Version_
