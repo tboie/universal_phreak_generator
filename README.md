@@ -361,9 +361,13 @@ Concept:
 
 - "Molecular Modelling" from arrangement of tesselated tiles?
   - ex) reaction from arrangement of tesselated tiles leaving a "nucleus" (border of electrons also?) and potential further reactions from outwards gliders (electrons?)
-
+  - block = proton
+  - beehive = neutron
+  - blinker = electron
+  - glider = neutrino
+  - etc...
+ 
 - Wavepoints?
-
   - is cell information streamed outwards in all space at distance 1 per generation while a cell is "alive"?
   - store when cell is toggled?
 
