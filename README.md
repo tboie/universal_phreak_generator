@@ -360,7 +360,7 @@ Concept:
 - Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
 
 - "Molecular Modelling" from arrangement of tesselated tiles?
-  - ex) reaction from arrangement of tesselated tiles leaving a "nucleus" (border of electrons also?) and potential further reactions from outwards gliders (electrons?)
+  - ex) reaction from arrangement of tesselated tiles (spacing? 1 tile base scale?) leaving a "nucleus" or mix of uniform/combined patterns? and potential further reactions from outwards gliders.
   - block = proton
   - beehive = neutron
   - blinker = electron
