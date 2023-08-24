@@ -365,7 +365,7 @@ Concept:
   - beehive = neutron
   - blinker = electron
   - glider = neutrino
-  - etc...
+  - glider with speed x 4? size scaled? different layer? = photon
  
 - Wavepoints?
   - is cell information streamed outwards in all space at distance 1 per generation while a cell is "alive"?
