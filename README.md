@@ -404,3 +404,17 @@ Concept:
 ## Starting banger?
 
 <img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
+
+## Towards Infinity Tile
+
+<img width="293" alt="Screen Shot 2023-08-25 at 6 47 23 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/823de780-c931-49c2-aa5c-a4ee92cb86a8">
+
+```
+x = 34, y = 34, rule = B3/S23
+23bo$22bobo$22bobo$23bo$6bo$5bobo10b2o7b2o$5bobo9bo2bo5bo2bo$6bo11b2o
+7b2o2$b2o7b2o11bo$o2bo5bo2bo9bobo$b2o7b2o10bobo$15b2ob2o3bo$6bo7bo4bo$
+5bobo4b3o4b2o$5bobo4bo3bo4bo$6bo11bo2bo$12bo2bo11bo$12bo4bo3bo4bobo$
+13b2o4b3o4bobo$14bo4bo7bo$10bo3b2ob2o$9bobo10b2o7b2o$9bobo9bo2bo5bo2bo
+$10bo11b2o7b2o2$5b2o7b2o11bo$4bo2bo5bo2bo9bobo$5b2o7b2o10bobo$27bo$10b
+o$9bobo$9bobo$10bo!
+```
