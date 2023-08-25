@@ -350,6 +350,8 @@ x = 8, y = 8, rule = B3/S23
 5.  Go to next generation and check for changes
 6.  Repeat step 4
 
+- Detect tiles naturally generated at singularity of reactions?
+
 ## Universal Border Generator
 
 - random border pattern generator
@@ -406,8 +408,6 @@ Concept:
 <img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
 
 ## Towards Infinity Tile
-
-- Tiling generated at singularity?
 
 <img width="293" alt="Screen Shot 2023-08-25 at 6 47 23 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/823de780-c931-49c2-aa5c-a4ee92cb86a8">
 
