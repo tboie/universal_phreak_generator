@@ -407,6 +407,8 @@ Concept:
 
 ## Towards Infinity Tile
 
+- Tiling generated at singularity?
+
 <img width="293" alt="Screen Shot 2023-08-25 at 6 47 23 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/823de780-c931-49c2-aa5c-a4ee92cb86a8">
 
 ```
