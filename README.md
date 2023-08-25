@@ -120,6 +120,8 @@ o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
 
 ### Golden Spiral/Volume mechanics?
 
+- 8 block 8 blinker atom?
+
 Notice opposing directions of spiral patterns?
 
 <img width="356" alt="spacetimestop-tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/087dcb96-d61b-4f07-b041-e6af7eb88400">
@@ -135,18 +137,6 @@ x = 20, y = 20, rule = B3/S23
 Related to golden spiral mechanics and inital reaction residue/decay?
 
 ![Screen Recording 2023-08-03 at 11 26 37 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/97605187-ee54-481d-9e28-f235e18be39d)
-
-### 8 block 8 blinker atom?
-
-<img width="349" alt="Screen Shot 2023-08-25 at 3 13 13 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/342f0457-3fb3-4f51-8292-36c910f39158">
-
-```
-x = 20, y = 20, rule = B3/S23
-3b5o5b5o$2bo4bo4bo4bo$3o4b2ob3o4b2o$o3bo4b2o3bo4bo$o3b3o2b2o3b3o2bo$o
-2b3o3b2o2b3o3bo$o4bo3b2o4bo3bo$b2o4b3ob2o4b3o$2bo4bo4bo4bo$2b5o5b5o$3b
-5o5b5o$2bo4bo4bo4bo$3o4b2ob3o4b2o$o3bo4b2o3bo4bo$o3b3o2b2o3b3o2bo$o2b
-3o3b2o2b3o3bo$o4bo3b2o4bo3bo$b2o4b3ob2o4b3o$2bo4bo4bo4bo$2b5o5b5o!
-```
 
 ### Structured Collapse
 
