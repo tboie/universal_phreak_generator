@@ -415,13 +415,40 @@ o$9bobo$9bobo$10bo!
 
 Extensive Beginnings Concept:
 
+- Medium weight spaceships emerge
+
 <img width="308" alt="towards infinity tile extended" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/111d0b8f-905b-4c17-bd4c-174cc395354c">
 
-## A Lower Level?
-- every cell has it's own board
-- board resolution scaled
-- time scaled for glider to move 1 upper level unit in 1 upper level generation
-- tile created using 3x3 matrix of upper level cell neighborhood with gravity directed spin, inverted states and border
+```
+x = 70, y = 70, rule = B3/S23
+23bo$22bobo$22bobo$23bo2$18b2o7b2o$17bo2bo5bo2bo$18b2o7b2o$54bo$14bo8b
+o8bo20bobo$13bobo6bobo6bobo19bobo$13bobo6bobo6bobo20bo$14bo8bo8bo$49b
+2o7b2o$9b2o7b2o7b2o7b2o10bo2bo5bo2bo$8bo2bo5bo2bo5bo2bo5bo2bo10b2o7b2o
+$9b2o7b2o7b2o7b2o$54bo8bo$14bo17bo8bo11bobo6bobo$13bobo15bobo6bobo10bo
+bo6bobo$13bobo15bobo6bobo11bo8bo$14bo17bo8bo$24bo33b2o7b2o$23bobo10b2o
+7b2o10bo2bo5bo2bo$23bobo9bo2bo5bo2bo10b2o7b2o$24bo11b2o7b2o$54bo8bo$
+19b2o7b2o11bo11bobo6bobo$18bo2bo5bo2bo9bobo10bobo6bobo$19b2o7b2o10bobo
+11bo8bo$33b2ob2o3bo$15bo8bo7bo4bo11b2o7b2o$14bobo6bobo4b3o4b2o9bo2bo5b
+o2bo$14bobo6bobo4bo3bo4bo9b2o7b2o$15bo8bo11bo2bo$30bo2bo11bo8bo$10b2o
+7b2o9bo4bo3bo4bobo6bobo$9bo2bo5bo2bo9b2o4b3o4bobo6bobo$10b2o7b2o11bo4b
+o7bo8bo$28bo3b2ob2o$6bo8bo11bobo10b2o7b2o$5bobo6bobo10bobo9bo2bo5bo2bo
+$5bobo6bobo11bo11b2o7b2o$6bo8bo$23b2o7b2o11bo$b2o7b2o10bo2bo5bo2bo9bob
+o$o2bo5bo2bo10b2o7b2o10bobo$b2o7b2o33bo$28bo8bo17bo$6bo8bo11bobo6bobo
+15bobo$5bobo6bobo10bobo6bobo15bobo$5bobo6bobo11bo8bo17bo$6bo8bo$32b2o
+7b2o7b2o7b2o$10b2o7b2o10bo2bo5bo2bo5bo2bo5bo2bo$9bo2bo5bo2bo10b2o7b2o
+7b2o7b2o$10b2o7b2o$37bo8bo8bo$15bo20bobo6bobo6bobo$14bobo19bobo6bobo6b
+obo$14bobo20bo8bo8bo$15bo$41b2o7b2o$40bo2bo5bo2bo$41b2o7b2o2$46bo$45bo
+bo$45bobo$46bo!
+```
+
+## More levels/layers?
+
+if scaled, can they be represented with matter?
+
+- each cell contains resolution scaled matrix
+- tile is 3x3 matrix of upper level cell neighborhood, duplicated and rotated, with border and an inverted state for dead cells
+- gravity, light, time, matter (default) layers?
+- stack time history/state (ongoing reactions)
 
 rough prototype of example beehive:
 
