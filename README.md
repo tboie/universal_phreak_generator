@@ -412,3 +412,15 @@ x = 34, y = 34, rule = B3/S23
 $10bo11b2o7b2o2$5b2o7b2o11bo$4bo2bo5bo2bo9bobo$5b2o7b2o10bobo$27bo$10b
 o$9bobo$9bobo$10bo!
 ```
+
+## A Lower Level?
+- every cell has it's own board
+- board resolution scaled
+- time scaled for glider to move 1 upper level unit in 1 upper level generation
+- tile created using 3x3 matrix of upper level cell neighborhood with gravity directed spin, inverted states and border
+
+rough prototype of example beehive:
+
+<img width="81" alt="beehive" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a624a02f-e6d6-4c20-80e8-a2e06d6ba7f0">
+
+<img width="400" alt="lower level" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/4ffc3206-b735-47d8-b8cd-c4df2c500900">
