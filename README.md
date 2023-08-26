@@ -401,7 +401,7 @@ Concept:
 
 ## Towards Infinity Tile
 
-<img width="293" alt="Screen Shot 2023-08-25 at 6 47 23 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/823de780-c931-49c2-aa5c-a4ee92cb86a8">
+<img width="293" alt="towards infinity tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/823de780-c931-49c2-aa5c-a4ee92cb86a8">
 
 ```
 x = 34, y = 34, rule = B3/S23
@@ -412,6 +412,10 @@ x = 34, y = 34, rule = B3/S23
 $10bo11b2o7b2o2$5b2o7b2o11bo$4bo2bo5bo2bo9bobo$5b2o7b2o10bobo$27bo$10b
 o$9bobo$9bobo$10bo!
 ```
+
+Extensive Beginnings Concept:
+
+<img width="308" alt="towards infinity tile extended" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/111d0b8f-905b-4c17-bd4c-174cc395354c">
 
 ## A Lower Level?
 - every cell has it's own board
