@@ -450,11 +450,12 @@ Example beehive gravity geometry:
 
 - each cell contains resolution scaled matrix
 - tile is 3x3 matrix of upper level cell neighborhood, duplicated and rotated, with border and an inverted state for dead cells
+
 rough prototype of example beehive:
 
 <img width="81" alt="beehive" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a624a02f-e6d6-4c20-80e8-a2e06d6ba7f0">
 
-<img width="401" alt="lower level" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/0be9561a-bbdb-44c9-be6c-c92366a1869d">
+<img width="404" alt="lower level beehive" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3c2b108e-0d3d-417c-b73b-eb4575653f70">
 
 ```
 x = 100, y = 120, rule = B3/S23
@@ -539,7 +540,7 @@ Cell Border Example:
 
 <img width="80" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
 
-<img width="402" alt="lower levl cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/8bc04378-4d24-4328-a40e-2dbe6349182f">
+<img width="400" alt="lower level cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/336ef35d-ec71-4104-a170-1a69a1bb22ec">
 
 ```
 x = 100, y = 100, rule = B3/S23
