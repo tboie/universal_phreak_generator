@@ -441,15 +441,15 @@ obo$14bobo20bo8bo8bo$15bo$41b2o7b2o$40bo2bo5bo2bo$41b2o7b2o2$46bo$45bo
 bo$45bobo$46bo!
 ```
 
-## More levels/layers?
+## Visualize more levels/layers?
 
-if scaled, can they be represented with matter?
+- gravity, light, time, life (default and visible)?
+- can they be modelled within this system?  Are they "hidden" mathematics?
+
+Example beehive gravity geometry:
 
 - each cell contains resolution scaled matrix
 - tile is 3x3 matrix of upper level cell neighborhood, duplicated and rotated, with border and an inverted state for dead cells
-- gravity, light, time, matter (default) layers?
-- stack time history/state (ongoing reactions)
-
 rough prototype of example beehive:
 
 <img width="81" alt="beehive" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a624a02f-e6d6-4c20-80e8-a2e06d6ba7f0">
