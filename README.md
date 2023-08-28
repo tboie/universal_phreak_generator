@@ -441,14 +441,11 @@ obo$14bobo20bo8bo8bo$15bo$41b2o7b2o$40bo2bo5bo2bo$41b2o7b2o2$46bo$45bo
 bo$45bobo$46bo!
 ```
 
-## Visualize more levels/layers?
+## System mechanics visualization
 
-- gravity, light, time, life (default and visible)?
-- can they be modelled within this system?  Are they "hidden" mathematics?
+Example of a dead cell with border:
 
-Example gravity geometry of a dead cell with border:
-
-- each cell contains a 12x12 matrix with 6x6 tiles of a rotated 3x3 tile of the cell neighborhood 
+- each cell contains a 6x6 matrix with rotated 3x3 tiles of the cell neighborhood
 
 <img width="80" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
 
