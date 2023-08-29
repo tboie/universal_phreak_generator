@@ -465,9 +465,9 @@ o$bo5b2o4b3o3b2o4bo$3b2o5bo3b3o5bo4b2o$o5b2ob2ob3obob2ob2obo$o6bo4bo3b
 
 ## Minimal system deployment
 
-<img width="129" alt="minimal system deployment" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/c90bedb1-1d6c-4512-8994-feec097f57ae">
+<img width="128" alt="minimal system deployment" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/6e4bfd88-adc7-4baa-9116-75b2fffc5ecf">
 
 ```
 x = 6, y = 6, rule = B3/S23
-o2b3o$2ob2o$2o$4b2o$b2ob2o$3o2bo!
+3o2bo$b2ob2o$4b2o$2o$2ob2o$o2b3o!
 ```
