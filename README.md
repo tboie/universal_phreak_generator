@@ -465,13 +465,9 @@ o$bo5b2o4b3o3b2o4bo$3b2o5bo3b3o5bo4b2o$o5b2ob2ob3obob2ob2obo$o6bo4bo3b
 
 ## Minimal system deployment
 
-1. Rotate 1 cell around to create a block
-2. Rotate 2 cells around the block
-3. Rotate 3 cells around the block
-
-<img width="127" alt="minimal deployment" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2d160d0e-4519-455c-8a14-ee0630dff133">
+<img width="129" alt="minimal system deployment" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/c90bedb1-1d6c-4512-8994-feec097f57ae">
 
 ```
 x = 6, y = 6, rule = B3/S23
-3o2bo$b2ob2o$2b4o$4o$2ob2o$o2b3o!
+o2b3o$2ob2o$2o$4b2o$b2ob2o$3o2bo!
 ```
