@@ -465,6 +465,10 @@ o$bo5b2o4b3o3b2o4bo$3b2o5bo3b3o5bo4b2o$o5b2ob2ob3obob2ob2obo$o6bo4bo3b
 
 ## Minimal system deployment
 
+1. Rotate 1 cell around to create a block
+2. Rotate 2 cells around the block
+3. Rotate 3 cells around the block
+
 <img width="127" alt="minimal deployment" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2d160d0e-4519-455c-8a14-ee0630dff133">
 
 ```
