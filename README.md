@@ -462,3 +462,12 @@ o$bo5b2o4b3o3b2o4bo$3b2o5bo3b3o5bo4b2o$o5b2ob2ob3obob2ob2obo$o6bo4bo3b
 2o5bo$b2o4bo5b3o3bo5b2o$4bo4b2o3b3o4b2o5bo$o5bo5bo5bo5bo$6bo5bo4b2o$
 11b2o4bo5bo$5bo5bo5bo5bo5bo$bo5b2o4b3o3b2o4bo!
 ```
+
+## Minimal system deployment
+
+<img width="127" alt="minimal deployment" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2d160d0e-4519-455c-8a14-ee0630dff133">
+
+```
+x = 6, y = 6, rule = B3/S23
+3o2bo$b2ob2o$2b4o$4o$2ob2o$o2b3o!
+```
