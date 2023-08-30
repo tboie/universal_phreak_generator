@@ -439,6 +439,8 @@ bo$45bobo$46bo!
 
 ## System mechanics visualization
 
+TODO: fix tiles
+
 Example of a dead cell with border:
 
 - each cell contains a 6x6 matrix with rotated 3x3 tiles of the cell neighborhood
