@@ -365,11 +365,7 @@ Concept:
 
 - "Molecular Modelling" from arrangement of tesselated tiles?
   - ex) reaction from arrangement of tesselated tiles (spacing? 1 tile base scale?) leaving a "nucleus" or mix of uniform/combined patterns? and potential further reactions from outwards gliders.
-  - block = proton
-  - beehive = neutron
-  - blinker = electron
-  - glider = neutrino
-  - glider with speed x 4? size scaled? different layer? = photon
+  - Comparisons to other models?
  
 - Wavepoints?
   - is cell information streamed outwards in all space at distance 1 per generation while a cell is "alive"?
