@@ -443,7 +443,7 @@ TODO: fix tiles?
 
 Example of a dead cell with border:
 
-- each cell contains a four 6x6 matrix with rotated 3x3 tiles of the cell neighborhood
+- each cell contains a four 6x6 matrices with rotated 3x3 tiles of the cell neighborhood
 
 <img width="80" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
 
