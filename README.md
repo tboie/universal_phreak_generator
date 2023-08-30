@@ -519,3 +519,13 @@ obo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o
 x = 6, y = 6, rule = B3/S23
 3o2bo$b2ob2o$4b2o$2o$2ob2o$o2b3o!
 ```
+
+Same result?
+
+<img width="127" alt="minimal system deployment 2" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f171ff31-2421-42a3-ba51-7273e44278de">
+
+
+```
+x = 6, y = 6, rule = B3/S23
+3o2bo$b2ob2o$2b4o$4o$2ob2o$o2b3o!
+```
