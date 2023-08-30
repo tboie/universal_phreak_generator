@@ -447,18 +447,41 @@ Example of a dead cell with border:
 
 <img width="80" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
 
-<img width="244" alt="lower level cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/e125ee28-c244-4943-a9c3-9d4c3fbd3632">
+<img width="494" alt="lower level cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/e90520e0-dfe4-42e2-ba7a-2313b26e35d2">
 
 ```
-x = 30, y = 30, rule = B3/S23
-4bo4b2o3b3o4b2o5bo$o5bo5bo5bo5bo$6bo5bo4b2o$11b2o4bo5bo$5bo5bo5bo5bo5b
-o$bo5b2o4b3o3b2o4bo$3b2o5bo3b3o5bo4b2o$o5b2ob2ob3obob2ob2obo$o6bo4bo3b
-2obo4bo$5bo4bob2o3bo4bo6bo$5bob2ob2obob3ob2ob2o5bo$b2o4bo5b3o3bo5b2o$
-2b3o3b3ob6o2b3o3b3o$o5b3obobob2ob4obobo$o4b2o3b9o3b3o4bo$o4b3o3b9o3b2o
-4bo$5bobob4ob2obobob3o5bo$b3o3b3o2b6ob3o3b3o$3b2o5bo3b3o5bo4b2o$o5b2ob
-2ob3obob2ob2obo$o6bo4bo3b2obo4bo$5bo4bob2o3bo4bo6bo$5bob2ob2obob3ob2ob
-2o5bo$b2o4bo5b3o3bo5b2o$4bo4b2o3b3o4b2o5bo$o5bo5bo5bo5bo$6bo5bo4b2o$
-11b2o4bo5bo$5bo5bo5bo5bo5bo$bo5b2o4b3o3b2o4bo!
+x = 60, y = 60, rule = B3/S23
+4bo5bo4b2o4b2o3b3o3b3o4b2o4b2o5bo5bo$o5bo5bo5bo5bo5bo5bo5bo5bo5bo$12bo
+5bo5bo4b2o4b2o5bo$17bo5b2o4b2o4bo5bo5bo$5bo5bo5bo5bo5bo5bo5bo5bo5bo5bo
+$bo5bo5b2o4b2o4b3o3b3o3b2o4b2o4bo5bo$4bo5bo4b2o4b2o3b3o3b3o4b2o4b2o5bo
+5bo$o5bo5bo5bo5bo5bo5bo5bo5bo5bo$12bo5bo5bo4b2o4b2o5bo$17bo5b2o4b2o4bo
+5bo5bo$5bo5bo5bo5bo5bo5bo5bo5bo5bo5bo$bo5bo5b2o4b2o4b3o3b3o3b2o4b2o4bo
+5bo$3b2o4b2o5bo5bo3bobo3bobo5bo5bo4b2o4b2o$o5bo5b2ob2ob2ob2ob5ob5ob2ob
+2ob2ob2obo5bo$o5bo6bo5bo5bo2b2obo2b2obo5bo4bo5bo$5bo5bo4bo5bob2o2bob2o
+2bo5bo5bo6bo5bo$5bo5bob2ob2ob2ob2ob5ob5ob2ob2ob2ob2o5bo5bo$b2o4b2o4bo
+5bo5bobo3bobo3bo5bo5b2o4b2o$3b2o4b2o5bo5bo3bobo3bobo5bo5bo4b2o4b2o$o5b
+o5b2ob2ob2ob2ob5ob5ob2ob2ob2ob2obo5bo$o5bo6bo5bo5bo2b2obo2b2obo5bo4bo
+5bo$5bo5bo4bo5bob2o2bob2o2bo5bo5bo6bo5bo$5bo5bob2ob2ob2ob2ob5ob5ob2ob
+2ob2ob2o5bo5bo$b2o4b2o4bo5bo5bobo3bobo3bo5bo5b2o4b2o$2b3o3b3o3bobo3bob
+ob12o2bobo3bobo3b3o3b3o$o5bo5b5ob5obob2ob2ob2ob6ob5obo5bo$o4b2o4bobo2b
+2obo2b14obo2b2obo2b3o4b2o4bo$o4b2o4b3o2bob2o2bob14o2bob2o2bobo4b2o4bo$
+5bo5bob5ob6ob2ob2ob2obob5ob5o5bo5bo$b3o3b3o3bobo3bobo2b12obobo3bobo3b
+3o3b3o$2b3o3b3o3bobo3bobob12o2bobo3bobo3b3o3b3o$o5bo5b5ob5obob2ob2ob2o
+b6ob5obo5bo$o4b2o4bobo2b2obo2b14obo2b2obo2b3o4b2o4bo$o4b2o4b3o2bob2o2b
+ob14o2bob2o2bobo4b2o4bo$5bo5bob5ob6ob2ob2ob2obob5ob5o5bo5bo$b3o3b3o3bo
+bo3bobo2b12obobo3bobo3b3o3b3o$3b2o4b2o5bo5bo3bobo3bobo5bo5bo4b2o4b2o$o
+5bo5b2ob2ob2ob2ob5ob5ob2ob2ob2ob2obo5bo$o5bo6bo5bo5bo2b2obo2b2obo5bo4b
+o5bo$5bo5bo4bo5bob2o2bob2o2bo5bo5bo6bo5bo$5bo5bob2ob2ob2ob2ob5ob5ob2ob
+2ob2ob2o5bo5bo$b2o4b2o4bo5bo5bobo3bobo3bo5bo5b2o4b2o$3b2o4b2o5bo5bo3bo
+bo3bobo5bo5bo4b2o4b2o$o5bo5b2ob2ob2ob2ob5ob5ob2ob2ob2ob2obo5bo$o5bo6bo
+5bo5bo2b2obo2b2obo5bo4bo5bo$5bo5bo4bo5bob2o2bob2o2bo5bo5bo6bo5bo$5bo5b
+ob2ob2ob2ob2ob5ob5ob2ob2ob2ob2o5bo5bo$b2o4b2o4bo5bo5bobo3bobo3bo5bo5b
+2o4b2o$4bo5bo4b2o4b2o3b3o3b3o4b2o4b2o5bo5bo$o5bo5bo5bo5bo5bo5bo5bo5bo
+5bo$12bo5bo5bo4b2o4b2o5bo$17bo5b2o4b2o4bo5bo5bo$5bo5bo5bo5bo5bo5bo5bo
+5bo5bo5bo$bo5bo5b2o4b2o4b3o3b3o3b2o4b2o4bo5bo$4bo5bo4b2o4b2o3b3o3b3o4b
+2o4b2o5bo5bo$o5bo5bo5bo5bo5bo5bo5bo5bo5bo$12bo5bo5bo4b2o4b2o5bo$17bo5b
+2o4b2o4bo5bo5bo$5bo5bo5bo5bo5bo5bo5bo5bo5bo5bo$bo5bo5b2o4b2o4b3o3b3o3b
+2o4b2o4bo5bo!
 ```
 
 ## Infinite Angle (testing system mechanics)
