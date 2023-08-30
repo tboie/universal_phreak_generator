@@ -554,3 +554,13 @@ Same result?
 x = 6, y = 6, rule = B3/S23
 3o2bo$b2ob2o$2b4o$4o$2ob2o$o2b3o!
 ```
+
+## Why does blinker with middle at 0,0 have dead energy floating point difference?
+
+```
+  1.0000000000000036
+- 0.9999999999999964
+= 0.000000000000007 (7x10^-15 femto)
+```
+
+NOTE: 7 is sum of prime factors (2+5) for a quadrillion (1x10^15)
