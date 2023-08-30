@@ -464,7 +464,7 @@ o$bo5b2o4b3o3b2o4bo$3b2o5bo3b3o5bo4b2o$o5b2ob2ob3obob2ob2obo$o6bo4bo3b
 ## Infinite Angle (testing system mechanics)
 
 - tile design is the space between a particle and a side
-- eternal gliders emerge from the center of a square after fully lighting the area
+- eternal gliders emerge from the center of a square after it is fully lit
 
 <img width="129" alt="infinite reflections" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/27e58374-19c6-460b-8264-9fc981a62fb4">
 
