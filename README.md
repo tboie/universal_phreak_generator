@@ -120,6 +120,8 @@ o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
 
 ### Golden Spiral/Volume mechanics?
 
+- 8 block 8 blinker atom?
+
 Notice opposing directions of spiral patterns?
 
 <img width="356" alt="spacetimestop-tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/087dcb96-d61b-4f07-b041-e6af7eb88400">
@@ -298,11 +300,14 @@ x = 12, y = 12, rule = B3/S23
 bo$2b2obo2b2obo$5ob5o$b5ob5o$ob2o2bob2o$obob3obob2o!
 ```
 
-## Smallest Outward Glider Tile
+## Smallest Outward Glider Tiles
+Base form at which information travels in all directions indefinitely?
 
-- This is conceptually interesting
-- Is 10x10 the smallest?
-
+- 10x10
+- tesselated reaction is constant result of only outward gliders
+- tiles spaced at varying distances result in groups of gliders outwards in corners (wavepacket?)
+- what if gliders were moving at 1 per generation?
+  
 <img width="197" alt="outwards-glider" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/89e14d7c-4641-4f31-9c03-da77ead1585d">
 
 ```
@@ -311,23 +316,38 @@ x = 10, y = 10, rule = B3/S23
 2o!
 ```
 
-## Universal Pattern/Tile Generator
+- 8x8
+- reaction result not constant
+- reaction at tesselation size 256x256 is interesting
+    - inner gliders movement change
+    - octagon to square to octagon?
+
+<img width="160" alt="Screen Shot 2023-08-23 at 12 51 32 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5c2c34cc-7ef2-41ba-9f17-eeae60f5ec77">
+
+```
+x = 8, y = 8, rule = B3/S23
+2obo3bo$bob2ob2o$2b2obo$bo3b3o$3o3bo$2bob2o$2ob2obo$o3bob2o!
+```
+
+## Universal Tile Generator
 
 ### _Squared Version_
 
-1.  Assign random bits (rotating 3d cubes?) to _x_ size matrix(s) representing a quadrant
-2.  Rotate matrix(s) clockwise for quadrants to form a tile
+1.  Assign random bits to _x_ size matrix(s) representing a quadrant
+2.  Rotate matrix(s) clockwise for quadrants 2, 3, and 4 to form a tile
 3.  Goto next generation and check for changes
 4.  Scale tiling area
 5.  Go to next generation and check for changes
 6.  Repeat step 4
+
+- Detect tiles naturally generated at singularity of reactions?
 
 ## Universal Border Generator
 
 - random border pattern generator
 - variations in corners?
 
-## Universal Core Generator
+## Universal Core Generator aka Pattern Poppers
 
 Logo:
 <img width="267" alt="Screen Shot 2023-06-29 at 12 16 57 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38a04458-1c28-481f-93eb-ec9ea1a0a092">
@@ -339,12 +359,15 @@ Concept:
 ## Theories in progress
 
 - "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form. The resulting sequence might be squared at scale?
-  - Is there a tile that emits gliders outwards? This has been to observed to start happening for a tile x 4.
+  - Is there a tile that emits gliders outwards?  This has been to observed to start happening for a tile x 4.
 - Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
 - Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
 
+- "Molecular Modelling" from arrangement of tesselated tiles?
+  - ex) reaction from arrangement of tesselated tiles (spacing? 1 tile base scale?) leaving a "nucleus" or mix of uniform/combined patterns? and potential further reactions from outwards gliders.
+  - Comparisons to other models?
+ 
 - Wavepoints?
-
   - is cell information streamed outwards in all space at distance 1 per generation while a cell is "alive"?
   - store when cell is toggled?
 
@@ -368,4 +391,188 @@ Concept:
 
 ## Starting banger?
 
+- Glider wave packet most likely analogy for energy flux source?
+
 <img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
+
+## Towards Infinity Tile
+
+<img width="293" alt="towards infinity tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/823de780-c931-49c2-aa5c-a4ee92cb86a8">
+
+```
+x = 34, y = 34, rule = B3/S23
+23bo$22bobo$22bobo$23bo$6bo$5bobo10b2o7b2o$5bobo9bo2bo5bo2bo$6bo11b2o
+7b2o2$b2o7b2o11bo$o2bo5bo2bo9bobo$b2o7b2o10bobo$15b2ob2o3bo$6bo7bo4bo$
+5bobo4b3o4b2o$5bobo4bo3bo4bo$6bo11bo2bo$12bo2bo11bo$12bo4bo3bo4bobo$
+13b2o4b3o4bobo$14bo4bo7bo$10bo3b2ob2o$9bobo10b2o7b2o$9bobo9bo2bo5bo2bo
+$10bo11b2o7b2o2$5b2o7b2o11bo$4bo2bo5bo2bo9bobo$5b2o7b2o10bobo$27bo$10b
+o$9bobo$9bobo$10bo!
+```
+
+Extensive Beginnings Concept:
+
+- Medium weight spaceships emerge
+
+<img width="308" alt="towards infinity tile extended" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/111d0b8f-905b-4c17-bd4c-174cc395354c">
+
+```
+x = 70, y = 70, rule = B3/S23
+23bo$22bobo$22bobo$23bo2$18b2o7b2o$17bo2bo5bo2bo$18b2o7b2o$54bo$14bo8b
+o8bo20bobo$13bobo6bobo6bobo19bobo$13bobo6bobo6bobo20bo$14bo8bo8bo$49b
+2o7b2o$9b2o7b2o7b2o7b2o10bo2bo5bo2bo$8bo2bo5bo2bo5bo2bo5bo2bo10b2o7b2o
+$9b2o7b2o7b2o7b2o$54bo8bo$14bo17bo8bo11bobo6bobo$13bobo15bobo6bobo10bo
+bo6bobo$13bobo15bobo6bobo11bo8bo$14bo17bo8bo$24bo33b2o7b2o$23bobo10b2o
+7b2o10bo2bo5bo2bo$23bobo9bo2bo5bo2bo10b2o7b2o$24bo11b2o7b2o$54bo8bo$
+19b2o7b2o11bo11bobo6bobo$18bo2bo5bo2bo9bobo10bobo6bobo$19b2o7b2o10bobo
+11bo8bo$33b2ob2o3bo$15bo8bo7bo4bo11b2o7b2o$14bobo6bobo4b3o4b2o9bo2bo5b
+o2bo$14bobo6bobo4bo3bo4bo9b2o7b2o$15bo8bo11bo2bo$30bo2bo11bo8bo$10b2o
+7b2o9bo4bo3bo4bobo6bobo$9bo2bo5bo2bo9b2o4b3o4bobo6bobo$10b2o7b2o11bo4b
+o7bo8bo$28bo3b2ob2o$6bo8bo11bobo10b2o7b2o$5bobo6bobo10bobo9bo2bo5bo2bo
+$5bobo6bobo11bo11b2o7b2o$6bo8bo$23b2o7b2o11bo$b2o7b2o10bo2bo5bo2bo9bob
+o$o2bo5bo2bo10b2o7b2o10bobo$b2o7b2o33bo$28bo8bo17bo$6bo8bo11bobo6bobo
+15bobo$5bobo6bobo10bobo6bobo15bobo$5bobo6bobo11bo8bo17bo$6bo8bo$32b2o
+7b2o7b2o7b2o$10b2o7b2o10bo2bo5bo2bo5bo2bo5bo2bo$9bo2bo5bo2bo10b2o7b2o
+7b2o7b2o$10b2o7b2o$37bo8bo8bo$15bo20bobo6bobo6bobo$14bobo19bobo6bobo6b
+obo$14bobo20bo8bo8bo$15bo$41b2o7b2o$40bo2bo5bo2bo$41b2o7b2o2$46bo$45bo
+bo$45bobo$46bo!
+```
+
+## System mechanics visualization
+
+TODO: fix tiles?
+
+Example of a dead cell with border:
+
+- each cell contains a four 6x6 matrices with rotated 3x3 tiles of the cell neighborhood
+
+<img width="80" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
+
+<img width="486" alt="lower level cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2d03ec9a-49ea-4959-902f-3368153ecab8">
+
+```
+x = 60, y = 60, rule = B3/S23
+o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$17bo5bo5b2o5bo5bo$29b2o$24bo
+10bo$12bo5bo5bo10bo5bo5bo$o4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$o4b
+2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$17bo5bo5b2o5bo5bo$29b2o$24bo10bo
+$12bo5bo5bo10bo5bo5bo$o4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$2o3b3o
+3b3o2b4o2b2ob3o4b3ob2o2b4o2b3o3b3o3b2o$5bo5b2o4b2o4bobob6obobo4b2o4b2o
+5bo$24b2o3b2o3b2o$24bo3b4o3bo$o5bo5bo4b2o4b4obo2bob4o4b2o4bo5bo5bo$o3b
+3o3b4o2b4o2b2o2b3o2b3o2b2o2b4o2b4o3b3o3bo$2o3b3o3b3o2b4o2b2o2b3o2b3o2b
+2o2b4o2b3o3b3o3b2o$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$24bo3b4o3bo$24b
+2o3b2o3b2o$o5bo5bo4b2o4bobob6obobo4b2o4bo5bo5bo$o3b3o3b4o2b4o2b2ob3o4b
+3ob2o2b4o2b4o3b3o3bo$o2b4o2b3o2b3o2b3o2b12o2b3o2b3o2b3o2b4o2bo$o5bo5b
+3obo2bob4ob2ob2ob2ob4obo2bob3o5bo5bo$o5bo5bo3b4o3b14o3b4o3bo5bo5bo$5bo
+5b3o3b2o3b16o3b2o3b3o5bo$5bo5bobob6obobob2ob2ob2obobob6obobo5bo$3o2b4o
+2bob3o4b3ob12ob3o4b3obo2b4o2b3o$3o2b4o2bob3o4b3ob12ob3o4b3obo2b4o2b3o$
+5bo5bobob6obobob2ob2ob2obobob6obobo5bo$5bo5b3o3b2o3b16o3b2o3b3o5bo$o5b
+o5bo3b4o3b14o3b4o3bo5bo5bo$o5bo5b3obo2bob4ob2ob2ob2ob4obo2bob3o5bo5bo$
+o2b4o2b3o2b3o2b3o2b12o2b3o2b3o2b3o2b4o2bo$o3b3o3b4o2b4o2b2ob3o4b3ob2o
+2b4o2b4o3b3o3bo$o5bo5bo4b2o4bobob6obobo4b2o4bo5bo5bo$24b2o3b2o3b2o$24b
+o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
+2b2o2b4o2b3o3b3o3b2o$o3b3o3b4o2b4o2b2o2b3o2b3o2b2o2b4o2b4o3b3o3bo$o5bo
+5bo4b2o4b4obo2bob4o4b2o4bo5bo5bo$24bo3b4o3bo$24b2o3b2o3b2o$5bo5b2o4b2o
+4bobob6obobo4b2o4b2o5bo$2o3b3o3b3o2b4o2b2ob3o4b3ob2o2b4o2b3o3b3o3b2o$o
+4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$12bo5bo5bo10bo5bo5bo$24bo10bo$
+29b2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$o4b2o
+4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$12bo5bo5bo10bo5bo5bo$24bo10bo$29b
+2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo!
+```
+
+## Infinite Angle (testing system mechanics)
+
+- tile design is the space between a particle and a side
+- eternal gliders emerge from the center of a square after it is fully lit
+
+<img width="129" alt="infinite reflections" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/27e58374-19c6-460b-8264-9fc981a62fb4">
+
+```
+x = 60, y = 60, rule = B3/S23
+2bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$obo3bobo3bobo3bobo
+3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b
+4o$4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o$3bobo3bobo3bobo3bobo3bobo3bo
+bo3bobo3bobo3bobo3bobo$bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bo
+bo$2bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$obo3bobo3bobo3bo
+bo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o
+2b4o$4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o$3bobo3bobo3bobo3bobo3bobo
+3bobo3bobo3bobo3bobo3bobo$bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo
+3bobo$2bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$obo3bobo3bobo
+3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b
+4o2b4o$4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o$3bobo3bobo3bobo3bobo3bob
+o3bobo3bobo3bobo3bobo3bobo$bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bob
+o3bobo$2bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$obo3bobo3bob
+o3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o
+2b4o2b4o$4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o$3bobo3bobo3bobo3bobo3b
+obo3bobo3bobo3bobo3bobo3bobo$bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3b
+obo3bobo$2bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$obo3bobo3b
+obo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b
+4o2b4o2b4o$4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o$3bobo3bobo3bobo3bobo
+3bobo3bobo3bobo3bobo3bobo3bobo$bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo
+3bobo3bobo$2bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$obo3bobo
+3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o2b4o2b4o
+2b4o2b4o2b4o$4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o$3bobo3bobo3bobo3bo
+bo3bobo3bobo3bobo3bobo3bobo3bobo$bobo3bobo3bobo3bobo3bobo3bobo3bobo3bo
+bo3bobo3bobo$2bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$obo3bo
+bo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o2b4o2b
+4o2b4o2b4o2b4o$4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o$3bobo3bobo3bobo
+3bobo3bobo3bobo3bobo3bobo3bobo3bobo$bobo3bobo3bobo3bobo3bobo3bobo3bobo
+3bobo3bobo3bobo$2bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$obo
+3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o2b4o
+2b4o2b4o2b4o2b4o$4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o$3bobo3bobo3bob
+o3bobo3bobo3bobo3bobo3bobo3bobo3bobo$bobo3bobo3bobo3bobo3bobo3bobo3bob
+o3bobo3bobo3bobo$2bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$ob
+o3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o2b
+4o2b4o2b4o2b4o2b4o$4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o$3bobo3bobo3b
+obo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$bobo3bobo3bobo3bobo3bobo3bobo3b
+obo3bobo3bobo3bobo$2bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$
+obo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o
+2b4o2b4o2b4o2b4o2b4o$4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o2b4o$3bobo3bobo
+3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$bobo3bobo3bobo3bobo3bobo3bobo
+3bobo3bobo3bobo3bobo!
+```
+
+## Minimal system deployment
+
+<img width="128" alt="minimal system deployment" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/6e4bfd88-adc7-4baa-9116-75b2fffc5ecf">
+
+```
+x = 6, y = 6, rule = B3/S23
+3o2bo$b2ob2o$4b2o$2o$2ob2o$o2b3o!
+```
+
+Same result?
+
+<img width="127" alt="minimal system deployment 2" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f171ff31-2421-42a3-ba51-7273e44278de">
+
+
+```
+x = 6, y = 6, rule = B3/S23
+3o2bo$b2ob2o$2b4o$4o$2ob2o$o2b3o!
+```
+
+## Why does blinker with middle at 0,0 have dead energy floating point difference?
+
+```
+  1.0000000000000036
+- 0.9999999999999964
+= 0.000000000000007 (7x10^-15 femto)
+```
+
+NOTE: 7 is sum of prime factors (2+5) for a quadrillion (1x10^15)
+
+## Minimal Creation
+
+1. A cell exists. Define area.
+
+<img width="52" alt="define cell" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3b935aa7-3581-4223-a24a-cfc70cae7cd9">
+
+2. Define pieces from cell.
+
+<img width="177" alt="define cell pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5ae1c7c7-ca5d-46af-9f68-1c2f5b01f163">
+
+3. Define areas from pieces.
+
+<img width="305" alt="define areas" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/317352a5-f4d5-40d7-9bbc-be6ff337a853">
+
+Result:
+
+<img width="329" alt="minimal creation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/0f4c3648-8947-435e-b7d4-95c8d3d621d9">
