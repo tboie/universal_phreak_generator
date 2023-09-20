@@ -2,6 +2,12 @@
 
 ## A spiraling collection of virtual measurements
 
+### authored by: p4tt3rn p0pp3rS . y0ch0
+
+<img width="267" alt="Screen Shot 2023-06-29 at 12 16 57 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38a04458-1c28-481f-93eb-ec9ea1a0a092">
+
+## Pattern Balance Technique
+
 <img width="700" alt="concept" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06d05e6a-1baa-4f8b-9880-b3b41d98967d">
 
 1.  X pattern is horizontal
@@ -301,13 +307,14 @@ bo$2b2obo2b2obo$5ob5o$b5ob5o$ob2o2bob2o$obob3obob2o!
 ```
 
 ## Smallest Outward Glider Tiles
+
 Base form at which information travels in all directions indefinitely?
 
 - 10x10
 - tesselated reaction is constant result of only outward gliders
 - tiles spaced at varying distances result in groups of gliders outwards in corners (wavepacket?)
 - what if gliders were moving at 1 per generation?
-  
+
 <img width="197" alt="outwards-glider" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/89e14d7c-4641-4f31-9c03-da77ead1585d">
 
 ```
@@ -319,8 +326,8 @@ x = 10, y = 10, rule = B3/S23
 - 8x8
 - reaction result not constant
 - reaction at tesselation size 256x256 is interesting
-    - inner gliders movement change
-    - octagon to square to octagon?
+  - inner gliders movement change
+  - octagon to square to octagon?
 
 <img width="160" alt="Screen Shot 2023-08-23 at 12 51 32 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5c2c34cc-7ef2-41ba-9f17-eeae60f5ec77">
 
@@ -329,12 +336,12 @@ x = 8, y = 8, rule = B3/S23
 2obo3bo$bob2ob2o$2b2obo$bo3b3o$3o3bo$2bob2o$2ob2obo$o3bob2o!
 ```
 
-## Universal Tile Generator
+## Universal Pattern/Tile Generator
 
 ### _Squared Version_
 
-1.  Assign random bits to _x_ size matrix(s) representing a quadrant
-2.  Rotate matrix(s) clockwise for quadrants 2, 3, and 4 to form a tile
+1.  Assign random bits (rotating 3d cubes?) to _x_ size matrix(s) representing a quadrant
+2.  Rotate matrix(s) clockwise for quadrants to form a tile
 3.  Goto next generation and check for changes
 4.  Scale tiling area
 5.  Go to next generation and check for changes
@@ -347,10 +354,7 @@ x = 8, y = 8, rule = B3/S23
 - random border pattern generator
 - variations in corners?
 
-## Universal Core Generator aka Pattern Poppers
-
-Logo:
-<img width="267" alt="Screen Shot 2023-06-29 at 12 16 57 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38a04458-1c28-481f-93eb-ec9ea1a0a092">
+## Universal Core Generator
 
 Concept:
 
@@ -359,15 +363,17 @@ Concept:
 ## Theories in progress
 
 - "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form. The resulting sequence might be squared at scale?
-  - Is there a tile that emits gliders outwards?  This has been to observed to start happening for a tile x 4.
+  - Is there a tile that emits gliders outwards? This has been to observed to start happening for a tile x 4.
 - Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
 - Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
 
 - "Molecular Modelling" from arrangement of tesselated tiles?
+
   - ex) reaction from arrangement of tesselated tiles (spacing? 1 tile base scale?) leaving a "nucleus" or mix of uniform/combined patterns? and potential further reactions from outwards gliders.
   - Comparisons to other models?
- 
+
 - Wavepoints?
+
   - is cell information streamed outwards in all space at distance 1 per generation while a cell is "alive"?
   - store when cell is toggled?
 
@@ -542,7 +548,6 @@ x = 6, y = 6, rule = B3/S23
 Same result?
 
 <img width="127" alt="minimal system deployment 2" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f171ff31-2421-42a3-ba51-7273e44278de">
-
 
 ```
 x = 6, y = 6, rule = B3/S23
