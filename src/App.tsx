@@ -196,6 +196,7 @@ function App() {
 
   // calculate change in energy
   function oNextGeneration(board: any[]) {
+    /*
     // Alive Energy
     const aliveBoard = board;
 
@@ -319,6 +320,7 @@ function App() {
 
     prevAliveBoard = [...aliveBoard];
     prevDeadBoard = [...deadBoard];
+    */
 
     return {};
   }
@@ -329,7 +331,7 @@ function App() {
         //console.log(game.getCells());
       });
 
-      //game.speedUp(20);
+      game.speedUp(20);
 
       /* 4 glider spiral base
       const gliders = [
@@ -583,6 +585,7 @@ function App() {
       // when density ascends outward, does the strucuture resemble
       // half spun reverse populated golden spiral probability?
 
+      /*
       const cells = 256; // 4624; // 34 x 34 // 4624
       const points = [...take(cells)(spiralOut(0))];
 
@@ -611,6 +614,47 @@ function App() {
         }
         //}
       });
+      */
+
+      /*  Circle
+      TODO?: multiple circle lines with decay like a wave and circular wave effect using time 
+
+      example circle line decay:
+      .    .    .    .
+      .  .  .  .  .  .
+      . . . . . . . . .
+      .................
+      . . . . . . . . .
+      .  .  .  .  .  .
+      .    .    .    .
+      */
+
+      // center
+      let h = 0;
+      let k = 0;
+
+      // radius
+      let r = 50;
+
+      // circles inward using radius
+      // for (let n = r; n > 0; n -= 2) {
+      // custom step for circle points
+      // let step = (2 * Math.PI) / (n * (50 / n));
+      // r = n;
+
+      let step = (2 * Math.PI) / 300;
+
+      // circle
+      for (let theta = 0; theta < 2 * Math.PI; theta += step) {
+        let x = h + r * Math.cos(theta);
+        let y = k - r * Math.sin(theta);
+
+        x = Math.round(x);
+        y = Math.round(y);
+
+        game.bornCell({ x: x, y: y });
+      }
+      //}
 
       /* inwards stream of gliders from four quadrants */
       // TODO: rough concept, more precision desired...
