@@ -453,7 +453,7 @@ Example of a dead cell with border:
 
 <img width="80" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
 
-<img width="486" alt="lower level cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2d03ec9a-49ea-4959-902f-3368153ecab8">
+<img width="486" alt="cell border lower level" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/444711c5-bfa0-47f2-b955-ed90866bd205">
 
 ```
 x = 60, y = 60, rule = B3/S23
