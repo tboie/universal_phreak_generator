@@ -6,6 +6,47 @@
 
 <img width="267" alt="Screen Shot 2023-06-29 at 12 16 57 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38a04458-1c28-481f-93eb-ec9ea1a0a092">
 
+## System mechanics visualization
+
+TODO: fix tiles?
+
+Example of a dead cell with border:
+
+- each cell contains four 6x6 matrices with rotated 3x3 tiles of the cell neighborhood
+
+<img width="80" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
+
+<img width="486" alt="cell border lower level" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/444711c5-bfa0-47f2-b955-ed90866bd205">
+
+```
+x = 60, y = 60, rule = B3/S23
+o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$17bo5bo5b2o5bo5bo$29b2o$24bo
+10bo$12bo5bo5bo10bo5bo5bo$o4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$o4b
+2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$17bo5bo5b2o5bo5bo$29b2o$24bo10bo
+$12bo5bo5bo10bo5bo5bo$o4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$2o3b3o
+3b3o2b4o2b2ob3o4b3ob2o2b4o2b3o3b3o3b2o$5bo5b2o4b2o4bobob6obobo4b2o4b2o
+5bo$24b2o3b2o3b2o$24bo3b4o3bo$o5bo5bo4b2o4b4obo2bob4o4b2o4bo5bo5bo$o3b
+3o3b4o2b4o2b2o2b3o2b3o2b2o2b4o2b4o3b3o3bo$2o3b3o3b3o2b4o2b2o2b3o2b3o2b
+2o2b4o2b3o3b3o3b2o$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$24bo3b4o3bo$24b
+2o3b2o3b2o$o5bo5bo4b2o4bobob6obobo4b2o4bo5bo5bo$o3b3o3b4o2b4o2b2ob3o4b
+3ob2o2b4o2b4o3b3o3bo$o2b4o2b3o2b3o2b3o2b12o2b3o2b3o2b3o2b4o2bo$o5bo5b
+3obo2bob4ob2ob2ob2ob4obo2bob3o5bo5bo$o5bo5bo3b4o3b14o3b4o3bo5bo5bo$5bo
+5b3o3b2o3b16o3b2o3b3o5bo$5bo5bobob6obobob2ob2ob2obobob6obobo5bo$3o2b4o
+2bob3o4b3ob12ob3o4b3obo2b4o2b3o$3o2b4o2bob3o4b3ob12ob3o4b3obo2b4o2b3o$
+5bo5bobob6obobob2ob2ob2obobob6obobo5bo$5bo5b3o3b2o3b16o3b2o3b3o5bo$o5b
+o5bo3b4o3b14o3b4o3bo5bo5bo$o5bo5b3obo2bob4ob2ob2ob2ob4obo2bob3o5bo5bo$
+o2b4o2b3o2b3o2b3o2b12o2b3o2b3o2b3o2b4o2bo$o3b3o3b4o2b4o2b2ob3o4b3ob2o
+2b4o2b4o3b3o3bo$o5bo5bo4b2o4bobob6obobo4b2o4bo5bo5bo$24b2o3b2o3b2o$24b
+o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
+2b2o2b4o2b3o3b3o3b2o$o3b3o3b4o2b4o2b2o2b3o2b3o2b2o2b4o2b4o3b3o3bo$o5bo
+5bo4b2o4b4obo2bob4o4b2o4bo5bo5bo$24bo3b4o3bo$24b2o3b2o3b2o$5bo5b2o4b2o
+4bobob6obobo4b2o4b2o5bo$2o3b3o3b3o2b4o2b2ob3o4b3ob2o2b4o2b3o3b3o3b2o$o
+4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$12bo5bo5bo10bo5bo5bo$24bo10bo$
+29b2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$o4b2o
+4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$12bo5bo5bo10bo5bo5bo$24bo10bo$29b
+2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo!
+```
+
 ## Pattern Balance Technique
 
 <img width="700" alt="concept" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06d05e6a-1baa-4f8b-9880-b3b41d98967d">
@@ -13,6 +54,24 @@
 1.  X pattern is horizontal
 2.  Y pattern is inverted and rotated
 3.  Golden Spiral Matrix
+
+## Minimal Creation
+
+1. A cell exists. Define area.
+
+<img width="52" alt="define cell" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3b935aa7-3581-4223-a24a-cfc70cae7cd9">
+
+2. Define pieces from cell.
+
+<img width="177" alt="define cell pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5ae1c7c7-ca5d-46af-9f68-1c2f5b01f163">
+
+3. Define areas from pieces.
+
+<img width="305" alt="define areas" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/317352a5-f4d5-40d7-9bbc-be6ff337a853">
+
+Result:
+
+<img width="329" alt="minimal creation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/0f4c3648-8947-435e-b7d4-95c8d3d621d9">
 
 <br/>
 
@@ -443,47 +502,6 @@ obo$14bobo20bo8bo8bo$15bo$41b2o7b2o$40bo2bo5bo2bo$41b2o7b2o2$46bo$45bo
 bo$45bobo$46bo!
 ```
 
-## System mechanics visualization
-
-TODO: fix tiles?
-
-Example of a dead cell with border:
-
-- each cell contains a four 6x6 matrices with rotated 3x3 tiles of the cell neighborhood
-
-<img width="80" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
-
-<img width="486" alt="cell border lower level" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/444711c5-bfa0-47f2-b955-ed90866bd205">
-
-```
-x = 60, y = 60, rule = B3/S23
-o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$17bo5bo5b2o5bo5bo$29b2o$24bo
-10bo$12bo5bo5bo10bo5bo5bo$o4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$o4b
-2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$17bo5bo5b2o5bo5bo$29b2o$24bo10bo
-$12bo5bo5bo10bo5bo5bo$o4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$2o3b3o
-3b3o2b4o2b2ob3o4b3ob2o2b4o2b3o3b3o3b2o$5bo5b2o4b2o4bobob6obobo4b2o4b2o
-5bo$24b2o3b2o3b2o$24bo3b4o3bo$o5bo5bo4b2o4b4obo2bob4o4b2o4bo5bo5bo$o3b
-3o3b4o2b4o2b2o2b3o2b3o2b2o2b4o2b4o3b3o3bo$2o3b3o3b3o2b4o2b2o2b3o2b3o2b
-2o2b4o2b3o3b3o3b2o$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$24bo3b4o3bo$24b
-2o3b2o3b2o$o5bo5bo4b2o4bobob6obobo4b2o4bo5bo5bo$o3b3o3b4o2b4o2b2ob3o4b
-3ob2o2b4o2b4o3b3o3bo$o2b4o2b3o2b3o2b3o2b12o2b3o2b3o2b3o2b4o2bo$o5bo5b
-3obo2bob4ob2ob2ob2ob4obo2bob3o5bo5bo$o5bo5bo3b4o3b14o3b4o3bo5bo5bo$5bo
-5b3o3b2o3b16o3b2o3b3o5bo$5bo5bobob6obobob2ob2ob2obobob6obobo5bo$3o2b4o
-2bob3o4b3ob12ob3o4b3obo2b4o2b3o$3o2b4o2bob3o4b3ob12ob3o4b3obo2b4o2b3o$
-5bo5bobob6obobob2ob2ob2obobob6obobo5bo$5bo5b3o3b2o3b16o3b2o3b3o5bo$o5b
-o5bo3b4o3b14o3b4o3bo5bo5bo$o5bo5b3obo2bob4ob2ob2ob2ob4obo2bob3o5bo5bo$
-o2b4o2b3o2b3o2b3o2b12o2b3o2b3o2b3o2b4o2bo$o3b3o3b4o2b4o2b2ob3o4b3ob2o
-2b4o2b4o3b3o3bo$o5bo5bo4b2o4bobob6obobo4b2o4bo5bo5bo$24b2o3b2o3b2o$24b
-o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
-2b2o2b4o2b3o3b3o3b2o$o3b3o3b4o2b4o2b2o2b3o2b3o2b2o2b4o2b4o3b3o3bo$o5bo
-5bo4b2o4b4obo2bob4o4b2o4bo5bo5bo$24bo3b4o3bo$24b2o3b2o3b2o$5bo5b2o4b2o
-4bobob6obobo4b2o4b2o5bo$2o3b3o3b3o2b4o2b2ob3o4b3ob2o2b4o2b3o3b3o3b2o$o
-4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$12bo5bo5bo10bo5bo5bo$24bo10bo$
-29b2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$o4b2o
-4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$12bo5bo5bo10bo5bo5bo$24bo10bo$29b
-2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo!
-```
-
 ## Infinite Angle (testing system mechanics)
 
 - tile design is the space between a particle and a side
@@ -564,20 +582,3 @@ x = 6, y = 6, rule = B3/S23
 
 NOTE: 7 is sum of prime factors (2+5) for a quadrillion (1x10^15)
 
-## Minimal Creation
-
-1. A cell exists. Define area.
-
-<img width="52" alt="define cell" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3b935aa7-3581-4223-a24a-cfc70cae7cd9">
-
-2. Define pieces from cell.
-
-<img width="177" alt="define cell pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5ae1c7c7-ca5d-46af-9f68-1c2f5b01f163">
-
-3. Define areas from pieces.
-
-<img width="305" alt="define areas" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/317352a5-f4d5-40d7-9bbc-be6ff337a853">
-
-Result:
-
-<img width="329" alt="minimal creation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/0f4c3648-8947-435e-b7d4-95c8d3d621d9">
