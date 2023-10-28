@@ -8,6 +8,7 @@
 
 ## Universal Pattern Gradient Generator
 - initial state design/designer?
+- gradients of tiles?
 
 ## System mechanics visualization
 
