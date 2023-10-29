@@ -51,14 +51,6 @@ o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
 2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo!
 ```
 
-## Pattern Balance Technique
-
-<img width="700" alt="concept" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06d05e6a-1baa-4f8b-9880-b3b41d98967d">
-
-1.  X pattern is horizontal
-2.  Y pattern is inverted and rotated
-3.  Golden Spiral Matrix
-
 ## Minimal Creation
 
 1. A cell exists. Define area.
@@ -78,6 +70,14 @@ Result:
 <img width="329" alt="minimal creation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/0f4c3648-8947-435e-b7d4-95c8d3d621d9">
 
 <br/>
+
+## Pattern Balance Technique
+
+<img width="700" alt="concept" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06d05e6a-1baa-4f8b-9880-b3b41d98967d">
+
+1.  X pattern is horizontal
+2.  Y pattern is inverted and rotated
+3.  Golden Spiral Matrix
 
 ## Core Collapse?
 
