@@ -6,6 +6,9 @@
 
 <img width="267" alt="Screen Shot 2023-06-29 at 12 16 57 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38a04458-1c28-481f-93eb-ec9ea1a0a092">
 
+## Phreak Phormula
+![Phreak Phormula](https://github.com/tboie/universal_phreak_generator/assets/26150152/a3c7dd18-6ea3-4db9-9d50-f7504c11d638)
+
 ## Universal Pattern Gradient Generator
 - initial state design/designer?
 - gradients of tiles?
