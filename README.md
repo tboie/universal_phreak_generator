@@ -58,7 +58,9 @@ o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
 
 Propagate locality resolution diagrams outwards and down 1 layer per generation (similar to below visualization)
 
-![NOTE: use locality resolution diagrams for layer cell patterns](https://github.com/tboie/universal_phreak_generator/assets/26150152/058fe6f6-e026-47c0-961f-d17f36e67622)
+NOTE: use locality resolution diagrams for layer cell patterns
+
+![Visualization](https://github.com/tboie/universal_phreak_generator/assets/26150152/058fe6f6-e026-47c0-961f-d17f36e67622)
 
 ## Minimal Creation
 
