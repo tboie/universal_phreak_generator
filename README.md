@@ -54,6 +54,12 @@ o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
 2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo!
 ```
 
+### Interesting geometrical pattern using system mechanics:
+
+Propagate locality resolution diagrams outwards and down 1 layer per generation (similar to diagram layers)
+
+![use locality resolution diagrams for layer cell patterns](https://github.com/tboie/universal_phreak_generator/assets/26150152/058fe6f6-e026-47c0-961f-d17f36e67622)
+
 ## Minimal Creation
 
 1. A cell exists. Define area.
