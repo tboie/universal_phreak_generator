@@ -17,7 +17,7 @@
 
 TODO: fix tiles?
 
-Example of a dead cell with border:
+Example locality resolution diagram of a dead cell with border:
 
 - each cell contains four 6x6 matrices containing four rotated 3x3 tiles of the cell neighborhood
 
