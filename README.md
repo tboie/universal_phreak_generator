@@ -6,6 +6,8 @@
 
 <img width="267" alt="Screen Shot 2023-06-29 at 12 16 57 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38a04458-1c28-481f-93eb-ec9ea1a0a092">
 
+code experiments can be found in [src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
+
 ## Phreak Phormula
 <img width="500" alt="Phreak Phormula" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3c7dd18-6ea3-4db9-9d50-f7504c11d638">
 
@@ -56,9 +58,9 @@ o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
 
 ### Interesting geometrical pattern using system mechanics:
 
-Propagate locality resolution diagrams outwards and down 1 layer per generation (similar to below visualization)
+Propagate locality resolution diagrams inwards, outwards and down 1 layer per generation (similar to below visualization)
 
-NOTE: use locality resolution diagrams for layer cell patterns
+NOTE: resolution changes with layer
 
 ![Visualization](https://github.com/tboie/universal_phreak_generator/assets/26150152/058fe6f6-e026-47c0-961f-d17f36e67622)
 
