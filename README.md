@@ -114,8 +114,6 @@ _Spacetime and pattern wavetime structure might be a geometric result (timeless?
 
 The 4 glider spiral reaction might contain design information.
 
-[Similar to Dirac Spin?](https://en.wikipedia.org/wiki/Dirac_equation)
-
 <img width="450" alt="4 Glider Spiral" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/22e031ae-8069-41a4-b765-c2eb8fc6b2ad">
 
 Comparing glider reactions from 2 of the [Family Four](https://conwaylife.com/wiki/Familiar_fours):
@@ -149,8 +147,6 @@ Tiled:
 <br/>
 
 2nd Generation produces a texture of [Ponds](https://conwaylife.com/wiki/Pond). _note: photonegative still lifes?_
-
-[Dirac Sea?](https://en.wikipedia.org/wiki/Dirac_sea)
 
 <br/>
 <img width="450" alt="Screen Shot 2023-07-15 at 3 46 17 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2224904a-5c1f-4052-afda-dedb66e42c6d">
@@ -193,8 +189,6 @@ o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
 ```
 
 ### Golden Spiral/Volume mechanics?
-
-- 8 block 8 blinker atom?
 
 Notice opposing directions of spiral patterns?
 
@@ -428,41 +422,6 @@ Concept:
 
 - Energy Flux = Shaped Frequency Layers \* (Universal Tile Generator + Universal Border Generator)
 
-## Theories in progress
-
-- "Spinning" a pattern by copying it and rotating it by 90 degrees in each quadrant might demonstrate further properties of form. The resulting sequence might be squared at scale?
-  - Is there a tile that emits gliders outwards? This has been to observed to start happening for a tile x 4.
-- Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties
-- Composition of matter structure might be geometrically proportional to spacetime structure(s?) defined by system properties (visual comparisons might be helpful? see spiral image at beginning of document)
-
-- "Molecular Modelling" from arrangement of tesselated tiles?
-
-  - ex) reaction from arrangement of tesselated tiles (spacing? 1 tile base scale?) leaving a "nucleus" or mix of uniform/combined patterns? and potential further reactions from outwards gliders.
-  - Comparisons to other models?
-
-- Wavepoints?
-
-  - is cell information streamed outwards in all space at distance 1 per generation while a cell is "alive"?
-  - store when cell is toggled?
-
-- Adjacent Differential Points Value?
-  - Implement?
-  - Does the value relate to cells with greatest alive/dead energy in system? (distance?)
-
-<img width="480" alt="adpv" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2a29a356-8746-4d55-9829-8be2035fe234">
-
-## 0.125 is combinationally interesting?
-
-- 0
-- 0.125
-- 0.25
-- 0.375
-- 0.5
-- 0.625
-- 0.75
-- 0.875
-- 1
-
 ## Starting banger?
 
 - Glider wave packet most likely analogy for energy flux source?
@@ -590,4 +549,22 @@ x = 6, y = 6, rule = B3/S23
 ```
 
 NOTE: 7 is sum of prime factors (2+5) for a quadrillion (1x10^15)
+
+## 0.125 is combinationally interesting?
+
+- 0
+- 0.125
+- 0.25
+- 0.375
+- 0.5
+- 0.625
+- 0.75
+- 0.875
+- 1
+
+## Adjacent Differential Points Value?
+- Implement visualization?
+- Does the value relate to cells with greatest alive/dead energy in system? (distance?)
+
+<img width="480" alt="adpv" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2a29a356-8746-4d55-9829-8be2035fe234">
 
