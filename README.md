@@ -17,7 +17,7 @@ code experiments can be found in [src/App.tsx](https://github.com/tboie/universa
 
 ## System mechanics visualization
 
-TODO: fix tiles?
+TODO: fix tiles and create visualization?
 
 Example locality resolution diagram of a dead cell with border:
 
@@ -55,14 +55,6 @@ o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
 4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$12bo5bo5bo10bo5bo5bo$24bo10bo$29b
 2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo!
 ```
-
-### Interesting geometrical pattern using system mechanics:
-
-Propagate locality resolution diagrams inwards, outwards and down 1 layer per generation (similar to below visualization)
-
-NOTE: resolution changes with layer
-
-![Visualization](https://github.com/tboie/universal_phreak_generator/assets/26150152/058fe6f6-e026-47c0-961f-d17f36e67622)
 
 ## Minimal Creation
 
