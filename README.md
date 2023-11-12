@@ -86,8 +86,6 @@ Result:
 
 ## Core Collapse?
 
-[gravitational collapse?](https://en.wikipedia.org/wiki/Gravitational_collapse)
-
 <img width="450" alt="core collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/9b4fb570-ef1d-4f51-a268-31bb4f510c16">
 <br/>
 <img width="450" alt="core collapse pattern" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3480ffbf-551b-4f2d-9b91-7ebadad94e04">
