@@ -2,11 +2,16 @@
 
 ## A spiraling collection of virtual measurements
 
-### authored by: p4tt3rn p0pp3rS . y0ch0
+authored by: 
+#### p4tt3rn p0pp3rS . y0ch0
 
 <img width="267" alt="Screen Shot 2023-06-29 at 12 16 57 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38a04458-1c28-481f-93eb-ec9ea1a0a092">
 
+<br/><br/>
+
 code experiments can be found in [src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
+
+<br/>
 
 ## Phreak Phormula
 <img width="500" alt="Phreak Phormula" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3c7dd18-6ea3-4db9-9d50-f7504c11d638">
@@ -17,15 +22,16 @@ code experiments can be found in [src/App.tsx](https://github.com/tboie/universa
 
 ## System mechanics visualization
 
-TODO: fix tiles and create visualization?
+TODO: fix tiles
 
 Example locality resolution diagram of a dead cell with border:
 
-- each cell contains four 6x6 matrices containing four rotated 3x3 tiles of the cell neighborhood
+- each cell contains rotated 3x3 locality diagrams (2x2 example below)
+- create "inverse square" visualization by layering resolutions? (1x1, 2x2, 3x3...)
 
 <img width="80" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
 
-<img width="486" alt="264479457-2d03ec9a-49ea-4959-902f-3368153ecab8" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/65666938-3401-47bd-9c19-c7bf8c3001bd">
+<img width="480" alt="Screen Shot 2023-10-26 at 11 19 18 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/080cc3d4-5815-4c8c-b237-2638eafdc006">
 
 ```
 x = 60, y = 60, rule = B3/S23
@@ -56,17 +62,17 @@ o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
 2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo!
 ```
 
-## Minimal Creation
+## Minimal Creation Concepts
 
-1. A cell exists. Define area.
+A cell exists. Define area.
 
 <img width="52" alt="define cell" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3b935aa7-3581-4223-a24a-cfc70cae7cd9">
 
-2. Define pieces from cell.
+Define pieces from cell.
 
 <img width="177" alt="define cell pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5ae1c7c7-ca5d-46af-9f68-1c2f5b01f163">
 
-3. Define areas from pieces.
+Define areas from pieces.
 
 <img width="305" alt="define areas" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/317352a5-f4d5-40d7-9bbc-be6ff337a853">
 
