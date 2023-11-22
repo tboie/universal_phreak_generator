@@ -16,6 +16,8 @@ code experiments can be found in [src/App.tsx](https://github.com/tboie/universa
 ## Phreak Phormula
 <img width="500" alt="Phreak Phormula" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3c7dd18-6ea3-4db9-9d50-f7504c11d638">
 
+<br/>
+
 ## System mechanics visualization
 
 TODO: fix tiles
@@ -58,6 +60,8 @@ o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
 2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo!
 ```
 
+<br/>
+
 ## Minimal Creation Concepts
 
 A cell exists. Define area.
@@ -79,12 +83,15 @@ Result:
 Note: adding dead cell with border to center produces blinkers instead of beehives
 
 <br/>
+<br/>
 
 ## Tiles
 
 The 4 glider spiral reaction might contain design information.
 
 <img width="450" alt="4 Glider Spiral" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/22e031ae-8069-41a4-b765-c2eb8fc6b2ad">
+
+<br/>
 
 ### LIGHTING UP THE AREA?:
 
@@ -102,6 +109,8 @@ o$bo5bo5bo5bo$4bo5bo5bo5bo$obo3bobo3bobo3bobo$2b3o3b3o3b3o3b3o$b3o3b3o
 3b3o3b3o$3bobo3bobo3bobo3bobo$bo5bo5bo5bo!
 ```
 
+<br/>
+
 ### Solid State/Empty Border Collapse Version
 
 <img width="377" alt="area light collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/e6f03f4b-09d4-49bb-9121-10fbc3d46c98">
@@ -115,6 +124,8 @@ x = 20, y = 20, rule = B3/S23
 5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo$b2ob2ob2ob2ob2ob2obo$2bo5b
 o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
 ```
+
+<br/>
 
 ### Spiral?
 
@@ -131,6 +142,8 @@ x = 20, y = 20, rule = B3/S23
 ```
 
 ![Screen Recording 2023-08-03 at 11 26 37 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/97605187-ee54-481d-9e28-f235e18be39d)
+
+<br/>
 
 ### Structured Collapse
 
@@ -150,6 +163,8 @@ Larger Scale Tiled Reaction Example:
 
 [large scale .rle file](https://github.com/tboie/universal_phreak_generator/blob/main/public/structured_collapse_lg.rle)
 
+<br/>
+
 ### Another Banger
 
 <img width="350" alt="Screen Shot 2023-08-08 at 9 22 25 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/29ed2d35-19c3-477f-97bc-6e5f2ef839d0">
@@ -161,6 +176,8 @@ bo3b5obo$ob5o3bob5o$o3bobobobo3bobobo$obo7bobo$4bob3o5bob3o$b3obo5b3ob
 o$7bobo7bobo$bobobo3bobobobo3bo$3b5obo3b5obo$ob5o3bob5o$3b5obo3b5obo$o
 b5o3bob5o$o3bobobobo3bobobo$obo7bobo$4bob3o5bob3o!
 ```
+
+<br/>
 
 ### More Bang
 
@@ -177,6 +194,8 @@ o4b3o2bo$2ob4o3b2ob4o$b2o2bobo3b2o2bobo$5b3o7b3o$6bo9bo$3bo9bo$2b3o7b
 ![Screen Recording 2023-08-04 at 2 05 09 PM](https://github.com/tboie/universal_phreak_generator/assets/26150152/ecb7dd1e-6abf-44b1-85a4-6731ad862f80)
 
 [electronoiserip_lg.rle](https://github.com/tboie/universal_phreak_generator/blob/main/public/electronoiserip_lg.rle)
+
+<br/>
 
 ### Isolating system spin mechanism?
 
@@ -196,6 +215,8 @@ Maybe it is by cancelling all system matter except for spin mechanism?
 Note: At this point in experiments, 1 beehive in each corner remain when all other matter is "cancelled". Also, scaling the tileset produces the same reaction.
 
 ![Screen Recording 2023-08-04 at 9 20 13 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/ada9b19d-6816-475f-8734-9843a001ad22)
+
+<br/>
 
 ### Reactions going outward?
 
@@ -220,6 +241,8 @@ ob2o2b2ob2o2bo$bo2b2o2bo2b2o$b2o2bo2b2o2bo$o2b2ob2o2b2obo$b2obobob2obo
 bo$bo3bo2bo3bo$obob2obobob2o$ob2o2b2ob2o2bo$bo2b2o2bo2b2o!
 ```
 
+<br/>
+
 ### Reaction going inwards
 
 <img width="292" alt="Screen Shot 2023-08-15 at 2 23 43 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/abcb9720-50a3-4c6d-83a7-7fcd2834ff81">
@@ -229,6 +252,8 @@ x = 16, y = 16, rule = B3/S23
 6ob7obo$b7ob7o$16o$16o$16o$16o$7ob7o$ob7ob6o$6ob7obo$b7ob7o$16o$16o$
 16o$16o$7ob7o$ob7ob6o!
 ```
+
+<br/>
 
 ### Reaction going inward and outward
 
@@ -244,6 +269,8 @@ ob3o2b2ob3o2bo$bo3b2o2bo3b2o!
 
 ![Screen Recording 2023-08-08 at 9 41 15 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/728e873f-c08d-42ca-b226-67db012d43ca)
 
+<br/>
+
 ### Oscillating Pattern Reaction
 
 <img width="195" alt="Screen Shot 2023-08-16 at 9 54 58 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ed7758af-8e37-4a2e-8c12-a9245b03409f">
@@ -253,6 +280,8 @@ x = 10, y = 10, rule = B3/S23
 3bo4bo$4ob4o$bobo2bobo$b4ob4o$bo4bo$3bo4bo$4ob4o$bobo2bobo$b4ob4o$bo4b
 o!
 ```
+
+<br/>
 
 ### Circular results?
 
@@ -283,6 +312,8 @@ x = 12, y = 12, rule = B3/S23
 2obob3obobo$2b2obo2b2obo$5ob5o$b5ob5o$ob2o2bob2o$obob3obob2o$2obob3obo
 bo$2b2obo2b2obo$5ob5o$b5ob5o$ob2o2bob2o$obob3obob2o!
 ```
+
+<br/>
 
 ### Smallest Outward Glider Tiles
 
@@ -316,6 +347,8 @@ x = 8, y = 8, rule = B3/S23
 2obo3bo$bob2ob2o$2b2obo$bo3b3o$3o3bo$2bob2o$2ob2obo$o3bob2o!
 ```
 
+<br/>
+
 ### Towards Infinity Tile
 
 <img width="293" alt="towards infinity tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/823de780-c931-49c2-aa5c-a4ee92cb86a8">
@@ -329,6 +362,8 @@ x = 34, y = 34, rule = B3/S23
 $10bo11b2o7b2o2$5b2o7b2o11bo$4bo2bo5bo2bo9bobo$5b2o7b2o10bobo$27bo$10b
 o$9bobo$9bobo$10bo!
 ```
+
+<br/>
 
 #### Extensive Beginnings Concept:
 
@@ -357,6 +392,8 @@ o$o2bo5bo2bo10b2o7b2o10bobo$b2o7b2o33bo$28bo8bo17bo$6bo8bo11bobo6bobo
 obo$14bobo20bo8bo8bo$15bo$41b2o7b2o$40bo2bo5bo2bo$41b2o7b2o2$46bo$45bo
 bo$45bobo$46bo!
 ```
+
+<br/>
 
 ### Infinite Angle
 
@@ -410,6 +447,9 @@ obo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o
 3bobo3bobo3bobo3bobo!
 ```
 
+<br/>
+
+
 ### Minimal tile system deployment
 
 - system composed of at least 2 types
@@ -430,6 +470,9 @@ x = 6, y = 6, rule = B3/S23
 3o2bo$b2ob2o$2b4o$4o$2ob2o$o2b3o!
 ```
 
+<br/>
+<br/>
+
 ## Universal Tile Generator
 
 ### _Squared Version_
@@ -442,15 +485,21 @@ x = 6, y = 6, rule = B3/S23
 6.  Repeat step 4
 
 - Detect tiles naturally generated at center of reactions?
-  
+
+<br/>
+
 ## Universal Border Generator
 
 - random border pattern generator
 - variations in corners?
 
+<br/>
+
 ## Universal Initial State Generator
 
 - Initial State Design = Layered Shape(s) \* (Universal Tile Generator + Universal Border Generator)
+
+<br/>
 
 ## Pattern Balance Technique
 
@@ -497,6 +546,7 @@ Tiled:
 [Blockade](https://catagolue.hatsya.com/object/xs16_0ggydgj3zop1yd11/b3s23) ...
 [Bakery](https://catagolue.hatsya.com/object/xs28_g88m952g8gz1218kid221/b3s23) ...
 
+<br/><br/>
 
 ## Why does blinker with middle at 0,0 have dead energy floating point difference?
 
@@ -506,7 +556,17 @@ Tiled:
 = 0.000000000000007 (7x10^-15 femto)
 ```
 
-## 0.125 is combinationally interesting?
+<br/>
+
+## Adjacent Differential Points Value?
+- Implement visualization?
+- Does the value relate to cells with greatest alive/dead energy in system? (distance?)
+
+<img width="480" alt="adpv" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2a29a356-8746-4d55-9829-8be2035fe234">
+
+<br/>
+
+## 0.125 sequence is combinationally interesting?
 
 - 0
 - 0.125
@@ -518,9 +578,4 @@ Tiled:
 - 0.875
 - 1
 
-## Adjacent Differential Points Value?
-- Implement visualization?
-- Does the value relate to cells with greatest alive/dead energy in system? (distance?)
-
-<img width="480" alt="adpv" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2a29a356-8746-4d55-9829-8be2035fe234">
-
+<br/>
