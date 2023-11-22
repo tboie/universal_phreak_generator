@@ -15,7 +15,12 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 <br/>
 
 ## Phreak Phormula
+
 <img width="500" alt="Phreak Phormula" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3c7dd18-6ea3-4db9-9d50-f7504c11d638">
+<br/>
+<img width="350" alt="Phreak Phormula example 1" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/14e497cb-e473-4b72-aa12-057b2963d967">
+<br/>
+<img width="350" alt="Phreak Phormula example 2" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/8685a79d-8af1-4df3-81ae-e506a87d57e4">
 
 <br/><br/>
 
