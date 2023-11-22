@@ -109,9 +109,6 @@ o$b2o2bob2o2bob2o2bob2o2bob2o$b2obo2b2obo2b2obo2b2obo2b2o$o2b4o2b4o2b
 
 ## Composition?
 
-_Spacetime and pattern wavetime structure might be a geometric result (timeless?) of coordinate and ruleset system properties_
-<br/><br/><br/>
-
 The 4 glider spiral reaction might contain design information.
 
 <img width="450" alt="4 Glider Spiral" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/22e031ae-8069-41a4-b765-c2eb8fc6b2ad">
@@ -132,7 +129,7 @@ Comparing the [Unique Father Problem](https://conwaylife.com/wiki/Unique_father_
 <img width="450" alt="Core Collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ec861f9f-1220-401f-8d91-f7f0f98f25b0">
 <br/><br/>
 
-Another Potential Pattern of Interest:
+Another Tiling Technique:
 
 [Fleet glider synthesis](https://catagolue.hatsya.com/object/xs24_g8o653wggz11wokc321/b3s23) from the [Family Four](https://conwaylife.com/wiki/Familiar_fours) forms the following pattern:
 
@@ -146,7 +143,7 @@ Tiled:
 <img width="450" alt="Screen Shot 2023-07-15 at 3 48 31 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/b8a547f4-d6fb-4c89-8696-ed17dca9d370">
 <br/>
 
-2nd Generation produces a texture of [Ponds](https://conwaylife.com/wiki/Pond). _note: photonegative still lifes?_
+2nd Generation produces a texture of [Ponds](https://conwaylife.com/wiki/Pond).
 
 <br/>
 <img width="450" alt="Screen Shot 2023-07-15 at 3 46 17 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2224904a-5c1f-4052-afda-dedb66e42c6d">
@@ -200,8 +197,6 @@ x = 20, y = 20, rule = B3/S23
 3o3b2o2b3o3bo$o4bo3b2o4bo3bo$b2o4b3ob2o4b3o$2bo4bo4bo4bo$2b5o5b5o!
 ```
 
-Related to golden spiral mechanics and inital reaction residue/decay?
-
 ![Screen Recording 2023-08-03 at 11 26 37 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/97605187-ee54-481d-9e28-f235e18be39d)
 
 ### Structured Collapse
@@ -223,8 +218,6 @@ Larger Scale Tiled Reaction Example:
 [large scale .rle file](https://github.com/tboie/universal_phreak_generator/blob/main/public/structured_collapse_lg.rle)
 
 ### Another Banger
-
-- Note: Singularity of result is a block
 
 <img width="350" alt="Screen Shot 2023-08-08 at 9 22 25 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/29ed2d35-19c3-477f-97bc-6e5f2ef839d0">
 
@@ -267,7 +260,7 @@ o$bo3bobobo3bobo$obo3bobobo3bo$o3bobobo3bobo$b3o2bo2b3o2bo$4b2o6b2o!
 
 Maybe it is by cancelling all system matter except for spin mechanism?
 
-Note: At this point in experiments, 1 beehive in each corner remain when all other matter is "cancelled"
+Note: At this point in experiments, 1 beehive in each corner remain when all other matter is "cancelled".
 
 <img width="328" alt="spin mechanics base" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/beddd640-d68e-4668-af7e-bcb2803c17b5">
 
@@ -516,7 +509,8 @@ obo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o
 3bobo3bobo3bobo3bobo!
 ```
 
-## Minimal system deployment
+## Minimal tile system deployment
+- system composed of at least 2 types
 
 <img width="128" alt="minimal system deployment" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/6e4bfd88-adc7-4baa-9116-75b2fffc5ecf">
 
