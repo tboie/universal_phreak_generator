@@ -557,6 +557,17 @@ Tiled:
 
 <br/>
 
+## Simplest combination creating multiple gliders from 1?
+
+<img width="150" alt="multiple gliders from 1" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/cece1393-a0cd-4ba8-8d8e-d55c12aa375d">
+
+```
+x = 8, y = 9, rule = B3/S23
+4b2o$3bo2bo$4b2o$bo$obo$obo$bo3b2o$5bobo$5bo!
+```
+
+<br/>
+
 ## Is this glider arrangement possible?
 
 <img width="76" alt="glider arrangement" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7ee3b9d3-6e63-452c-aba1-713e2f10137d">
