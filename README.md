@@ -522,12 +522,6 @@ Concept:
 
 - Energy Flux = Shaped Frequency Layers \* (Universal Tile Generator + Universal Border Generator)
 
-## Starting banger?
-
-- Glider wave packet most likely analogy for energy flux source?
-
-<img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
-
 ## Why does blinker with middle at 0,0 have dead energy floating point difference?
 
 ```
