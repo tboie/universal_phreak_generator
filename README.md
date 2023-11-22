@@ -80,15 +80,13 @@ Note: adding dead cell with border to center produces blinkers instead of beehiv
 
 <br/>
 
-## Composition?
+## Tiles
 
 The 4 glider spiral reaction might contain design information.
 
 <img width="450" alt="4 Glider Spiral" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/22e031ae-8069-41a4-b765-c2eb8fc6b2ad">
 
-## Tiling examples
-
-- LIGHTING UP THE AREA?:
+### LIGHTING UP THE AREA?:
 
 <img width="120" alt="area light tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ca715375-ccb1-4410-8c9d-014c3574e9f8">
 <br/>
@@ -118,7 +116,7 @@ x = 20, y = 20, rule = B3/S23
 o5bo$5bo5bo5bo$ob2ob2ob2ob2ob2ob2o$2bo5bo5bo$5bo5bo5bo!
 ```
 
-### Golden Spiral/Volume mechanics?
+### Spiral?
 
 Notice opposing directions of spiral patterns?
 
@@ -222,7 +220,7 @@ ob2o2b2ob2o2bo$bo2b2o2bo2b2o$b2o2bo2b2o2bo$o2b2ob2o2b2obo$b2obobob2obo
 bo$bo3bo2bo3bo$obob2obobob2o$ob2o2b2ob2o2bo$bo2b2o2bo2b2o!
 ```
 
-## Reaction going inwards
+### Reaction going inwards
 
 <img width="292" alt="Screen Shot 2023-08-15 at 2 23 43 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/abcb9720-50a3-4c6d-83a7-7fcd2834ff81">
 
@@ -232,7 +230,7 @@ x = 16, y = 16, rule = B3/S23
 16o$16o$7ob7o$ob7ob6o!
 ```
 
-## Reaction going inward and outward
+### Reaction going inward and outward
 
 <img width="289" alt="Screen Shot 2023-08-08 at 9 43 21 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3d22ea4e-a33f-4498-aac2-50f419eae7aa">
 
@@ -246,7 +244,7 @@ ob3o2b2ob3o2bo$bo3b2o2bo3b2o!
 
 ![Screen Recording 2023-08-08 at 9 41 15 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/728e873f-c08d-42ca-b226-67db012d43ca)
 
-## Oscillating Pattern Reaction
+### Oscillating Pattern Reaction
 
 <img width="195" alt="Screen Shot 2023-08-16 at 9 54 58 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ed7758af-8e37-4a2e-8c12-a9245b03409f">
 
@@ -256,7 +254,7 @@ x = 10, y = 10, rule = B3/S23
 o!
 ```
 
-## Circular results?
+### Circular results?
 
 <img width="228" alt="circular result" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ef56ffe6-bc6a-4f44-993e-f9cbe5660c1d">
 
@@ -286,7 +284,7 @@ x = 12, y = 12, rule = B3/S23
 bo$2b2obo2b2obo$5ob5o$b5ob5o$ob2o2bob2o$obob3obob2o!
 ```
 
-## Smallest Outward Glider Tiles
+### Smallest Outward Glider Tiles
 
 Base form at which information travels in all directions indefinitely?
 
@@ -316,7 +314,7 @@ x = 8, y = 8, rule = B3/S23
 2obo3bo$bob2ob2o$2b2obo$bo3b3o$3o3bo$2bob2o$2ob2obo$o3bob2o!
 ```
 
-## Towards Infinity Tile
+### Towards Infinity Tile
 
 <img width="293" alt="towards infinity tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/823de780-c931-49c2-aa5c-a4ee92cb86a8">
 
@@ -330,7 +328,7 @@ $10bo11b2o7b2o2$5b2o7b2o11bo$4bo2bo5bo2bo9bobo$5b2o7b2o10bobo$27bo$10b
 o$9bobo$9bobo$10bo!
 ```
 
-Extensive Beginnings Concept:
+#### Extensive Beginnings Concept:
 
 - Medium weight spaceships emerge
 
@@ -358,7 +356,7 @@ obo$14bobo20bo8bo8bo$15bo$41b2o7b2o$40bo2bo5bo2bo$41b2o7b2o2$46bo$45bo
 bo$45bobo$46bo!
 ```
 
-## Infinite Angle (testing system mechanics)
+### Infinite Angle
 
 - tile design is the space between a particle and a side
 - eternal gliders emerge from the center of a square after it is fully lit
@@ -410,7 +408,8 @@ obo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o
 3bobo3bobo3bobo3bobo!
 ```
 
-## Minimal tile system deployment
+### Minimal tile system deployment
+
 - system composed of at least 2 types
 
 <img width="128" alt="minimal system deployment" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/6e4bfd88-adc7-4baa-9116-75b2fffc5ecf">
@@ -429,7 +428,7 @@ x = 6, y = 6, rule = B3/S23
 3o2bo$b2ob2o$2b4o$4o$2ob2o$o2b3o!
 ```
 
-## Universal Pattern/Tile Generator
+## Universal Tile Generator
 
 ### _Squared Version_
 
@@ -440,19 +439,16 @@ x = 6, y = 6, rule = B3/S23
 5.  Go to next generation and check for changes
 6.  Repeat step 4
 
-- Detect tiles naturally generated at singularity of reactions?
-
+- Detect tiles naturally generated at center of reactions?
+  
 ## Universal Border Generator
 
 - random border pattern generator
 - variations in corners?
 
-## Universal Core Generator
+## Universal Initial State Generator
 
-Concept:
-
-- Energy Flux = Shaped Frequency Layers \* (Universal Tile Generator + Universal Border Generator)
-
+- Initial State Design = Layered Shape(s) \* (Universal Tile Generator + Universal Border Generator)
 
 ## Pattern Balance Technique
 
@@ -477,7 +473,7 @@ Comparing 4 glider spiral reactions to the [Unique Father Problem](https://conwa
 
 <br/>
 
-### Another Tiling Technique:
+## Another Tiling Technique:
 
 [Fleet glider synthesis](https://catagolue.hatsya.com/object/xs24_g8o653wggz11wokc321/b3s23) from the [Family Four](https://conwaylife.com/wiki/Familiar_fours) forms the following pattern:
 
