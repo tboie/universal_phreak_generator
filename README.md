@@ -33,7 +33,9 @@ Example locality resolution diagram of a dead cell with border:
 - each cell contains rotated 3x3 locality diagrams (2x2 example below)
 - create "inverse square" visualization by layering resolutions? (1x1, 2x2, 3x3...)
 
-<img width="80" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
+<img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
+
+<br/>
 
 <img width="480" alt="Screen Shot 2023-10-26 at 11 19 18 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/080cc3d4-5815-4c8c-b237-2638eafdc006">
 
