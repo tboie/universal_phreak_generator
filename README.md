@@ -385,36 +385,6 @@ x = 8, y = 8, rule = B3/S23
 2obo3bo$bob2ob2o$2b2obo$bo3b3o$3o3bo$2bob2o$2ob2obo$o3bob2o!
 ```
 
-## Universal Pattern/Tile Generator
-
-### _Squared Version_
-
-1.  Assign random bits (rotating 3d cubes?) to _x_ size matrix(s) representing a quadrant
-2.  Rotate matrix(s) clockwise for quadrants to form a tile
-3.  Goto next generation and check for changes
-4.  Scale tiling area
-5.  Go to next generation and check for changes
-6.  Repeat step 4
-
-- Detect tiles naturally generated at singularity of reactions?
-
-## Universal Border Generator
-
-- random border pattern generator
-- variations in corners?
-
-## Universal Core Generator
-
-Concept:
-
-- Energy Flux = Shaped Frequency Layers \* (Universal Tile Generator + Universal Border Generator)
-
-## Starting banger?
-
-- Glider wave packet most likely analogy for energy flux source?
-
-<img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
-
 ## Towards Infinity Tile
 
 <img width="293" alt="towards infinity tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/823de780-c931-49c2-aa5c-a4ee92cb86a8">
@@ -527,6 +497,36 @@ Same result?
 x = 6, y = 6, rule = B3/S23
 3o2bo$b2ob2o$2b4o$4o$2ob2o$o2b3o!
 ```
+
+## Universal Pattern/Tile Generator
+
+### _Squared Version_
+
+1.  Assign random bits (rotating 3d cubes?) to _x_ size matrix(s) representing a quadrant
+2.  Rotate matrix(s) clockwise for quadrants to form a tile
+3.  Goto next generation and check for changes
+4.  Scale tiling area
+5.  Go to next generation and check for changes
+6.  Repeat step 4
+
+- Detect tiles naturally generated at singularity of reactions?
+
+## Universal Border Generator
+
+- random border pattern generator
+- variations in corners?
+
+## Universal Core Generator
+
+Concept:
+
+- Energy Flux = Shaped Frequency Layers \* (Universal Tile Generator + Universal Border Generator)
+
+## Starting banger?
+
+- Glider wave packet most likely analogy for energy flux source?
+
+<img width="728" alt="starting banger" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3018fa4e-762a-461f-9385-5b5db5f06b76">
 
 ## Why does blinker with middle at 0,0 have dead energy floating point difference?
 
