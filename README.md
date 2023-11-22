@@ -16,10 +16,6 @@ code experiments can be found in [src/App.tsx](https://github.com/tboie/universa
 ## Phreak Phormula
 <img width="500" alt="Phreak Phormula" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3c7dd18-6ea3-4db9-9d50-f7504c11d638">
 
-## Universal Pattern Gradient Generator
-- initial state design/designer?
-- gradients of tiles?
-
 ## System mechanics visualization
 
 TODO: fix tiles
@@ -221,8 +217,6 @@ Tiled Reaction Example:
 [medium scale .rle file](https://github.com/tboie/universal_phreak_generator/blob/main/public/structured_collapse_md.rle)
 
 Larger Scale Tiled Reaction Example:
-
-Note: Singularity is a pond
 
 ![Screen Recording 2023-08-01 at 9 49 48 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/4f808299-eb0b-48e1-a383-47c3becd2c84)
 
