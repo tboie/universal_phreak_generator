@@ -204,9 +204,7 @@ o4b3o2bo$2ob4o3b2ob4o$b2o2bobo3b2o2bobo$5b3o7b3o$6bo9bo$3bo9bo$2b3o7b
 
 <br/>
 
-### Isolating system spin mechanism?
-
-Is there a system spin mechanism? Is it possible to visualize system spin mechanism?
+### Cancellation
 
 <img width="288" alt="spin mechanism tile" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/aa7e0d67-15f3-4240-829d-092b94d9f6b7">
 
@@ -217,15 +215,15 @@ obobo3bobo$b3o2bo2b3o2bo$4b2o6b2o$2b2o6b2o$bo2b3o2bo2b3o$bobo3bobobo3b
 o$bo3bobobo3bobo$obo3bobobo3bo$o3bobobo3bobo$b3o2bo2b3o2bo$4b2o6b2o!
 ```
 
-Maybe it is by cancelling all system matter except for spin mechanism?
-
 Note: At this point in experiments, 1 beehive in each corner remain when all other matter is "cancelled". Also, scaling the tileset produces the same reaction.
 
 ![Screen Recording 2023-08-04 at 9 20 13 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/ada9b19d-6816-475f-8734-9843a001ad22)
 
+Is there a system spin mechanism/value? Is it possible to visualize system spin mechanism/value? Would it be 1 bit in each corner as a base value?
+
 <br/>
 
-### Reactions going outward?
+### Reactions going outward
 
 <img width="322" alt="Screen Shot 2023-08-08 at 7 04 08 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/e9328c58-71eb-4ae2-bb4c-76fcb47fa9d5">
 
@@ -329,7 +327,6 @@ Base form at which information travels in all directions indefinitely?
 - 10x10
 - tesselated reaction is constant result of only outward gliders
 - tiles spaced at varying distances result in groups of gliders outwards in corners (wavepacket?)
-- what if gliders were moving at 1 per generation?
 
 <img width="197" alt="outwards-glider" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/89e14d7c-4641-4f31-9c03-da77ead1585d">
 
