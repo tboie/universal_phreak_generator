@@ -86,15 +86,13 @@ Define pieces from cell.
 
 Define areas from pieces.
 
-<img width="305" alt="define areas" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/317352a5-f4d5-40d7-9bbc-be6ff337a853">
+<img width="304" alt="Screen Shot 2023-11-22 at 11 45 10 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/df5fe56d-49ef-4980-85ce-0f3f53ad0717">
 
 <br/><br/>
 
 Result:
 
-<img width="329" alt="minimal creation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/0f4c3648-8947-435e-b7d4-95c8d3d621d9">
-
-Note: adding dead cell with border to center produces blinkers instead of beehives
+<img width="304" alt="Screen Shot 2023-11-22 at 11 45 50 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/87b9b685-52f8-4ba4-b4e0-96220a20a4c8">
 
 <br/>
 <br/>
