@@ -555,6 +555,12 @@ Tiled:
 [Blockade](https://catagolue.hatsya.com/object/xs16_0ggydgj3zop1yd11/b3s23) ...
 [Bakery](https://catagolue.hatsya.com/object/xs28_g88m952g8gz1218kid221/b3s23) ...
 
+<br/>
+
+## Is this glider arrangement possible?
+
+<img width="76" alt="glider arrangement" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7ee3b9d3-6e63-452c-aba1-713e2f10137d">
+
 <br/><br/>
 
 ## Why does blinker with middle at 0,0 have dead energy floating point difference?
