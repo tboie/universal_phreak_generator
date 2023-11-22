@@ -306,6 +306,8 @@ x = 10, y = 10, rule = B3/S23
 - reaction at tesselation size 256x256 is interesting
   - inner gliders movement change
   - octagon to square to octagon?
+ 
+Note: are tileset sizes 256/512 significant?
 
 <img width="160" alt="Screen Shot 2023-08-23 at 12 51 32 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5c2c34cc-7ef2-41ba-9f17-eeae60f5ec77">
 
@@ -503,8 +505,6 @@ Tiled:
 - 0.9999999999999964
 = 0.000000000000007 (7x10^-15 femto)
 ```
-
-NOTE: 7 is sum of prime factors (2+5) for a quadrillion (1x10^15)
 
 ## 0.125 is combinationally interesting?
 
