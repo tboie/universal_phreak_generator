@@ -17,7 +17,7 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 ## Phreak Phormula
 <img width="500" alt="Phreak Phormula" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3c7dd18-6ea3-4db9-9d50-f7504c11d638">
 
-<br/>
+<br/><br/>
 
 ## System mechanics visualization
 
