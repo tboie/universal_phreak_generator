@@ -76,9 +76,13 @@ Result:
 
 <img width="329" alt="minimal creation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/0f4c3648-8947-435e-b7d4-95c8d3d621d9">
 
+Note: adding dead cell with border to center produces blinkers instead of beehives
+
 <br/>
 
 ## Pattern Balance Technique
+
+- example uses [Unique Father Problem](https://conwaylife.com/wiki/Unique_father_problem) 
 
 <img width="700" alt="concept" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06d05e6a-1baa-4f8b-9880-b3b41d98967d">
 
