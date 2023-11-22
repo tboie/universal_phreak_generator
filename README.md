@@ -195,11 +195,7 @@ o$bo3bobobo3bobo$obo3bobobo3bo$o3bobobo3bobo$b3o2bo2b3o2bo$4b2o6b2o!
 
 Maybe it is by cancelling all system matter except for spin mechanism?
 
-Note: At this point in experiments, 1 beehive in each corner remain when all other matter is "cancelled".
-
-<img width="328" alt="spin mechanics base" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/beddd640-d68e-4668-af7e-bcb2803c17b5">
-
-Scaled reaction remains fixed indicating a constant?
+Note: At this point in experiments, 1 beehive in each corner remain when all other matter is "cancelled". Also, scaling the tileset produces the same reaction.
 
 ![Screen Recording 2023-08-04 at 9 20 13 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/ada9b19d-6816-475f-8734-9843a001ad22)
 
