@@ -568,7 +568,7 @@ Tiled:
 
 <img width="480" alt="adpv" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2a29a356-8746-4d55-9829-8be2035fe234">
 
-<br/>
+<br/><br/>
 
 ## 0.125 sequence is combinationally interesting?
 
