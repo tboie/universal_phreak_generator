@@ -10,7 +10,7 @@ p4tt3rn p0pp3rS . y0ch0
 
 <br/><br/>
 
-code experiments can be found in [src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
+More concepts in code experiments at [src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
 
 <br/>
 
@@ -69,19 +69,19 @@ A cell exists. Define area.
 
 <img width="52" alt="define cell" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3b935aa7-3581-4223-a24a-cfc70cae7cd9">
 
-<br/>
+<br/><br/>
 
 Define pieces from cell.
 
 <img width="177" alt="define cell pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5ae1c7c7-ca5d-46af-9f68-1c2f5b01f163">
 
-<br/>
+<br/><br/>
 
 Define areas from pieces.
 
 <img width="305" alt="define areas" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/317352a5-f4d5-40d7-9bbc-be6ff337a853">
 
-<br/>
+<br/><br/>
 
 Result:
 
