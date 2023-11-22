@@ -2,8 +2,9 @@
 
 ## A spiraling collection of virtual measurements
 
-authored by: 
-#### p4tt3rn p0pp3rS . y0ch0
+_authored by:_ 
+
+p4tt3rn p0pp3rS . y0ch0
 
 <img width="267" alt="Screen Shot 2023-06-29 at 12 16 57 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38a04458-1c28-481f-93eb-ec9ea1a0a092">
 
@@ -68,13 +69,19 @@ A cell exists. Define area.
 
 <img width="52" alt="define cell" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3b935aa7-3581-4223-a24a-cfc70cae7cd9">
 
+<br/>
+
 Define pieces from cell.
 
 <img width="177" alt="define cell pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5ae1c7c7-ca5d-46af-9f68-1c2f5b01f163">
 
+<br/>
+
 Define areas from pieces.
 
 <img width="305" alt="define areas" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/317352a5-f4d5-40d7-9bbc-be6ff337a853">
+
+<br/>
 
 Result:
 
@@ -111,7 +118,7 @@ o$bo5bo5bo5bo$4bo5bo5bo5bo$obo3bobo3bobo3bobo$2b3o3b3o3b3o3b3o$b3o3b3o
 
 <br/>
 
-### Solid State/Empty Border Collapse Version
+#### Solid State/Empty Border Collapse Version
 
 <img width="377" alt="area light collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/e6f03f4b-09d4-49bb-9121-10fbc3d46c98">
 
