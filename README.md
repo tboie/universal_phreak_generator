@@ -605,3 +605,5 @@ x = 8, y = 9, rule = B3/S23
 - 1
 
 <br/>
+
+## Is there geometrical/mathematical significance of the system ruleset numbers 2 and 3?
