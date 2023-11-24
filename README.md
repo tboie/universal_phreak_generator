@@ -331,7 +331,7 @@ Base form at which information travels in all directions indefinitely?
 
 - 10x10
 - tesselated reaction is constant result of only outward gliders
-- tiles spaced at varying distances result in groups of gliders outwards in corners (wavepacket?)
+- tiles spaced at varying distances result in groups of gliders outwards in corners
 
 <img width="197" alt="outwards-glider" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/89e14d7c-4641-4f31-9c03-da77ead1585d">
 
