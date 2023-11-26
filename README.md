@@ -604,4 +604,6 @@ x = 8, y = 9, rule = B3/S23
 
 <br/>
 
-## Is there geometrical/mathematical significance of the system ruleset numbers 2 and 3?
+## Significance of system ruleset numbers 2 and 3?
+- connections of 2 in a neighborhood length of 3?
+- blinker is period 2 with 3 alive cells?
