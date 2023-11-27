@@ -24,6 +24,22 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 
 <br/><br/>
 
+## Why does blinker with middle at 0,0 have dead energy floating point difference?
+
+```
+  1.0000000000000036
+- 0.9999999999999964
+= 0.000000000000007 (7x10^-15 femto)
+```
+
+```
+  1
+/ 0.000000000000007
+= 142857142857142.857142857142857
+```
+
+<br/>
+
 ## System mechanics visualization
 
 TODO: fix tiles
@@ -67,6 +83,25 @@ o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
 4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$12bo5bo5bo10bo5bo5bo$24bo10bo$29b
 2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo!
 ```
+
+<br/>
+
+## Significance of system ruleset numbers 2 and 3?
+- connections of 2 in a neighborhood length of 3?
+- asymmetry?
+
+<br/>
+
+## 8 most common patterns can be formed using 3x3 perimeter
+- https://catagolue.hatsya.com/statistics
+- 1   xs4_33 (Block)	1641635518161410
+- 2   xp2_7 (Blinker)	1524639293713408
+- 3		xs6_696 (Beehive)	869945894691485
+- 4		xq4_153 (Glider)	467343903744820
+- 5		xs7_2596 (Loaf)	256651602436129
+- 6		xs5_253 (Boat)	236781408150196
+- 7		xs6_356 (Ship)	163492510796214
+- 8		xs4_252 (Tub)	51670473427163
 
 <br/>
 
@@ -572,22 +607,6 @@ x = 8, y = 9, rule = B3/S23
 
 <br/><br/>
 
-## Why does blinker with middle at 0,0 have dead energy floating point difference?
-
-```
-  1.0000000000000036
-- 0.9999999999999964
-= 0.000000000000007 (7x10^-15 femto)
-```
-
-```
-  1
-/ 0.000000000000007
-= 142857142857142.857142857142857
-```
-
-<br/>
-
 ## Adjacent Differential Points Value?
 - Implement visualization?
 - Does the value relate to cells with greatest alive/dead energy in system? (distance?)
@@ -595,25 +614,6 @@ x = 8, y = 9, rule = B3/S23
 <img width="480" alt="adpv" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2a29a356-8746-4d55-9829-8be2035fe234">
 
 <br/><br/>
-
-## Significance of system ruleset numbers 2 and 3?
-- connections of 2 in a neighborhood length of 3?
-- asymmetry?
-
-<br/>
-
-## 8 most common patterns can be formed using 3x3 perimeter
-- https://catagolue.hatsya.com/statistics
-- 1   xs4_33 (Block)	1641635518161410
-- 2   xp2_7 (Blinker)	1524639293713408
-- 3		xs6_696 (Beehive)	869945894691485
-- 4		xq4_153 (Glider)	467343903744820
-- 5		xs7_2596 (Loaf)	256651602436129
-- 6		xs5_253 (Boat)	236781408150196
-- 7		xs6_356 (Ship)	163492510796214
-- 8		xs4_252 (Tub)	51670473427163
-
-<br/>
 
 ## Random note for later: 0.125 sequence is combinationally interesting?
 - 0
