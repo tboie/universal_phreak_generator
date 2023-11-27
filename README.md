@@ -590,22 +590,11 @@ x = 8, y = 9, rule = B3/S23
 
 <br/><br/>
 
-## 0.125 sequence is combinationally interesting?
-
-- 0
-- 0.125
-- 0.25
-- 0.375
-- 0.5
-- 0.625
-- 0.75
-- 0.875
-- 1
-
-<br/>
-
 ## Significance of system ruleset numbers 2 and 3?
 - connections of 2 in a neighborhood length of 3?
+- asymmetry?
+
+<br/>
 
 ## 8 most common patterns can be formed using 3x3 perimeter
 - https://catagolue.hatsya.com/statistics
@@ -618,4 +607,15 @@ x = 8, y = 9, rule = B3/S23
 - 7		xs6_356 (Ship)	163492510796214
 - 8		xs4_252 (Tub)	51670473427163
 
+<br/>
 
+## Random note for later: 0.125 sequence is combinationally interesting?
+- 0
+- 0.125
+- 0.25
+- 0.375
+- 0.5
+- 0.625
+- 0.75
+- 0.875
+- 1
