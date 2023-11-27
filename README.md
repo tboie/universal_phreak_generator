@@ -607,3 +607,16 @@ x = 8, y = 9, rule = B3/S23
 ## Significance of system ruleset numbers 2 and 3?
 - connections of 2 in a neighborhood length of 3?
 - blinker is period 2 with 3 alive cells?
+
+## 8 most common patterns can be formed using 3x3 perimeter
+- https://catagolue.hatsya.com/statistics
+- 1   xs4_33 (Block)	1641635518161410
+- 2   xp2_7 (Blinker)	1524639293713408
+- 3		xs6_696 (Beehive)	869945894691485
+- 4		xq4_153 (Glider)	467343903744820
+- 5		xs7_2596 (Loaf)	256651602436129
+- 6		xs5_253 (Boat)	236781408150196
+- 7		xs6_356 (Ship)	163492510796214
+- 8		xs4_252 (Tub)	51670473427163
+
+
