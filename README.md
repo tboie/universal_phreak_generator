@@ -28,6 +28,8 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 - Alive energy uses alive cells
 - Dead energy uses dead cells within a bounding box around min/max of alive cell x/y in system
   - Calculate another "category" for dead cells adjacent to alive cells?
+ 
+- System energy changes create waveform?
 
 <br/>
 
