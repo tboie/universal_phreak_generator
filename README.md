@@ -26,8 +26,10 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 
 ## System energy calculations
 - Alive energy uses alive cells
-- Dead energy uses dead cells within a bounding box around alive cells in system
-  - Should dead energy only account for dead cells adjacent to alive cells?
+- Dead energy uses dead cells within a bounding box around min/max of alive cell x/y in system
+  - Calculate another "category" for dead cells adjacent to alive cells?
+
+<br/>
 
 ## Why does blinker with middle at 0,0 have dead energy floating point difference?
 
