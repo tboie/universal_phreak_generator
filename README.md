@@ -31,7 +31,7 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 
 <br/>
 
-## Why does blinker with middle at 0,0 have dead energy floating point difference?
+## Blinker with middle at 0,0 has bounding box dead energy change floating point difference?
 
 ```
   1.0000000000000036
@@ -44,6 +44,10 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 / 0.000000000000007
 = 142857142857142.857142857142857
 ```
+
+Defining bounding box of blinker creates a pulsar:
+-  https://conwaylife.com/wiki/Pulsar
+-  3x3 center is interesting?
 
 <br/>
 
