@@ -628,6 +628,9 @@ x = 8, y = 9, rule = B3/S23
 
 <br/><br/>
 
+## What is geometry of each cell/point?
+- pyramid/cone?
+
 ## Random note for later: 0.125 sequence is combinationally interesting?
 - 0
 - 0.125
