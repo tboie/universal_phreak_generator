@@ -102,6 +102,7 @@ o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
 ## Significance of system ruleset numbers 2 and 3?
 - connections of 2 in a neighborhood length of 3?
 - asymmetry?
+- how to apply ruleset naturally/geometrically?
 
 <br/>
 
