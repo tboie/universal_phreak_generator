@@ -628,7 +628,7 @@ x = 8, y = 9, rule = B3/S23
 
 <br/>
 
-Dead Cell ADPV = 1 - (1 / Total Connected Alive Cells) ?
+Dead Cell ADPV = 1 - (1 / (Total Connected Alive Cells + 1)) ?
 
 <br/><br/>
 
