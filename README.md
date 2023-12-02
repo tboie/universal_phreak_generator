@@ -626,6 +626,8 @@ x = 8, y = 9, rule = B3/S23
 
 <img width="480" alt="adpv" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2a29a356-8746-4d55-9829-8be2035fe234">
 
+Dead Cell ADPV = 1 - (1 / Total Connected Alive Cells) ?
+
 <br/><br/>
 
 ## What is geometry of each cell/point?
