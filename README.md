@@ -107,7 +107,7 @@ o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
 
 <br/>
 
-## 8 most common patterns can be formed using 3x3 perimeter
+## 8 most common patterns are in results of 3x3 perimeter variations
 - https://catagolue.hatsya.com/statistics
 - 1   xs4_33 (Block)	1641635518161410
 - 2   xp2_7 (Blinker)	1524639293713408
