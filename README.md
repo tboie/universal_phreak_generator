@@ -149,7 +149,7 @@ Result:
 
 Combining concepts:
 
-<img width="440" alt="minimal creation combination" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f1d8f806-0d8e-48c2-824d-ab9f9162998a">
+<img width="304" alt="minimal creation combination" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f1d8f806-0d8e-48c2-824d-ab9f9162998a">
 
 <br/><br/>
 
