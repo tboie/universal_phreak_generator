@@ -177,6 +177,12 @@ bo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo
 
 <br/><br/>
 
+Layering the systems:
+
+<img width="304" alt="layered system" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/46c3078a-33c7-4e2c-84aa-29812fa881fd">
+
+<br/><br/>
+
 ## Tiles
 
 The 4 glider spiral reaction might contain design information.
