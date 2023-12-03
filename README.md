@@ -153,6 +153,30 @@ Combining concepts:
 
 <br/><br/>
 
+Defining the system:
+
+<img width="304" alt="minimal creation define system" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/951fefa8-12b1-4eec-9246-e05d4327da57">
+
+```
+x = 39, y = 39, rule = B3/S23
+39o$o17bobo17bo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3b
+obo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$obo3bo3bo3bo
+3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo
+3bo3bo3bo3bobo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bo
+bo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$obo3bo3bo3bo
+3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo
+3bo3bo3bo3bobo$39o$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$39o$obo3bo3bo3bo3bo
+bo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo
+3bo3bo3bobo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo
+3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$obo3bo3bo3bo3bo
+bo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo
+3bo3bo3bobo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo
+3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o17bobo17bo$39o
+!
+```
+
+<br/><br/>
+
 ## Tiles
 
 The 4 glider spiral reaction might contain design information.
