@@ -154,6 +154,7 @@ Combining concepts:
 <br/><br/>
 
 Defining the system:
+- should border size be 2?
 
 <img width="304" alt="minimal creation define system" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/951fefa8-12b1-4eec-9246-e05d4327da57">
 
