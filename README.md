@@ -114,13 +114,13 @@ Result:
 <br/>
 <br/>
 
-Combining concepts:
+Combining pieces and areas:
 
 <img width="304" alt="minimal creation combination" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f1d8f806-0d8e-48c2-824d-ab9f9162998a">
 
 <br/><br/>
 
-Defining the system:
+Define combination:
 - should border size be 2?
 
 <img width="304" alt="minimal creation define system" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/951fefa8-12b1-4eec-9246-e05d4327da57">
@@ -145,7 +145,7 @@ bo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo
 
 <br/><br/>
 
-Layering the systems:
+Layered:
 
 <img width="304" alt="layered system" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/46c3078a-33c7-4e2c-84aa-29812fa881fd">
 
