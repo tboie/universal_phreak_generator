@@ -14,7 +14,7 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 
 <br/>
 
-## Phreak Phormula
+## Phreak Phormulas
 
 <img width="500" alt="Phreak Phormula" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3c7dd18-6ea3-4db9-9d50-f7504c11d638">
 <br/>
@@ -22,7 +22,12 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 <br/>
 <img width="350" alt="Phreak Phormula example 2" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/8685a79d-8af1-4df3-81ae-e506a87d57e4">
 
-<br/><br/>
+<br/>
+
+more initial state designs (ring version, fibonnaci spiral) found here:
+[src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
+
+<br/>
 
 ## System energy calculations
 - Alive energy uses alive cells
@@ -63,6 +68,15 @@ Example inverse square locality diagram of a dead cell with border
 <br/>
 
 <img width="480" alt="inverse square locality" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38bb849d-73be-4eb6-8c59-e13ccf79f60b">
+
+<br/>
+<br/>
+
+script and tiles here:
+<br/>
+[tiles](https://github.com/tboie/universal_phreak_generator/tree/main/public/tiles)
+<br/>
+[script](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts)
 
 <br/>
 
