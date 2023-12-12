@@ -158,7 +158,7 @@ bo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo
 
 <br/><br/>
 
-Layered:
+Layering each defined combination of pieces and areas:
 
 <img width="304" alt="minimal creation layered" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/56ff9fc2-e537-408d-9ee2-03e808b50cb5">
 
