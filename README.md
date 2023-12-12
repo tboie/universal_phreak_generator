@@ -55,47 +55,14 @@ Defining bounding box of blinker creates a pulsar:
 
 ## System mechanics visualization
 
-TODO: fix tiles
-
-Example locality resolution diagram of a dead cell with border:
-
-- each cell contains rotated 3x3 locality diagrams (2x2 example below)
-- create "inverse square" visualization by layering resolutions? (1x1, 2x2, 3x3...)
+Example inverse square locality diagram of a dead cell with border
+- 3 layers
 
 <img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
 
 <br/>
 
-<img width="480" alt="Screen Shot 2023-10-26 at 11 19 18 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/080cc3d4-5815-4c8c-b237-2638eafdc006">
-
-```
-x = 60, y = 60, rule = B3/S23
-o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$17bo5bo5b2o5bo5bo$29b2o$24bo
-10bo$12bo5bo5bo10bo5bo5bo$o4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$o4b
-2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$17bo5bo5b2o5bo5bo$29b2o$24bo10bo
-$12bo5bo5bo10bo5bo5bo$o4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$2o3b3o
-3b3o2b4o2b2ob3o4b3ob2o2b4o2b3o3b3o3b2o$5bo5b2o4b2o4bobob6obobo4b2o4b2o
-5bo$24b2o3b2o3b2o$24bo3b4o3bo$o5bo5bo4b2o4b4obo2bob4o4b2o4bo5bo5bo$o3b
-3o3b4o2b4o2b2o2b3o2b3o2b2o2b4o2b4o3b3o3bo$2o3b3o3b3o2b4o2b2o2b3o2b3o2b
-2o2b4o2b3o3b3o3b2o$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$24bo3b4o3bo$24b
-2o3b2o3b2o$o5bo5bo4b2o4bobob6obobo4b2o4bo5bo5bo$o3b3o3b4o2b4o2b2ob3o4b
-3ob2o2b4o2b4o3b3o3bo$o2b4o2b3o2b3o2b3o2b12o2b3o2b3o2b3o2b4o2bo$o5bo5b
-3obo2bob4ob2ob2ob2ob4obo2bob3o5bo5bo$o5bo5bo3b4o3b14o3b4o3bo5bo5bo$5bo
-5b3o3b2o3b16o3b2o3b3o5bo$5bo5bobob6obobob2ob2ob2obobob6obobo5bo$3o2b4o
-2bob3o4b3ob12ob3o4b3obo2b4o2b3o$3o2b4o2bob3o4b3ob12ob3o4b3obo2b4o2b3o$
-5bo5bobob6obobob2ob2ob2obobob6obobo5bo$5bo5b3o3b2o3b16o3b2o3b3o5bo$o5b
-o5bo3b4o3b14o3b4o3bo5bo5bo$o5bo5b3obo2bob4ob2ob2ob2ob4obo2bob3o5bo5bo$
-o2b4o2b3o2b3o2b3o2b12o2b3o2b3o2b3o2b4o2bo$o3b3o3b4o2b4o2b2ob3o4b3ob2o
-2b4o2b4o3b3o3bo$o5bo5bo4b2o4bobob6obobo4b2o4bo5bo5bo$24b2o3b2o3b2o$24b
-o3b4o3bo$5bo5b2o4b2o4b4obo2bob4o4b2o4b2o5bo$2o3b3o3b3o2b4o2b2o2b3o2b3o
-2b2o2b4o2b3o3b3o3b2o$o3b3o3b4o2b4o2b2o2b3o2b3o2b2o2b4o2b4o3b3o3bo$o5bo
-5bo4b2o4b4obo2bob4o4b2o4bo5bo5bo$24bo3b4o3bo$24b2o3b2o3b2o$5bo5b2o4b2o
-4bobob6obobo4b2o4b2o5bo$2o3b3o3b3o2b4o2b2ob3o4b3ob2o2b4o2b3o3b3o3b2o$o
-4b2o4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$12bo5bo5bo10bo5bo5bo$24bo10bo$
-29b2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo$o4b2o
-4b2o3b3o3b3o2b6o2b3o3b3o3b2o4b2o4bo$12bo5bo5bo10bo5bo5bo$24bo10bo$29b
-2o$17bo5bo5b2o5bo5bo$o4b2o4b3o3b3o3b4o2b2o2b4o3b3o3b3o4b2o4bo!
-```
+<img width="480" alt="inverse square locality" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38bb849d-73be-4eb6-8c59-e13ccf79f60b">
 
 <br/>
 
