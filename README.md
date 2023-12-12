@@ -29,80 +29,6 @@ more initial state designs (ring version, fibonnaci spiral) found here:
 
 <br/>
 
-## System energy calculations
-- Alive energy uses alive cells
-- Dead energy uses dead cells within a bounding box around min/max of alive cell x/y in system
-  - Calculate another "category" for dead cells adjacent to alive cells?
- 
-- System energy changes create waveform?
-
-<br/>
-
-## Blinker with middle at 0,0 has bounding box dead energy change floating point difference?
-
-```
-  1.0000000000000036
-- 0.9999999999999964
-= 0.000000000000007 (7x10^-15 femto)
-```
-
-```
-  1
-/ 0.000000000000007
-= 142857142857142.857142857142857
-```
-
-Defining bounding box of blinker creates a pulsar:
--  https://conwaylife.com/wiki/Pulsar
--  3x3 center is interesting?
-
-<br/>
-
-## System mechanics visualization
-
-Example inverse square locality diagram of a dead cell with border
-- 3 layers
-- fix the inverted colors?
-- adjust the opacity/colors?
-
-<img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
-
-<br/>
-
-<img width="480" alt="inverse square locality" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38bb849d-73be-4eb6-8c59-e13ccf79f60b">
-
-<br/>
-<br/>
-
-script and tiles here:
-<br/>
-[tiles](https://github.com/tboie/universal_phreak_generator/tree/main/public/tiles)
-<br/>
-[script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_locality_tiles.py)
-
-<br/>
-
-## Significance of system ruleset numbers 2 and 3?
-- connections of 2 in a neighborhood length of 3?
-- asymmetry?
-- sequence of defining center cell in 3x3 matrix?
-- how to apply ruleset naturally/geometrically?
-
-<br/>
-
-## 8 most common patterns are in results of 3x3 perimeter variations
-- https://catagolue.hatsya.com/statistics
-- 1   xs4_33 (Block)	1641635518161410
-- 2   xp2_7 (Blinker)	1524639293713408
-- 3		xs6_696 (Beehive)	869945894691485
-- 4		xq4_153 (Glider)	467343903744820
-- 5		xs7_2596 (Loaf)	256651602436129
-- 6		xs5_253 (Boat)	236781408150196
-- 7		xs6_356 (Ship)	163492510796214
-- 8		xs4_252 (Tub)	51670473427163
-
-<br/>
-
 ## Minimal Creation Concepts
 
 A cell exists. Define area.
@@ -182,6 +108,80 @@ o$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o17bobo17bo$39o!
 ```
 
 <br/><br/>
+
+## System mechanics visualization
+
+Example inverse square locality diagram of a dead cell with border
+- 3 layers
+- fix the inverted colors?
+- adjust the opacity/colors?
+
+<img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
+
+<br/>
+
+<img width="480" alt="inverse square locality" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38bb849d-73be-4eb6-8c59-e13ccf79f60b">
+
+<br/>
+<br/>
+
+script and tiles here:
+<br/>
+[tiles](https://github.com/tboie/universal_phreak_generator/tree/main/public/tiles)
+<br/>
+[script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_locality_tiles.py)
+
+<br/>
+
+## System energy calculations
+- Alive energy uses alive cells
+- Dead energy uses dead cells within a bounding box around min/max of alive cell x/y in system
+  - Calculate another "category" for dead cells adjacent to alive cells?
+ 
+- System energy changes create waveform?
+
+<br/>
+
+## Blinker with middle at 0,0 has bounding box dead energy change floating point difference?
+
+```
+  1.0000000000000036
+- 0.9999999999999964
+= 0.000000000000007 (7x10^-15 femto)
+```
+
+```
+  1
+/ 0.000000000000007
+= 142857142857142.857142857142857
+```
+
+Defining bounding box of blinker creates a pulsar:
+-  https://conwaylife.com/wiki/Pulsar
+-  3x3 center is interesting?
+
+<br/>
+
+## Significance of system ruleset numbers 2 and 3?
+- connections of 2 in a neighborhood length of 3?
+- asymmetry?
+- sequence of defining center cell in 3x3 matrix?
+- how to apply ruleset naturally/geometrically?
+
+<br/>
+
+## 8 most common patterns are in results of 3x3 perimeter variations
+- https://catagolue.hatsya.com/statistics
+- 1   xs4_33 (Block)	1641635518161410
+- 2   xp2_7 (Blinker)	1524639293713408
+- 3		xs6_696 (Beehive)	869945894691485
+- 4		xq4_153 (Glider)	467343903744820
+- 5		xs7_2596 (Loaf)	256651602436129
+- 6		xs5_253 (Boat)	236781408150196
+- 7		xs6_356 (Ship)	163492510796214
+- 8		xs4_252 (Tub)	51670473427163
+
+<br/>
 
 ## Tiles
 
