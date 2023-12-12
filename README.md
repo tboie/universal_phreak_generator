@@ -162,6 +162,23 @@ Layering each defined combination of pieces and areas:
 
 <img width="304" alt="minimal creation layered" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/56ff9fc2-e537-408d-9ee2-03e808b50cb5">
 
+```
+x = 39, y = 39, rule = B3/S23
+39o$o17bobo17bo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obob31obobo$ob
+obobo3bo3bo3bobo3bo3bo3bobobobo$ob35obo$obobobo3bo3bo3bobo3bo3bo3bobob
+obo$obobobob23obobobobo$obobobobobo3bo3bobo3bo3bobobobobobo$ob35obo$ob
+obobobobo3bo3bobo3bo3bobobobobobo$obobobobobob15obobobobobobo$obobobob
+obobobo3bobo3bobobobobobobobo$ob35obo$obobobobobobobo3bobo3bobobobobob
+obobo$obobobobobobobob7obobobobobobobobo$obobobobobobobobobobobobobobo
+bobobobobo$39o$obobobobobobobobobobobobobobobobobobobo$39o$obobobobobo
+bobobobobobobobobobobobobobo$obobobobobobobob7obobobobobobobobo$obobob
+obobobobo3bobo3bobobobobobobobo$ob35obo$obobobobobobobo3bobo3bobobobob
+obobobo$obobobobobob15obobobobobobo$obobobobobo3bo3bobo3bo3bobobobobob
+o$ob35obo$obobobobobo3bo3bobo3bo3bobobobobobo$obobobob23obobobobo$obob
+obo3bo3bo3bobo3bo3bo3bobobobo$ob35obo$obobobo3bo3bo3bobo3bo3bo3bobobob
+o$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o17bobo17bo$39o!
+```
+
 <br/><br/>
 
 ## Tiles
