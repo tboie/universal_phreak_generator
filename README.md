@@ -109,7 +109,7 @@ A cell exists. Define area.
 
 <br/><br/>
 
-Define pieces from cell.
+Define pieces using last generation of sequence.
 
 <img width="177" alt="define cell pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5ae1c7c7-ca5d-46af-9f68-1c2f5b01f163">
 
@@ -135,7 +135,6 @@ Combining pieces and areas:
 <br/><br/>
 
 Define combination:
-- should border size be 2?
 
 <img width="304" alt="minimal creation define system" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/951fefa8-12b1-4eec-9246-e05d4327da57">
 
