@@ -161,7 +161,7 @@ bo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo
 
 Layered:
 
-<img width="304" alt="layered system" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/46c3078a-33c7-4e2c-84aa-29812fa881fd">
+<img width="304" alt="minimal creation layered" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/56ff9fc2-e537-408d-9ee2-03e808b50cb5">
 
 <br/><br/>
 
