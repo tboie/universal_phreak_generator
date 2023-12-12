@@ -76,7 +76,7 @@ script and tiles here:
 <br/>
 [tiles](https://github.com/tboie/universal_phreak_generator/tree/main/public/tiles)
 <br/>
-[script](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts)
+[script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_locality_tiles.py)
 
 <br/>
 
