@@ -131,6 +131,13 @@ script and tiles here:
 
 <br/>
 
+defining a second area displays center pattern similarities?
+
+```
+x = 11, y = 11, rule = B3/S23
+11o$o9bo$o9bo$o9bo$o3b3o3bo$o3bobo3bo$o3b3o3bo$o9bo$o9bo$o9bo$11o!
+```
+
 ## System energy calculations
 - Alive energy uses alive cells
 - Dead energy uses dead cells within a bounding box around min/max of alive cell x/y in system
