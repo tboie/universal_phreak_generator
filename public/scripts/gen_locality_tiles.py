@@ -7,10 +7,13 @@ import numpy as np
 
 # tile size
 # note: check rectangle border when not a multiple of 2 and 3
-size = 480
+size = 120
 
 # total layers
-layers = 8
+layers = 4
+
+# path to tiles
+path = "../tiles/"
 
 # generate gray scale colors
 num_shades = layers + 1
@@ -18,7 +21,7 @@ gray_values = np.linspace(0, 255, num_shades, dtype=int)
 colors = [f"#{val:02x}{val:02x}{val:02x}" for val in gray_values]
 
 # 3x3 base tile
-def genTile(m, path, color, colorBG):
+def genTile(m, p, color, colorBG):
     d = draw.Drawing(size, size, origin=(0,0))
     tSize = size / 3
 
@@ -29,7 +32,7 @@ def genTile(m, path, color, colorBG):
             else:
                 d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=colorBG))
 
-    d.save_svg(path)
+    d.save_svg(p)
 
 # split tuple to array
 def split(arr, size):
@@ -55,31 +58,30 @@ for idx, tuple in enumerate(combinations):
     # flip array
     m = np.flip(m)
 
-    # file name and path
+    # tile file name and path
     file = ""
     for p in tuple:
         file = file + str(p)
-    
-    # edit?
-    path = "../tiles/" + file + ".svg"
-    
+
+    pathTile = path + file + ".svg"
+
     # create base 1x1 tile
-    genTile(m, path, colors[1], colors[0])
+    genTile(m, pathTile, colors[1], colors[0])
 
     # initialize svg
     d = draw.Drawing(size, size, origin=(0,0))
 
     # apply 1x1 tile
-    d.append(draw.Image(0, 0, size, size, path, embed=True, opacity=1))
+    d.append(draw.Image(0, 0, size, size, pathTile, embed=True, opacity=1))
 
     # layers loop
     for layer in range(2, layers + 1):
-        genTile(m, path, colors[layer], "transparent")
+        genTile(m, pathTile, colors[layer], "transparent")
         
         cSize = size / layer
         for x in range(0, layer):
             for y in range(0, layer):
-                d.append(draw.Image(x * cSize, y * cSize, cSize, cSize, path, embed=True, opacity=1))
+                d.append(draw.Image(x * cSize, y * cSize, cSize, cSize, pathTile, embed=True, opacity=1))
 
     # save layers tile
-    d.save_svg('../tiles/' + file + "_layers.svg")
+    d.save_svg(path + file + "_layers.svg")
