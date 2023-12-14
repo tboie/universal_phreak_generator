@@ -71,7 +71,7 @@ for idx, tuple in enumerate(combinations):
         cSize = size / layer
         for x in range(0, layer):
             for y in range(0, layer):
-                d.append(draw.Image(x * cSize, y * cSize, cSize, cSize, pathTile, embed=True, opacity=1))
+                d.append(draw.Image(x * cSize, y * cSize, cSize, cSize, pathTile, embed=True, opacity=0.5))
 
     # save layers tile
     d.save_svg(path + file + "_layers.svg")
