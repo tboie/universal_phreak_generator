@@ -1,5 +1,6 @@
 # creates 3x3 tiles of all possible combinations
 # creates layered inverse square tile using 3x3 tile
+# creates locality diagram using layered tiles
 
 import itertools
 import drawsvg as draw
@@ -74,3 +75,43 @@ for idx, tuple in enumerate(combinations):
 
     # save layers tile
     d.save_svg(path + file + "_layers.svg")
+
+
+# locality diagram
+matrix = [
+        [0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0],
+        [0,0,1,1,1,0,0],
+        [0,0,1,0,1,0,0],
+        [0,0,1,1,1,0,0],
+        [0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0],
+        ]
+
+def get_surrounding_elements(matrix, row, col):
+    """
+    Returns the surrounding elements of a specified element in an array matrix.
+    """
+    rows, cols = len(matrix), len(matrix[0])
+    surrounding_elements = []
+    for i in range(row-1, row+2):
+        for j in range(col-1, col+2):
+            if i >= 0 and i < rows and j >= 0 and j < cols:
+                surrounding_elements.append(matrix[i][j])
+    return surrounding_elements
+
+def loop_through_matrix(matrix, x1, y1, x2, y2):
+    s = size * (len(matrix) - 2)
+    d = draw.Drawing(s, s, origin=(0,0))
+    """
+    Loops through all matrix elements within an array matrix bounding box.
+    """
+    for i in range(x1, x2+1):
+        for j in range(y1, y2+1):
+            strTile = ''.join(str(ele) for ele in get_surrounding_elements(matrix, j, i))
+            strPath = path + strTile + "_layers.svg"
+            d.append(draw.Image((i-1) * size, (j-1) * size, size, size, strPath, embed=True, opacity=1))
+
+    d.save_svg(path + "locality_diagram.svg")
+
+loop_through_matrix(matrix, 1, 1, len(matrix) - 2, len(matrix) - 2)
