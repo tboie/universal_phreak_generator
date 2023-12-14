@@ -34,17 +34,6 @@ def genTile(m, p, color, colorBG):
 
     d.save_svg(p)
 
-# split tuple to array
-def split(arr, size):
-    arrs = []
-    while len(arr) > size:
-        pice = arr[:size]
-        arrs.append(pice)
-        arr   = arr[size:]
-    arrs.append(arr)
-    return arrs
-
-
 # main...
 
 # all 3x3 combinations
@@ -53,7 +42,7 @@ combinations = list(itertools.product(bits, repeat=9))
 
 for idx, tuple in enumerate(combinations):
     # 010111001 tuple to [[0, 1, 0], [1 ,1 ,1], [0, 0, 1]]
-    m = np.array(split(tuple, 3))
+    m = np.array_split(tuple, 3)
 
     # flip array
     m = np.flip(m)
