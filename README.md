@@ -112,15 +112,13 @@ o$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o17bobo17bo$39o!
 ## System mechanics visualization
 
 Example inverse square locality diagram of a dead cell with border
-- 3 layers
-- fix the inverted colors?
-- adjust the opacity/colors?
+- 4 layers
 
 <img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
 
 <br/>
 
-<img width="480" alt="inverse square locality" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38bb849d-73be-4eb6-8c59-e13ccf79f60b">
+<img width="480" alt="locality diagram layered" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2c59b35e-3854-4832-adc0-b19ca42e50ea">
 
 <br/>
 <br/>
