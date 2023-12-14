@@ -17,8 +17,8 @@ layers = 4
 path = "../tiles/"
 
 # generate gray scale colors
-num_shades = layers + 1
-gray_values = np.linspace(0, 255, num_shades, dtype=int)
+num_shades = layers
+gray_values = np.linspace(255, 100, num_shades, dtype=int)
 colors = [f"#{val:02x}{val:02x}{val:02x}" for val in gray_values]
 
 # 3x3 base tile
@@ -56,7 +56,7 @@ for idx, tuple in enumerate(combinations):
     pathTile = path + file + ".svg"
 
     # create base 1x1 tile
-    genTile(m, pathTile, colors[1], colors[0])
+    genTile(m, pathTile, colors[0], "#000000")
 
     # initialize svg
     d = draw.Drawing(size, size, origin=(0,0))
@@ -66,7 +66,7 @@ for idx, tuple in enumerate(combinations):
 
     # layers loop
     for layer in range(2, layers + 1):
-        genTile(m, pathTile, colors[layer], "transparent")
+        genTile(m, pathTile, colors[layer-1], "transparent")
         
         cSize = size / layer
         for x in range(0, layer):

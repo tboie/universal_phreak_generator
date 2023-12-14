@@ -3,12 +3,12 @@
      width="120" height="120" viewBox="0 0 120 120">
 <defs>
 </defs>
-<rect x="0.0" y="0.0" width="40.0" height="40.0" fill="#ffffff" />
+<rect x="0.0" y="0.0" width="40.0" height="40.0" fill="#646464" />
 <rect x="0.0" y="40.0" width="40.0" height="40.0" fill="transparent" />
-<rect x="0.0" y="80.0" width="40.0" height="40.0" fill="#ffffff" />
+<rect x="0.0" y="80.0" width="40.0" height="40.0" fill="#646464" />
 <rect x="40.0" y="0.0" width="40.0" height="40.0" fill="transparent" />
 <rect x="40.0" y="40.0" width="40.0" height="40.0" fill="transparent" />
-<rect x="40.0" y="80.0" width="40.0" height="40.0" fill="#ffffff" />
+<rect x="40.0" y="80.0" width="40.0" height="40.0" fill="#646464" />
 <rect x="80.0" y="0.0" width="40.0" height="40.0" fill="transparent" />
 <rect x="80.0" y="40.0" width="40.0" height="40.0" fill="transparent" />
 <rect x="80.0" y="80.0" width="40.0" height="40.0" fill="transparent" />
