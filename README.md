@@ -118,7 +118,7 @@ Example inverse square locality diagram of a dead cell with border
 
 <br/>
 
-<img width="480" alt="locality diagram" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/93b24ddd-eb89-4413-9b4b-0540351cf10d">
+<img width="480" alt="locality diagram" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/bb85071a-17ee-4d72-8d30-6191d2530ab2">
 
 <br/>
 <br/>
