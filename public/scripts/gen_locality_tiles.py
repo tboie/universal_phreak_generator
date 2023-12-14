@@ -56,7 +56,7 @@ for idx, tuple in enumerate(combinations):
     pathTile = path + file + ".svg"
 
     # create base 1x1 tile
-    genTile(m, pathTile, colors[0], "#000000")
+    genTile(m, pathTile, colors[0], "#303030")
 
     # initialize svg
     d = draw.Drawing(size, size, origin=(0,0))
