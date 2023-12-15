@@ -42,18 +42,15 @@ def genTile(m, p, color, colorBG):
 bits = [0, 1]
 combinations = list(itertools.product(bits, repeat=9))
 
-for idx, tuple in enumerate(combinations):
+for idx, bits in enumerate(combinations):
     # 010111001 tuple to [[0, 1, 0], [1 ,1 ,1], [0, 0, 1]]
-    m = np.array_split(tuple, 3)
+    m = np.array_split(bits, 3)
 
     # flip array
     m = np.flip(m)
 
     # tile file name and path
-    file = ""
-    for p in tuple:
-        file = file + str(p)
-
+    file = ''.join(map(str, bits))
     pathTile = path + file + ".svg"
 
     # create base 1x1 tile
