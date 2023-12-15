@@ -15,7 +15,7 @@ size = 120
 layers = 4
 
 # path to tiles
-path = "../tiles/"
+path = "out/"
 
 # board matrix
 matrix = [
