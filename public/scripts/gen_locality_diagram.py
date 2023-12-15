@@ -7,15 +7,7 @@ import drawsvg as draw
 import numpy as np
 import os
 
-# tile size
-# note: check rectangle border when not a multiple of 2 and 3
-size = 120
-
-# total layers
-layers = 4
-
-# path to tiles
-path = "out/"
+# config...
 
 # board matrix
 matrix = [
@@ -24,10 +16,21 @@ matrix = [
         [1,1,1],
         ]
 
+# tile size
+size = 120
+
+# total layers
+layers = 4
+
+# path to tiles
+path = "out/"
+
 # generate gray scale colors
 num_shades = layers
 gray_values = np.linspace(255, 100, num_shades, dtype=int)
 colors = [f"#{val:02x}{val:02x}{val:02x}" for val in gray_values]
+
+# funcs...
 
 # 3x3 base tile
 def genTile(m, p, color, colorBG):
@@ -43,6 +46,32 @@ def genTile(m, p, color, colorBG):
 
     d.save_svg(p)
 
+# returns 3x3 matrix of specififed element of matrix m
+def get_surrounding_elements(m, row, col):
+    rows, cols = len(m), len(m[0])
+    surrounding_elements = []
+    for i in range(row-1, row+2):
+        for j in range(col-1, col+2):
+            if i >= 0 and i < rows and j >= 0 and j < cols:
+                surrounding_elements.append(m[i][j])
+    return surrounding_elements
+
+# loop through matrix m at start/end positions
+# outputs
+def loop_through_matrix(m, x1, y1, x2, y2):
+    s = size * (len(m) - 2)
+    d = draw.Drawing(s, s, origin=(0,0))
+
+    for i in range(x1, x2+1):
+        for j in range(y1, y2+1):
+            strTile = ''.join(str(ele) for ele in get_surrounding_elements(m, j, i))
+            strPath = path + strTile + "_layers.svg"
+            d.append(draw.Image((i-1) * size, (j-1) * size, size, size, strPath, embed=True, opacity=1))
+
+    d.save_svg(path + "locality_diagram.svg")
+
+# main...
+    
 # base 3x3 tile and layers tile...
 
 # all 3x3 combinations
@@ -83,27 +112,6 @@ for idx, bits in enumerate(combinations):
 
 
 # locality_diagram.svg ...
-
-def get_surrounding_elements(m, row, col):
-    rows, cols = len(m), len(m[0])
-    surrounding_elements = []
-    for i in range(row-1, row+2):
-        for j in range(col-1, col+2):
-            if i >= 0 and i < rows and j >= 0 and j < cols:
-                surrounding_elements.append(m[i][j])
-    return surrounding_elements
-
-def loop_through_matrix(m, x1, y1, x2, y2):
-    s = size * (len(m) - 2)
-    d = draw.Drawing(s, s, origin=(0,0))
-
-    for i in range(x1, x2+1):
-        for j in range(y1, y2+1):
-            strTile = ''.join(str(ele) for ele in get_surrounding_elements(m, j, i))
-            strPath = path + strTile + "_layers.svg"
-            d.append(draw.Image((i-1) * size, (j-1) * size, size, size, strPath, embed=True, opacity=1))
-
-    d.save_svg(path + "locality_diagram.svg")
 
 # padding matrix by 2 more simple than checking NaN for surrounding elements
 matrix = np.pad(matrix, 2, mode='constant')
