@@ -46,7 +46,7 @@ def genTile(m, p, color, colorBG):
 
     d.save_svg(p)
 
-# returns 3x3 matrix of specififed element of matrix m
+# returns 3x3 of matrix element
 def get_surrounding_elements(m, row, col):
     rows, cols = len(m), len(m[0])
     surrounding_elements = []
@@ -56,8 +56,7 @@ def get_surrounding_elements(m, row, col):
                 surrounding_elements.append(m[i][j])
     return surrounding_elements
 
-# loop through matrix m at start/end positions
-# outputs
+# loop matrix and create locality_diagram
 def loop_through_matrix(m, x1, y1, x2, y2):
     s = size * (len(m) - 2)
     d = draw.Drawing(s, s, origin=(0,0))
@@ -111,13 +110,13 @@ for idx, bits in enumerate(combinations):
     d.save_svg(path + file + "_layers.svg")
 
 
-# locality_diagram.svg ...
+# locality_diagram.svg...
 
 # padding matrix by 2 more simple than checking NaN for surrounding elements
 matrix = np.pad(matrix, 2, mode='constant')
 loop_through_matrix(matrix, 1, 1, len(matrix) - 2, len(matrix) - 2)
 
-# cleanup files ...
+# cleanup files...
 for idx, bits in enumerate(combinations):
     f = path + ''.join(map(str, bits)) + ".svg"
     if os.path.exists(f):
