@@ -35,7 +35,7 @@ def genTile(m, p, color, colorBG):
 
     d.save_svg(p)
 
-# main...
+# base 3x3 tile and layers tile...
 
 # all 3x3 combinations
 bits = [0, 1]
@@ -77,15 +77,12 @@ for idx, tuple in enumerate(combinations):
     d.save_svg(path + file + "_layers.svg")
 
 
-# locality diagram
+# locality diagram...
+    
 matrix = [
-        [0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0],
-        [0,0,1,1,1,0,0],
-        [0,0,1,0,1,0,0],
-        [0,0,1,1,1,0,0],
-        [0,0,0,0,0,0,0],
-        [0,0,0,0,0,0,0],
+        [1,1,1],
+        [1,0,1],
+        [1,1,1],
         ]
 
 def get_surrounding_elements(matrix, row, col):
@@ -114,4 +111,6 @@ def loop_through_matrix(matrix, x1, y1, x2, y2):
 
     d.save_svg(path + "locality_diagram.svg")
 
+# padding matrix by 2 more simple than checking NaN for surrounding elements
+matrix = np.pad(matrix, 2, mode='constant')
 loop_through_matrix(matrix, 1, 1, len(matrix) - 2, len(matrix) - 2)
