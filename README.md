@@ -112,26 +112,30 @@ o$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o17bobo17bo$39o!
 ## System mechanics visualization
 
 Example inverse square locality diagram of a dead cell with border
-- 4 layers
 
 <img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
-
-<br/>
-
-<img width="480" alt="locality diagram" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/bb85071a-17ee-4d72-8d30-6191d2530ab2">
-
 <br/>
 <br/>
 
-script and tiles here:
+4 layers
 <br/>
-[tiles](https://github.com/tboie/universal_phreak_generator/tree/main/public/tiles)
+<img width="480" alt="locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/bb85071a-17ee-4d72-8d30-6191d2530ab2">
 <br/>
-[script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_locality_tiles.py)
-
 <br/>
 
-defining a second area displays center pattern similarities?
+8 layers
+<br/>
+<img width="480" alt="locality diagram 8 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a827f4fb-d473-4fd0-a676-323376186db4">
+<br/>
+<br/>
+
+python script:
+<br/>
+[public/scripts/gen_locality_diagram.py](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_locality_diagram.py)
+<br/>
+<br/>
+
+defining a second area displays center pattern similarities of 2-4 layer diagram?
 
 ```
 x = 11, y = 11, rule = B3/S23
