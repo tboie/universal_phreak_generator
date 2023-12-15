@@ -5,6 +5,7 @@
 import itertools
 import drawsvg as draw
 import numpy as np
+import os
 
 # tile size
 # note: check rectangle border when not a multiple of 2 and 3
@@ -114,3 +115,13 @@ def loop_through_matrix(matrix, x1, y1, x2, y2):
 # padding matrix by 2 more simple than checking NaN for surrounding elements
 matrix = np.pad(matrix, 2, mode='constant')
 loop_through_matrix(matrix, 1, 1, len(matrix) - 2, len(matrix) - 2)
+
+# cleanup files ...
+for idx, bits in enumerate(combinations):
+    f = path + ''.join(map(str, bits)) + ".svg"
+    if os.path.exists(f):
+        os.remove(f)
+
+    f = path + ''.join(map(str, bits)) + "_layers.svg"
+    if os.path.exists(f):
+        os.remove(f)
