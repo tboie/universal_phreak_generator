@@ -6,6 +6,7 @@ import itertools
 import drawsvg as draw
 import numpy as np
 import os
+import math
 
 # config...
 
@@ -20,19 +21,16 @@ matrix = [
 size = 120
 
 # total layers
-layers = 4
+layers = 8
 
 # path to tiles
 path = "out/"
 
-# generate gray scale colors
-num_shades = layers
-gray_values = np.linspace(255, 100, num_shades, dtype=int)
-colors = [f"#{val:02x}{val:02x}{val:02x}" for val in gray_values]
-
 # funcs...
 
 # 3x3 base tile
+# todo: should first layer have opacity?
+
 def genTile(m, p, color, colorBG):
     d = draw.Drawing(size, size, origin=(0,0))
     tSize = size / 3
@@ -74,6 +72,8 @@ def loop_through_matrix(m, x1, y1, x2, y2):
 # base 3x3 tile and layers tile...
 
 # all 3x3 combinations
+# todo: only combinations used in matrix?
+
 bits = [0, 1]
 combinations = list(itertools.product(bits, repeat=9))
 
@@ -89,7 +89,7 @@ for idx, bits in enumerate(combinations):
     pathTile = path + file + ".svg"
 
     # create base 1x1 tile
-    genTile(m, pathTile, colors[0], "#303030")
+    genTile(m, pathTile, "#FFFFFF", "#000000")
 
     # initialize svg
     d = draw.Drawing(size, size, origin=(0,0))
@@ -97,14 +97,16 @@ for idx, bits in enumerate(combinations):
     # apply 1x1 tile
     d.append(draw.Image(0, 0, size, size, pathTile, embed=True, opacity=1))
 
+    # base 1x1 tile with transparent bg for layering
+    genTile(m, pathTile, "#FFFFFF", "transparent")
+
     # layers loop
     for layer in range(2, layers + 1):
-        genTile(m, pathTile, colors[layer-1], "transparent")
-        
         cSize = size / layer
+
         for x in range(0, layer):
             for y in range(0, layer):
-                d.append(draw.Image(x * cSize, y * cSize, cSize, cSize, pathTile, embed=True, opacity=0.5))
+                d.append(draw.Image(x * cSize, y * cSize, cSize, cSize, pathTile, embed=True, opacity=1/math.sqrt(layer)))
 
     # save layers tile
     d.save_svg(path + file + "_layers.svg")
