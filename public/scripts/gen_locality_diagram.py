@@ -8,6 +8,7 @@ import numpy as np
 import os
 import math
 
+
 # config...
 
 # board matrix
@@ -21,28 +22,27 @@ matrix = [
 size = 120
 
 # total layers
-layers = 8
+layers = 16
 
-# path to tiles
+# path to tiles & diagram
 path = "out/"
+
+# experimenting...
+
+# inverse square opacity change
+changeOpacity = True
+
+# inverse square color scale
+changeColor = True
+
 
 # funcs...
 
-# 3x3 base tile
-# todo: should first layer have opacity?
-
-def genTile(m, p, color, colorBG):
-    d = draw.Drawing(size, size, origin=(0,0))
-    tSize = size / 3
-
-    for i in range(3):
-        for j in range(3):
-            if m[j][i] == 1:
-                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=color))
-            else:
-                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=colorBG))
-
-    d.save_svg(p)
+# generate inverse square gray scale colors
+grays = []
+for layer in range(2, layers + 1):
+    val = int(255 * (1 / math.sqrt(layer)))
+    grays.append('#%02x%02x%02x' % (val, val, val))
 
 # returns 3x3 of matrix element
 def get_surrounding_elements(m, row, col):
@@ -63,6 +63,21 @@ def get_matrix_combinations(m, x1, y1, x2, y2):
 
     return combos
 
+# 3x3 base tile
+# todo: should first layer have opacity?
+def genTile(m, p, color, colorBG):
+    d = draw.Drawing(size, size, origin=(0,0))
+    tSize = size / 3
+
+    for i in range(3):
+        for j in range(3):
+            if m[j][i] == 1:
+                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=color))
+            else:
+                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=colorBG))
+
+    d.save_svg(p)
+
 # loop matrix and create locality_diagram
 def gen_diagram(m, x1, y1, x2, y2):
     s = size * (len(m) - 2)
@@ -75,6 +90,7 @@ def gen_diagram(m, x1, y1, x2, y2):
             d.append(draw.Image((i-1) * size, (j-1) * size, size, size, strPath, embed=True, opacity=1))
 
     d.save_svg(path + "locality_diagram.svg")
+
 
 # main...
     
@@ -106,25 +122,36 @@ for bits in combinations:
     # apply 1x1 tile
     d.append(draw.Image(0, 0, size, size, pathTile, embed=True, opacity=1))
 
-    # base 1x1 tile with transparent bg for layering
-    genTile(m, pathTile, "#FFFFFF", "transparent")
-
     # layers loop
     for layer in range(2, layers + 1):
-        cSize = size / layer
+        tSize = size / layer
+
+        opacity = 1
+        if changeOpacity == True:
+            opacity = 1 / math.sqrt(layer)
+        
+        color = "#FFFFFF"
+        if changeColor == True:
+            color = grays[layer-2]
+
+        # base 1x1 tile with transparent bg for layering
+        genTile(m, pathTile, color, "transparent")
 
         for x in range(0, layer):
             for y in range(0, layer):
-                d.append(draw.Image(x * cSize, y * cSize, cSize, cSize, pathTile, embed=True, opacity=1/math.sqrt(layer)))
+                d.append(draw.Image(x * tSize, y * tSize, tSize, tSize, pathTile, embed=True, opacity=opacity))
 
     # save layers tile
     d.save_svg(path + file + "_layers.svg")
 
 
 # locality_diagram.svg...
+
 gen_diagram(matrix, 1, 1, len(matrix) - 2, len(matrix) - 2)
 
+
 # cleanup files...
+
 for idx, bits in enumerate(combinations):
     f = path + ''.join(map(str, bits)) + ".svg"
     if os.path.exists(f):
