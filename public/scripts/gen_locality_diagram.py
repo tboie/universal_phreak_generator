@@ -54,8 +54,17 @@ def get_surrounding_elements(m, row, col):
                 surrounding_elements.append(m[i][j])
     return surrounding_elements
 
+# loop matrix and return 3x3 combinations
+def get_matrix_combinations(m, x1, y1, x2, y2):
+    combos = []
+    for i in range(x1, x2+1):
+        for j in range(y1, y2+1):
+            combos.append(get_surrounding_elements(m, j, i))
+
+    return combos
+
 # loop matrix and create locality_diagram
-def loop_through_matrix(m, x1, y1, x2, y2):
+def gen_diagram(m, x1, y1, x2, y2):
     s = size * (len(m) - 2)
     d = draw.Drawing(s, s, origin=(0,0))
 
@@ -69,16 +78,16 @@ def loop_through_matrix(m, x1, y1, x2, y2):
 
 # main...
     
-# base 3x3 tile and layers tile...
+# create base 3x3 tile and layers tile...
 
-# all 3x3 combinations
-# todo: only combinations used in matrix?
+# padding matrix by 2 more simple than checking NaN for surrounding elements
+matrix = np.pad(matrix, 2, mode='constant')
 
-bits = [0, 1]
-combinations = list(itertools.product(bits, repeat=9))
+# get matrix cell 3x3 combinations
+combinations = get_matrix_combinations(matrix, 1, 1, len(matrix) - 2, len(matrix) - 2)
 
-for idx, bits in enumerate(combinations):
-    # 010111001 tuple to [[0, 1, 0], [1 ,1 ,1], [0, 0, 1]]
+for bits in combinations:
+    # 010111001 to [[0, 1, 0], [1 ,1 ,1], [0, 0, 1]]
     m = np.array_split(bits, 3)
 
     # flip array
@@ -113,10 +122,7 @@ for idx, bits in enumerate(combinations):
 
 
 # locality_diagram.svg...
-
-# padding matrix by 2 more simple than checking NaN for surrounding elements
-matrix = np.pad(matrix, 2, mode='constant')
-loop_through_matrix(matrix, 1, 1, len(matrix) - 2, len(matrix) - 2)
+gen_diagram(matrix, 1, 1, len(matrix) - 2, len(matrix) - 2)
 
 # cleanup files...
 for idx, bits in enumerate(combinations):
