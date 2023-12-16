@@ -119,13 +119,19 @@ Example inverse square locality diagram of a dead cell with border
 
 4 layers
 <br/>
-<img width="480" alt="locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/bb85071a-17ee-4d72-8d30-6191d2530ab2">
+<img width="480" alt="locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/dbf58ec9-90f9-446b-87fe-f890ad68c004">
 <br/>
 <br/>
 
 8 layers
 <br/>
-<img width="480" alt="locality diagram 8 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a827f4fb-d473-4fd0-a676-323376186db4">
+<img width="480" alt="locality diagram 8 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a0f7e11f-feed-435e-8987-c6ade31efdd0">
+<br/>
+<br/>
+
+16 layers
+<br/>
+<img width="480" alt="locality diagram 16 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/d529c179-19dd-46aa-b500-18da8e7be3af">
 <br/>
 <br/>
 
