@@ -135,9 +135,9 @@ Example inverse square locality diagram of a dead cell with border
 <br/>
 <br/>
 
-8 layer animation
+16 layer animation
 <br/>
-<img width="480" alt="locality diagram 8 layers animation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/580d9f49-0c13-4129-9e08-bbff18e12fc1">
+<img width="480" alt="locality diagram 8 layers animation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/85c3acbd-2442-4c78-a251-cfd8d5a2a1af">
 <br/>
 <br/>
 
