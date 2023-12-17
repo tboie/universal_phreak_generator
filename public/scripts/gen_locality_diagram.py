@@ -22,7 +22,7 @@ matrix = [
 size = 120
 
 # total layers
-layers = 16
+layers = 8
 
 # path to tiles & diagram
 path = "out/"
@@ -79,18 +79,17 @@ def genTile(m, p, color, colorBG):
     d.save_svg(p)
 
 # loop matrix and create locality_diagram
-def gen_diagram(m, x1, y1, x2, y2):
+def gen_diagram(m, x1, y1, x2, y2, layer):
     s = size * (len(m) - 2)
     d = draw.Drawing(s, s, origin=(0,0))
 
     for i in range(x1, x2+1):
         for j in range(y1, y2+1):
             strTile = ''.join(str(ele) for ele in get_surrounding_elements(m, j, i))
-            strPath = path + strTile + "_layers.svg"
+            strPath = path + strTile + "_layers_" + str(layer) + ".svg"
             d.append(draw.Image((i-1) * size, (j-1) * size, size, size, strPath, embed=True, opacity=1))
 
-    d.save_svg(path + "locality_diagram.svg")
-
+    d.save_svg(path + "locality_diagram_" + str(layer) + ".svg")
 
 # main...
     
@@ -111,7 +110,7 @@ for bits in combinations:
 
     # tile file name and path
     file = ''.join(map(str, bits))
-    pathTile = path + file + ".svg"
+    pathTile = path + file + "_layers_1.svg"
 
     # create base 1x1 tile
     genTile(m, pathTile, "#FFFFFF", "#000000")
@@ -141,22 +140,23 @@ for bits in combinations:
             for y in range(0, layer):
                 d.append(draw.Image(x * tSize, y * tSize, tSize, tSize, pathTile, embed=True, opacity=opacity))
 
-    # save layers tile
-    d.save_svg(path + file + "_layers.svg")
+        # save layers tile
+        d.save_svg(path + file + "_layers_" + str(layer) + ".svg")
+
+    # base 1x1 tile was modified, re-create it
+    genTile(m, pathTile, "#FFFFFF", "#000000")
 
 
 # locality_diagram.svg...
 
-gen_diagram(matrix, 1, 1, len(matrix) - 2, len(matrix) - 2)
-
+for layer in range(1, layers + 1):
+    gen_diagram(matrix, 1, 1, len(matrix) - 2, len(matrix) - 2, layer)
 
 # cleanup files...
 
-for idx, bits in enumerate(combinations):
-    f = path + ''.join(map(str, bits)) + ".svg"
-    if os.path.exists(f):
-        os.remove(f)
+for layer in range(1, layers + 1):
+    for idx, bits in enumerate(combinations):
+        f = path + ''.join(map(str, bits)) + "_layers_" + str(layer) + ".svg"
+        if os.path.exists(f):
+            os.remove(f)
 
-    f = path + ''.join(map(str, bits)) + "_layers.svg"
-    if os.path.exists(f):
-        os.remove(f)
