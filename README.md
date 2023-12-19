@@ -119,7 +119,13 @@ Increment cell inverse-square 1 per generation?
 <br/>
 <br/>
 
-4 layers
+1 generation pattern.  32 generations of inverse square animated:
+<br/>
+<img width="480" alt="locality diagram single generation animation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/160c6e57-b278-496f-8d69-99cdaa042c57">
+<br/>
+<br/>
+
+4 layers 
 <br/>
 <img width="480" alt="locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/dbf58ec9-90f9-446b-87fe-f890ad68c004">
 <br/>
