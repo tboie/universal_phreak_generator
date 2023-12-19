@@ -113,7 +113,10 @@ o$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o17bobo17bo$39o!
 
 Example inverse square locality diagram of a dead cell with border.
 
-Increment cell inverse-square 1 per generation?
+Inverse square is incremented 1 per generation.
+
+TODO: - how should inverse square intensity be accurately visualized?
+      - demo pattern sequence (current pattern is static)
 
 <img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
 <br/>
@@ -125,25 +128,27 @@ Increment cell inverse-square 1 per generation?
 <br/>
 <br/>
 
-4 layers 
+Continuous dead cell border pattern:
+
+4 generations
 <br/>
 <img width="480" alt="locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/dbf58ec9-90f9-446b-87fe-f890ad68c004">
 <br/>
 <br/>
 
-8 layers
+8 generations
 <br/>
 <img width="480" alt="locality diagram 8 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a0f7e11f-feed-435e-8987-c6ade31efdd0">
 <br/>
 <br/>
 
-16 layers
+16 generations
 <br/>
 <img width="480" alt="locality diagram 16 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/d529c179-19dd-46aa-b500-18da8e7be3af">
 <br/>
 <br/>
 
-32 layer animation
+32 generation animation
 <br/>
 <img width="480" alt="locality diagram 32 layers animation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/b60fec1f-d7fd-4182-9cf6-8c6d7c22b44c">
 <br/>
@@ -161,8 +166,6 @@ defining a second area displays center pattern similarities of 2-4 layer diagram
 x = 11, y = 11, rule = B3/S23
 11o$o9bo$o9bo$o9bo$o3b3o3bo$o3bobo3bo$o3b3o3bo$o9bo$o9bo$o9bo$11o!
 ```
-
-todo: initial state design?
 
 ## System energy calculations
 - Alive energy uses alive cells
