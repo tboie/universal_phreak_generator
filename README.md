@@ -115,8 +115,11 @@ Example inverse square locality diagram of a dead cell with border.
 
 Inverse square is incremented 1 per generation.
 
-TODO: - how should inverse square intensity be accurately visualized?
-      - demo pattern sequence (current pattern is static)
+
+TODO: 
+- how should inverse square intensity be accurately visualized?
+- demo pattern sequence (current pattern is static)
+
 
 <img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
 <br/>
