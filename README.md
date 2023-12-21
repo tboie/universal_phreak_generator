@@ -175,6 +175,7 @@ Initial state design?
 - Translation Technique
     - Inverse Square?
     - Spiral?
+    - Multiple generations?
 
 ## System energy calculations
 - Alive energy uses alive cells
