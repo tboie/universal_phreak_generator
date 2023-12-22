@@ -111,19 +111,24 @@ o$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o17bobo17bo$39o!
 
 ## System mechanics visualization
 
-Example inverse square locality diagram of a dead cell with border.
-
-Inverse square is incremented 1 per generation.
-
 TODO: 
 - how should inverse square intensity be accurately visualized (color, opacity, etc.)?
 - apply to multiple period patterns ex) oscillators, spaceships
     - interesting layer variations?
 - apply to entire system
 
+<br/>
 <img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
 <br/>
 <br/>
+
+Example inverse square locality diagram of a dead cell with border.
+<br/>
+<img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/fd1e9b72-9004-4828-bcad-6814c038eeed">
+<br/>
+<br/>
+
+Inverse square is incremented 1 per generation.
 
 1 generation pattern.  32 generations of inverse square animated:
 <br/>
