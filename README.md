@@ -124,7 +124,7 @@ TODO:
 
 Example inverse square locality diagram of a dead cell with border.
 <br/>
-<img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/fd1e9b72-9004-4828-bcad-6814c038eeed">
+<img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/c492224b-3bb7-4d7a-bb67-e60ade8d239b">
 <br/>
 <br/>
 
