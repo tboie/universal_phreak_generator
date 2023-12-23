@@ -112,7 +112,7 @@ o$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o17bobo17bo$39o!
 ## System mechanics visualization
 
 TODO: 
-- how should inverse square intensity be accurately visualized (color, opacity, etc.)?
+- how should inverse square intensity be accurately visualized (color, opacity, depth etc.)?
 - apply to multiple period patterns ex) oscillators, spaceships
     - interesting layer variations?
 - apply to entire system
