@@ -64,47 +64,43 @@ Combining pieces and areas:
 
 Define combination:
 
-<img width="304" alt="minimal creation define system" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/951fefa8-12b1-4eec-9246-e05d4327da57">
+<img width="304" alt="minimal creation define system" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f0fb4950-1eb1-4754-a7c5-bd579faa91c1">
 
 ```
-x = 39, y = 39, rule = B3/S23
-39o$o17bobo17bo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3b
-obo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$obo3bo3bo3bo
-3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo
-3bo3bo3bo3bobo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bo
-bo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$obo3bo3bo3bo
-3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo
-3bo3bo3bo3bobo$39o$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$39o$obo3bo3bo3bo3bo
-bo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo
-3bo3bo3bobo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo
-3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$obo3bo3bo3bo3bo
-bo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo
-3bo3bo3bobo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obo3bo3bo3bo3bobo
-3bo3bo3bo3bobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o17bobo17bo$39o
-!
+x = 31, y = 31, rule = B3/S23
+31o$o29bo$ob27obo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$
+obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo
+3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3b
+o3bobo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo
+3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bob
+o3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3bo3bo
+bo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo
+3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bob
+o$ob27obo$o29bo$31o!
 ```
 
 <br/><br/>
 
 Layering each defined combination of pieces and areas:
 
-<img width="304" alt="minimal creation layered" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/56ff9fc2-e537-408d-9ee2-03e808b50cb5">
+<img width="304" alt="minimal creation layered" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7c0d201d-e78b-42fd-b62c-1bfc94319cf7">
 
 ```
 x = 39, y = 39, rule = B3/S23
-39o$o17bobo17bo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obob31obobo$ob
-obobo3bo3bo3bobo3bo3bo3bobobobo$ob35obo$obobobo3bo3bo3bobo3bo3bo3bobob
-obo$obobobob23obobobobo$obobobobobo3bo3bobo3bo3bobobobobobo$ob35obo$ob
-obobobobo3bo3bobo3bo3bobobobobobo$obobobobobob15obobobobobobo$obobobob
-obobobo3bobo3bobobobobobobobo$ob35obo$obobobobobobobo3bobo3bobobobobob
-obobo$obobobobobobobob7obobobobobobobobo$obobobobobobobobobobobobobobo
-bobobobobo$39o$obobobobobobobobobobobobobobobobobobobo$39o$obobobobobo
-bobobobobobobobobobobobobobo$obobobobobobobob7obobobobobobobobo$obobob
-obobobobo3bobo3bobobobobobobobo$ob35obo$obobobobobobobo3bobo3bobobobob
-obobobo$obobobobobob15obobobobobobo$obobobobobo3bo3bobo3bo3bobobobobob
-o$ob35obo$obobobobobo3bo3bobo3bo3bobobobobobo$obobobob23obobobobo$obob
-obo3bo3bo3bobo3bo3bo3bobobobo$ob35obo$obobobo3bo3bo3bobo3bo3bo3bobobob
-o$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o17bobo17bo$39o!
+39o$o37bo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obob31obobo$obobobo
+3bo3bo3bobo3bo3bo3bobobobo$ob35obo$obobobo3bo3bo3bobo3bo3bo3bobobobo$o
+bobobob23obobobobo$obobobobobo3bo3bobo3bo3bobobobobobo$ob35obo$obobobo
+bobo3bo3bobo3bo3bobobobobobo$obobobobobob15obobobobobobo$obobobobobobo
+bo3bobo3bobobobobobobobo$ob35obo$obobobobobobobo3bobo3bobobobobobobobo
+$obobobobobobobo3bobo3bobobobobobobobo$obobobobobobobo3bobo3bobobobobo
+bobobo$ob35obo$obobobobobobobo3bobo3bobobobobobobobo$ob35obo$obobobobo
+bobobo3bobo3bobobobobobobobo$obobobobobobobo3bobo3bobobobobobobobo$obo
+bobobobobobo3bobo3bobobobobobobobo$ob35obo$obobobobobobobo3bobo3bobobo
+bobobobobo$obobobobobob15obobobobobobo$obobobobobo3bo3bobo3bo3bobobobo
+bobo$ob35obo$obobobobobo3bo3bobo3bo3bobobobobobo$obobobob23obobobobo$o
+bobobo3bo3bo3bobo3bo3bo3bobobobo$ob35obo$obobobo3bo3bo3bobo3bo3bo3bobo
+bobo$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o37bo$39o!
+
 ```
 
 <br/><br/>
