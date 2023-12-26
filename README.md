@@ -171,12 +171,13 @@ x = 11, y = 11, rule = B3/S23
 11o$o9bo$o9bo$o9bo$o3b3o3bo$o3bobo3bo$o3b3o3bo$o9bo$o9bo$o9bo$11o!
 ```
 
-Initial state design?
+Initial state design from cell contents?
 - Cell to Board?
 - Board to Board?
 - Translation Technique
     - Inverse Square?
     - Spiral?
+    - [Minimal Creation Grid?](https://github.com/tboie/universal_phreak_generator?tab=readme-ov-file#minimal-creation-concepts)
     - Multiple generations?
 
 ## System energy calculations
