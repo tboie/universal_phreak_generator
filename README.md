@@ -53,8 +53,20 @@ Result:
 
 <img width="304" alt="Screen Shot 2023-11-22 at 11 45 50 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/87b9b685-52f8-4ba4-b4e0-96220a20a4c8">
 
-<br/>
-<br/>
+<br/><br/>
+
+Expansion by adding defined pieces:
+
+<img width="304" alt="adding defined pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a8a9546c-36b8-42de-9c67-c2d876fa875e">
+
+```
+x = 27, y = 27, rule = B3/S23
+12b3o$12bobo$12bobo$12bobo$12b3o$12bobo$12bobo$12bobo$12b3o$12bobo$12b
+obo$12bobo$27o$o3bo3bo3bobo3bo3bo3bo$27o$12bobo$12bobo$12bobo$12b3o$
+12bobo$12bobo$12bobo$12b3o$12bobo$12bobo$12bobo$12b3o!
+```
+
+<br/><br/>
 
 Combining pieces and areas:
 
