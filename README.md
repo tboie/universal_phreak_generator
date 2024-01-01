@@ -124,6 +124,7 @@ TODO:
 - apply to multiple period patterns ex) oscillators, spaceships
     - interesting layer variations?
 - apply to entire system
+- compare pattern locality diagram reaction to tiled pattern tesselation reaction
 
 <br/>
 <img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
