@@ -2,7 +2,6 @@
 # creates layered inverse square tile using 3x3 tile
 # creates matrix "locality_diagram.svg" using layered tiles
 
-import itertools
 import drawsvg as draw
 import numpy as np
 import os
