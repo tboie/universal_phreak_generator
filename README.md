@@ -144,8 +144,17 @@ Inverse square is incremented 1 per generation.
 <img width="480" alt="locality diagram single generation animation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/160c6e57-b278-496f-8d69-99cdaa042c57">
 <br/>
 <br/>
+<br/>
 
 Continuous dead cell border pattern:
+
+<br/>
+
+2 generations
+<br/>
+<img width="480" alt="locality diagram 2 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/25cdd9e5-e9fa-4c5b-9d08-ad48b39cd134">
+<br/>
+<br/>
 
 4 generations
 <br/>
