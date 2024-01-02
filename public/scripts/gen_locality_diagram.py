@@ -18,14 +18,17 @@ matrix = [
         [1,1,1],
         ]
 
-# tile size
-size = 120
-
 # total layers
 layers = 8
 
+# grid lines
+gridLines = False
+
 # path to tiles & diagram
 path = "out/"
+
+# tile size
+size = 120
 
 # experimenting...
 
@@ -72,9 +75,9 @@ def genTile(m, p, color, colorBG):
     for i in range(3):
         for j in range(3):
             if m[j][i] == 1:
-                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=color))
+                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=color, stroke="red", stroke_opacity=0.5 if gridLines == True else 0))
             else:
-                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=colorBG))
+                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=colorBG, stroke="red", stroke_opacity=0.5 if gridLines == True else 0))
 
     d.save_svg(p)
 
@@ -87,6 +90,9 @@ def gen_diagram(m, x1, y1, x2, y2, layer):
         for j in range(y1, y2+1):
             strTile = ''.join(str(ele) for ele in get_surrounding_elements(m, j, i))
             strPath = path + strTile + "_layers_" + str(layer) + ".svg"
+
+            d.append(draw.Rectangle((i-1) * size, (j-1) * size, size, size, stroke="gray", stroke_width=5, stroke_opacity=1 if gridLines == True else 0))
+
             d.append(draw.Image((i-1) * size, (j-1) * size, size, size, strPath, embed=True, opacity=1))
 
     d.save_svg(path + "locality_diagram_" + str(layer) + ".svg")
