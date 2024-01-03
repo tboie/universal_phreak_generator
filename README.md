@@ -174,6 +174,7 @@ Initial state design from cell contents?
 - Alive energy uses alive cells
 - Dead energy uses dead cells within a bounding box around min/max of alive cell x/y in system
   - Calculate another "category" for dead cells adjacent to alive cells?
+      - Adjacent Dead Cell ADPV = Total Connected Alive Cells / 8 ?
  
 - System energy changes create waveform?
 
@@ -707,7 +708,7 @@ x = 8, y = 9, rule = B3/S23
 
 <br/><br/>
 
-Dead Cell ADPV = 1 - (1 - (Total Connected Alive Cells / 8)) ?
+Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 
 <br/><br/>
 
