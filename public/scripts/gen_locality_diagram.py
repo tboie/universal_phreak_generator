@@ -110,8 +110,8 @@ for bits in combinations:
     # 010111001 to [[0, 1, 0], [1 ,1 ,1], [0, 0, 1]]
     m = np.array_split(bits, 3)
 
-    # flip array
-    m = np.flip(m)
+    # uncomment to invert
+    # m = np.flip(m)
 
     # tile file name and path
     file = ''.join(map(str, bits))
@@ -124,7 +124,7 @@ for bits in combinations:
     d = draw.Drawing(size, size, origin=(0,0))
 
     # apply 1x1 tile
-    d.append(draw.Image(0, 0, size, size, pathTile, embed=True, opacity=1))
+    d.append(draw.Image(0, 0, size, size, pathTile, embed=True, opacity= 1 / math.sqrt(2)))
 
     # layers loop
     for layer in range(2, layers + 1):
@@ -132,7 +132,7 @@ for bits in combinations:
 
         opacity = 1
         if changeOpacity == True:
-            opacity = 1 / math.sqrt(layer)
+            opacity = 1 / math.sqrt(layer + 1)
         
         color = "#FFFFFF"
         if changeColor == True:
