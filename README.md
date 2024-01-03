@@ -120,7 +120,7 @@ bobo$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o37bo$39o!
 ## System mechanics visualization
 
 TODO: 
-- how should inverse square intensity be accurately visualized (color, opacity, depth etc.)?
+- how should intensity be accurately visualized (color, opacity, depth etc.)?
 - apply to multiple period patterns ex) oscillators, spaceships
     - interesting layer variations?
 - apply to entire system
@@ -131,53 +131,14 @@ TODO:
 <br/>
 <br/>
 
-Example inverse square locality diagram of a dead cell with border.
+4 Layer Locality Diagram:
 <br/>
-<img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/c492224b-3bb7-4d7a-bb67-e60ade8d239b">
-<br/>
-<br/>
-
-Inverse square is incremented 1 per generation.
-
-1 generation pattern.  32 generations of inverse square animated:
-<br/>
-<img width="480" alt="locality diagram single generation animation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/160c6e57-b278-496f-8d69-99cdaa042c57">
-<br/>
-<br/>
+<img width="480" alt="locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3fef22a5-e79c-418d-b3a8-87bc1e620b46">
 <br/>
 
-Continuous dead cell border pattern:
-
+4 Layer Inverse Locality Diagram:
 <br/>
-
-2 generations
-<br/>
-<img width="480" alt="locality diagram 2 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/25cdd9e5-e9fa-4c5b-9d08-ad48b39cd134">
-<br/>
-<br/>
-
-4 generations
-<br/>
-<img width="480" alt="locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/dbf58ec9-90f9-446b-87fe-f890ad68c004">
-<br/>
-<br/>
-
-8 generations
-<br/>
-<img width="480" alt="locality diagram 8 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a0f7e11f-feed-435e-8987-c6ade31efdd0">
-<br/>
-<br/>
-
-16 generations
-<br/>
-<img width="480" alt="locality diagram 16 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/d529c179-19dd-46aa-b500-18da8e7be3af">
-<br/>
-<br/>
-
-32 generation animation
-<br/>
-<img width="480" alt="locality diagram 32 layers animation" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/b60fec1f-d7fd-4182-9cf6-8c6d7c22b44c">
-<br/>
+<img width="480" alt="inverse locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/71784c11-5373-4ad0-95e8-9866525b83b3">
 <br/>
 
 python script:
