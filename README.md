@@ -169,10 +169,11 @@ Initial state design from cell contents?
     - Multiple generations?
 
 ## System energy calculations
+[Code in App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx#L198)
+
 - Alive energy uses alive cells
 - Dead energy uses dead cells within a bounding box around min/max of alive cell x/y in system
   - Calculate another "category" for dead cells adjacent to alive cells?
-- Calculate [System Mechanics Visualization](https://github.com/tboie/universal_phreak_generator?tab=readme-ov-file#system-mechanics-visualization) cells?
  
 - System energy changes create waveform?
 
