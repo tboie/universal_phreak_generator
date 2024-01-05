@@ -223,8 +223,6 @@ Defining bounding box of blinker creates a pulsar:
 
 ## Tiles
 
-Created using inverse square?
-
 <br/>
 
 The 4 glider spiral reaction might contain design information.
