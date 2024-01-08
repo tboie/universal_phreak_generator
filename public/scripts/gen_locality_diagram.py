@@ -20,6 +20,9 @@ matrix = [
 # total layers
 layers = 8
 
+# inverted
+inverted = True
+
 # grid lines
 gridLines = False
 
@@ -110,8 +113,8 @@ for bits in combinations:
     # 010111001 to [[0, 1, 0], [1 ,1 ,1], [0, 0, 1]]
     m = np.array_split(bits, 3)
 
-    # uncomment to invert
-    # m = np.flip(m)
+    if inverted:
+        m = np.flip(m)
 
     # tile file name and path
     file = ''.join(map(str, bits))
