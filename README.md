@@ -223,6 +223,10 @@ Defining bounding box of blinker creates a pulsar:
 
 ## Tiles
 
+A block is 4 quadrants?  A blinker rotates 90 degrees?  A tile combines the concepts of 2 most common patterns.
+
+Tesselated tiles display scaled pattern information? (pattern is squared)
+
 <br/>
 
 The 4 glider spiral reaction might contain design information.
