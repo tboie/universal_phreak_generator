@@ -354,6 +354,8 @@ Note: At this point in experiments, 1 beehive in each corner remain when all oth
 
 ![Screen Recording 2023-08-04 at 9 20 13 AM](https://github.com/tboie/universal_phreak_generator/assets/26150152/ada9b19d-6816-475f-8734-9843a001ad22)
 
+3x3 tile tesselation results in outwards gliders.
+
 Is there a system spin mechanism/value? Is it possible to visualize system spin mechanism/value? Would it be 1 bit in each corner as a base value?
 
 <br/>
