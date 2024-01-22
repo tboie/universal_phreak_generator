@@ -168,8 +168,6 @@ Initial state design from cell contents?
     - [Minimal Creation Grid?](https://github.com/tboie/universal_phreak_generator?tab=readme-ov-file#minimal-creation-concepts)
     - Multiple generations?
 
-Is there a still-life having "nothing" enclosed?
-
 ## System energy calculations
 [Code in App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx#L198)
 
