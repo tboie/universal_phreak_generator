@@ -731,7 +731,7 @@ Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 - 1
 
 ## Nothing to Something Sequence (will it scale?)
-
+```
 Generation = 0
 Position = 0,0
 Ruleset = Dead cell to Alive cell when connected to 1 Alive Cell
@@ -767,4 +767,4 @@ Generation = 6
 Activate Location = 0, -1
 
 ... towards infinity
-
+```
