@@ -729,3 +729,42 @@ Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 - 0.75
 - 0.875
 - 1
+
+## Nothing to Something Sequence (will it scale?)
+
+Generation = 0
+Position = 0,0
+Ruleset = Dead cell to Alive cell when connected to 1 Alive Cell
+
+Activate Location 0,0
+
+Step Generation = 1 and Apply Ruleset
+Now there is 3x3:
+
+111
+101
+111
+
+Ruleset changes to 2/3 from actions creating 3x3
+
+For each generation step, sequentially activate a cell location in spiral direction
+
+Example:
+
+Generation = 2
+Activate Location = 0,1
+
+Generation = 3
+Activate Location = 1,1
+
+Generation = 4
+Activate Location = 1,0
+
+Generation = 5
+Activate Location = -1, -1
+
+Generation = 6
+Activate Location = 0, -1
+
+... towards infinity
+
