@@ -201,10 +201,18 @@ Defining bounding box of blinker creates a pulsar:
 <br/>
 
 ## Significance of system ruleset numbers 2 and 3?
+- reverse engineering shows 3 locations are a constant of an alive cell?
+  - a dead cell with 3 neighbors becomes alive (3 known locations)
+  - an alive cell with 2 alive neighbors stays alive (3 known locations)
+  - an alive cell with 3 alive neighbors stays alive (3 known neighbor locations?)
+  - 3 locations enough to create triangle/square in neighborhood? (basic geometric shapes)
+  - 2^3 = 8
+    - 3 locations = 8 numbers of x,y for an alive cell?
+    - more or less cause dead cell?
+    - 8 total neighbors
+
 - connections of 2 in a neighborhood length of 3?
-- asymmetry?
-- sequence of defining center cell in 3x3 matrix?
-- how to apply ruleset naturally/geometrically?
+- sequence of defining center cell in 3x3 matrix? (start at corner/side?)
 
 <br/>
 
@@ -774,4 +782,10 @@ Activate Location = 0, -1
 301
 3 1
 322
+```
+
+```
+011
+3 2
+332
 ```
