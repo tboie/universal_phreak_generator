@@ -167,6 +167,11 @@ Initial state design from cell contents?
     - Spiral?
     - [Minimal Creation Grid?](https://github.com/tboie/universal_phreak_generator?tab=readme-ov-file#minimal-creation-concepts)
     - Multiple generations?
+ 
+Locality Trace Diagram:
+<br/>
+<img width="480" alt="locality trace diagram" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f1a09742-a2f1-476e-a48c-1af41ba9af05">
+
 
 ## System energy calculations
 [Code in App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx#L198)
