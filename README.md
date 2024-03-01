@@ -794,3 +794,17 @@ Activate Location = 0, -1
 3 2
 332
 ```
+
+## Neighborhood Time Differentials
+
+Time = 0
+<br/>
+<img width="420" alt="neighborhood time diff 0" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/45e37468-8d10-48a8-8ca0-97d35034e23d">
+
+<br/>
+
+Time = 1
+<br/>
+<img width="420" alt="neighborhood time diff 1" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/4b5e2de2-18fe-4a63-b9dc-e45c2000c25f">
+
+
