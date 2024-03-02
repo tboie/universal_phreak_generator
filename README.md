@@ -799,12 +799,14 @@ Activate Location = 0, -1
 
 Time = 0
 <br/>
-<img width="420" alt="neighborhood time diff 0" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/45e37468-8d10-48a8-8ca0-97d35034e23d">
+<img width="420" alt="neiborhood time diff 0" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/c2d8d724-6e08-4506-99f9-356e7746aef0">
+
 
 <br/>
 
 Time = 1
 <br/>
-<img width="420" alt="neighborhood time diff 1" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/4b5e2de2-18fe-4a63-b9dc-e45c2000c25f">
+<img width="420" alt="neighborhood time diff 1" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/607498d5-722e-4055-a383-bf9e474557b2">
+
 
 
