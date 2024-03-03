@@ -796,6 +796,22 @@ Activate Location = 0, -1
 332
 ```
 
+The following:
+
+```
+100
+101
+111
+```
+
+Produces infinite gliders matching corner values:
+
+```
+133
+1 3
+220
+```
+
 ## Neighborhood Time Differentials
 
 Time = 0
