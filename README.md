@@ -221,7 +221,7 @@ Defining bounding box of blinker creates a pulsar:
 
 <br/>
 
-## 8 most common patterns are in results of 3x3 perimeter variations
+## 9 cell neighborhood combinations produce 9 most common patterns
 - https://catagolue.hatsya.com/statistics
 - 1   xs4_33 (Block)	1641635518161410
 - 2   xp2_7 (Blinker)	1524639293713408
@@ -231,6 +231,7 @@ Defining bounding box of blinker creates a pulsar:
 - 6		xs5_253 (Boat)	236781408150196
 - 7		xs6_356 (Ship)	163492510796214
 - 8		xs4_252 (Tub)	51670473427163
+- 9     xs8_6996 (Pond)	55336623799705
 
 <br/>
 
