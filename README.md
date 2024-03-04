@@ -745,6 +745,9 @@ Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 - 1
 
 ## Nothing to Something Sequence (will it scale?)
+
+Idea:
+
 ```
 Generation = 0
 Position = 0,0
@@ -782,6 +785,10 @@ Activate Location = 0, -1
 
 ... towards infinity
 ```
+
+Idea:
+
+Rotate 2-4 points towards infinity
 
 ## Neighborhood Fibonnaci Sequence
 ```
