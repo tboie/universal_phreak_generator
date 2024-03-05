@@ -237,6 +237,10 @@ Defining bounding box of blinker creates a pulsar:
 
 ## Tiles
 
+Tile = form?
+
+Tesselation = scaled reaction of form?
+
 A block is 4 quadrants?  A blinker rotates 90 degrees?  A tile combines concepts of the 2 most common patterns.
 
 Tesselated tiles display scaled pattern information? (pattern is squared)
@@ -649,6 +653,8 @@ x = 6, y = 6, rule = B3/S23
 <br/>
 
 ## Universal Initial State Generator
+
+Is this still relevant?
 
 - Initial State Design = Layered Shape(s) \* (Universal Tile Generator + Universal Border Generator)
 
