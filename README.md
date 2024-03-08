@@ -218,6 +218,7 @@ Defining bounding box of blinker creates a pulsar:
 
 - connections of 2 in a neighborhood length of 3?
 - sequence of defining center cell in 3x3 matrix? (start at corner/side?)
+- blinker is period 2 with 3 cells
 
 <br/>
 
