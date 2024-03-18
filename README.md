@@ -793,9 +793,13 @@ Activate Location = 0, -1
 ... towards infinity
 ```
 
-Idea:
+Idea Notes:
 
-Rotate 2-4 points towards infinity
+Rotate 2-4 points towards infinity?
+
+Opposing location sequence?
+
+Use center cell?
 
 ## Neighborhood Fibonnaci Sequence
 ```
