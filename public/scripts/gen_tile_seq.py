@@ -11,17 +11,18 @@ from seagull.lifeforms import Custom
 size_matrix = 3
 
 # Tesselation Size
-num_tiles = 16
+num_tiles = 3
 
 # Board Margin
-margin = size_matrix * num_tiles
+margin = (size_matrix * num_tiles) * 2
 
 # Total Generations
 generations = 100
 
-# Output Folder Path (ex: Tile Size/Tesselation Size)
+# Output Folder Path (ex: Tile Size/Tesselation Size/Number Generations)
 path = "tile_" + str(size_matrix) + "x" + str(size_matrix) + "/"
 path = path + "tess_" + str(num_tiles) + "x" + str(num_tiles) + "/"
+path = path + "gen_" + str(generations) + "/"
 #if not os.path.exists(path):
 os.makedirs(path)
 
@@ -81,20 +82,19 @@ for idx, combo in enumerate(combinations):
 
     for i, gen in enumerate(hist):
         np.savetxt(path + str_matrix + "/" + str(i) + '.txt', gen, delimiter="", fmt="%d")
+    
+    # Animated GIF
+    anim = sim.animate(interval=1)
+    anim.save(path + str_matrix + "/animation.gif", fps=4)
+    #plt.show()
 
+    # Console Status
     str_status = str(idx + 1) + "/" + str(pow(2, size_matrix * size_matrix))
-
-    # Elapsed Time
     item_end = time.time()
     str_time = str(round(item_end - item_start, 3)) + "s"
     
     print(str_status + " " + str_time)
 
-    # Display
-    #interval = 250
-    #anim = sim.animate(interval=interval)
-    #plt.show()
-
-# Elapsed Time
+# Total Elapsed Time
 script_end = time.time()
 print("Total Elapsed: " + str(round(script_end - script_start, 3)) + "s")
