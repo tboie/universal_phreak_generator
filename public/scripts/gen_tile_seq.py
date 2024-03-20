@@ -82,12 +82,16 @@ combinations = list(itertools.product([0, 1], repeat=pow(size_matrix, 2)))
 
 # Loop combinations
 for idx, combo in enumerate(combinations):
+    # Tile quadrant matrix to binary string
+    str_matrix = ''.join(str(i) for i in combo)
+
+    # Print Item Information to Console
+    str_status = str(idx + 1) + "/" + str(pow(2, size_matrix * size_matrix))
+    print(str_status)
+    print(str_matrix)
+
     # Start Performance Timer
     item_start = time.time()
-
-    # Tile quadrant binary string
-    str_matrix = ''.join(str(i) for i in combo)
-    print(str_matrix)
 
     # Create directory
     if not os.path.exists(path + str_matrix):
@@ -150,13 +154,11 @@ for idx, combo in enumerate(combinations):
         # Display
         #plt.show()
 
-    # Console Status
-    str_status = str(idx + 1) + "/" + str(pow(2, size_matrix * size_matrix))
+    # Print Item Performance to Console
     item_end = time.time()
     str_time = str(round(item_end - item_start, 3)) + "s"
-    
-    print(str_status + " " + str_time + "\n")
+    print(str_time + "\n")
 
-# Total Elapsed Time
+# Print Total Script Elapsed Time to Console
 script_end = time.time()
 print("Total Elapsed: " + str(round(script_end - script_start, 3)) + "s")
