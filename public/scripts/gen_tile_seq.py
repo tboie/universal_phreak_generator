@@ -98,7 +98,9 @@ for idx, combo in enumerate(combinations):
     item_end = time.time()
     str_time = str(round(item_end - item_start, 3)) + "s"
     
+    print(str_matrix)
     print(str_status + " " + str_time)
+    print("")
 
 # Total Elapsed Time
 script_end = time.time()
