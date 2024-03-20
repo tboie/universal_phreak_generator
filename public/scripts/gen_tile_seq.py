@@ -7,6 +7,7 @@ plt.rcParams["animation.html"] = "jshtml"
 import seagull as sg
 from seagull.lifeforms import Custom
 
+
 # Tile Quadrant Size
 size_matrix = 3
 
@@ -19,15 +20,59 @@ margin = (size_matrix * num_tiles) * 2
 # Total Generations
 generations = 100
 
+# Output Array to Text File
+out_txt = True
+
+# Output RLE File
+out_rle = False
+
 # Output Animated GIF
-animated_gif = False
+out_gif = False
 
 # Output Folder Path (ex: Tile Size/Tesselation Size/Number Generations)
 path = "tile_" + str(size_matrix) + "x" + str(size_matrix) + "/"
 path = path + "tess_" + str(num_tiles) + "x" + str(num_tiles) + "/"
 path = path + "gen_" + str(generations) + "/"
-#if not os.path.exists(path):
-os.makedirs(path)
+
+# Convert boolean array to uncompressed RLE string
+# https://conwaylife.com/wiki/Run_Length_Encoded
+def arrayToRLE(arr):
+    data = ""
+
+    for row in arr:
+        s = ""
+
+        for ele in row:
+            if ele == True:
+                s += "o"
+            else:
+                s += "b"
+
+        data += encodeRLE(s) + "$"
+    
+    return data
+
+# Encode string to RLE
+def encodeRLE(message):
+    encoded_message = ""
+    i = 0
+ 
+    while (i <= len(message)-1):
+        count = 1
+        ch = message[i]
+        j = i
+        while (j < len(message)-1):
+            if (message[j] == message[j+1]):
+                count = count+1
+                j = j+1
+            else:
+                break
+        encoded_message=encoded_message+str(count)+ch
+        i = j+1
+    return encoded_message
+
+
+# Begin...
 
 # Script Performance
 script_start = time.time()
@@ -40,8 +85,13 @@ for idx, combo in enumerate(combinations):
     # Start Performance Timer
     item_start = time.time()
 
+    # Tile quadrant binary string
     str_matrix = ''.join(str(i) for i in combo)
-    os.makedirs(path + str_matrix)
+    print(str_matrix)
+
+    # Create directory
+    if not os.path.exists(path + str_matrix):
+        os.makedirs(path + str_matrix)
 
     # Reshape the flat list into a 3x3 matrix
     matrix = np.array([combo[i:i + size_matrix] for i in range(0, pow(size_matrix, 2), size_matrix)])
@@ -81,13 +131,20 @@ for idx, combo in enumerate(combinations):
 
     # Logging
     hist = sim.get_history()
-    #print(hist)
 
+    # Output Generation Data to Files
     for i, gen in enumerate(hist):
-        np.savetxt(path + str_matrix + "/" + str(i) + '.txt', gen, delimiter="", fmt="%d")
+        # check performance?
+        if out_txt:
+            np.savetxt(path + str_matrix + "/" + str(i) + ".txt", gen, delimiter="", fmt="%d")
+        
+        if out_rle:
+            with open(path + str_matrix + "/" + str(i) + ".rle", "w") as file:
+                file.write("x = 0, y = 0, rule = B3/S23\n")
+                file.write(arrayToRLE(gen))
     
     # Animated GIF
-    if animated_gif == True:
+    if out_gif == True:
         anim = sim.animate(interval=1)
         anim.save(path + str_matrix + "/animation.gif", fps=4)
         # Display
@@ -98,9 +155,7 @@ for idx, combo in enumerate(combinations):
     item_end = time.time()
     str_time = str(round(item_end - item_start, 3)) + "s"
     
-    print(str_matrix)
-    print(str_status + " " + str_time)
-    print("")
+    print(str_status + " " + str_time + "\n")
 
 # Total Elapsed Time
 script_end = time.time()
