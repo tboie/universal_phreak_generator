@@ -7,10 +7,10 @@ plt.rcParams["animation.html"] = "jshtml"
 import seagull as sg
 from seagull.lifeforms import Custom
 
-# Tile Size
+# Tile Quadrant Size
 size_matrix = 3
 
-# Tesselation Size
+# Tile Tesselation Size
 num_tiles = 3
 
 # Board Margin
@@ -18,6 +18,9 @@ margin = (size_matrix * num_tiles) * 2
 
 # Total Generations
 generations = 100
+
+# Output Animated GIF
+animated_gif = False
 
 # Output Folder Path (ex: Tile Size/Tesselation Size/Number Generations)
 path = "tile_" + str(size_matrix) + "x" + str(size_matrix) + "/"
@@ -84,9 +87,11 @@ for idx, combo in enumerate(combinations):
         np.savetxt(path + str_matrix + "/" + str(i) + '.txt', gen, delimiter="", fmt="%d")
     
     # Animated GIF
-    anim = sim.animate(interval=1)
-    anim.save(path + str_matrix + "/animation.gif", fps=4)
-    #plt.show()
+    if animated_gif == True:
+        anim = sim.animate(interval=1)
+        anim.save(path + str_matrix + "/animation.gif", fps=4)
+        # Display
+        #plt.show()
 
     # Console Status
     str_status = str(idx + 1) + "/" + str(pow(2, size_matrix * size_matrix))
