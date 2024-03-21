@@ -12,25 +12,28 @@ from seagull.lifeforms import Custom
 size_matrix = 3
 
 # Tile Tesselation Size
-num_tiles = 100
+num_tiles = 3
 
 # Board Margin
 margin = (size_matrix * num_tiles) * 2
 
 # Total Generations
-generations = 100
+generations = 50
 
 # Output Initial Tesselation RLE
 out_tess = True
 
 # Output Data of Each Generation to Text File
-out_txt = False
+out_txt = True
 
 # Output RLE File for Each Generation
-out_rle = False
+out_rle = True
+
+# Output Tile Image
+out_img_tile = True
 
 # Output Animated GIF of all Generations
-out_gif = False
+out_img_animated = True
 
 # Output Folder Path (ex: Tile Size/Tesselation Size/Number Generations)
 path = "tile_" + str(size_matrix) + "x" + str(size_matrix) + "/"
@@ -142,53 +145,81 @@ for idx, combo in enumerate(combinations):
         with open(path + str_matrix + "/tesselation.rle", "w") as file:
             file.write("x = 0, y = 0, rule = B3/S23\n")
             file.write(str_rle)
-    
-    if out_txt == True or out_rle == True or out_gif == True:
+
+    if out_txt == True or out_rle == True or out_img_animated == True or out_img_tile == True:
         # Tile
         size_quad = len(q1)
         size_tile = size_quad * 2
 
-        # Board
-        size_board = size_tile * num_tiles
-        size_board = size_board + (margin * 2)
-        board = sg.Board(size=(size_board , size_board))
+        # Single Tile Image
+        if out_img_tile:
+            board = sg.Board(size=(size_tile, size_tile))
 
-        for y in range(num_tiles):
-            loc_y = (y * size_tile) + margin
+            for y in range(1):
+                loc_y = (y * size_tile)
 
-            for x in range(num_tiles):
-                loc_x = (x * size_tile) + margin + size_quad
-                
-                # note: loc = y, x
-                board.add(Custom(q1), loc=(loc_y, loc_x))
-                board.add(Custom(q2), loc=(loc_y, loc_x - size_quad))
-                board.add(Custom(q3), loc=(loc_y + size_quad, loc_x - size_quad))
-                board.add(Custom(q4), loc=(loc_y + size_quad, loc_x))
-
-        # Simulate board
-        sim = sg.Simulator(board)      
-        sim.run(sg.rules.conway_classic, iters=generations)
-
-        # Logging
-        hist = sim.get_history()
-
-        # Output Generation Data to Files
-        for i, gen in enumerate(hist):
-            # check performance?
-            if out_txt:
-                np.savetxt(path + str_matrix + "/" + str(i) + ".txt", gen, delimiter="", fmt="%d")
+                for x in range(1):
+                    loc_x = (x * size_tile) + size_quad
+                    
+                    # note: loc = y, x
+                    board.add(Custom(q1), loc=(loc_y, loc_x))
+                    board.add(Custom(q2), loc=(loc_y, loc_x - size_quad))
+                    board.add(Custom(q3), loc=(loc_y + size_quad, loc_x - size_quad))
+                    board.add(Custom(q4), loc=(loc_y + size_quad, loc_x))
             
-            if out_rle:
-                with open(path + str_matrix + "/" + str(i) + ".rle", "w") as file:
-                    file.write("x = 0, y = 0, rule = B3/S23\n")
-                    file.write(arrayToRLE(gen))
+            # Grid Lines
+            fig = board.view()[0]
+            for pt in np.arange(0.5, size_tile, 1):
+                plt.axvline(pt, lw=1, color='gray', alpha=1)
+                plt.axhline(pt, lw=1, color='gray', alpha=1)
+
+            plt.savefig(path + str_matrix + "/tile.png")
+
+        # Data Output and Animated GIF
+        if out_txt == True or out_rle == True or out_img_animated:
+            # Setup Board
+            size_board = size_tile * num_tiles
+            size_board = size_board + (margin * 2)
+            board = sg.Board(size=(size_board , size_board))
+
+            for y in range(num_tiles):
+                loc_y = (y * size_tile) + margin
+
+                for x in range(num_tiles):
+                    loc_x = (x * size_tile) + margin + size_quad
+                    
+                    # note: loc = y, x
+                    board.add(Custom(q1), loc=(loc_y, loc_x))
+                    board.add(Custom(q2), loc=(loc_y, loc_x - size_quad))
+                    board.add(Custom(q3), loc=(loc_y + size_quad, loc_x - size_quad))
+                    board.add(Custom(q4), loc=(loc_y + size_quad, loc_x))
         
-        # Animated GIF
-        if out_gif == True:
-            anim = sim.animate(interval=1)
-            anim.save(path + str_matrix + "/animation.gif", fps=4)
-            # Display
-            #plt.show()
+            # Simulate board
+            sim = sg.Simulator(board)      
+            sim.run(sg.rules.conway_classic, iters=generations)
+
+            # Logging
+            hist = sim.get_history()
+
+            # Output Generation Data to Files
+            for i, gen in enumerate(hist):
+                # check performance?
+                if out_txt:
+                    np.savetxt(path + str_matrix + "/" + str(i) + ".txt", gen, delimiter="", fmt="%d")
+                
+                if out_rle:
+                    with open(path + str_matrix + "/" + str(i) + ".rle", "w") as file:
+                        file.write("x = 0, y = 0, rule = B3/S23\n")
+                        file.write(arrayToRLE(gen))
+            
+            # Animated GIF
+            if out_img_animated == True:
+                # 250ms
+                anim = sim.animate(interval=1)
+                anim.save(path + str_matrix + "/animation.gif", fps=4)
+        
+        # Display
+        #plt.show()
 
     # Print Item Performance to Console
     item_end = time.time()
