@@ -7,7 +7,7 @@ from pathlib import Path
 import os, time
 
 path = "tile_3x3/"
-size_cell = 32
+size_cell = 8
 
 color_on = 255
 color_off = 0
@@ -42,7 +42,7 @@ for p in Path(path).rglob('*.txt'):
 
 # iterate .txt files in folder and generate image
 i = 0
-for p in Path(path).rglob('*.txt'):
+for p in sorted(Path(path).rglob('*.txt')):
     # .txt string to array of rows
     matrix = p.read_text().split("\n")
     # grid size using data array size

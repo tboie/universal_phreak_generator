@@ -18,22 +18,22 @@ num_tiles = 3
 margin = (size_matrix * num_tiles) * 2
 
 # Total Generations
-generations = 50
+generations = 8
 
 # Output Initial Tesselation RLE
-out_tess = True
+out_tess = False
 
 # Output Data of Each Generation to Text File
 out_txt = True
 
 # Output RLE File for Each Generation
-out_rle = True
+out_rle = False
 
 # Output Tile Image
-out_img_tile = True
+out_img_tile = False
 
 # Output Animated GIF of all Generations
-out_img_animated = True
+out_img_animated = False
 
 # Output Folder Path (ex: Tile Size/Tesselation Size/Number Generations)
 path = "tile_" + str(size_matrix) + "x" + str(size_matrix) + "/"
@@ -205,10 +205,10 @@ for idx, combo in enumerate(combinations):
             for i, gen in enumerate(hist):
                 # check performance?
                 if out_txt:
-                    np.savetxt(path + str_matrix + "/" + str(i) + ".txt", gen, delimiter="", fmt="%d")
+                    np.savetxt(path + str_matrix + "/gen_" + str(i) + ".txt", gen, delimiter="", fmt="%d")
                 
                 if out_rle:
-                    with open(path + str_matrix + "/" + str(i) + ".rle", "w") as file:
+                    with open(path + str_matrix + "/gen_" + str(i) + ".rle", "w") as file:
                         file.write("x = 0, y = 0, rule = B3/S23\n")
                         file.write(arrayToRLE(gen))
             
