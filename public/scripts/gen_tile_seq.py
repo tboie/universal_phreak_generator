@@ -205,10 +205,10 @@ for idx, combo in enumerate(combinations):
             for i, gen in enumerate(hist):
                 # check performance?
                 if out_txt:
-                    np.savetxt(path + str_matrix + "/gen_" + str(i) + ".txt", gen, delimiter="", fmt="%d")
+                    np.savetxt(path + str_matrix + "/gen_" + '{:08}'.format(i) + ".txt", gen, delimiter="", fmt="%d")
                 
                 if out_rle:
-                    with open(path + str_matrix + "/gen_" + str(i) + ".rle", "w") as file:
+                    with open(path + str_matrix + "/gen_" + '{:08}'.format(i) + ".rle", "w") as file:
                         file.write("x = 0, y = 0, rule = B3/S23\n")
                         file.write(arrayToRLE(gen))
             

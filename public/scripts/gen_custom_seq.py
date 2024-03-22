@@ -10,18 +10,36 @@ from seagull.lifeforms import Custom
 import numpy as np
 import os
 
+def spiral(X, Y):
+    x, y = 0, 0
+    dx, dy = 0, -1
+
+    coords = []
+
+    for i in range(max(X, Y) ** 2):
+        if (-X / 2 < x <= X / 2) and (-Y / 2 < y <= Y / 2):
+            coords.append([[x, y]])
+
+        if x == y or (x < 0 and x == -y) or (x > 0 and x == 1 - y):
+            dx, dy = -dy, dx
+        x, y = x + dx, y + dy
+    
+    return coords
+
 # output path
-path = "gen/"
+path = "tile_3x3/"
 
 # x,y coordinates per generation
 # TODO: generate sequence using func?
-seq = [[[1, 1], [-1, -1]], [[2, 2], [-2, -2]], [[3, 3], [-3, -3]]]
+#seq = [[[1, 1], [-1, -1]], [[2, 2], [-2, -2]], [[3, 3], [-3, -3]]]
+seq = spiral(21, 21)
+print(seq)
 
 # initial config pattern
 initial_config = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
 
 # board (odd has center)
-board_size = 11
+board_size = 99
 board_center = round(board_size / 2) - 1
 
 # start with initial config
@@ -35,8 +53,8 @@ hist = sim.get_history()
 if not os.path.exists(path):
     os.makedirs(path)
 
-np.savetxt(path + "0.txt", hist[0], delimiter="", fmt="%d")
-np.savetxt(path + "1.txt", hist[1], delimiter="", fmt="%d")
+np.savetxt(path + "gen_00000000.txt", hist[0], delimiter="", fmt="%d")
+np.savetxt(path + "gen_00000001.txt", hist[1], delimiter="", fmt="%d")
 
 # add locations from seq per generation
 for i, gen in enumerate(seq):
@@ -50,7 +68,7 @@ for i, gen in enumerate(seq):
     sim.run(sg.rules.conway_classic, iters=1)
     hist = sim.get_history()
 
-    np.savetxt(path + str(i + 2) + ".txt", hist[1], delimiter="", fmt="%d")
+    np.savetxt(path + "gen_" + '{:08}'.format(i + 2) + ".txt", hist[1], delimiter="", fmt="%d")
 
     # display last generation sequence
     #if i == len(seq) - 1:
