@@ -8,7 +8,7 @@ import seagull as sg
 from seagull.lifeforms import Custom
 
 import numpy as np
-import os
+import os, time
 
 def spiral(X, Y):
     x, y = 0, 0
@@ -27,13 +27,11 @@ def spiral(X, Y):
     return coords
 
 # output path
-path = "tile_3x3/"
+path = "gen/"
 
 # x,y coordinates per generation
-# TODO: generate sequence using func?
 #seq = [[[1, 1], [-1, -1]], [[2, 2], [-2, -2]], [[3, 3], [-3, -3]]]
 seq = spiral(21, 21)
-print(seq)
 
 # initial config pattern
 initial_config = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
@@ -56,8 +54,9 @@ if not os.path.exists(path):
 np.savetxt(path + "gen_00000000.txt", hist[0], delimiter="", fmt="%d")
 np.savetxt(path + "gen_00000001.txt", hist[1], delimiter="", fmt="%d")
 
-# add locations from seq per generation
 for i, gen in enumerate(seq):
+    timer_start = time.time()
+
     board = sg.Board(size=(board_size, board_size))
     board.add(Custom(hist[1]), loc=(0, 0))
 
@@ -69,6 +68,10 @@ for i, gen in enumerate(seq):
     hist = sim.get_history()
 
     np.savetxt(path + "gen_" + '{:08}'.format(i + 2) + ".txt", hist[1], delimiter="", fmt="%d")
+
+    timer_end = time.time()
+    timer_str = str("{:.3f}".format(round(timer_end - timer_start, 3))) + "s"
+    print(str(i + 2) + "/" + str(len(seq) + 2) + " " + timer_str)
 
     # display last generation sequence
     #if i == len(seq) - 1:
