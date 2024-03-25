@@ -795,7 +795,7 @@ Activate Location = 0, -1
 
 Idea Notes:
 
-Rotate 2-4 points towards infinity?
+Rotate 2-8 points towards infinity?
 
 Opposing location sequence?
 
