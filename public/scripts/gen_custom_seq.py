@@ -10,6 +10,7 @@ from seagull.lifeforms import Custom
 import numpy as np
 import os, time, json
 
+# test func
 def spiral(X, Y):
     x, y = 0, 0
     dx, dy = 0, -1
@@ -27,7 +28,7 @@ def spiral(X, Y):
     return coords
 
 # output path
-path = "gen/"
+path = "gen"
 
 # x,y coordinates per generation
 # length of array determines total generations processed
@@ -54,8 +55,8 @@ hist = sim.get_history()
 if not os.path.exists(path):
     os.makedirs(path)
 
-np.savetxt(path + "gen_00000000.txt", hist[0], delimiter="", fmt="%d")
-np.savetxt(path + "gen_00000001.txt", hist[1], delimiter="", fmt="%d")
+np.savetxt(path + "/gen_00000000.txt", hist[0], delimiter="", fmt="%d")
+np.savetxt(path + "/gen_00000001.txt", hist[1], delimiter="", fmt="%d")
 
 for i, gen in enumerate(seq):
     timer_start = time.time()
@@ -71,9 +72,9 @@ for i, gen in enumerate(seq):
     sim.run(sg.rules.conway_classic, iters=1)
     hist = sim.get_history()
 
-    # debug
-    # np.savetxt(path + "orig_" + '{:08}'.format(i + 2) + ".txt", hist[0], delimiter="", fmt="%d")
-    np.savetxt(path + "gen_" + '{:08}'.format(i + 2) + ".txt", hist[1], delimiter="", fmt="%d")
+    # debug gen coordinates
+    # np.savetxt(path + "/orig_" + '{:08}'.format(i + 2) + ".txt", hist[0], delimiter="", fmt="%d")
+    np.savetxt(path + "/gen_" + '{:08}'.format(i + 2) + ".txt", hist[1], delimiter="", fmt="%d")
 
     timer_end = time.time()
     timer_str = str("{:.3f}".format(round(timer_end - timer_start, 3))) + "s"
@@ -83,5 +84,5 @@ for i, gen in enumerate(seq):
 # add first 2 gens to beginning of seq
 seq.insert(0, [[]])
 seq.insert(0, [[]])
-with open(path + "sequence.json", "w") as f:
+with open(path + "/sequence.json", "w") as f:
     json.dump(seq, f) # works with any number of elements in a line

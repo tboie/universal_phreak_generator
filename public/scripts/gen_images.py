@@ -13,11 +13,12 @@ size_grid = 400
 num_cells = 99
 size_cell = round(size_grid / num_cells)
 
-path = "gen/"
+path = "gen"
 
 grid_lines = True
 
 color_on = 255
+# alpha not working
 color_seq = (0, 255, 0, 64)
 color_off = 0
 color_line = (64, 64, 64)
@@ -57,7 +58,7 @@ def create_grid(gen, matrix, size_grid, fname, seq):
 
 # load sequence 
 seq = []
-f_seq = open(path + "sequence.json")
+f_seq = open(path + "/sequence.json")
 if f_seq:
     seq = json.load(f_seq)
 
@@ -71,8 +72,6 @@ i = 0
 for p in sorted(Path(path).rglob('*.txt')):
     # .txt string to array of rows
     matrix = p.read_text().split("\n")
-    # grid size using data array size
-    # size_grid = size_cell * (len(matrix) - 1)
     # out file image name
     out_file = os.path.splitext(p)[0] + ".png"
 
