@@ -8,7 +8,7 @@ import seagull as sg
 from seagull.lifeforms import Custom
 
 import numpy as np
-import os, time
+import os, time, json
 
 def spiral(X, Y):
     x, y = 0, 0
@@ -30,13 +30,16 @@ def spiral(X, Y):
 path = "gen/"
 
 # x,y coordinates per generation
-#seq = [[[1, 1], [-1, -1]], [[2, 2], [-2, -2]], [[3, 3], [-3, -3]]]
-seq = spiral(21, 21)
+# length of array determines total generations processed
+# seq = [[[1, 1], [-1, -1]], [[2, 2], [-2, -2]], [[3, 3]]]
+seq = spiral(20, 20)
+# remove first 0,0 coordinate
+seq.pop()
 
 # initial config pattern
 initial_config = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
 
-# board (odd has center)
+# board size in cells (odd has center)
 board_size = 99
 board_center = round(board_size / 2) - 1
 
@@ -61,19 +64,24 @@ for i, gen in enumerate(seq):
     board.add(Custom(hist[1]), loc=(0, 0))
 
     for loc in gen:
-        board.add(Custom([[True]]), loc=(board_center + loc[1], board_center + loc[0]))
-
+        # loc = y, x
+        board.add(Custom([[True]]), loc=(board_center - loc[1], board_center + loc[0]))
+        
     sim = sg.Simulator(board)
     sim.run(sg.rules.conway_classic, iters=1)
     hist = sim.get_history()
 
+    # debug
+    # np.savetxt(path + "orig_" + '{:08}'.format(i + 2) + ".txt", hist[0], delimiter="", fmt="%d")
     np.savetxt(path + "gen_" + '{:08}'.format(i + 2) + ".txt", hist[1], delimiter="", fmt="%d")
 
     timer_end = time.time()
     timer_str = str("{:.3f}".format(round(timer_end - timer_start, 3))) + "s"
     print(str(i + 2) + "/" + str(len(seq) + 2) + " " + timer_str)
 
-    # display last generation sequence
-    #if i == len(seq) - 1:
-    #    anim = sim.animate(interval=500)
-    #    plt.show()
+# write sequence to file for image drawing.
+# add first 2 gens to beginning of seq
+seq.insert(0, [[]])
+seq.insert(0, [[]])
+with open(path + "sequence.json", "w") as f:
+    json.dump(seq, f) # works with any number of elements in a line
