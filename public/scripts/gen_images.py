@@ -6,15 +6,16 @@ from PIL import Image, ImageDraw
 from pathlib import Path
 import os, time, math, json
 
-# px
+# grid size in pixels
 size_grid = 400
 # todo: script argument
 # board size in cells
 num_cells = 99
 size_cell = round(size_grid / num_cells)
-
+# path
 path = "gen"
 
+# grid styling
 grid_lines = True
 
 color_on = 255
@@ -44,6 +45,7 @@ def create_grid(gen, matrix, size_grid, fname, seq):
             draw.line([(i, 0), (i, size_grid)], fill=color_line)
             draw.line([(0, i), (size_grid, i)], fill=color_line)
 
+    # apply sequence from gen_custom_seq.py
     board_center = round(num_cells / 2) - 1
     if gen < len(seq):
         for c in seq[gen]:

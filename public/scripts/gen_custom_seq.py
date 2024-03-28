@@ -44,7 +44,7 @@ initial_config = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
 board_size = 99
 board_center = round(board_size / 2) - 1
 
-# start with initial config
+# start by applying initial config to board and run 1 generation
 board = sg.Board(size=(board_size, board_size))
 board.add(Custom(initial_config), loc=(board_center - 1, board_center - 1))
 
@@ -52,30 +52,37 @@ sim = sg.Simulator(board)
 sim.run(sg.rules.conway_classic, iters=1)
 hist = sim.get_history()
 
+# data.txt output
 if not os.path.exists(path):
     os.makedirs(path)
 
 np.savetxt(path + "/gen_00000000.txt", hist[0], delimiter="", fmt="%d")
 np.savetxt(path + "/gen_00000001.txt", hist[1], delimiter="", fmt="%d")
 
+# apply sequence locations to board history and run board for 1 generation
 for i, gen in enumerate(seq):
     timer_start = time.time()
 
     board = sg.Board(size=(board_size, board_size))
     board.add(Custom(hist[1]), loc=(0, 0))
 
+    # add sequence coordinates
     for loc in gen:
         # loc = y, x
         board.add(Custom([[True]]), loc=(board_center - loc[1], board_center + loc[0]))
-        
+    
+    # run 1 generation
     sim = sg.Simulator(board)
     sim.run(sg.rules.conway_classic, iters=1)
     hist = sim.get_history()
 
     # debug gen coordinates
     # np.savetxt(path + "/orig_" + '{:08}'.format(i + 2) + ".txt", hist[0], delimiter="", fmt="%d")
+    
+    # data .txt output
     np.savetxt(path + "/gen_" + '{:08}'.format(i + 2) + ".txt", hist[1], delimiter="", fmt="%d")
 
+    # console logging
     timer_end = time.time()
     timer_str = str("{:.3f}".format(round(timer_end - timer_start, 3))) + "s"
     print(str(i + 2) + "/" + str(len(seq) + 2) + " " + timer_str)
