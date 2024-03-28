@@ -1,5 +1,9 @@
-# add alive cells per generation using an array
-# outputs each generation
+###
+# generate a custom sequence of coordinates to apply 1
+# generation at a time to board
+#
+# output each generation data to .txt file in path
+###
 
 import matplotlib.pyplot as plt
 plt.rcParams["animation.html"] = "jshtml"
@@ -52,7 +56,7 @@ sim = sg.Simulator(board)
 sim.run(sg.rules.conway_classic, iters=1)
 hist = sim.get_history()
 
-# data.txt output
+# .txt file output
 if not os.path.exists(path):
     os.makedirs(path)
 
