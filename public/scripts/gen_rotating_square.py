@@ -54,8 +54,8 @@ seq = []
 
 # fill array with 45 degree rotating square perimeter
 for i in range(round(board_size / 2)):
-    #if i >= 3:
-        if i % 2 != 0:
+    if i > 0:
+        if i % 2 == 0:
             c = {
                 "t": [0, i],
                 "l": [i * -1, 0],
@@ -96,6 +96,7 @@ for i in range(round(board_size / 2)):
 if not os.path.exists(path):
     os.makedirs(path)
 
+hist = []
 # apply sequence locations to board history and run board for 1 generation
 for i, gen in enumerate(seq):
     timer_start = time.time()
@@ -115,10 +116,7 @@ for i, gen in enumerate(seq):
     sim.run(sg.rules.conway_classic, iters=1)
     hist = sim.get_history()
 
-    # debug gen coordinates
-    # np.savetxt(path + "/orig_" + '{:08}'.format(i) + ".txt", hist[0], delimiter="", fmt="%d")
-    
-    # data .txt output
+    # output data as .txt file
     np.savetxt(path + "/gen_" + '{:08}'.format(i) + ".txt", hist[1], delimiter="", fmt="%d")
 
     # console logging
