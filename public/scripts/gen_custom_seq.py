@@ -14,6 +14,70 @@ from seagull.lifeforms import Custom
 import numpy as np
 import os, time, json
 
+def get_square_coordinates(centerX, centerY, radius):
+    # Calculate the four vertices
+    top_left = (centerX - radius, centerY + radius)
+    top_right = (centerX + radius, centerY + radius)
+    bottom_left = (centerX - radius, centerY - radius)
+    bottom_right = (centerX + radius, centerY - radius)
+
+    # Return the coordinates
+    return {
+        "tl": top_left,
+        "tr": top_right,
+        "bl": bottom_left,
+        "br": bottom_right
+    }
+
+def connect_points(ends):
+    d0, d1 = np.abs(np.diff(ends, axis=0))[0]
+    if d0 > d1:
+        return np.c_[np.linspace(ends[0, 0], ends[1, 0], d0 + 1, dtype=np.int32),
+                     np.round(np.linspace(ends[0, 1], ends[1, 1], d0 + 1)).astype(np.int32)]
+    else:
+        return np.c_[np.round(np.linspace(ends[0, 0], ends[1, 0], d1 + 1)).astype(np.int32),
+                     np.linspace(ends[0, 1], ends[1, 1], d1 + 1, dtype=np.int32)]
+
+seq = []
+for i in range(99):
+    if i >= 3:
+        if i % 2 != 0:
+            c = {
+                "t": [0, i],
+                "l": [i * -1, 0],
+                "r": [i, 0],
+                "b": [0, i * -1]
+            }
+            
+            l1 = connect_points(np.array([c["t"], c["l"]]))
+            l2 = connect_points(np.array([c["t"], c["r"]]))
+            l3 = connect_points(np.array([c["l"], c["b"]]))
+            l4 = connect_points(np.array([c["r"], c["b"]]))
+
+            f = []
+            for coord in [l1, l2, l3, l4]:
+                for cc in coord:
+                    f.append(cc)
+
+            f = np.unique(f, axis=0)
+            seq.append(f.tolist())
+
+        else:
+            c = get_square_coordinates(0, 0, i)
+
+            l1 = connect_points(np.array([c["tl"], c["tr"]]))
+            l2 = connect_points(np.array([c["tl"], c["bl"]]))
+            l3 = connect_points(np.array([c["br"], c["bl"]]))
+            l4 = connect_points(np.array([c["tr"], c["br"]]))
+
+            f = []
+            for coord in [l1, l2, l3, l4]:
+                for cc in coord:
+                    f.append(cc)
+
+            f = np.unique(f, axis=0)
+            seq.append(f.tolist())
+
 # test func
 def spiral(X, Y):
     x, y = 0, 0
@@ -27,6 +91,8 @@ def spiral(X, Y):
 
         if x == y or (x < 0 and x == -y) or (x > 0 and x == 1 - y):
             dx, dy = -dy, dx
+            #dx, dy = dy, -dx  # Rotate 90 degrees
+
         x, y = x + dx, y + dy
     
     return coords
@@ -37,15 +103,15 @@ path = "gen"
 # x,y coordinates per generation
 # length of array determines total generations processed
 # seq = [[[1, 1], [-1, -1]], [[2, 2], [-2, -2]], [[3, 3]]]
-seq = spiral(20, 20)
+#seq = spiral(50, 50)
 # remove first 0,0 coordinate
-seq.pop()
+#seq.pop()
 
 # initial config pattern
 initial_config = [[1, 1, 1], [1, 0, 1], [1, 1, 1]]
 
 # board size in cells (odd has center)
-board_size = 99
+board_size = 199
 board_center = round(board_size / 2) - 1
 
 # start by applying initial config to board and run 1 generation
