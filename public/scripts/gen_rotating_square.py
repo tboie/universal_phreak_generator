@@ -18,7 +18,7 @@ import os, time, json
 path = "gen"
 
 # board size in cells (odd has center)
-board_size = 19
+board_size = 99
 board_center = round(board_size / 2) - 1
 
 # helper funcs for square perimeter
@@ -52,16 +52,43 @@ def connect_points(ends):
 # ex) seq = [[[1, 1], [-1, -1]], [[2, 2], [-2, -2]], [[3, 3]]]
 seq = []
 
+
+''' 
+sample sequence:
+
+0 1 0
+1 0 1
+0 1 0
+
+1 1 1
+1 0 1
+1 1 1
+
+0 0 1 0 0
+0 1 0 1 0
+1 0 0 0 1
+0 1 0 1 0
+0 0 1 0 0
+
+1 1 1 1 1
+1 0 0 0 1
+1 0 0 0 1
+1 0 0 0 1
+1 1 1 1 1
+
+...
+
+'''
 # fill array with 45 degree rotating square perimeter
 for i in range(round(board_size / 2)):
     if i > 0:
         # rotated
-        if i % 2 == 0:
+        if i % 2 != 0:
             c = {
-                "t": [0, i + 1],
-                "l": [(i + 1) * -1, 0],
-                "r": [i + 1, 0],
-                "b": [0, (i + 1) * -1]
+                "t": [0, i],
+                "l": [i * -1, 0],
+                "r": [i, 0],
+                "b": [0, i * -1]
             }
             
             l1 = connect_points(np.array([c["t"], c["l"]]))
@@ -78,7 +105,7 @@ for i in range(round(board_size / 2)):
             seq.append(f.tolist())
         # not rotated
         else:
-            c = get_square_coordinates(0, 0, i)
+            c = get_square_coordinates(0, 0, i - 1)
 
             l1 = connect_points(np.array([c["tl"], c["tr"]]))
             l2 = connect_points(np.array([c["tl"], c["bl"]]))
