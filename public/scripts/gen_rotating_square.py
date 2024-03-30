@@ -50,8 +50,7 @@ def connect_points(ends):
 # x,y coordinates per generation
 # length of array determines total generations processed
 # ex) seq = [[[1, 1], [-1, -1]], [[2, 2], [-2, -2]], [[3, 3]]]
-seq = []
-
+seq = [[[0, 0]]]
 
 ''' 
 sample sequence:
