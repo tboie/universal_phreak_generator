@@ -801,6 +801,35 @@ Opposing location sequence?
 
 Use center cell?
 
+```
+expanding rectange sample sequence:
+
+0 1 0
+1 0 1
+0 1 0
+
+1 1 1
+1 0 1
+1 1 1
+
+0 0 1 0 0
+0 1 0 1 0
+1 0 0 0 1
+0 1 0 1 0
+0 0 1 0 0
+
+1 1 1 1 1
+1 0 0 0 1
+1 0 0 0 1
+1 0 0 0 1
+1 1 1 1 1
+
+...
+
+```
+
+Do on cells invert above sequence? [Locality Diagram](#system-mechanics-visualization) one direction and inverted sequence the other?
+
 ## Neighborhood Fibonnaci Sequence
 ```
 301
