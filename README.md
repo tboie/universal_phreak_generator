@@ -802,7 +802,7 @@ Opposing location sequence?
 Use center cell?
 
 ```
-expanding rectange sample sequence:
+expanding rotating square boundary sample sequence:
 
 1
 
@@ -828,9 +828,13 @@ expanding rectange sample sequence:
 
 ...
 
+configurations are applied 1 generation at a time to the existing board.
+
 ```
 
-[Locality Diagram](#system-mechanics-visualization) one direction and inverted sequence the other?
+Demo:
+
+![expanding rotating boundary demo](https://github.com/tboie/universal_phreak_generator/assets/26150152/065ba4ca-0f10-41a6-88dc-52a60fc6ff2e)
 
 Does the sequence of applying locality diagrams cause rotation?
 
