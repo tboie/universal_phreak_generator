@@ -149,12 +149,6 @@ python script:
 <br/>
 <br/>
 
-defining a second area displays center pattern similarities of 2-4 layer diagram?
-
-```
-x = 11, y = 11, rule = B3/S23
-11o$o9bo$o9bo$o9bo$o3b3o3bo$o3bobo3bo$o3b3o3bo$o9bo$o9bo$o9bo$11o!
-```
 
 Initial state design from cell contents?
 - Cell to Board?
