@@ -823,7 +823,9 @@ configurations are applied 1 generation at a time to the existing board.
 
 ```
 
-Demo:
+Demos:
+
+![gen](https://github.com/tboie/universal_phreak_generator/assets/26150152/22a28ee3-2179-4cb6-b122-4a01b3e41653)
 
 ![expanding rotating boundary demo](https://github.com/tboie/universal_phreak_generator/assets/26150152/065ba4ca-0f10-41a6-88dc-52a60fc6ff2e)
 
