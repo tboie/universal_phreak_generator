@@ -141,7 +141,7 @@ TODO:
 <img width="480" alt="locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3fef22a5-e79c-418d-b3a8-87bc1e620b46">
 <br/>
 
-Apply upwards and downwards for a cell
+Apply upwards and downwards for a cell?
 
 python script:
 <br/>
@@ -744,54 +744,6 @@ Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 
 ## Nothing to Something Sequence (will it scale?)
 
-Idea:
-
-```
-Generation = 0
-Position = 0,0
-Ruleset = Dead cell to Alive cell when connected to 1 Alive Cell
-
-Activate Location 0,0
-
-Step Generation = 1 and Apply Ruleset
-Now there is 3x3:
-
-111
-101
-111
-
-Ruleset changes to 2/3 from actions creating 3x3
-
-For each generation step, sequentially activate a cell location in spiral direction
-
-Example:
-
-Generation = 2
-Activate Location = 0,1
-
-Generation = 3
-Activate Location = 1,1
-
-Generation = 4
-Activate Location = 1,0
-
-Generation = 5
-Activate Location = -1, -1
-
-Generation = 6
-Activate Location = 0, -1
-
-... towards infinity
-```
-
-Idea Notes:
-
-Rotate 2-8 points towards infinity?
-
-Opposing location sequence?
-
-Use center cell?
-
 ```
 expanding rotating square boundary sample sequence:
 
@@ -829,7 +781,11 @@ Demos:
 
 ![lg expanding rotating boundary demo](https://github.com/tboie/universal_phreak_generator/assets/26150152/065ba4ca-0f10-41a6-88dc-52a60fc6ff2e)
 
-Does the sequence of applying locality diagrams cause rotation?
+Does the sequence of applying [locality diagrams](#system-mechanics-visualization) cause rotation?
+
+Is the single cell cyclic?  
+Do generations stack?  
+Is information communicated between generation layers?
 
 ## Neighborhood Fibonnaci Sequence
 ```
