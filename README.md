@@ -804,6 +804,8 @@ Use center cell?
 ```
 expanding rectange sample sequence:
 
+1
+
 0 1 0
 1 0 1
 0 1 0
@@ -828,7 +830,9 @@ expanding rectange sample sequence:
 
 ```
 
-Do on cells invert above sequence? [Locality Diagram](#system-mechanics-visualization) one direction and inverted sequence the other?
+[Locality Diagram](#system-mechanics-visualization) one direction and inverted sequence the other?
+
+Does the sequence of applying locality diagrams cause rotation?
 
 ## Neighborhood Fibonnaci Sequence
 ```
