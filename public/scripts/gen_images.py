@@ -12,11 +12,14 @@ import os, time, json
 path = "gen"
 
 # grid size in pixels
-grid_size = 400
+grid_size = 356
 
 # todo: script argument
 # board size in cells
-grid_cells = 99
+grid_cells = 19
+
+# step sequence visual
+seq_step = True
 
 # grid styling
 grid_lines = True
@@ -73,24 +76,49 @@ if f_seq:
 num_files = 0
 for p in Path(path).rglob('*.txt'):
     num_files += 1
+    if seq_step == True:
+        num_files += 1
 
 # iterate .txt files in folder and generate image
 i = 0
+prev_matrix = []
+
 for p in sorted(Path(path).rglob('*.txt')):
     # .txt string to array of rows
     matrix = p.read_text().split("\n")
 
     # out file image name
-    file_out = os.path.splitext(p)[0] + ".png"
+    file_out = []
+    
+    if seq_step == False:
+        file_out.append(os.path.splitext(p)[0] + ".png")
+    else:
+        file_path = os.path.splitext(p)[0].rsplit("_", 1)
+        file_out.append(file_path[0] + '_{0:08}'.format(i) + ".png")
+        file_out.append(file_path[0] + '_{0:08}'.format(i + 1) + ".png")
 
     # generate image
     timer_start = time.time()
-    create_grid(i, matrix, grid_size, file_out, seq)
+
+    if seq_step == True:
+        gen = round(i / 2)
+        create_grid(gen, prev_matrix, grid_size, file_out[0], seq)
+        create_grid(gen, matrix, grid_size, file_out[1], [])
+    else:
+        create_grid(i, prev_matrix, grid_size, file_out[0], seq)
+
+    prev_matrix = matrix
+
     timer_end = time.time()
 
-    # print status
     i += 1
+    # print status
     timer_str = str("{:.3f}".format(round(timer_end - timer_start, 3))) + "s"
-    print(str(i) + "/" + str(num_files) + " " + timer_str + " " + file_out)
+    print(str(i) + "/" + str(num_files) + " " + timer_str + " " + file_out[0])
+
+    if seq_step == True:
+        i += 1
+        print(str(i) + "/" + str(num_files) + " " + timer_str + " " + file_out[1])
+
 
 print("Finished")
