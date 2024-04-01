@@ -121,10 +121,6 @@ bobo$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o37bo$39o!
 
 TODO: 
 - how should intensity be accurately visualized (color, opacity, depth etc.)?
-- apply to multiple period patterns ex) oscillators, spaceships
-    - interesting layer variations?
-- apply to entire system
-- compare pattern locality diagrams to tiled pattern tesselation reaction at various scales (inverse square to exponential square)
 
 <br/>
 <img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
@@ -197,19 +193,7 @@ Defining bounding box of blinker creates a pulsar:
 <br/>
 
 ## Significance of system ruleset numbers 2 and 3?
-- reverse engineering shows 3 locations are a constant of an alive cell?
-  - a dead cell with 3 neighbors becomes alive (3 known locations)
-  - an alive cell with 2 alive neighbors stays alive (3 known locations)
-  - an alive cell with 3 alive neighbors stays alive (3 known neighbor locations?)
-  - 3 locations enough to create triangle/square in neighborhood? (basic geometric shapes)
-  - 2^3 = 8
-    - 3 locations = 8 numbers of x,y for an alive cell?
-    - more or less cause dead cell?
-    - 8 total neighbors
-
 - connections of 2 in a neighborhood length of 3?
-- sequence of defining center cell in 3x3 matrix? (start at corner/side?)
-- blinker is period 2 with 3 cells
 
 <br/>
 
@@ -672,30 +656,6 @@ Comparing 4 glider spiral reactions to the [Unique Father Problem](https://conwa
 <br/>
 <img width="450" alt="Core Collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ec861f9f-1220-401f-8d91-f7f0f98f25b0">
 <br/><br/>
-
-<br/>
-
-## Another Tiling Technique:
-
-[Fleet glider synthesis](https://catagolue.hatsya.com/object/xs24_g8o653wggz11wokc321/b3s23) from the [Family Four](https://conwaylife.com/wiki/Familiar_fours) forms the following pattern:
-
-<img width="143" alt="fleet reaction pattern" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/bcf4e1fe-60a3-4b42-ba7f-d1d15ed39375">
-
-<br/>
-<br/>
-
-Tiled:
-<br/>
-<img width="450" alt="Screen Shot 2023-07-15 at 3 48 31 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/b8a547f4-d6fb-4c89-8696-ed17dca9d370">
-<br/>
-
-2nd Generation produces a texture of [Ponds](https://conwaylife.com/wiki/Pond).
-
-<br/>
-<img width="450" alt="Screen Shot 2023-07-15 at 3 46 17 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/2224904a-5c1f-4052-afda-dedb66e42c6d">
-
-[Blockade](https://catagolue.hatsya.com/object/xs16_0ggydgj3zop1yd11/b3s23) ...
-[Bakery](https://catagolue.hatsya.com/object/xs28_g88m952g8gz1218kid221/b3s23) ...
 
 <br/>
 
