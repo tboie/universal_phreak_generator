@@ -141,10 +141,7 @@ TODO:
 <img width="480" alt="locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3fef22a5-e79c-418d-b3a8-87bc1e620b46">
 <br/>
 
-4 Layer Intensity Inverse Locality Diagram:
-<br/>
-<img width="480" alt="inverse locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/71784c11-5373-4ad0-95e8-9866525b83b3">
-<br/>
+Apply upwards and downwards for a cell
 
 python script:
 <br/>
