@@ -21,13 +21,13 @@ grid_cells = 99
 # grid styling
 grid_lines = True
 
-# cell size in pixels
-cell_size = round(grid_size / grid_cells)
-
 color_on = 255
 color_seq = (0, 255, 0, 64) # alpha not working
 color_off = 0
 color_line = (64, 64, 64)
+
+# cell size in pixels
+cell_size = round(grid_size / grid_cells)
 
 # on cell image
 img_on = Image.new('1', (cell_size, cell_size), color=color_on)
@@ -42,13 +42,6 @@ def create_grid(gen, matrix, grid_size, fname, seq):
         for x, c in enumerate(row):
             if c == "1":
                 grid.paste(img_on, box=(x * cell_size, i * cell_size)) 
-    
-    # grid lines
-    if grid_lines == True:
-        draw = ImageDraw.Draw(grid)
-        for i in range(cell_size, grid_size, cell_size):
-            draw.line([(i, 0), (i, grid_size)], fill=color_line)
-            draw.line([(0, i), (grid_size, i)], fill=color_line)
 
     # apply sequence from gen_custom_seq.py (optional)
     board_center = round(grid_cells / 2) - 1
@@ -60,6 +53,13 @@ def create_grid(gen, matrix, grid_size, fname, seq):
 
                 grid.paste(img_seq, box=((board_center + x) * cell_size, (board_center - y) * cell_size))
 
+    # grid lines
+    if grid_lines == True:
+        draw = ImageDraw.Draw(grid)
+        for i in range(cell_size, grid_size, cell_size):
+            draw.line([(i, 0), (i, grid_size)], fill=color_line)
+            draw.line([(0, i), (grid_size, i)], fill=color_line)
+    
     # output image
     grid.save(fname,"PNG")
 
