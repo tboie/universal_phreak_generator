@@ -224,7 +224,9 @@ Tesselated tiles display scaled pattern information? (pattern is squared)
 Tiling Scripts:
 
 [generate tiled tesselations](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_tile_seq.py)
+<br/>
 [graph reaction size](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_graph.py)
+<br/>
 
 <br/>
 
@@ -753,11 +755,16 @@ Do generations stack?
 Is information communicated between generation layers?
 
 Scripts:
+<br/>
 [gen rotating square data](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_rotating_square.py)
+<br/>
 [gen custom sequence data](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_custom_seq.sh)
-
+<br/>
+<br/>
 [gen images](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_images.py)
+<br/>
 [gen animation)[https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_animated_gif.sh]
+<br/>
 
 ## Neighborhood Fibonnaci Sequence
 ```
