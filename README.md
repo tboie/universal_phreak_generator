@@ -752,6 +752,13 @@ Is the single cell cyclic?
 Do generations stack?  
 Is information communicated between generation layers?
 
+Scripts:
+[gen rotating square data](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_rotating_square.py)
+[gen custom sequence data](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_custom_seq.sh)
+
+[gen images](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_images.py)
+[gen animation)[https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_animated_gif.sh]
+
 ## Neighborhood Fibonnaci Sequence
 ```
 301
