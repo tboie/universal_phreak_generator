@@ -221,6 +221,11 @@ A block is 4 quadrants?  A blinker rotates 90 degrees?  A tile combines concepts
 
 Tesselated tiles display scaled pattern information? (pattern is squared)
 
+Tiling Scripts:
+
+[generate tiled tesselations](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_tile_seq.py)
+[graph reaction size](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_graph.py)
+
 <br/>
 
 The 4 glider spiral reaction might contain design information.
