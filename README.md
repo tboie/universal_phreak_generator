@@ -763,7 +763,7 @@ Scripts:
 <br/>
 [gen images](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_images.py)
 <br/>
-[gen animation)[https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_animated_gif.sh]
+[gen animation](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_animated_gif.sh)
 <br/>
 
 ## Neighborhood Fibonnaci Sequence
