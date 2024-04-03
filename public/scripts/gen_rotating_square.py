@@ -18,7 +18,7 @@ import os, time, json
 path = "gen"
 
 # board size in cells (odd has center)
-board_size = 99
+board_size = 599
 board_center = round(board_size / 2) - 1
 
 # helper funcs for square perimeter
@@ -50,7 +50,8 @@ def connect_points(ends):
 # x,y coordinates per generation
 # length of array determines total generations processed
 # ex) seq = [[[1, 1], [-1, -1]], [[2, 2], [-2, -2]], [[3, 3]]]
-seq = [[[0, 0]]]
+#seq = [[[0, 0]]]
+seq = []
 
 ''' 
 sample sequence:
@@ -119,6 +120,12 @@ for i in range(round(board_size / 2)):
             f = np.unique(f, axis=0)
             seq.append(f.tolist())
 
+# repeat sequence
+for idx, s in enumerate(seq):
+    if idx < len(seq) - 2:
+        for c in seq[idx]:
+            seq[idx+2].append(c)
+        
 # .txt file output
 if not os.path.exists(path):
     os.makedirs(path)
