@@ -1,8 +1,6 @@
-# creates 3x3 tiles of all possible combinations
-# creates layered inverse square tile using 3x3 tile
-# creates matrix "locality_diagram.svg" using layered tiles
+# creates layers of locality diagram
+# todo: redesign?
 
-import itertools
 import drawsvg as draw
 import numpy as np
 import os
@@ -13,19 +11,27 @@ import math
 
 # board matrix
 matrix = [
-        [1,1,1],
-        [1,0,1],
-        [1,1,1],
+        [1]
         ]
+
+''' 
+example:
+
+[1, 1, 1],
+[1, 0, 1],
+[1, 1, 1]
+'''
 
 # tile size
 size = 120
 
 # total layers
-layers = 32
+layers = 4
 
 # path to tiles & diagram
 path = "out/"
+
+gridLines = True
 
 # experimenting...
 
@@ -72,9 +78,9 @@ def genTile(m, p, color, colorBG):
     for i in range(3):
         for j in range(3):
             if m[j][i] == 1:
-                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=color))
+                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=color, stroke="red", stroke_opacity=0.5 if gridLines == True else 0))
             else:
-                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=colorBG))
+                d.append(draw.Rectangle(tSize * i, tSize * j, tSize, tSize, fill=colorBG, stroke="red", stroke_opacity=0.5 if gridLines == True else 0))
 
     d.save_svg(p)
 
@@ -92,6 +98,10 @@ def gen_diagram(m, x1, y1, x2, y2, layer):
 
             strPath = path + strTile + "_layers_" + str(layer) + ".svg"
             strPath_single = path + strTile + "_single_" + str(layer) + ".svg"
+            
+            # grid lines
+            d_single.append(draw.Rectangle((i-1) * size, (j-1) * size, size, size, stroke="red", stroke_width=3, stroke_opacity=1 if gridLines == True else 0))
+
       
             if layer > 0:
                 #d.append(draw.Image((i-1) * size, (j-1) * size, size, size, strPath, embed=True, opacity=1))                
@@ -121,7 +131,7 @@ for bits in combinations:
     m = np.array_split(bits, 3)
 
     # flip array
-    m = np.flip(m)
+    # m = np.flip(m)
 
     # tile file name and path
     file = ''.join(map(str, bits))
