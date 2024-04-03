@@ -711,6 +711,8 @@ Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 
 ## Nothing to Something Sequence (will it scale?)
 
+![repeating sequence](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aab920e-7fd5-4bdf-8140-a432091a9fc9)
+
 Potential starting point communicated using locality diagrams?
 
 ![locality_diagram_starting_note](https://github.com/tboie/universal_phreak_generator/assets/26150152/9c4d4f6c-7fd8-4a84-a00c-c4d1c67dc388)
