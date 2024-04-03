@@ -717,13 +717,17 @@ Potential starting point communicated using locality diagrams?
 
 Does the sequence of applying [locality diagrams](#system-mechanics-visualization) cause expansion from a single point?
 
-Example demo of applying a different experimental sequence between generations:
+Demo of applying an example experimental sequence between generations:
 <br/>
 ![sm expanding rotating boundary demo](https://github.com/tboie/universal_phreak_generator/assets/26150152/ef7a3961-fd7a-4a61-ba6f-311212b1bbd5)
 
 Does the single cell cycle?
-Do generations stack?  
+<br/>
+Do generations stack?
+<br/>
 Is information communicated between generation layers via locality diagram geometry?
+<br/>
+Create full visual of process?
 
 Scripts:
 <br/>
