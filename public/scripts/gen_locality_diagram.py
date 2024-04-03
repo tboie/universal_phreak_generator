@@ -1,6 +1,5 @@
-# creates 3x3 tiles of all possible combinations
-# creates layered inverse square tile using 3x3 tile
 # creates matrix "locality_diagram.svg" using layered tiles
+# TODO: re-design?
 
 import drawsvg as draw
 import numpy as np
@@ -12,19 +11,25 @@ import math
 
 # board matrix
 matrix = [
-        [1,1,1],
-        [1,0,1],
-        [1,1,1],
+        [1]
         ]
+
+''' 
+example:
+
+[1, 1, 1],
+[1, 0, 1],
+[1, 1, 1]
+'''
 
 # total layers
 layers = 8
 
 # inverted
-inverted = True
+inverted = False
 
 # grid lines
-gridLines = False
+gridLines = True
 
 # path to tiles & diagram
 path = "out/"
@@ -92,10 +97,14 @@ def gen_diagram(m, x1, y1, x2, y2, layer):
         for j in range(y1, y2+1):
             strTile = ''.join(str(ele) for ele in get_surrounding_elements(m, j, i))
             strPath = path + strTile + "_layers_" + str(layer) + ".svg"
+            
+            # grid lines
+            d.append(draw.Rectangle((i-1) * size, (j-1) * size, size, size, stroke="red", stroke_width=3, stroke_opacity=1 if gridLines == True else 0))
 
-            d.append(draw.Rectangle((i-1) * size, (j-1) * size, size, size, stroke="gray", stroke_width=5, stroke_opacity=1 if gridLines == True else 0))
+            if m[i][j] == 1:
+                d.append(draw.Rectangle((i-1) * size, (j-1) * size, size, size, fill="#fff"))
 
-            d.append(draw.Image((i-1) * size, (j-1) * size, size, size, strPath, embed=True, opacity=1))
+            d.append(draw.Image((i-1) * size, (j-1) * size, size, size, strPath, embed=True))
 
     d.save_svg(path + "locality_diagram_" + str(layer) + ".svg")
 
@@ -121,7 +130,7 @@ for bits in combinations:
     pathTile = path + file + "_layers_1.svg"
 
     # create base 1x1 tile
-    genTile(m, pathTile, "#FFFFFF", "#000000")
+    genTile(m, pathTile, grays[0], "transparent")
 
     # initialize svg
     d = draw.Drawing(size, size, origin=(0,0))
@@ -152,7 +161,7 @@ for bits in combinations:
         d.save_svg(path + file + "_layers_" + str(layer) + ".svg")
 
     # base 1x1 tile was modified, re-create it
-    genTile(m, pathTile, "#FFFFFF", "#000000")
+    genTile(m, pathTile, grays[0], "transparent")
 
 
 # locality_diagram.svg...
