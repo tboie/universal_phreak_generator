@@ -711,48 +711,18 @@ Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 
 ## Nothing to Something Sequence (will it scale?)
 
-```
-expanding rotating square boundary sample sequence:
+Potential starting point communicated using locality diagrams?
 
-1
+![locality_diagram_starting_note](https://github.com/tboie/universal_phreak_generator/assets/26150152/9c4d4f6c-7fd8-4a84-a00c-c4d1c67dc388)
 
-0 1 0
-1 0 1
-0 1 0
+Does the sequence of applying [locality diagrams](#system-mechanics-visualization) cause expansion from a single point?
 
-1 1 1
-1 0 1
-1 1 1
-
-0 0 1 0 0
-0 1 0 1 0
-1 0 0 0 1
-0 1 0 1 0
-0 0 1 0 0
-
-1 1 1 1 1
-1 0 0 0 1
-1 0 0 0 1
-1 0 0 0 1
-1 1 1 1 1
-
-...
-
-configurations are applied 1 generation at a time to the existing board.
-
-```
-
-Demos:
-
+Example demo of applying a different experimental sequence between generations:
 ![sm expanding rotating boundary demo](https://github.com/tboie/universal_phreak_generator/assets/26150152/ef7a3961-fd7a-4a61-ba6f-311212b1bbd5)
 
-![lg expanding rotating boundary demo](https://github.com/tboie/universal_phreak_generator/assets/26150152/065ba4ca-0f10-41a6-88dc-52a60fc6ff2e)
-
-Does the sequence of applying [locality diagrams](#system-mechanics-visualization) cause rotation?
-
-Is the single cell cyclic?  
+Does the single cell cycle?
 Do generations stack?  
-Is information communicated between generation layers?
+Is information communicated between generation layers via locality diagram geometry?
 
 Scripts:
 <br/>
