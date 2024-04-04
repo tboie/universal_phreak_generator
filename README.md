@@ -711,7 +711,35 @@ Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 
 ## Nothing to Something Sequence (will it scale?)
 
+```
+expanding rotating square boundary sample sequence:
+
+1
+
+0 1 0
+1 0 1
+0 1 0
+
+1 1 1
+1 0 1
+1 1 1
+
+0 0 1 0 0
+0 1 0 1 0
+1 0 0 0 1
+0 1 0 1 0
+0 0 1 0 0
+
+1 1 1 1 1
+1 0 0 0 1
+1 0 0 0 1
+1 0 0 0 1
+1 1 1 1 1
+```
+
 ![repeating sequence](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aab920e-7fd5-4bdf-8140-a432091a9fc9)
+
+[similar to Minimal Creation Concepts?](#minimal-creation-concepts)
 
 Potential starting point communicated using locality diagrams?
 
