@@ -12,17 +12,17 @@ import os, time, json
 path = "gen"
 
 # grid size in pixels
-grid_size = 356
+grid_size = 399
 
 # todo: script argument
 # board size in cells
-grid_cells = 19
+grid_cells = 99
 
 # step sequence visual
 seq_step = True
 
 # grid styling
-grid_lines = True
+grid_lines = False
 
 color_on = 255
 color_seq = (0, 255, 0, 64) # alpha not working
@@ -68,9 +68,10 @@ def create_grid(gen, matrix, grid_size, fname, seq):
 
 # load sequence if exists
 seq = []
-f_seq = open(path + "/sequence.json")
-if f_seq:
-    seq = json.load(f_seq)
+if seq_step == True:
+    f_seq = open(path + "/sequence.json")
+    if f_seq:
+        seq = json.load(f_seq)
 
 # get total nested .txt files for logging
 num_files = 0
@@ -84,22 +85,22 @@ i = 0
 prev_matrix = []
 
 for p in sorted(Path(path).rglob('*.txt')):
+    timer_start = time.time()
+        
     # .txt string to array of rows
     matrix = p.read_text().split("\n")
 
     # out file image name
     file_out = []
     
-    if seq_step == False:
-        file_out.append(os.path.splitext(p)[0] + ".png")
-    else:
+    if seq_step == True:
         file_path = os.path.splitext(p)[0].rsplit("_", 1)
         file_out.append(file_path[0] + '_{0:08}'.format(i) + ".png")
         file_out.append(file_path[0] + '_{0:08}'.format(i + 1) + ".png")
-
+    else:
+        file_out.append(os.path.splitext(p)[0] + ".png")
+        
     # generate image
-    timer_start = time.time()
-
     if seq_step == True:
         gen = round(i / 2)
         create_grid(gen, prev_matrix, grid_size, file_out[0], seq)
