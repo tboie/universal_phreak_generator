@@ -155,7 +155,7 @@ for i, gen in enumerate(seq):
     # console logging
     timer_end = time.time()
     timer_str = str("{:.3f}".format(round(timer_end - timer_start, 3))) + "s"
-    print(str(i) + "/" + str(len(seq)) + " " + timer_str)
+    print(str(i + 1) + "/" + str(len(seq)) + " " + timer_str)
 
 # write sequence to file for image drawing.
 with open(path + "/sequence.json", "w") as f:
