@@ -46,7 +46,6 @@ def connect_points(ends):
         return np.c_[np.round(np.linspace(ends[0, 0], ends[1, 0], d1 + 1)).astype(np.int32),
                      np.linspace(ends[0, 1], ends[1, 1], d1 + 1, dtype=np.int32)]
 
-
 # x,y coordinates per generation
 # length of array determines total generations processed
 # ex) seq = [[[1, 1], [-1, -1]], [[2, 2], [-2, -2]], [[3, 3]]]
@@ -119,12 +118,15 @@ for i in range(round(board_size / 2)):
             f = np.unique(f, axis=0)
             seq.append(f.tolist())
 
+# use 2nd half of array
+# seq = seq[round(len(seq)//2):]
+
 # repeat sequence
 for idx, s in enumerate(seq):
     if idx < len(seq) - 2:
         for c in seq[idx]:
             seq[idx+2].append(c)
-        
+      
 # .txt file output
 if not os.path.exists(path):
     os.makedirs(path)
