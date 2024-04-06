@@ -716,7 +716,9 @@ Implement geometry emerging from locality diagrams for basic configurations star
 ```
 expanding rotating square boundary sample sequence:
 
-1
+0 0 0
+0 1 0
+0 0 0
 
 0 1 0
 1 0 1
