@@ -711,6 +711,8 @@ Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 
 ## Nothing to Something Sequence (will it scale?)
 
+Implement geometry emerging from locality diagrams for basic configurations starting with a single point.
+
 ```
 expanding rotating square boundary sample sequence:
 
