@@ -1,8 +1,11 @@
 ###
 # generate a custom sequence of coordinates to apply 1
-# generation at a time to board
+# generation at a time to board.
+#
+# current concept 
 #
 # output each generation data to .txt file in path
+#
 ###
 
 import matplotlib.pyplot as plt
@@ -17,11 +20,11 @@ import os, time, json, math
 # output path
 path = "gen"
 
-generations = 99
-#gen_start = 0
+generations = 499
+gen_start = 0
 
 # board size in cells (odd has center)
-board_size = generations * 2
+board_size = generations + gen_start
 board_center = math.floor(board_size / 2)
 
 # helper funcs for square perimeter
@@ -102,17 +105,19 @@ sample sequence:
 '''
 
 # expanding square perimeter by rotating
-for gen in range(generations):
+gen_range = round(generations / 2) + round(gen_start / 2)
+for gen in range(gen_range):
     seq.append(get_coordinates(gen, "square"))
     seq.append(get_coordinates(gen + 1, "rhombus"))
 
-'''
+# initial config if gen_start > 0
+# todo: better perf method?
 for i in range(gen_start):
     for c in seq[i]:
         seq[i + 1].append(c.copy())
 
-seq = seq[gen_start:] 
-'''
+# slice array to gen_start
+seq = seq[gen_start:]
 
 # .txt file output
 if not os.path.exists(path):
