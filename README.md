@@ -8,6 +8,12 @@ p4tt3rn p0pp3r5 . y0ch0
 
 <img width="267" alt="Screen Shot 2023-06-29 at 12 16 57 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/38a04458-1c28-481f-93eb-ec9ea1a0a092">
 
+```
+1 0 1
+1 0 1
+1 1 1
+```
+
 <br/><br/>
 
 More concepts in code experiments at [src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
