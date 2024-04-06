@@ -739,7 +739,16 @@ expanding rotating square boundary sample sequence:
 1 1 1 1 1
 ```
 
-![repeating sequence](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aab920e-7fd5-4bdf-8140-a432091a9fc9)
+Locality diagrams of first 3 sequences:
+
+![locality_diagram_8_point](https://github.com/tboie/universal_phreak_generator/assets/26150152/8eb0a8ac-6cda-43d1-8e6a-0b6913dca6d4)
+
+![locality_diagram_8_dead](https://github.com/tboie/universal_phreak_generator/assets/26150152/c7d89f6c-6555-47f0-b95f-f6987fc5b9dd)
+
+![locality_diagram_8_o](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4e88433-97a0-457d-9711-69f39b3158bf)
+
+<br/>
+<br/>
 
 [similar to Minimal Creation Concepts?](#minimal-creation-concepts)
 
@@ -748,11 +757,7 @@ Potential starting point communicated using locality diagrams?
 ![locality_diagram_starting_note](https://github.com/tboie/universal_phreak_generator/assets/26150152/9c4d4f6c-7fd8-4a84-a00c-c4d1c67dc388)
 
 Does the sequence of applying [locality diagrams](#system-mechanics-visualization) cause expansion from a single point?
-
-Demo of applying an example experimental sequence between generations:
 <br/>
-![sm expanding rotating boundary demo](https://github.com/tboie/universal_phreak_generator/assets/26150152/ef7a3961-fd7a-4a61-ba6f-311212b1bbd5)
-
 Does the single cell cycle?
 <br/>
 Do generations stack?
