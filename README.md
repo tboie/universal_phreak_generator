@@ -746,6 +746,9 @@ expanding rotating square boundary sample sequence:
 1 0 0 0 1
 1 1 1 1 1
 ```
+Demo:
+
+![gen](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aa9e4dd-7ac1-4ee0-859d-5cba94b0bce0)
 
 Locality diagrams of first 3 sequence configurations:
 
