@@ -747,7 +747,7 @@ expanding rotating square boundary sample sequence:
 1 1 1 1 1
 ```
 
-Locality diagrams of first 3 sequences:
+Locality diagrams of first 3 sequence configurations:
 
 ![locality_diagram_8_point](https://github.com/tboie/universal_phreak_generator/assets/26150152/8eb0a8ac-6cda-43d1-8e6a-0b6913dca6d4)
 
@@ -756,6 +756,9 @@ Locality diagrams of first 3 sequences:
 ![locality_diagram_8_o](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4e88433-97a0-457d-9711-69f39b3158bf)
 
 <br/>
+
+Do layers reveal geometry for specific times?
+
 <br/>
 
 [similar to Minimal Creation Concepts?](#minimal-creation-concepts)
