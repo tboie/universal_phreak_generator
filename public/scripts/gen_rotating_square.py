@@ -2,10 +2,7 @@
 # generate a custom sequence of coordinates to apply 1
 # generation at a time to board.
 #
-# current concept 
-#
 # output each generation data to .txt file in path
-#
 ###
 
 import matplotlib.pyplot as plt
@@ -20,11 +17,14 @@ import os, time, json, math
 # output path
 path = "gen"
 
-generations = 499
+generations = 99
 gen_start = 0
 
 # board size in cells (odd has center)
 board_size = generations + gen_start
+if board_size % 2 == 0:
+    board_size += 1
+
 board_center = math.floor(board_size / 2)
 
 # helper funcs for square perimeter
