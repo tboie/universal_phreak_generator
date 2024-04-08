@@ -13,15 +13,15 @@ path = "../sequences/gen"
 
 # todo: script argument
 # board size in cells
-# generations * 2 + 1
-grid_cells = 17
+# generations + 1
+grid_cells = 401
 
 # grid size in pixels
 # multiple of grid_cells for alignment (no floats)
-grid_size = 510
+grid_size = 802
 
 # step sequence visual
-seq_step = True
+seq_step = False
 
 # grid styling
 grid_lines = False

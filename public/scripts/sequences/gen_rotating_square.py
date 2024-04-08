@@ -17,12 +17,12 @@ import os, time, json, math
 # output path
 path = "gen"
 
-generations = 8
+generations = 400
 # todo: test
 gen_start = 0
 
 # board size in cells (odd has center)
-board_size = (generations * 2) + gen_start
+board_size = generations + gen_start
 if board_size % 2 == 0:
     board_size += 1
 
@@ -106,7 +106,8 @@ sample sequence:
 '''
 
 # expanding square perimeter by rotating
-gen_range = (generations * 2) + gen_start + 1
+gen_range = gen_start + round(generations / 2) + 1
+
 for gen in range(gen_range):
     seq.append(get_coordinates(gen, "square"))
     seq.append(get_coordinates(gen + 1, "rhombus"))
