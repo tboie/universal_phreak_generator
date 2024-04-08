@@ -9,7 +9,7 @@ from pathlib import Path
 import os, time, json, math
 
 # data path
-path = "gen"
+path = "../sequences/gen"
 
 # todo: script argument
 # board size in cells
