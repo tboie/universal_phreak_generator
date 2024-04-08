@@ -17,11 +17,12 @@ import os, time, json, math
 # output path
 path = "gen"
 
-generations = 99
+generations = 8
+# todo: test
 gen_start = 0
 
 # board size in cells (odd has center)
-board_size = generations + gen_start
+board_size = (generations * 2) + gen_start
 if board_size % 2 == 0:
     board_size += 1
 
@@ -105,7 +106,7 @@ sample sequence:
 '''
 
 # expanding square perimeter by rotating
-gen_range = round(generations / 2) + round(gen_start / 2)
+gen_range = (generations * 2) + gen_start + 1
 for gen in range(gen_range):
     seq.append(get_coordinates(gen, "square"))
     seq.append(get_coordinates(gen + 1, "rhombus"))
@@ -117,7 +118,7 @@ for i in range(gen_start):
         seq[i + 1].append(c.copy())
 
 # slice array to gen_start
-seq = seq[gen_start:]
+seq = seq[gen_start:gen_start + generations]
 
 # .txt file output
 if not os.path.exists(path):

@@ -6,17 +6,19 @@
 
 from PIL import Image, ImageDraw
 from pathlib import Path
-import os, time, json
+import os, time, json, math
 
 # data path
 path = "gen"
 
-# grid size in pixels
-grid_size = 399
-
 # todo: script argument
 # board size in cells
-grid_cells = 99
+# generations * 2 + 1
+grid_cells = 17
+
+# grid size in pixels
+# multiple of grid_cells for alignment (no floats)
+grid_size = 510
 
 # step sequence visual
 seq_step = True
@@ -47,7 +49,7 @@ def create_grid(gen, matrix, grid_size, fname, seq):
                 grid.paste(img_on, box=(x * cell_size, i * cell_size)) 
 
     # apply sequence from gen_custom_seq.py (optional)
-    board_center = round(grid_cells / 2) - 1
+    board_center = math.floor(grid_cells / 2)
     if gen < len(seq):
         for c in seq[gen]:
             if len(c) > 0:
