@@ -758,6 +758,10 @@ Locality diagrams of first 3 sequence configurations:
 
 ![locality_diagram_8_o](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4e88433-97a0-457d-9711-69f39b3158bf)
 
+Demo of 400 generations:
+
+![demo sequence 400 gens](https://github.com/tboie/universal_phreak_generator/assets/26150152/0e39819b-89cc-42a1-b379-22e458bd5a36)
+
 <br/>
 
 Do layers reveal geometry for specific times?
