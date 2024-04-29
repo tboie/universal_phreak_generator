@@ -762,7 +762,9 @@ Demo of 400 generations:
 
 ![demo sequence 400 gens](https://github.com/tboie/universal_phreak_generator/assets/26150152/0e39819b-89cc-42a1-b379-22e458bd5a36)
 
-<br/>
+
+#### Older notes:
+
 
 Do layers reveal geometry for specific times?
 
@@ -783,6 +785,19 @@ Do generations stack?
 Is information communicated between generation layers via locality diagram geometry?
 <br/>
 Create full visual of process?
+<br/>
+
+#### Newer Notes:
+
+Invert locality diagrams?
+<br/>
+All information contained in cell?
+<br/>
+Expansion and contraction?
+<br/>
+Defining area creates scaled cell?
+<br/>
+<br/>
 
 Scripts:
 <br/>
