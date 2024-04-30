@@ -802,6 +802,11 @@ Nothing is something?
 1 / 0?  Rotation = energy?
 <br/>
 <br/>
+Sequence concept:
+<br/>
+<img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/375901f0-900d-4fb9-aa66-f1906973229f">
+<br/>
+<br/>
 
 Scripts:
 <br/>
