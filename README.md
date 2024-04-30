@@ -789,13 +789,17 @@ Create full visual of process?
 
 #### Newer Notes:
 
-Invert locality diagrams?
-<br/>
 All information contained in cell?
 <br/>
-Expansion and contraction?
+Expansion(inverted locality diagram?) and contraction reaction information correlates to locality diagrams?
 <br/>
-Defining area creates scaled cell?
+Defined area is scaled cell?
+<br/>
+Single "on" cell is specific case of system?
+<br/>
+Nothing is something?
+<br/>
+1 / 0?  Rotation = energy?
 <br/>
 <br/>
 
