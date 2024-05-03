@@ -807,6 +807,11 @@ Sequence concept:
 <img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/375901f0-900d-4fb9-aa66-f1906973229f">
 <br/>
 <br/>
+Animated sequence concept (16 layers, 250 generations, opacity decreases):
+<br/>
+![gen_animated_16_250](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4d7fa07-d332-46b5-9841-d23a79b82b56)
+<br/>
+<br/>
 
 Scripts:
 <br/>
