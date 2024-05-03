@@ -1,6 +1,7 @@
 # creates transparency palette file for sequence layer
 # output: ../sequences/[layer #]/palette.png
 # TODO: refactor
+# only 1 palette needed for same color?
 
 ffmpeg -i ../sequences/0/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/0/palette.png
 ffmpeg -i ../sequences/1/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/1/palette.png
@@ -19,3 +20,51 @@ ffmpeg -i ../sequences/13/gen_%08d.png -vf palettegen=reserve_transparent=1 ../s
 ffmpeg -i ../sequences/14/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/14/palette.png
 ffmpeg -i ../sequences/15/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/15/palette.png
 ffmpeg -i ../sequences/16/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/16/palette.png
+ffmpeg -i ../sequences/17/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/17/palette.png
+ffmpeg -i ../sequences/18/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/18/palette.png
+ffmpeg -i ../sequences/19/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/19/palette.png
+ffmpeg -i ../sequences/20/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/20/palette.png
+ffmpeg -i ../sequences/21/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/21/palette.png
+ffmpeg -i ../sequences/22/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/22/palette.png
+ffmpeg -i ../sequences/23/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/23/palette.png
+ffmpeg -i ../sequences/24/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/24/palette.png
+ffmpeg -i ../sequences/25/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/25/palette.png
+ffmpeg -i ../sequences/26/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/26/palette.png
+ffmpeg -i ../sequences/27/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/27/palette.png
+ffmpeg -i ../sequences/28/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/28/palette.png
+ffmpeg -i ../sequences/29/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/29/palette.png
+ffmpeg -i ../sequences/30/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/30/palette.png
+ffmpeg -i ../sequences/31/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/31/palette.png
+ffmpeg -i ../sequences/32/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/32/palette.png
+ffmpeg -i ../sequences/33/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/33/palette.png
+ffmpeg -i ../sequences/34/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/34/palette.png
+ffmpeg -i ../sequences/35/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/35/palette.png
+ffmpeg -i ../sequences/36/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/36/palette.png
+ffmpeg -i ../sequences/37/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/37/palette.png
+ffmpeg -i ../sequences/38/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/38/palette.png
+ffmpeg -i ../sequences/39/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/39/palette.png
+ffmpeg -i ../sequences/40/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/40/palette.png
+ffmpeg -i ../sequences/41/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/41/palette.png
+ffmpeg -i ../sequences/42/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/42/palette.png
+ffmpeg -i ../sequences/43/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/43/palette.png
+ffmpeg -i ../sequences/44/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/44/palette.png
+ffmpeg -i ../sequences/45/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/45/palette.png
+ffmpeg -i ../sequences/46/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/46/palette.png
+ffmpeg -i ../sequences/47/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/47/palette.png
+ffmpeg -i ../sequences/48/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/48/palette.png
+ffmpeg -i ../sequences/49/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/49/palette.png
+ffmpeg -i ../sequences/50/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/50/palette.png
+ffmpeg -i ../sequences/51/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/51/palette.png
+ffmpeg -i ../sequences/52/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/52/palette.png
+ffmpeg -i ../sequences/53/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/53/palette.png
+ffmpeg -i ../sequences/54/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/54/palette.png
+ffmpeg -i ../sequences/55/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/55/palette.png
+ffmpeg -i ../sequences/56/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/56/palette.png
+ffmpeg -i ../sequences/57/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/57/palette.png
+ffmpeg -i ../sequences/58/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/58/palette.png
+ffmpeg -i ../sequences/59/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/59/palette.png
+ffmpeg -i ../sequences/60/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/60/palette.png
+ffmpeg -i ../sequences/61/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/61/palette.png
+ffmpeg -i ../sequences/62/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/62/palette.png
+ffmpeg -i ../sequences/63/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/63/palette.png
+ffmpeg -i ../sequences/64/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/64/palette.png

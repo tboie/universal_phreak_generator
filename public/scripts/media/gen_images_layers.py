@@ -11,16 +11,16 @@ import os, time, json, math
 
 # data path
 path_base = "../sequences/"
-radius_sizes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+radius_sizes = list(range(0, 65))
 
 # todo: script argument
 # board size in cells
 # generations + 1
-grid_cells = 151
+grid_cells = 601
 
 # grid size in pixels
 # multiple of grid_cells for alignment (no floats)
-grid_size = 604
+grid_size = 601
 
 # step sequence visual (not implemented)
 seq_step = False

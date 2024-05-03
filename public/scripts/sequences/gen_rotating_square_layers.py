@@ -16,9 +16,9 @@ import os, time, json, math
 
 # config
 # radius = layer #
-radius_sizes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-board_size = 150
-generations = 250
+radius_sizes = list(range(0, 64))
+board_size = 600
+generations = 800
 
 # odd board size has center
 if board_size % 2 == 0:
