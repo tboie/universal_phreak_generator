@@ -108,7 +108,7 @@ for p in sorted(Path(path).rglob('*.txt')):
         create_grid(gen, prev_matrix, grid_size, file_out[0], seq)
         create_grid(gen, matrix, grid_size, file_out[1], [])
     else:
-        create_grid(i, prev_matrix, grid_size, file_out[0], seq)
+        create_grid(i, matrix, grid_size, file_out[0], seq)
 
     prev_matrix = matrix
 

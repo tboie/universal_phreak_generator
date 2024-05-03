@@ -11,7 +11,9 @@ import math
 
 # board matrix
 matrix = [
-        [1]
+        [1,1,1],
+        [1,0,1],
+        [1,1,1]
         ]
 
 ''' 
@@ -26,10 +28,10 @@ example:
 layers = 8
 
 # inverted
-inverted = False
+inverted = True
 
 # grid lines
-gridLines = True
+gridLines = False
 
 # path to tiles & diagram
 path = "out/"

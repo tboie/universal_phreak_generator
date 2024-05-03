@@ -17,12 +17,15 @@ import os, time, json, math
 # output path
 path = "gen"
 
-generations = 400
+generations = 8
+margin = 8
+reverse = True
+
 # todo: test
 gen_start = 0
 
 # board size in cells (odd has center)
-board_size = generations + gen_start
+board_size = generations + gen_start + margin
 if board_size % 2 == 0:
     board_size += 1
 
@@ -120,6 +123,29 @@ for i in range(gen_start):
 
 # slice array to gen_start
 seq = seq[gen_start:gen_start + generations]
+
+# reverse
+if reverse == True:
+    seq = seq[::-1]
+
+'''
+testing changing directions
+
+for i, gen in enumerate(seq):
+    cc = []
+    for c in gen:
+        cc.append(c.copy())
+    
+    seq_rev.append(cc.copy())
+    
+seq = seq_rev[::-1]
+'''
+
+'''
+for i, gen in enumerate(seq):
+    for c in seq_rev[i]:
+        seq[i].append(c.copy())
+'''
 
 # .txt file output
 if not os.path.exists(path):

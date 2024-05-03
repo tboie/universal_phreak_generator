@@ -1,0 +1,8 @@
+notes for gif transparency:
+
+ffmpeg -i gen_%08d.png -vf palettegen=reserve_transparent=1 palette.png
+ffmpeg -framerate 10 -i gen_%08d.png -i palette.png -lavfi paletteuse=alpha_threshold=128 gen_animated.gif
+
+layers gifs:
+(edit size parameters)
+ffmpeg -y -i gen_animated_10.gif -i gen_animated_16.gif -filter_complex "[1:v]scale=408:408[i1];[0:v][i1]overlay=0:0:format=auto,split[s0][s1];[s0]palettegen=reserve_transparent=1[p];[s1][p]paletteuse" -q:v 1 out.gif
