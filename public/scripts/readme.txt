@@ -21,8 +21,8 @@ update index.html in /media/html_layers
 run html server to view:
 serve -s /media/html_layers
 
-use quicktime to capture screen
-use web tool to convert movie to gif
+use tool to capture screen
+use tool to convert movie to gif
 
 ------------------
 sequence concept:

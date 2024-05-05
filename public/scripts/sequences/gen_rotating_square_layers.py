@@ -15,10 +15,12 @@ import numpy as np
 import os, time, json, math
 
 # config
+path_base = "out"
 # radius = layer #
-radius_sizes = list(range(0, 64))
-board_size = 600
-generations = 800
+radius_sizes = list(range(0, 9))
+# 64: 600 size, 800 gen
+board_size = 50
+generations = 100
 
 # odd board size has center
 if board_size % 2 == 0:
@@ -72,7 +74,7 @@ def connect_points(ends):
                      np.linspace(ends[0, 1], ends[1, 1], d1 + 1, dtype=np.int32)]
 
 for radius_size in radius_sizes:
-    path = str(radius_size)
+    path = path_base + "/" + str(radius_size)
     
     # x,y coordinates per generation
     # length of array determines total generations processed
@@ -100,7 +102,7 @@ for radius_size in radius_sizes:
     # slice correct number of generations   
     seq = seq[0:generations]
 
-    # .txt file output
+    # create path if needed
     if not os.path.exists(path):
         os.makedirs(path)
 

@@ -10,17 +10,17 @@ from pathlib import Path
 import os, time, json, math
 
 # data path
-path_base = "../sequences/"
-radius_sizes = list(range(0, 65))
+path_base = "../sequences/out/"
+radius_sizes = list(range(0, 9))
 
 # todo: script argument
 # board size in cells
 # generations + 1
-grid_cells = 601
+grid_cells = 51
 
 # grid size in pixels
 # multiple of grid_cells for alignment (no floats)
-grid_size = 601
+grid_size = 408
 
 # step sequence visual (not implemented)
 seq_step = False

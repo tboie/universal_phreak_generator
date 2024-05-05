@@ -2,7 +2,7 @@
 
 ## A spiraling collection of virtual measurements
 
-_authored by:_ 
+_authored by:_
 
 p4tt3rn p0pp3r5 . y0ch0
 
@@ -125,7 +125,8 @@ bobo$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o37bo$39o!
 
 ## System mechanics visualization
 
-TODO: 
+TODO:
+
 - how should intensity be accurately visualized (color, opacity, depth etc.)?
 
 <br/>
@@ -151,29 +152,30 @@ python script:
 <br/>
 <br/>
 
-
 Initial state design from cell contents?
+
 - Cell to Board?
 - Board to Board?
 - Translation Technique
-    - Inverse Square?
-    - Spiral?
-    - [Minimal Creation Grid?](https://github.com/tboie/universal_phreak_generator?tab=readme-ov-file#minimal-creation-concepts)
-    - Multiple generations?
- 
+  - Inverse Square?
+  - Spiral?
+  - [Minimal Creation Grid?](https://github.com/tboie/universal_phreak_generator?tab=readme-ov-file#minimal-creation-concepts)
+  - Multiple generations?
+
 Locality Trace Diagram:
 <br/>
 <img width="480" alt="locality trace diagram" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f1a09742-a2f1-476e-a48c-1af41ba9af05">
 
-
 ## System energy calculations
+
 [Code in App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx#L198)
 
 - Alive energy uses alive cells
 - Dead energy uses dead cells within a bounding box around min/max of alive cell x/y in system
+
   - Calculate another "category" for dead cells adjacent to alive cells?
-      - Adjacent Dead Cell ADPV = Total Connected Alive Cells / 8 ?
- 
+    - Adjacent Dead Cell ADPV = Total Connected Alive Cells / 8 ?
+
 - System energy changes create waveform?
 
 <br/>
@@ -193,27 +195,30 @@ Locality Trace Diagram:
 ```
 
 Defining bounding box of blinker creates a pulsar:
--  https://conwaylife.com/wiki/Pulsar
--  3x3 center is interesting?
+
+- https://conwaylife.com/wiki/Pulsar
+- 3x3 center is interesting?
 
 <br/>
 
 ## Significance of system ruleset numbers 2 and 3?
+
 - connections of 2 in a neighborhood length of 3?
 
 <br/>
 
 ## 9 cell neighborhood combinations produce 9 most common patterns
+
 - https://catagolue.hatsya.com/statistics
-- 1   xs4_33 (Block)	1641635518161410
-- 2   xp2_7 (Blinker)	1524639293713408
-- 3		xs6_696 (Beehive)	869945894691485
-- 4		xq4_153 (Glider)	467343903744820
-- 5		xs7_2596 (Loaf)	256651602436129
-- 6		xs5_253 (Boat)	236781408150196
-- 7		xs6_356 (Ship)	163492510796214
-- 8		xs4_252 (Tub)	51670473427163
-- 9     xs8_6996 (Pond)	55336623799705
+- 1 xs4_33 (Block) 1641635518161410
+- 2 xp2_7 (Blinker) 1524639293713408
+- 3 xs6_696 (Beehive) 869945894691485
+- 4 xq4_153 (Glider) 467343903744820
+- 5 xs7_2596 (Loaf) 256651602436129
+- 6 xs5_253 (Boat) 236781408150196
+- 7 xs6_356 (Ship) 163492510796214
+- 8 xs4_252 (Tub) 51670473427163
+- 9 xs8_6996 (Pond) 55336623799705
 
 <br/>
 
@@ -223,7 +228,7 @@ Tile = form?
 
 Tesselation = scaled reaction of form?
 
-A block is 4 quadrants?  A blinker rotates 90 degrees?  A tile combines concepts of the 2 most common patterns.
+A block is 4 quadrants? A blinker rotates 90 degrees? A tile combines concepts of the 2 most common patterns.
 
 Tesselated tiles display scaled pattern information? (pattern is squared)
 
@@ -483,7 +488,7 @@ x = 10, y = 10, rule = B3/S23
 - reaction at tesselation size 256x256 is interesting
   - inner gliders movement change
   - octagon to square to octagon?
- 
+
 Note: are tileset sizes 256/512 significant?
 
 <img width="160" alt="Screen Shot 2023-08-23 at 12 51 32 PM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5c2c34cc-7ef2-41ba-9f17-eeae60f5ec77">
@@ -595,7 +600,6 @@ obo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo3bobo$2b4o2b4o2b4o2b4o2b4o
 
 <br/>
 
-
 ### Minimal tile system deployment
 
 - system composed of at least 2 types
@@ -651,7 +655,7 @@ Is this still relevant?
 
 ## Pattern Balance Technique
 
-- example uses [Unique Father Problem](https://conwaylife.com/wiki/Unique_father_problem) 
+- example uses [Unique Father Problem](https://conwaylife.com/wiki/Unique_father_problem)
 
 <img width="700" alt="concept" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06d05e6a-1baa-4f8b-9880-b3b41d98967d">
 
@@ -690,6 +694,7 @@ x = 8, y = 9, rule = B3/S23
 <br/><br/>
 
 ## Adjacent Differential Points Value?
+
 - Implement visualization?
 - Does the value relate to cells with greatest alive/dead energy in system? (distance?)
 
@@ -702,9 +707,11 @@ Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 <br/><br/>
 
 ## What is geometry of each cell/point?
+
 - pyramid/cone?
 
 ## Random note for later: 0.125 sequence is combinationally interesting?
+
 - 0
 - 0.125
 - 0.25
@@ -746,6 +753,7 @@ expanding rotating square boundary sample sequence:
 1 0 0 0 1
 1 1 1 1 1
 ```
+
 Demo:
 
 ![gen](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aa9e4dd-7ac1-4ee0-859d-5cba94b0bce0)
@@ -762,9 +770,7 @@ Demo of 400 generations:
 
 ![demo sequence 400 gens](https://github.com/tboie/universal_phreak_generator/assets/26150152/0e39819b-89cc-42a1-b379-22e458bd5a36)
 
-
 #### Older notes:
-
 
 Do layers reveal geometry for specific times?
 
@@ -799,7 +805,7 @@ Single "on" cell is specific case of system?
 <br/>
 Nothing is something?
 <br/>
-1 / 0?  Rotation = energy?
+1 / 0? Rotation = energy?
 <br/>
 <br/>
 Sequence concept:
@@ -815,17 +821,12 @@ Animated sequence concept (16 layers, 250 generations, opacity decreases):
 
 Scripts:
 <br/>
-[gen rotating square data](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_rotating_square.py)
+[https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts)
 <br/>
-[gen custom sequence data](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_custom_seq.sh)
-<br/>
-<br/>
-[gen images](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_images.py)
-<br/>
-[gen animation](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_animated_gif.sh)
 <br/>
 
 ## Neighborhood Fibonnaci Sequence
+
 ```
 301
 3 1
@@ -860,12 +861,8 @@ Time = 0
 <br/>
 <img width="420" alt="neiborhood time diff 0" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/c2d8d724-6e08-4506-99f9-356e7746aef0">
 
-
 <br/>
 
 Time = 1
 <br/>
 <img width="420" alt="neighborhood time diff 1" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/607498d5-722e-4055-a383-bf9e474557b2">
-
-
-
