@@ -94,6 +94,15 @@ for radius_size in radius_sizes:
         else:
             seq.append(get_coordinates(i, "square"))
             seq.append(get_coordinates(i, "rhombus"))
+            
+    '''
+    # prev radius stays on?
+    # alternate?
+    for i, gen in enumerate(seq):
+        if i < len(seq) - 1:
+            for c in gen:
+                seq[i + 1].append(c.copy())        
+    '''
 
     # sloppy amount of trailing empty generations
     for i in range(generations - (radius_size * 2)):
