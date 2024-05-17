@@ -772,29 +772,6 @@ Demo of 400 generations:
 
 ![demo sequence 400 gens](https://github.com/tboie/universal_phreak_generator/assets/26150152/0e39819b-89cc-42a1-b379-22e458bd5a36)
 
-#### Older notes:
-
-Do layers reveal geometry for specific times?
-
-<br/>
-
-[similar to Minimal Creation Concepts?](#minimal-creation-concepts)
-
-Potential starting point communicated using locality diagrams?
-
-![locality_diagram_starting_note](https://github.com/tboie/universal_phreak_generator/assets/26150152/9c4d4f6c-7fd8-4a84-a00c-c4d1c67dc388)
-
-Does the sequence of applying [locality diagrams](#system-mechanics-visualization) cause expansion from a single point?
-<br/>
-Does the single cell cycle?
-<br/>
-Do generations stack?
-<br/>
-Is information communicated between generation layers via locality diagram geometry?
-<br/>
-Create full visual of process?
-<br/>
-
 #### Newer Notes:
 
 All information contained in cell?
