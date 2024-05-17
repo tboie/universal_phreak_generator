@@ -203,6 +203,8 @@ Defining bounding box of blinker creates a pulsar:
 
 ## Significance of system ruleset numbers 2 and 3?
 
+- triangle?
+
 - connections of 2 in a neighborhood length of 3?
 
 <br/>
