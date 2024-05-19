@@ -791,7 +791,7 @@ Sequence concept:
 <br/>
 <img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/375901f0-900d-4fb9-aa66-f1906973229f">
 <br/>
-- Layer created when boundary increases
+- Layer created when boundary expands as rhombus
 - Number of Locality Diagram layers for each layer = layer number?
 <br/>
 <br/>
