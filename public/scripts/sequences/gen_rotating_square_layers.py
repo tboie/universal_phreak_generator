@@ -87,23 +87,9 @@ for radius_size in radius_sizes:
 
     # contracting rotating square (radius = layer #)
     for i in reversed(range(radius_size + 1)):
-        if i == 0:
-            seq.append(get_coordinates(i, "square"))
-        elif i == radius_size:
-            seq.append(get_coordinates(i, "rhombus"))
-        else:
-            seq.append(get_coordinates(i, "square"))
-            seq.append(get_coordinates(i, "rhombus"))
-            
-    '''
-    # prev radius stays on?
-    # alternate?
-    for i, gen in enumerate(seq):
-        if i < len(seq) - 1:
-            for c in gen:
-                seq[i + 1].append(c.copy())        
-    '''
-
+        seq.append(get_coordinates(i, "square"))
+        seq.append(get_coordinates(i, "rhombus"))
+    
     # sloppy amount of trailing empty generations
     for i in range(generations - (radius_size * 2)):
         seq.append([])
