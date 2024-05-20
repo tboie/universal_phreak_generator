@@ -791,13 +791,9 @@ Sequence concept:
 <br/>
 <img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/375901f0-900d-4fb9-aa66-f1906973229f">
 <br/>
-- Layer created when boundary expands as rhombus
+- Create better diagram?
+- [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
 - Number of Locality Diagram layers for each layer = layer number?
-<br/>
-<br/>
-Animated sequence concept (16 layers, 250 generations, opacity decreases):
-<br/>
-![gen_animated_16_250](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4d7fa07-d332-46b5-9841-d23a79b82b56)
 <br/>
 <br/>
 
