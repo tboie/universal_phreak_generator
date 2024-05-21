@@ -18,7 +18,6 @@ import os, time, json, math
 path_base = "out"
 # radius = layer #
 radius_sizes = list(range(0, 9))
-# 64: 600 size, 800 gen
 board_size = 50
 generations = 100
 
@@ -87,6 +86,9 @@ for radius_size in radius_sizes:
 
     # contracting rotating square (radius = layer #)
     for i in reversed(range(radius_size + 1)):
+        if i == radius_size:
+            seq.append(get_coordinates(i, "rhombus"))
+        
         seq.append(get_coordinates(i, "square"))
         seq.append(get_coordinates(i, "rhombus"))
     
