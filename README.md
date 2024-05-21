@@ -724,12 +724,16 @@ Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 - 0.875
 - 1
 
-## Nothing to Something Sequence (will it scale?)
+## Nothing to Something Sequence
 
 Implement geometry emerging from locality diagrams for basic configurations starting with a single point.
 
 ```
 expanding rotating square boundary sample sequence:
+
+0 0 0
+0 1 0
+0 0 0
 
 0 0 0
 0 1 0
@@ -760,6 +764,10 @@ Demo:
 
 ![gen](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aa9e4dd-7ac1-4ee0-859d-5cba94b0bce0)
 
+note: demo is missing a point from beginning of sequence
+
+<br/>
+
 Locality diagrams of first 3 sequence configurations:
 
 ![locality_diagram_8_point](https://github.com/tboie/universal_phreak_generator/assets/26150152/8eb0a8ac-6cda-43d1-8e6a-0b6913dca6d4)
@@ -784,7 +792,7 @@ Single "on" cell is specific case of system?
 <br/>
 Nothing is something?
 <br/>
-1 / 0? Rotation = energy?
+1 / 3?
 <br/>
 <br/>
 Sequence concept:
