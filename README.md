@@ -49,6 +49,7 @@ TODO:
 <br/>
 
 Apply upwards and downwards for a cell?
+Sequence?
 
 python script:
 <br/>
