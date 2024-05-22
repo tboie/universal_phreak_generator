@@ -16,112 +16,16 @@ p4tt3rn p0pp3r5 . y0ch0
 
 <br/><br/>
 
+Scripts:
+
+[https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts)
+
+<br/>
+
 More concepts in code experiments at [src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
 
 <br/>
-
-## Phreak Phormulas
-
-<img width="500" alt="Phreak Phormula" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3c7dd18-6ea3-4db9-9d50-f7504c11d638">
 <br/>
-<img width="350" alt="Phreak Phormula example 1" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/14e497cb-e473-4b72-aa12-057b2963d967">
-<br/>
-<img width="350" alt="Phreak Phormula example 2" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/8685a79d-8af1-4df3-81ae-e506a87d57e4">
-
-<br/>
-
-more initial state designs (ring version, fibonnaci spiral) found here:
-[src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
-
-<br/>
-
-## Minimal Creation Concepts
-
-A cell exists. Define area.
-
-<img width="52" alt="define cell" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3b935aa7-3581-4223-a24a-cfc70cae7cd9">
-
-<br/><br/>
-
-Define pieces using last generation of sequence.
-
-<img width="177" alt="define cell pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5ae1c7c7-ca5d-46af-9f68-1c2f5b01f163">
-
-<br/><br/>
-
-Define areas from pieces.
-
-<img width="304" alt="Screen Shot 2023-11-22 at 11 45 10 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/df5fe56d-49ef-4980-85ce-0f3f53ad0717">
-
-<br/><br/>
-
-Result:
-
-<img width="304" alt="Screen Shot 2023-11-22 at 11 45 50 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/87b9b685-52f8-4ba4-b4e0-96220a20a4c8">
-
-<br/><br/>
-
-Expansion by adding defined pieces:
-
-<img width="304" alt="adding defined pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a8a9546c-36b8-42de-9c67-c2d876fa875e">
-
-```
-x = 27, y = 27, rule = B3/S23
-12b3o$12bobo$12bobo$12bobo$12b3o$12bobo$12bobo$12bobo$12b3o$12bobo$12b
-obo$12bobo$27o$o3bo3bo3bobo3bo3bo3bo$27o$12bobo$12bobo$12bobo$12b3o$
-12bobo$12bobo$12bobo$12b3o$12bobo$12bobo$12bobo$12b3o!
-```
-
-<br/><br/>
-
-Combining pieces and areas:
-
-<img width="304" alt="minimal creation combination" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f1d8f806-0d8e-48c2-824d-ab9f9162998a">
-
-<br/><br/>
-
-Define combination:
-
-<img width="304" alt="minimal creation define system" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f0fb4950-1eb1-4754-a7c5-bd579faa91c1">
-
-```
-x = 31, y = 31, rule = B3/S23
-31o$o29bo$ob27obo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$
-obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo
-3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3b
-o3bobo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo
-3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bob
-o3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3bo3bo
-bo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo
-3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bob
-o$ob27obo$o29bo$31o!
-```
-
-<br/><br/>
-
-Layering each defined combination of pieces and areas:
-
-<img width="304" alt="minimal creation layered" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7c0d201d-e78b-42fd-b62c-1bfc94319cf7">
-
-```
-x = 39, y = 39, rule = B3/S23
-39o$o37bo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obob31obobo$obobobo
-3bo3bo3bobo3bo3bo3bobobobo$ob35obo$obobobo3bo3bo3bobo3bo3bo3bobobobo$o
-bobobob23obobobobo$obobobobobo3bo3bobo3bo3bobobobobobo$ob35obo$obobobo
-bobo3bo3bobo3bo3bobobobobobo$obobobobobob15obobobobobobo$obobobobobobo
-bo3bobo3bobobobobobobobo$ob35obo$obobobobobobobo3bobo3bobobobobobobobo
-$obobobobobobobo3bobo3bobobobobobobobo$obobobobobobobo3bobo3bobobobobo
-bobobo$ob35obo$obobobobobobobo3bobo3bobobobobobobobo$ob35obo$obobobobo
-bobobo3bobo3bobobobobobobobo$obobobobobobobo3bobo3bobobobobobobobo$obo
-bobobobobobo3bobo3bobobobobobobobo$ob35obo$obobobobobobobo3bobo3bobobo
-bobobobobo$obobobobobob15obobobobobobo$obobobobobo3bo3bobo3bo3bobobobo
-bobo$ob35obo$obobobobobo3bo3bobo3bo3bobobobobobo$obobobob23obobobobo$o
-bobobo3bo3bo3bobo3bo3bo3bobobobo$ob35obo$obobobo3bo3bo3bobo3bo3bo3bobo
-bobo$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o37bo$39o!
-
-```
-
-<br/><br/>
 
 ## System mechanics visualization
 
@@ -166,62 +70,89 @@ Locality Trace Diagram:
 <br/>
 <img width="480" alt="locality trace diagram" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f1a09742-a2f1-476e-a48c-1af41ba9af05">
 
-## System energy calculations
+<br/>
+<br/>
 
-[Code in App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx#L198)
+## Nothing to Something Sequence
 
-- Alive energy uses alive cells
-- Dead energy uses dead cells within a bounding box around min/max of alive cell x/y in system
+Implement geometry emerging from locality diagrams for basic configurations starting with a single point.
 
-  - Calculate another "category" for dead cells adjacent to alive cells?
-    - Adjacent Dead Cell ADPV = Total Connected Alive Cells / 8 ?
+```
+expanding rotating square boundary sample sequence:
 
-- System energy changes create waveform?
+0 0 0
+0 1 0
+0 0 0
+
+0 0 0
+0 1 0
+0 0 0
+
+0 1 0
+1 0 1
+0 1 0
+
+1 1 1
+1 0 1
+1 1 1
+
+0 0 1 0 0
+0 1 0 1 0
+1 0 0 0 1
+0 1 0 1 0
+0 0 1 0 0
+
+1 1 1 1 1
+1 0 0 0 1
+1 0 0 0 1
+1 0 0 0 1
+1 1 1 1 1
+```
+
+Demo:
+
+![gen](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aa9e4dd-7ac1-4ee0-859d-5cba94b0bce0)
+
+note: demo is missing a point from beginning of sequence
 
 <br/>
 
-## Blinker with middle at 0,0 has bounding box dead energy change floating point difference?
+Locality diagrams of first 3 sequence configurations:
 
-```
-  1.0000000000000036
-- 0.9999999999999964
-= 0.000000000000007 (7x10^-15 femto)
-```
+![locality_diagram_8_point](https://github.com/tboie/universal_phreak_generator/assets/26150152/8eb0a8ac-6cda-43d1-8e6a-0b6913dca6d4)
 
-```
-  1
-/ 0.000000000000007
-= 142857142857142.857142857142857
-```
+![locality_diagram_8_dead](https://github.com/tboie/universal_phreak_generator/assets/26150152/c7d89f6c-6555-47f0-b95f-f6987fc5b9dd)
 
-Defining bounding box of blinker creates a pulsar:
+![locality_diagram_8_o](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4e88433-97a0-457d-9711-69f39b3158bf)
 
-- https://conwaylife.com/wiki/Pulsar
-- 3x3 center is interesting?
+Demo of 400 generations:
+
+![demo sequence 400 gens](https://github.com/tboie/universal_phreak_generator/assets/26150152/0e39819b-89cc-42a1-b379-22e458bd5a36)
+
+#### Newer Notes:
+
+All information contained in cell?
+<br/>
+Expansion(inverted locality diagram?) and contraction reaction information correlates to locality diagrams?
+<br/>
+Defined area is scaled cell?
+<br/>
+Single "on" cell is specific case of system?
+<br/>
+Nothing is something?
+<br/>
+1 / 3?
+<br/>
+<br/>
+Sequence concept:
+<br/>
+<img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/375901f0-900d-4fb9-aa66-f1906973229f">
+<br/>
+- Create better diagram?
+- [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
+- Number of Locality Diagram layers for each layer = layer number?
 
 <br/>
-
-## Significance of system ruleset numbers 2 and 3?
-
-- triangle?
-
-- connections of 2 in a neighborhood length of 3?
-
-<br/>
-
-## 9 cell neighborhood combinations produce 9 most common patterns
-
-- https://catagolue.hatsya.com/statistics
-- 1 xs4_33 (Block) 1641635518161410
-- 2 xp2_7 (Blinker) 1524639293713408
-- 3 xs6_696 (Beehive) 869945894691485
-- 4 xq4_153 (Glider) 467343903744820
-- 5 xs7_2596 (Loaf) 256651602436129
-- 6 xs5_253 (Boat) 236781408150196
-- 7 xs6_356 (Ship) 163492510796214
-- 8 xs4_252 (Tub) 51670473427163
-- 9 xs8_6996 (Pond) 55336623799705
-
 <br/>
 
 ## Tiles
@@ -625,6 +556,170 @@ x = 6, y = 6, rule = B3/S23
 <br/>
 <br/>
 
+
+## System energy calculations
+
+[Code in App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx#L198)
+
+- Alive energy uses alive cells
+- Dead energy uses dead cells within a bounding box around min/max of alive cell x/y in system
+
+  - Calculate another "category" for dead cells adjacent to alive cells?
+    - Adjacent Dead Cell ADPV = Total Connected Alive Cells / 8 ?
+
+- System energy changes create waveform?
+
+<br/>
+<br/>
+
+## Phreak Phormulas
+
+<img width="500" alt="Phreak Phormula" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3c7dd18-6ea3-4db9-9d50-f7504c11d638">
+<br/>
+<img width="350" alt="Phreak Phormula example 1" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/14e497cb-e473-4b72-aa12-057b2963d967">
+<br/>
+<img width="350" alt="Phreak Phormula example 2" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/8685a79d-8af1-4df3-81ae-e506a87d57e4">
+
+<br/>
+
+more initial state designs (ring version, fibonnaci spiral) found here:
+[src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
+
+<br/>
+
+## Minimal Creation Concepts
+
+A cell exists. Define area.
+
+<img width="52" alt="define cell" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3b935aa7-3581-4223-a24a-cfc70cae7cd9">
+
+<br/><br/>
+
+Define pieces using last generation of sequence.
+
+<img width="177" alt="define cell pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/5ae1c7c7-ca5d-46af-9f68-1c2f5b01f163">
+
+<br/><br/>
+
+Define areas from pieces.
+
+<img width="304" alt="Screen Shot 2023-11-22 at 11 45 10 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/df5fe56d-49ef-4980-85ce-0f3f53ad0717">
+
+<br/><br/>
+
+Result:
+
+<img width="304" alt="Screen Shot 2023-11-22 at 11 45 50 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/87b9b685-52f8-4ba4-b4e0-96220a20a4c8">
+
+<br/><br/>
+
+Expansion by adding defined pieces:
+
+<img width="304" alt="adding defined pieces" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a8a9546c-36b8-42de-9c67-c2d876fa875e">
+
+```
+x = 27, y = 27, rule = B3/S23
+12b3o$12bobo$12bobo$12bobo$12b3o$12bobo$12bobo$12bobo$12b3o$12bobo$12b
+obo$12bobo$27o$o3bo3bo3bobo3bo3bo3bo$27o$12bobo$12bobo$12bobo$12b3o$
+12bobo$12bobo$12bobo$12b3o$12bobo$12bobo$12bobo$12b3o!
+```
+
+<br/><br/>
+
+Combining pieces and areas:
+
+<img width="304" alt="minimal creation combination" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f1d8f806-0d8e-48c2-824d-ab9f9162998a">
+
+<br/><br/>
+
+Define combination:
+
+<img width="304" alt="minimal creation define system" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f0fb4950-1eb1-4754-a7c5-bd579faa91c1">
+
+```
+x = 31, y = 31, rule = B3/S23
+31o$o29bo$ob27obo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$
+obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo
+3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3b
+o3bobo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo
+3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bob
+o3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo3bo3bobo3bo3bo3bo
+bo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$ob27obo$obo3bo
+3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bobo$obo3bo3bo3bobo3bo3bo3bob
+o$ob27obo$o29bo$31o!
+```
+
+<br/><br/>
+
+Layering each defined combination of pieces and areas:
+
+<img width="304" alt="minimal creation layered" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7c0d201d-e78b-42fd-b62c-1bfc94319cf7">
+
+```
+x = 39, y = 39, rule = B3/S23
+39o$o37bo$ob35obo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$obob31obobo$obobobo
+3bo3bo3bobo3bo3bo3bobobobo$ob35obo$obobobo3bo3bo3bobo3bo3bo3bobobobo$o
+bobobob23obobobobo$obobobobobo3bo3bobo3bo3bobobobobobo$ob35obo$obobobo
+bobo3bo3bobo3bo3bobobobobobo$obobobobobob15obobobobobobo$obobobobobobo
+bo3bobo3bobobobobobobobo$ob35obo$obobobobobobobo3bobo3bobobobobobobobo
+$obobobobobobobo3bobo3bobobobobobobobo$obobobobobobobo3bobo3bobobobobo
+bobobo$ob35obo$obobobobobobobo3bobo3bobobobobobobobo$ob35obo$obobobobo
+bobobo3bobo3bobobobobobobobo$obobobobobobobo3bobo3bobobobobobobobo$obo
+bobobobobobo3bobo3bobobobobobobobo$ob35obo$obobobobobobobo3bobo3bobobo
+bobobobobo$obobobobobob15obobobobobobo$obobobobobo3bo3bobo3bo3bobobobo
+bobo$ob35obo$obobobobobo3bo3bobo3bo3bobobobobobo$obobobob23obobobobo$o
+bobobo3bo3bo3bobo3bo3bo3bobobobo$ob35obo$obobobo3bo3bo3bobo3bo3bo3bobo
+bobo$obob31obobo$obo3bo3bo3bo3bobo3bo3bo3bo3bobo$ob35obo$o37bo$39o!
+
+```
+
+<br/><br/>
+
+## Blinker with middle at 0,0 has bounding box dead energy change floating point difference?
+
+```
+  1.0000000000000036
+- 0.9999999999999964
+= 0.000000000000007 (7x10^-15 femto)
+```
+
+```
+  1
+/ 0.000000000000007
+= 142857142857142.857142857142857
+```
+
+Defining bounding box of blinker creates a pulsar:
+
+- https://conwaylife.com/wiki/Pulsar
+- 3x3 center is interesting?
+
+<br/>
+
+## Significance of system ruleset numbers 2 and 3?
+
+- triangle?
+
+- connections of 2 in a neighborhood length of 3?
+
+<br/>
+
+## 9 cell neighborhood combinations produce 9 most common patterns
+
+- https://catagolue.hatsya.com/statistics
+- 1 xs4_33 (Block) 1641635518161410
+- 2 xp2_7 (Blinker) 1524639293713408
+- 3 xs6_696 (Beehive) 869945894691485
+- 4 xq4_153 (Glider) 467343903744820
+- 5 xs7_2596 (Loaf) 256651602436129
+- 6 xs5_253 (Boat) 236781408150196
+- 7 xs6_356 (Ship) 163492510796214
+- 8 xs4_252 (Tub) 51670473427163
+- 9 xs8_6996 (Pond) 55336623799705
+
+<br/>
+<br/>
+
 ## Universal Tile Generator
 
 ### _Squared Version_
@@ -724,90 +819,6 @@ Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 - 0.875
 - 1
 
-## Nothing to Something Sequence
-
-Implement geometry emerging from locality diagrams for basic configurations starting with a single point.
-
-```
-expanding rotating square boundary sample sequence:
-
-0 0 0
-0 1 0
-0 0 0
-
-0 0 0
-0 1 0
-0 0 0
-
-0 1 0
-1 0 1
-0 1 0
-
-1 1 1
-1 0 1
-1 1 1
-
-0 0 1 0 0
-0 1 0 1 0
-1 0 0 0 1
-0 1 0 1 0
-0 0 1 0 0
-
-1 1 1 1 1
-1 0 0 0 1
-1 0 0 0 1
-1 0 0 0 1
-1 1 1 1 1
-```
-
-Demo:
-
-![gen](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aa9e4dd-7ac1-4ee0-859d-5cba94b0bce0)
-
-note: demo is missing a point from beginning of sequence
-
-<br/>
-
-Locality diagrams of first 3 sequence configurations:
-
-![locality_diagram_8_point](https://github.com/tboie/universal_phreak_generator/assets/26150152/8eb0a8ac-6cda-43d1-8e6a-0b6913dca6d4)
-
-![locality_diagram_8_dead](https://github.com/tboie/universal_phreak_generator/assets/26150152/c7d89f6c-6555-47f0-b95f-f6987fc5b9dd)
-
-![locality_diagram_8_o](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4e88433-97a0-457d-9711-69f39b3158bf)
-
-Demo of 400 generations:
-
-![demo sequence 400 gens](https://github.com/tboie/universal_phreak_generator/assets/26150152/0e39819b-89cc-42a1-b379-22e458bd5a36)
-
-#### Newer Notes:
-
-All information contained in cell?
-<br/>
-Expansion(inverted locality diagram?) and contraction reaction information correlates to locality diagrams?
-<br/>
-Defined area is scaled cell?
-<br/>
-Single "on" cell is specific case of system?
-<br/>
-Nothing is something?
-<br/>
-1 / 3?
-<br/>
-<br/>
-Sequence concept:
-<br/>
-<img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/375901f0-900d-4fb9-aa66-f1906973229f">
-<br/>
-- Create better diagram?
-- [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
-- Number of Locality Diagram layers for each layer = layer number?
-<br/>
-<br/>
-
-Scripts:
-<br/>
-[https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts)
 <br/>
 <br/>
 
