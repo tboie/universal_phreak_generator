@@ -1,4 +1,4 @@
-![ScreenRecording2024-06-02at1 53 06PM-ezgif com-video-to-gif-converter](https://github.com/tboie/universal_phreak_generator/assets/26150152/607b477a-44b9-4296-aada-b698616ab55c)# Conway Game of Life Experiments
+# Conway Game of Life Experiments
 
 ## A spiraling collection of virtual measurements
 
@@ -131,10 +131,11 @@ Layered Sequence Concept:
 32 layer demo:
 <br/>
 <img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/6978e0fe-0bf8-4281-902b-c0b27300a66e">
+
 <br/>
 <br/>
-All information contained in cell?
-<br/>
+
+- All information contained in cell?
 - Reaction resembles locality diagrams?
 - Cell form scales?
 - Scale increases towards resulting outer boundary?
