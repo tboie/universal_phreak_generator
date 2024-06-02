@@ -1,4 +1,4 @@
-# Conway Game of Life Experiments
+![ScreenRecording2024-06-02at1 53 06PM-ezgif com-video-to-gif-converter](https://github.com/tboie/universal_phreak_generator/assets/26150152/607b477a-44b9-4296-aada-b698616ab55c)# Conway Game of Life Experiments
 
 ## A spiraling collection of virtual measurements
 
@@ -131,27 +131,27 @@ Demo of 400 generations:
 ![demo sequence 400 gens](https://github.com/tboie/universal_phreak_generator/assets/26150152/0e39819b-89cc-42a1-b379-22e458bd5a36)
 
 #### Newer Notes:
-
-All information contained in cell?
-<br/>
-Expansion(inverted locality diagram?) and contraction reaction information correlates to locality diagrams?
-<br/>
-Defined area is scaled cell?
-<br/>
-Single "on" cell is specific case of system?
-<br/>
-Nothing is something?
-<br/>
-1 / 3?
 <br/>
 <br/>
-Sequence concept:
+Layered Sequence Concept:
 <br/>
 <img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/375901f0-900d-4fb9-aa66-f1906973229f">
 <br/>
-- Create better diagram?
-- [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
+<br/>
+32 layer demo:
+<br/>
+<img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/6978e0fe-0bf8-4281-902b-c0b27300a66e">
+<br/>
+<br/>
+All information contained in cell?
+<br/>
+- Reaction resembles locality diagrams?
+- Cell form scales?
+- Scale increases towards resulting outer boundary?
+- Single "on" cell is specific case of system?
+- Nothing is something?
 - Number of Locality Diagram layers for each layer = layer number?
+- [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
 
 <br/>
 <br/>
