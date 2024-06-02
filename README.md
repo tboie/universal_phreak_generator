@@ -53,7 +53,7 @@ Combining Layers:
 <br/>
 <br/>
 
-8 Layer Locality Diagram of Point (no grid lines included)
+8 Layer Locality Diagram of Point (no grid lines)
 <br/>
 <img width="480" alt="locality diagram 8 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/4aa623b4-4394-45c3-b79b-72f0e167d7a9">
 <br/>
