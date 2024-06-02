@@ -14,7 +14,6 @@ ffmpeg -i ../sequences/out/5/gen_%08d.png -vf palettegen=reserve_transparent=1 .
 ffmpeg -i ../sequences/out/6/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/6/palette.png
 ffmpeg -i ../sequences/out/7/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/7/palette.png
 ffmpeg -i ../sequences/out/8/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/8/palette.png
-: <<'END'
 ffmpeg -i ../sequences/out/9/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/9/palette.png
 ffmpeg -i ../sequences/out/10/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/10/palette.png
 ffmpeg -i ../sequences/out/11/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/11/palette.png
@@ -39,6 +38,7 @@ ffmpeg -i ../sequences/out/29/gen_%08d.png -vf palettegen=reserve_transparent=1 
 ffmpeg -i ../sequences/out/30/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/30/palette.png
 ffmpeg -i ../sequences/out/31/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/31/palette.png
 ffmpeg -i ../sequences/out/32/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/32/palette.png
+: <<'END'
 ffmpeg -i ../sequences/out/33/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/33/palette.png
 ffmpeg -i ../sequences/out/34/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/34/palette.png
 ffmpeg -i ../sequences/out/35/gen_%08d.png -vf palettegen=reserve_transparent=1 ../sequences/out/35/palette.png

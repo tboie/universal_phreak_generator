@@ -13,7 +13,6 @@ ffmpeg -framerate 10 -i ../sequences/out/5/gen_%08d.png -i ../sequences/out/5/pa
 ffmpeg -framerate 10 -i ../sequences/out/6/gen_%08d.png -i ../sequences/out/6/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_6.gif
 ffmpeg -framerate 10 -i ../sequences/out/7/gen_%08d.png -i ../sequences/out/7/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_7.gif
 ffmpeg -framerate 10 -i ../sequences/out/8/gen_%08d.png -i ../sequences/out/8/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_8.gif
-: <<'END'
 ffmpeg -framerate 10 -i ../sequences/out/9/gen_%08d.png -i ../sequences/out/9/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_9.gif
 ffmpeg -framerate 10 -i ../sequences/out/10/gen_%08d.png -i ../sequences/out/10/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_10.gif
 ffmpeg -framerate 10 -i ../sequences/out/11/gen_%08d.png -i ../sequences/out/11/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_11.gif
@@ -38,6 +37,7 @@ ffmpeg -framerate 10 -i ../sequences/out/29/gen_%08d.png -i ../sequences/out/29/
 ffmpeg -framerate 10 -i ../sequences/out/30/gen_%08d.png -i ../sequences/out/30/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_30.gif
 ffmpeg -framerate 10 -i ../sequences/out/31/gen_%08d.png -i ../sequences/out/31/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_31.gif
 ffmpeg -framerate 10 -i ../sequences/out/32/gen_%08d.png -i ../sequences/out/32/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_32.gif
+: <<'END'
 ffmpeg -framerate 10 -i ../sequences/out/33/gen_%08d.png -i ../sequences/out/33/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_33.gif
 ffmpeg -framerate 10 -i ../sequences/out/34/gen_%08d.png -i ../sequences/out/34/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_34.gif
 ffmpeg -framerate 10 -i ../sequences/out/35/gen_%08d.png -i ../sequences/out/35/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_35.gif
@@ -70,4 +70,4 @@ ffmpeg -framerate 10 -i ../sequences/out/61/gen_%08d.png -i ../sequences/out/61/
 ffmpeg -framerate 10 -i ../sequences/out/62/gen_%08d.png -i ../sequences/out/62/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_62.gif
 ffmpeg -framerate 10 -i ../sequences/out/63/gen_%08d.png -i ../sequences/out/63/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_63.gif
 ffmpeg -framerate 10 -i ../sequences/out/64/gen_%08d.png -i ../sequences/out/64/palette.png -lavfi paletteuse=alpha_threshold=128 ../sequences/out/gif/gen_animated_64.gif
-END
+END 
