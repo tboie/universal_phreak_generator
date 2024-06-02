@@ -49,23 +49,13 @@ TODO:
 <br/>
 
 Apply upwards and downwards for a cell?
-Sequence?
+Sequence of nested diagrams?
 
 python script:
 <br/>
 [public/scripts/gen_locality_diagram.py](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_locality_diagram.py)
 <br/>
 <br/>
-
-Initial state design from cell contents?
-
-- Cell to Board?
-- Board to Board?
-- Translation Technique
-  - Inverse Square?
-  - Spiral?
-  - [Minimal Creation Grid?](https://github.com/tboie/universal_phreak_generator?tab=readme-ov-file#minimal-creation-concepts)
-  - Multiple generations?
 
 Locality Trace Diagram:
 <br/>
