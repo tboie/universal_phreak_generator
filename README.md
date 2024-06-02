@@ -68,16 +68,15 @@ python script:
 <br/>
 <br/>
 
-Locality Trace Diagram:
+Locality Trace Diagram (revise?):
 <br/>
 <img width="480" alt="locality trace diagram" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/f1a09742-a2f1-476e-a48c-1af41ba9af05">
-
 <br/>
 <br/>
 
 ## Nothing to Something Sequence
 
-Implement geometry emerging from locality diagrams for basic configurations starting with a single point.
+Does the following sequence pattern emerge from locality diagrams/trace diagrams starting from 1 "on" cell?
 
 ```
 expanding rotating square boundary sample sequence:
@@ -90,6 +89,7 @@ expanding rotating square boundary sample sequence:
 0 1 0
 0 0 0
 
+
 0 1 0
 1 0 1
 0 1 0
@@ -109,23 +109,25 @@ expanding rotating square boundary sample sequence:
 1 0 0 0 1
 1 0 0 0 1
 1 1 1 1 1
+
+...
 ```
-
-Demo:
-
-![gen](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aa9e4dd-7ac1-4ee0-859d-5cba94b0bce0)
-
-note: demo is missing a point from beginning of sequence
 
 <br/>
 
-Locality diagrams of first 3 sequence configurations:
+Locality diagrams of first 3 sequence forms:
 
 ![locality_diagram_8_point](https://github.com/tboie/universal_phreak_generator/assets/26150152/8eb0a8ac-6cda-43d1-8e6a-0b6913dca6d4)
 
 ![locality_diagram_8_dead](https://github.com/tboie/universal_phreak_generator/assets/26150152/c7d89f6c-6555-47f0-b95f-f6987fc5b9dd)
 
 ![locality_diagram_8_o](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4e88433-97a0-457d-9711-69f39b3158bf)
+
+Demo of sequence:
+
+![gen](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aa9e4dd-7ac1-4ee0-859d-5cba94b0bce0)
+
+note: demo is missing a point from beginning of sequence
 
 Demo of 400 generations:
 
