@@ -29,27 +29,38 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 
 ## System mechanics visualization
 
-TODO:
-
-- how should intensity be accurately visualized (color, opacity, depth etc.)?
-
+Point:
 <br/>
-<img width="480" alt="cell border" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/1ed5bbd4-1c4c-4c45-8a52-68076a573eb8">
+<img width="480" alt="locality diagram 0 layer point grid lines" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/658a7a80-1350-4c2c-b2e6-a77620efcd60"/>
 <br/>
 <br/>
 
-1 Layer Intensity Example Locality Diagram:
+1st Layer Locality Diagram of Point:
 <br/>
-<img width="480" alt="locality diagram 1 layer grid lines" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/9ec190a5-763f-41fc-a285-2b7a8da2c3f2">
+<img width="480" alt="locality diagram 1 layer grid lines" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/74e53f46-fea5-4b9e-b044-aec10a3ae2a5">
 <br/>
-
-4 Layer Intensity Locality Diagram:
-<br/>
-<img width="480" alt="locality diagram 4 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/3fef22a5-e79c-418d-b3a8-87bc1e620b46">
 <br/>
 
-Apply upwards and downwards for a cell?
-Sequence of nested diagrams?
+2nd Layer Locality Diagram of Point:
+<br/>
+<img width="480" alt="locality diagram 2 layer grid lines" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06240771-b898-4c0e-87e4-f5b5a7d1b6b5">
+<br/>
+<br/>
+
+Combining Layers:
+<br/>
+<img width="480" alt="locality diagram combined layers grid lines" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/c612b15c-dec0-42ab-9b6f-235ae5e617f4">
+<br/>
+<br/>
+
+8 Layer Locality Diagram of Point
+<br/>
+<img width="480" alt="locality diagram 8 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/4aa623b4-4394-45c3-b79b-72f0e167d7a9">
+<br/>
+
+- How should intensity be accurately visualized (color, opacity, depth etc.)?
+- Apply upwards and downwards for a cell?
+- Sequence of nested diagrams?
 
 python script:
 <br/>
