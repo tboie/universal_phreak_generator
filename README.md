@@ -123,19 +123,21 @@ Locality diagrams of first 3 sequence forms:
 
 ![locality_diagram_8_o](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4e88433-97a0-457d-9711-69f39b3158bf)
 
-Demo of sequence:
+<br/>
 
+Demo of sequence:
+<br/>
 ![gen](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aa9e4dd-7ac1-4ee0-859d-5cba94b0bce0)
 
 note: demo is missing a point from beginning of sequence
 
-Demo of 400 generations:
+<br/>
 
+Demo of 400 generations:
+<br/>
 ![demo sequence 400 gens](https://github.com/tboie/universal_phreak_generator/assets/26150152/0e39819b-89cc-42a1-b379-22e458bd5a36)
 
 #### Newer Notes:
-<br/>
-<br/>
 Layered Sequence Concept:
 <br/>
 <img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/375901f0-900d-4fb9-aa66-f1906973229f">
@@ -157,6 +159,8 @@ Layered Sequence Concept:
 - Number of Locality Diagram layers for each layer = layer number?
 - Include expanding base layer in demo?
 - [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
+- [Layered sequence web demo](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts/media/html_layers)
+- [Readme for scripts info](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/readme.txt)
 
 <br/>
 <br/>
