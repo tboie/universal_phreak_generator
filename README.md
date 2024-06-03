@@ -20,6 +20,11 @@ Scripts:
 
 <br/>
 
+Does geometric sequence emerge from a grid of cells?
+How to apply geometric sequence?
+
+<br/>
+
 ## System mechanics visualization
 
 Point:
