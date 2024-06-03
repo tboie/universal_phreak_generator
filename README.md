@@ -14,17 +14,10 @@ p4tt3rn p0pp3r5 . y0ch0
 1 1 1
 ```
 
-<br/><br/>
-
 Scripts:
-
+<br/>
 [https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts)
 
-<br/>
-
-More concepts in code experiments at [src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
-
-<br/>
 <br/>
 
 ## System mechanics visualization
@@ -873,3 +866,10 @@ Time = 0
 Time = 1
 <br/>
 <img width="420" alt="neighborhood time diff 1" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/607498d5-722e-4055-a383-bf9e474557b2">
+
+<br/>
+
+More concepts in code experiments at [src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
+
+<br/>
+<br/>
