@@ -149,7 +149,7 @@ Layered Sequence Concept:
 <br/>
 
 - All information contained in cell?
-- Reaction resembles locality diagrams?
+- Reaction resembles locality diagrams? (significance if true? data matches data?) 
 - Cell form scales?
 - Scale increases towards resulting outer boundary?
 - Single "on" cell is specific case of system?
