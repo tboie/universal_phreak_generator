@@ -22,6 +22,7 @@ Scripts:
 
 - Does geometric sequence emerge from a grid of cells?
 - How to apply geometric sequence?
+- What if grid diagrams visually match sequence reaction?
 
 <br/>
 
