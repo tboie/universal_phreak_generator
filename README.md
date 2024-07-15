@@ -28,19 +28,19 @@ Scripts:
 
 ## System mechanics visualization
 
-Point:
+Cell:
 <br/>
 <img width="480" alt="locality diagram 0 layer point grid lines" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/658a7a80-1350-4c2c-b2e6-a77620efcd60"/>
 <br/>
 <br/>
 
-1st Layer Locality Diagram of Point:
+1st Layer Locality Diagram of Cell:
 <br/>
 <img width="480" alt="locality diagram 1 layer grid lines" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/74e53f46-fea5-4b9e-b044-aec10a3ae2a5">
 <br/>
 <br/>
 
-2nd Layer Locality Diagram of Point:
+2nd Layer Locality Diagram of Cell:
 <br/>
 <img width="480" alt="locality diagram 2 layer grid lines" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06240771-b898-4c0e-87e4-f5b5a7d1b6b5">
 <br/>
@@ -52,7 +52,7 @@ Combining Layers:
 <br/>
 <br/>
 
-8 Layer Locality Diagram of Point (no grid lines)
+8 Layer Locality Diagram of Cell (no grid lines)
 <br/>
 <img width="480" alt="locality diagram 8 layers" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/4aa623b4-4394-45c3-b79b-72f0e167d7a9">
 <br/>
