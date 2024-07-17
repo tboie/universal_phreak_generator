@@ -120,15 +120,17 @@ Cell Data Map?:
 <br/>
 ![locality_diagram_8_point](https://github.com/tboie/universal_phreak_generator/assets/26150152/8eb0a8ac-6cda-43d1-8e6a-0b6913dca6d4)
 <br/><br/>
+Initiated State?:
+<br/>
 ![locality_diagram_8_dead](https://github.com/tboie/universal_phreak_generator/assets/26150152/c7d89f6c-6555-47f0-b95f-f6987fc5b9dd)
-<br/><br/>
-Active State?:
-<br/><br/>
-![locality_diagram_8 active](https://github.com/user-attachments/assets/42d7727f-1520-4793-b04c-eb312bb8df68)
 <br/><br/>
 Expanding State?:
 <br/>
 ![locality_diagram_8_o](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4e88433-97a0-457d-9711-69f39b3158bf)
+<br/><br/>
+Active State? (not in sequence):
+<br/>
+![locality_diagram_8 active](https://github.com/user-attachments/assets/c363eb98-db27-4058-9e4e-ea601522f7ed)
 <br/><br/>
 
 Demo of sequence:
