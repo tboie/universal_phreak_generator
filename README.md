@@ -132,6 +132,10 @@ Active State? (1st layer sequence):
 <br/>
 ![locality_diagram_8 active](https://github.com/user-attachments/assets/c363eb98-db27-4058-9e4e-ea601522f7ed)
 <br/><br/>
+Inactive State? (not in sequence):
+<br/>
+![locality_diagram_8 inactive](https://github.com/user-attachments/assets/f42dfe29-243c-4f41-92a3-21bdc0d954a8)
+<br/><br/>
 
 Demo of sequence:
 <br/>
