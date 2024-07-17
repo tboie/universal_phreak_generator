@@ -128,7 +128,7 @@ Expanding State?:
 <br/>
 ![locality_diagram_8_o](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4e88433-97a0-457d-9711-69f39b3158bf)
 <br/><br/>
-Active State? (not in sequence):
+Active State? (1st layer sequence):
 <br/>
 ![locality_diagram_8 active](https://github.com/user-attachments/assets/c363eb98-db27-4058-9e4e-ea601522f7ed)
 <br/><br/>
