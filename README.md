@@ -122,6 +122,9 @@ Cell Data Map?:
 <br/><br/>
 ![locality_diagram_8_dead](https://github.com/tboie/universal_phreak_generator/assets/26150152/c7d89f6c-6555-47f0-b95f-f6987fc5b9dd)
 <br/><br/>
+Active State?:
+![locality_diagram_8 active](https://github.com/user-attachments/assets/42d7727f-1520-4793-b04c-eb312bb8df68)
+<br/><br/>
 Expanding State?:
 <br/>
 ![locality_diagram_8_o](https://github.com/tboie/universal_phreak_generator/assets/26150152/f4e88433-97a0-457d-9711-69f39b3158bf)
