@@ -136,6 +136,10 @@ Inactive State? (not in sequence):
 <br/>
 ![locality_diagram_8 inactive](https://github.com/user-attachments/assets/f42dfe29-243c-4f41-92a3-21bdc0d954a8)
 <br/><br/>
+Activating State? (not in sequence):
+<br/>
+![locality_diagram_8 activating](https://github.com/user-attachments/assets/5238b100-eae3-41fd-a969-e6987ae8b347)
+<br/><br/>
 
 Demo of sequence:
 <br/>
