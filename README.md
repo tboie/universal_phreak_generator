@@ -191,6 +191,8 @@ A block is 4 quadrants? A blinker rotates 90 degrees? A tile combines concepts o
 
 Tesselated tiles display scaled pattern information? (pattern is squared)
 
+Does this relate to how the system scales in Nothing to Something?  (common ranges?)
+
 Tiling Scripts:
 
 [generate tiled tesselations](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/gen_tile_seq.py)
