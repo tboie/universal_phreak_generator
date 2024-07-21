@@ -140,6 +140,13 @@ Activating State?:
 <br/>
 ![locality_diagram_8 activating](https://github.com/user-attachments/assets/5238b100-eae3-41fd-a969-e6987ae8b347)
 <br/><br/>
+TODO?:
+```
+010
+000
+101
+```
+<br/><br/>
 
 Demo of sequence:
 <br/>
