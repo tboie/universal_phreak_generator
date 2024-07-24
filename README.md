@@ -915,6 +915,8 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 
 ## Rotating cells around scaling cell
 
+TODO: move surrounding cells outwards by 1 so there is a boundary of no information between the center cell? (neighboring cells have information in locality diagrams)
+
 ```
 1 0 0 0 1
 0 0 0 0 0
