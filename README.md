@@ -200,15 +200,17 @@ Layered Sequence Concept:
 
 ## Tiles
 
-Does this method relate to Rotating Cell and Boundary? Scaling structure of system? Horizontal vs Vertical data evolution? 
+TODO: tile common patterns and all matrix combinations?
 
 Tile = form?
 
+Tesselated tiles display scaled pattern information? (pattern is squared)
+
 Tesselation = scaled reaction of form?
 
-A block is 4 quadrants? A blinker rotates 90 degrees? A tile combines concepts of the 2 most common patterns.
+Does this method relate to Rotating Cell and Boundary? Scaling structure of system? Horizontal vs Vertical data evolution? 
 
-Tesselated tiles display scaled pattern information? (pattern is squared)
+A block is 4 quadrants? A blinker rotates 90 degrees? A tile combines concepts of the 2 most common patterns.
 
 Does this relate to how the system scales in Nothing to Something?  (common ranges?)
 
