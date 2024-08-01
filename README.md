@@ -188,6 +188,7 @@ Layered Sequence Concept:
 - Nothing is something?
 - Number of Locality Diagram layers for each layer = layer number?
 - Include expanding base layer in demo?
+- Scaling tile perimeter?
 - [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
 - [Layered sequence web demo](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts/media/html_layers)
 - [Readme for scripts info](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/readme.txt)
@@ -196,6 +197,8 @@ Layered Sequence Concept:
 <br/>
 
 ## Tiles
+
+Does this method connect to Rotating Cell and Boundary? Scaling structure of system? Horizontal vs Vertical data evolution? 
 
 Tile = form?
 
