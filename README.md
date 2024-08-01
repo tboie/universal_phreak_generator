@@ -192,6 +192,7 @@ Layered Sequence Concept:
   - Is there form like objects/patterns in layered geometry?
   - Other methodologies to learn about the cell expansion/structure?
   - ex) results from tesselating "expanding state" pattern from locality diagrams?
+  - can the parts of the expanding cell be modeled without running the sequence?
 - Scaling tile perimeter?
 - [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
 - [Layered sequence web demo](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts/media/html_layers)
