@@ -188,7 +188,7 @@ Layered Sequence Concept:
 - Nothing is something?
 - Number of Locality Diagram layers for each layer = layer number?
 - Include expanding base layer in demo?
-- How does vertical evolution of data function?
+- How does data process vertically?
 - Scaling tile perimeter?
 - [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
 - [Layered sequence web demo](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts/media/html_layers)
