@@ -189,7 +189,8 @@ Layered Sequence Concept:
 - Number of Locality Diagram layers for each layer = layer number?
 - Include expanding base layer in demo?
 - How does data process vertically?
-  - Are there patterns in reaction sequences like the common patterns (blocks, blinkers, etc)?
+  - Is there form like objects/patterns in layered geometry?
+  - Other methodologies to learn about this process?
 - Scaling tile perimeter?
 - [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
 - [Layered sequence web demo](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts/media/html_layers)
