@@ -190,7 +190,8 @@ Layered Sequence Concept:
 - Include expanding base layer in demo?
 - How does data process vertically?
   - Is there form like objects/patterns in layered geometry?
-  - Other methodologies to learn about this process?
+  - Other methodologies to learn about the cell expansion/structure?
+  - ex) results from tesselating "expanding state" pattern from locality diagrams?
 - Scaling tile perimeter?
 - [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
 - [Layered sequence web demo](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts/media/html_layers)
