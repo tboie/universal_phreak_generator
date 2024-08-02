@@ -190,9 +190,10 @@ Layered Sequence Concept:
 - Include expanding base layer in demo?
 - How does data process vertically?
   - Is there form like objects/patterns in layered geometry?
+  - Tubes from Expanding Boundary?
   - Other methodologies to learn about the cell expansion/structure?
   - ex) results from tesselating "expanding state" pattern from locality diagrams?
-  - can the parts of the expanding cell be modeled without running the sequence?
+  - can parts/areas of the expanding cell be modeled independently?
 - Scaling tile perimeter?
 - [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
 - [Layered sequence web demo](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts/media/html_layers)
@@ -213,9 +214,9 @@ Tesselation = scaled reaction of form?
 
 Does this method relate to Rotating Cell and Boundary? Scaling structure of system? Horizontal vs Vertical data evolution? 
 
-A block is 4 quadrants? A blinker rotates 90 degrees? A tile combines concepts of the 2 most common patterns.
-
 Does this relate to how the system scales in Nothing to Something?  (common ranges?)
+
+A block is 4 quadrants? A blinker rotates 90 degrees? A tile combines concepts of the 2 most common patterns.
 
 Tiling Scripts:
 
