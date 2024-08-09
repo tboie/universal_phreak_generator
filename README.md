@@ -193,7 +193,8 @@ Layered Sequence Concept:
   - Tubes from Expanding Boundary?
   - Other methodologies to learn about the cell expansion/structure?
   - ex) results from tesselating "expanding/initiated state" patterns from locality diagrams?
-  - can parts/areas of the expanding cell be modeled independently?
+    - structure to mass produce Tub (Initiated State) = interesting?
+  - can parts/areas/states of the expanding cell be modeled independently?
 - Scaling tile perimeter?
 - [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
 - [Layered sequence web demo](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts/media/html_layers)
