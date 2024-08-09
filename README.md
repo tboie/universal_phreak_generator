@@ -180,6 +180,9 @@ Layered Sequence Concept:
 <br/>
 <br/>
 
+- Does every "Iniated State(Tub)" pattern start a new layer and sequence?
+- Does the sequence continuously add for each generation while "Iniated State(Tub)" exists?
+
 - All information contained in cell?
 - Reaction resembles locality diagrams? (significance if true? data matches data?) 
 - Cell form scales?
