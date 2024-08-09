@@ -34,13 +34,13 @@ Cell:
 <br/>
 <br/>
 
-1st Layer Locality Diagram of Cell:
+Next Layer Locality Diagram of Cell:
 <br/>
 <img width="480" alt="locality diagram 1 layer grid lines" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/74e53f46-fea5-4b9e-b044-aec10a3ae2a5">
 <br/>
 <br/>
 
-2nd Layer Locality Diagram of Cell:
+Next Layer Locality Diagram of Cell:
 <br/>
 <img width="480" alt="locality diagram 2 layer grid lines" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06240771-b898-4c0e-87e4-f5b5a7d1b6b5">
 <br/>
