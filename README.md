@@ -979,11 +979,6 @@ TODO: move surrounding cells outwards by 1 so there is a boundary of no informat
 ....
 ```
 
-## Life Phorms
-
-- animals are gliders scaled?
-- plants are blinkers scaled?
-
 ## Triangle and 1 dimensional automata
 - Proof of scaling functionality?
   
