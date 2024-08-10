@@ -180,7 +180,7 @@ Layered Sequence Concept:
 <img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/375901f0-900d-4fb9-aa66-f1906973229f">
 <br/>
 <br/>
-#### 32 layers sequence concept demo:
+#### 32 layer demo:
 <br/>
 <img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/6978e0fe-0bf8-4281-902b-c0b27300a66e">
 
