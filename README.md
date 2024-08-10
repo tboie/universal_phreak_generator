@@ -115,6 +115,9 @@ expanding rotating square boundary sample sequence:
 <br/>
 
 Locality diagrams of first 3 sequence forms:
+
+Are these "Processing States" of Mechanism 2?
+
 <br/><br/>
 Cell Data Map?:
 <br/>
@@ -155,7 +158,10 @@ ex)
 
 <br/><br/>
 
-Demo of sequence:
+#### Mechanism 1
+
+Demo of Sequence:
+
 <br/>
 ![gen](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aa9e4dd-7ac1-4ee0-859d-5cba94b0bce0)
 
@@ -167,7 +173,8 @@ Demo of 400 generations:
 <br/>
 ![demo sequence 400 gens](https://github.com/tboie/universal_phreak_generator/assets/26150152/0e39819b-89cc-42a1-b379-22e458bd5a36)
 
-#### Newer Notes:
+#### Mechanism 2
+
 Layered Sequence Concept:
 <br/>
 <img width="600" alt="" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/375901f0-900d-4fb9-aa66-f1906973229f">
