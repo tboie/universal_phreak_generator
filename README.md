@@ -116,7 +116,7 @@ expanding rotating square boundary sample sequence:
 
 Locality diagrams of first 3 sequence forms:
 
-Are these "Processing States" of Mechanism 2?
+Are these "Processing States" of the Primary Mechanism?
 
 <br/><br/>
 Cell Data Map?:
@@ -159,6 +159,8 @@ ex)
 <br/><br/>
 
 #### Mechanism
+
+Mechanisms are scaling foundational forms?
 
 Demo of Sequence:
 
