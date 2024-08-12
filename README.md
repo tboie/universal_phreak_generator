@@ -192,6 +192,7 @@ Layered Sequence Concept:
 - Outwards version = Mechanism?
 
 - Triangle Mechanism?
+  - Scaling rotating 3 points since a triangle is not complete?
 
 - Does every "Iniated State(Tub)" pattern start a new layer and sequence?
 - Does the sequence continuously add for each generation while "Iniated State(Tub)" exists?
