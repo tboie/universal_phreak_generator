@@ -75,6 +75,42 @@ Locality Trace Diagram (revise?):
 
 ## Nothing to Something Sequence
 
+### Proof and Definition of Minimal Scaling Parts
+
+A Grid is most simple form of arrangement?
+
+Specify a Grid Cell:
+
+1
+
+Scale the Grid to 2x2 allowing area for parts?
+
+10
+00
+
+A Line defines direction?
+
+11
+00
+
+10
+10
+
+10
+01
+
+...
+
+A Triangle is minimal form of area?
+
+11
+10
+
+Expanding the triangle creates the 2/3 ruleset for a minimal, stable, complete, scaled cell from it's parts?
+
+11
+11
+
 Does the following sequence pattern emerge from locality diagrams/trace diagrams starting from 1 "on" cell?
 
 ```
