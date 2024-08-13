@@ -287,6 +287,8 @@ Tesselated tiles display scaled pattern information? (pattern is squared)
 
 Tesselation = scaled reaction of form?
 
+Tesselations at Scale 2 do not rotate?
+
 Does this method relate to Rotating Cell and Boundary? Scaling structure of system? Horizontal/Vertical pattern relation? 
 
 A block is 4 quadrants? A blinker rotates 90 degrees? A tile combines concepts of the 2 most common patterns.
