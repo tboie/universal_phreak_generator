@@ -77,13 +77,18 @@ Locality Trace Diagram (revise?):
 
 ### Proof and Definition of Minimal Scaling Parts
 
-A Grid is most simple form of arrangement?
+Stuctures of System Scales:
+
+Scale 1 (1x1): Points
+Scale 2 (2x2): Points, Lines, Triangles
+Scale 3 (3x3): Circles
 
 Specify a Grid Cell:
 
 ```
 1
 ```
+
 Scale the Grid to 2x2 allowing area for parts?
 
 ```
