@@ -81,7 +81,7 @@ Stuctures of System Scales:
 
 - Scale 1 (1x1): Points
 - Scale 2 (2x2): Points, Lines, Triangles
-- Scale 3 (3x3): Circles
+- Scale 3 (3x3): Points, Lines, Triangles, Circles
 
 Specify a Grid Cell:
 
