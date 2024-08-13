@@ -1057,5 +1057,10 @@ TODO: move surrounding cells outwards by 1 so there is a boundary of no informat
 
 ## Triangle and 1 dimensional automata
 - Proof of scaling functionality?
-  
+
+## Human Form in Cell?
+
+<img width="498" alt="davinci circle human" src="https://github.com/user-attachments/assets/6a55d06b-1a36-44d1-baaf-172609c1b7af">
+
+![4 blinkers](https://github.com/user-attachments/assets/022eb2ba-3ca7-4d72-b208-c7ef916693f7)
 
