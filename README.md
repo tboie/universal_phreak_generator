@@ -118,7 +118,7 @@ A Triangle is minimal form of area?
 10
 ```
 
-Expanding the triangle creates the 2/3 ruleset for a minimal, stable, complete, scaled cell from it's parts?
+The 2/3 ruleset is created by adding another triangle for a minimal, stable, complete, scaled cell from it's parts?
 
 ```
 11
@@ -241,8 +241,10 @@ Layered Sequence Concept:
 
 - Outwards version = Mechanism?
 
-- Triangle Mechanism?
-  - Scaling rotating 3 points since a triangle is not complete?
+- Triangle Mechanisms?
+  - How information is processed by triangles at scales?
+  - Triangles are added, not expanded at scale 2?
+  - Apply corner triangle points every iteration?
 
 - Does every "Iniated State(Tub)" pattern start a new layer and sequence?
 - Does the sequence continuously add for each generation while "Iniated State(Tub)" exists?
