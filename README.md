@@ -214,6 +214,7 @@ Mechanisms are scaling foundational forms?
 Demo of Sequence:
 
 <br/>
+
 ![gen](https://github.com/tboie/universal_phreak_generator/assets/26150152/3aa9e4dd-7ac1-4ee0-859d-5cba94b0bce0)
 
 note: demo is missing a point from beginning of sequence
