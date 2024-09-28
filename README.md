@@ -1057,7 +1057,8 @@ TODO: move surrounding cells outwards by 1 so there is a boundary of no informat
 
 ## Triangle and 1 dimensional automata
 - Proof of scaling functionality?
-- 2D contains 1D, 1D does not contain 2D? 
+- 2D contains 1D, 1D does not contain 2D?
+- 2D 2x2 and 1D 1x2?
 
 ## Human Form in Cell?
 
