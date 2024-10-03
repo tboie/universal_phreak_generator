@@ -1060,6 +1060,16 @@ TODO: move surrounding cells outwards by 1 so there is a boundary of no informat
 - 2D contains 1D, 1D does not contain 2D?
 - 2D 2x2 and 1D 1x2?
 
+Example repeating corner
+
+```
+11000
+11100
+01110
+00111
+00010
+```
+
 ## Human Form in Cell?
 
 <img width="498" alt="davinci circle human" src="https://github.com/user-attachments/assets/6a55d06b-1a36-44d1-baaf-172609c1b7af">
