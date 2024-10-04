@@ -1060,7 +1060,7 @@ TODO: move surrounding cells outwards by 1 so there is a boundary of no informat
 - 2D contains 1D, 1D does not contain 2D?
 - 2D 2x2 and 1D 1x2?
 
-Example repeating corner
+Example repeating corners:
 
 ```
 11000
@@ -1068,6 +1068,14 @@ Example repeating corner
 01110
 00111
 00010
+```
+
+```
+010
+111
+111
+111
+101
 ```
 
 ## Human Form in Cell?
