@@ -274,6 +274,26 @@ Layered Sequence Concept:
 - [Layered sequence web demo](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts/media/html_layers)
 - [Readme for scripts info](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/readme.txt)
 
+- Inactive state contained in sequence?:
+```
+00100
+01010
+10001
+01010
+00100
+```
+
+- Rotated bounding box containing inactive state produces tub?:
+```
+0001000
+0010100
+0110110
+1000001
+0110110
+0010100
+0001000
+```
+
 <br/>
 <br/>
 
