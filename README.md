@@ -943,62 +943,6 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 <br/>
 <br/>
 
-## Rotating cells around scaling cell
-
-TODO: move surrounding cells outwards by 1 so there is a boundary of no information between the center cell? (neighboring cells have information in locality diagrams)
-
-```
-1 0 0 0 1
-0 0 0 0 0
-0 0 1 0 0
-0 0 0 0 0 
-1 0 0 0 1
-
-0 1 0 0 0
-0 0 0 0 1
-0 0 1 0 0
-1 0 0 0 0 
-0 0 0 1 0
-
-...
-
-
-1 0 0 0 0 1
-0 0 0 0 0 0
-0 0 1 1 0 0
-0 0 1 1 0 0
-0 0 0 0 0 0
-1 0 0 0 0 1
-
-0 1 0 0 0 0
-0 0 0 0 0 1
-0 0 1 1 0 0
-0 0 1 1 0 0
-1 0 0 0 0 0
-0 0 0 0 1 0
-
-...
-
-
-1 0 0 0 0 0 1
-0 0 0 0 0 0 0
-0 0 1 1 1 0 0
-0 0 1 1 1 0 0
-0 0 1 1 1 0 0
-0 0 0 0 0 0 0
-1 0 0 0 0 0 1
-
-0 1 0 0 0 0 0
-0 0 0 0 0 0 1
-0 0 1 1 1 0 0
-0 0 1 1 1 0 0
-0 0 1 1 1 0 0
-1 0 0 0 0 0 0
-0 0 0 0 0 1 0
-
-....
-```
-
 ## Corners
 
 4 Repeating corners produces base result?:
