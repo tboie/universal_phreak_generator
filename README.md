@@ -144,18 +144,6 @@ Activating State?:
 ![locality_diagram_8 activating](https://github.com/user-attachments/assets/5238b100-eae3-41fd-a969-e6987ae8b347)
 <br/><br/>
 
-TODO?:
-<br/>
-
-Triangles?
-```
-ex)
-
-010
-000
-101
-```
-
 <br/><br/>
 
 #### Mechanism
@@ -197,7 +185,20 @@ Layered Sequence Concept:
 - [Demo script](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/sequences/gen_rotating_square_layers.py)
 - [Layered sequence web demo](https://github.com/tboie/universal_phreak_generator/tree/main/public/scripts/media/html_layers)
 - [Readme for scripts info](https://github.com/tboie/universal_phreak_generator/blob/main/public/scripts/readme.txt)
-  
+
+TODO?:
+<br/>
+
+Triangles sequence?
+```
+ex)
+
+010
+000
+101
+```
+<br/><br/>
+
 - Inactive state contained in sequence?:
 ```
 00100
