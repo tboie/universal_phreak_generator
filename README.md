@@ -771,8 +771,7 @@ Defining bounding box of blinker creates a pulsar:
 
 ## Significance of system ruleset numbers 2 and 3?
 
-- triangle?
-
+- completes minimum form of 2x2 when 3 cells on? 
 - connections of 2 in a neighborhood length of 3?
 
 <br/>
@@ -943,6 +942,12 @@ More concepts in code experiments at [src/App.tsx](https://github.com/tboie/univ
 
 <br/>
 <br/>
+
+## One-Dimensional Cellular Automata
+
+Proof a triangle emerges from a single cell?
+
+Proof of scaling functionality?
 
 ## Corners
 
