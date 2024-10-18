@@ -821,28 +821,6 @@ Is this still relevant?
 - Initial State Design = Layered Shape(s) \* (Universal Tile Generator + Universal Border Generator)
 
 <br/>
-
-## Pattern Balance Technique
-
-- example uses [Unique Father Problem](https://conwaylife.com/wiki/Unique_father_problem)
-
-<img width="700" alt="concept" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/06d05e6a-1baa-4f8b-9880-b3b41d98967d">
-
-1.  X pattern is horizontal
-2.  Y pattern is inverted and rotated
-3.  Golden Spiral Matrix
-
-Comparing 4 glider spiral reactions to the [Unique Father Problem](https://conwaylife.com/wiki/Unique_father_problem) and Pattern Balance Technique
-<br/>
-<img width="95" alt="Screen Shot 2023-07-14 at 8 31 30 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7f5e1520-dc4b-42a2-a4f5-5edd75e6bc0d">
-<img width="91" alt="Screen Shot 2023-07-14 at 8 31 22 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/731f0da1-5979-49e0-9ef3-06c9404ec06d">
-<img width="89" alt="Screen Shot 2023-07-14 at 8 31 42 AM" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/a3ffb028-15b8-4d26-a30c-458ddc728f9b">
-<br/>
-<img width="450" alt="Unique Father Problem" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7c44c22a-fdc0-4385-8bd1-f04713439772">
-<br/>
-<img width="450" alt="Core Collapse" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/ec861f9f-1220-401f-8d91-f7f0f98f25b0">
-<br/><br/>
-
 <br/>
 
 ## Simplest combination creating multiple gliders from 1?
@@ -853,12 +831,6 @@ Comparing 4 glider spiral reactions to the [Unique Father Problem](https://conwa
 x = 8, y = 9, rule = B3/S23
 4b2o$3bo2bo$4b2o$bo$obo$obo$bo3b2o$5bobo$5bo!
 ```
-
-<br/>
-
-## Is this glider arrangement possible?
-
-<img width="76" alt="glider arrangement" src="https://github.com/tboie/universal_phreak_generator/assets/26150152/7ee3b9d3-6e63-452c-aba1-713e2f10137d">
 
 <br/><br/>
 
@@ -874,10 +846,6 @@ x = 8, y = 9, rule = B3/S23
 Dead Cell ADPV = Total Connected Alive Cells / 8 ?
 
 <br/><br/>
-
-## What is geometry of each cell/point?
-
-- pyramid/cone?
 
 ## Random note for later: 0.125 sequence is combinationally interesting?
 
