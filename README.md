@@ -164,6 +164,8 @@ Demo of 400 generations:
 <br/>
 ![demo sequence 400 gens](https://github.com/tboie/universal_phreak_generator/assets/26150152/0e39819b-89cc-42a1-b379-22e458bd5a36)
 
+- What is the energy modulation rate of the expanding rotating perimeter?
+
 #### Primary Mechanism
 
 Layered Sequence Concept:
