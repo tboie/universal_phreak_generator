@@ -660,9 +660,9 @@ x = 6, y = 6, rule = B3/S23
 more initial state designs (ring version, fibonnaci spiral) found here:
 [src/App.tsx](https://github.com/tboie/universal_phreak_generator/blob/main/src/App.tsx)
 
-do these equations relate to system mass asymmetry (ratio/form/reaction processes)?
+does inverse version reaction consistently creates lines of width 1 and 3 when scaled?
 
-does asymmetry create patterns within as size scales?
+do these equations relate to system mass asymmetry (ratio/form/reaction processes)?
 
 <br/>
 
