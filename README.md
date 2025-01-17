@@ -664,6 +664,8 @@ does inverse version reaction consistently creates lines of width 1 and 3 when s
 
 do these equations relate to system mass asymmetry (ratio/form/reaction processes)?
 
+mechanics of inverse square law + entropy?
+
 <br/>
 
 ## Minimal Creation Concepts
