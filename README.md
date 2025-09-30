@@ -75,7 +75,7 @@ Locality Trace Diagram (revise?):
 
 ## Nothing to Something Sequence
 
-Median representation of infinite process?
+min, median, and max representation of functional infinite process?
 
 Does the following sequence pattern emerge from locality diagrams/trace diagrams starting from 1 "on" cell?
 
