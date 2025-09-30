@@ -75,6 +75,8 @@ Locality Trace Diagram (revise?):
 
 ## Nothing to Something Sequence
 
+Median representation of infinite process?
+
 Does the following sequence pattern emerge from locality diagrams/trace diagrams starting from 1 "on" cell?
 
 ```
